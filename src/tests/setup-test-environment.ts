@@ -1,8 +1,8 @@
-import '@testing-library/jest-dom/vitest';
+// import '@testing-library/jest-dom/vitest';
 
-// See <https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#configuring-your-testing-environment>.
+// // See <https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#configuring-your-testing-environment>.
 
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-ignore
-globalThis.IS_REACT_ACT_ENVIRONMENT = true;
-/* eslint-enable @typescript-eslint/ban-ts-comment */
+// /* eslint-disable @typescript-eslint/ban-ts-comment */
+// // @ts-ignore
+// globalThis.IS_REACT_ACT_ENVIRONMENT = true;
+// /* eslint-enable @typescript-eslint/ban-ts-comment */
