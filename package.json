@@ -13,9 +13,14 @@
     "test": "vitest --reporter=verbose"
   },
   "dependencies": {
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.68.3",
     "next": "15.1.2",
+    "next-sanity": "^9.8.31",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sanity": "^3.68.3",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
