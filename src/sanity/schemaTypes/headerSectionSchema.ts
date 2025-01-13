@@ -11,6 +11,7 @@ export const headerSectionSchema = defineType({
       type: 'string',
       validation: rule => rule.required(),
     }),
+
     defineField({
       name: 'menuItems',
       title: 'Menu Items',
@@ -41,6 +42,14 @@ export const headerSectionSchema = defineType({
           ],
         }),
       ],
+    }),
+
+    defineField({
+      name: 'photo',
+      title: 'Photo for burger menu',
+      type: 'image',
+      options: { hotspot: true },
+      validation: rule => rule.required(),
     }),
 
     defineField({

@@ -17,8 +17,22 @@ export const subscribeSectionSchema = defineType({
       type: 'object',
       fields: [
         defineField({
-          name: 'image',
-          title: 'Image',
+          name: 'desktopImage',
+          title: 'Desktop Image',
+          type: 'image',
+          options: { hotspot: true },
+          validation: rule => rule.required(),
+        }),
+        defineField({
+          name: 'mobileImage',
+          title: 'Mobile Image',
+          type: 'image',
+          options: { hotspot: true },
+          validation: rule => rule.required(),
+        }),
+        defineField({
+          name: 'mobileImageReversed',
+          title: 'Mobile Image Reversed',
           type: 'image',
           options: { hotspot: true },
           validation: rule => rule.required(),

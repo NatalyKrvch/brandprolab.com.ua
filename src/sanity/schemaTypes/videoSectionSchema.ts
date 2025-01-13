@@ -29,5 +29,11 @@ export const videoSectionSchema = defineType({
       type: 'string',
       validation: rule => rule.required(),
     }),
+    defineField({
+      name: 'buttonLink',
+      title: 'Button Link',
+      type: 'url',
+      validation: rule => rule.required(),
+    }),
   ],
 });
