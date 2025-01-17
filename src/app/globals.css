@@ -37,10 +37,6 @@
 
 body {
   font-family: 'Mariupol', sans-serif;
-}
-
-body {
   color: var(--main-text);
   background: var(--background);
-  font-family: 'Mariupol', sans-serif;
 }
