@@ -1,5 +1,44 @@
 import type { Preview } from '@storybook/react';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import '../src/app/globals.css';
+
+const customViewports = {
+  smallMobile: {
+    name: 'Small Mobile',
+    styles: {
+      width: '380px',
+      height: '568px',
+    },
+  },
+  largeMobile: {
+    name: 'Large Mobile',
+    styles: {
+      width: '440px',
+      height: '896px',
+    },
+  },
+  tablet: {
+    name: 'Tablet',
+    styles: {
+      width: '744px',
+      height: '1024px',
+    },
+  },
+  desktop: {
+    name: 'Desktop',
+    styles: {
+      width: '1440px',
+      height: '800px',
+    },
+  },
+  widescreen: {
+    name: 'Widescreen',
+    styles: {
+      width: '1920px',
+      height: '1080px',
+    },
+  },
+};
 
 const preview: Preview = {
   parameters: {
@@ -31,6 +70,12 @@ const preview: Preview = {
         { name: 'dark', value: '#333333' },
         { name: 'gray', value: '#f0f0f0' },
       ],
+    },
+    viewport: {
+      viewports: {
+        ...INITIAL_VIEWPORTS,
+        ...customViewports,
+      },
     },
   },
 };
