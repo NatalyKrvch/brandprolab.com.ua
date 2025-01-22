@@ -6,4 +6,9 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(js|jsx|mjs|cjs)$': 'babel-jest',
+  },
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
 };
