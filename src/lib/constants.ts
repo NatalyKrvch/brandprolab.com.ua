@@ -11,3 +11,5 @@ export const ALL_DATA_QUERY = `
   "diagnostic": *[_type == "diagnosticSection"][0]
 }
 `;
+
+export const REVALIDATE = 60;
