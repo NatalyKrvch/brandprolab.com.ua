@@ -30,6 +30,11 @@ export default {
           default: '#D44C62',
         },
       },
+      screens: {
+        mobile: { max: '599px' },
+        tablet: { min: '600px', max: '1223px' },
+        desktop: { min: '1224px' },
+      },
     },
   },
   plugins: [],
