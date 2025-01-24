@@ -1,47 +1,79 @@
 import { render, screen } from '@testing-library/react';
 import Container from './Container';
+import '@testing-library/jest-dom';
+import {
+  FULL_WIDTH_CONTAINER_TEST_ID,
+  LIMITED_WIDTH_CONTAINER_TEST_ID,
+} from '@/lib/constants';
 
 describe('Container component', () => {
-  it('renders children inside the container', () => {
-    render(
-      <Container>
+  it('renders children inside the full-width container', () => {
+    const { asFragment } = render(
+      <Container fullWidth>
         <p>Test content</p>
       </Container>,
     );
 
-    expect(screen.getByText('Test content')).toBeInTheDocument();
+    const container = screen.getByTestId(FULL_WIDTH_CONTAINER_TEST_ID);
+    expect(container).toBeInTheDocument();
+    expect(container).toHaveTextContent('Test content');
+
+    expect(asFragment()).toMatchSnapshot();
   });
 
-  it('applies fullWidth styles when fullWidth is true', () => {
-    const { container } = render(
-      <Container fullWidth>
-        <p>Full width content</p>
-      </Container>,
-    );
-
-    expect(container.firstChild).toHaveClass('mx-auto');
-  });
-
-  it('applies default styles when fullWidth is false', () => {
-    const { container } = render(
+  it('renders children inside the limited-width container', () => {
+    const { asFragment } = render(
       <Container>
         <p>Default content</p>
       </Container>,
     );
 
-    expect(container.firstChild).toHaveClass('mx-auto');
-    expect(container.firstChild).toHaveClass('max-w-[1224px]');
-    expect(container.firstChild).toHaveClass('px-4');
+    const container = screen.getByTestId(LIMITED_WIDTH_CONTAINER_TEST_ID);
+    expect(container).toBeInTheDocument();
+    expect(container).toHaveTextContent('Default content');
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('applies fullWidth styles when fullWidth is true', () => {
+    const { asFragment } = render(
+      <Container fullWidth>
+        <p>Full width content</p>
+      </Container>,
+    );
+
+    const container = screen.getByTestId(FULL_WIDTH_CONTAINER_TEST_ID);
+    expect(container).toHaveClass('mx-auto');
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('applies default styles when fullWidth is false', () => {
+    const { asFragment } = render(
+      <Container>
+        <p>Default content</p>
+      </Container>,
+    );
+
+    const container = screen.getByTestId(LIMITED_WIDTH_CONTAINER_TEST_ID);
+    expect(container).toHaveClass('mx-auto');
+    expect(container).toHaveClass('max-w-[1224px]');
+    expect(container).toHaveClass('px-4');
+
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('applies tablet and desktop styles correctly', () => {
-    const { container } = render(
+    const { asFragment } = render(
       <Container>
         <p>Responsive content</p>
       </Container>,
     );
 
-    expect(container.firstChild).toHaveClass('tablet:px-12');
-    expect(container.firstChild).toHaveClass('desktop:px-12');
+    const container = screen.getByTestId(LIMITED_WIDTH_CONTAINER_TEST_ID);
+    expect(container).toHaveClass('tablet:px-12');
+    expect(container).toHaveClass('desktop:px-12');
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });
