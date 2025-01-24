@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InternalLink component applies the provided className 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="internal-link-test-id"
+    href="/example"
+  >
+    Test Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`InternalLink component handles missing className gracefully 1`] = `
+<DocumentFragment>
+  <a
+    data-testid="internal-link-test-id"
+    href="/example"
+  >
+    Test Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`InternalLink component renders an SVG element when passed as children 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="internal-link-test-id"
+    href="/example"
+  >
+    <svg
+      data-testid="test-svg"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10 10h4v4h-4z"
+      />
+    </svg>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`InternalLink component renders children correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="internal-link-test-id"
+    href="/example"
+  >
+    Test Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`InternalLink component renders the link with the correct href 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="internal-link-test-id"
+    href="/example"
+  >
+    Test Link
+  </a>
+</DocumentFragment>
+`;
