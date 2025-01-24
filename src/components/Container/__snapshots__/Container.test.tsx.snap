@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component applies default styles when fullWidth is false 1`] = `
+<DocumentFragment>
+  <div
+    class="mx-auto max-w-[1224px] px-4 tablet:px-12 desktop:px-12"
+    data-testid="limited-width-container-test-id"
+  >
+    <p>
+      Default content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Container component applies fullWidth styles when fullWidth is true 1`] = `
+<DocumentFragment>
+  <div
+    class="mx-auto"
+    data-testid="full-width-container-test-id"
+  >
+    <p>
+      Full width content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Container component applies tablet and desktop styles correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="mx-auto max-w-[1224px] px-4 tablet:px-12 desktop:px-12"
+    data-testid="limited-width-container-test-id"
+  >
+    <p>
+      Responsive content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Container component renders children inside the full-width container 1`] = `
+<DocumentFragment>
+  <div
+    class="mx-auto"
+    data-testid="full-width-container-test-id"
+  >
+    <p>
+      Test content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Container component renders children inside the limited-width container 1`] = `
+<DocumentFragment>
+  <div
+    class="mx-auto max-w-[1224px] px-4 tablet:px-12 desktop:px-12"
+    data-testid="limited-width-container-test-id"
+  >
+    <p>
+      Default content
+    </p>
+  </div>
+</DocumentFragment>
+`;
