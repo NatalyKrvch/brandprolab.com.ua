@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExternalLink component applies the provided className 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="external-link-test-id"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ExternalLink component has target and rel attributes set for security 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="external-link-test-id"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ExternalLink component renders an SVG element when passed as children 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="external-link-test-id"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <svg
+      data-testid="test-svg"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10 10h4v4h-4z"
+      />
+    </svg>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ExternalLink component renders children correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="external-link-test-id"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ExternalLink component renders the link with the correct href 1`] = `
+<DocumentFragment>
+  <a
+    class="test-class"
+    data-testid="external-link-test-id"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</DocumentFragment>
+`;

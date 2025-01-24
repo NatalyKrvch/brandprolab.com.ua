@@ -13,3 +13,6 @@ export const ALL_DATA_QUERY = `
 `;
 
 export const REVALIDATE = 60;
+
+export const INTERNAL_LINK_TEST_ID = 'internal-link-test-id';
+export const EXTERNAL_LINK_TEST_ID = 'external-link-test-id';

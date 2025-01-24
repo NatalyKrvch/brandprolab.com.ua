@@ -1,13 +1,14 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  preset: 'ts-jest', // Вказуємо, що використовуємо ts-jest
-  testEnvironment: 'jsdom', // Середовище для тестів (браузер)
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'], // Налаштування Jest
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1', // Маппінг alias для імпортів
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
-  transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest', // Трансформуємо TypeScript
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.jest.json',
+    },
   },
-  transformIgnorePatterns: ['<rootDir>/node_modules/'], // Ігноруємо node_modules
 };
