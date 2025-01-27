@@ -6,6 +6,7 @@ export default {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
     './.storybook/**/*.{js,jsx,ts,tsx}',
+    './src/utils/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
