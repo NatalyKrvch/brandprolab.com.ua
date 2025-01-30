@@ -3,40 +3,36 @@
 import Image from 'next/image';
 import { IconProps } from './types';
 import { useIconStyles, useMediaQuery } from '@/hooks';
+import {
+  DESKTOP_MEDIA_QUERY,
+  ICON_COMPONENT_IMAGE_TEST_ID,
+  ICON_COMPONENT_TEST_ID,
+  TABLET_MEDIA_QUERY,
+} from '@/lib/constants';
 
 const Icon = ({
   size,
   iconURL,
-  iconAlt = 'icon',
+  iconAlt = '',
   isIconCentered = false,
-  isSemiTransparent = false,
-  circleColor = 'bg-teal-medium',
+  circleColor = 'bg-teal-darkOpacity',
 }: IconProps) => {
   const { circleStyles, iconStyles } = useIconStyles(size, isIconCentered);
 
-  const isDesktop = useMediaQuery('(min-width: 1224px)');
-  const isTablet = useMediaQuery('(min-width: 600px)');
-  const transparency = isSemiTransparent ? 'opacity-10' : '';
+  const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
+  const isTablet = useMediaQuery(TABLET_MEDIA_QUERY);
 
-  const currentIconStyles = isDesktop
-    ? iconStyles.desktop
+  const deviceStyles = isDesktop
+    ? { circle: circleStyles.desktop, icon: iconStyles.desktop }
     : isTablet
-      ? iconStyles.tablet
-      : iconStyles.mobile;
-
-  const currentCircleStyles = isDesktop
-    ? circleStyles.desktop
-    : isTablet
-      ? circleStyles.tablet
-      : circleStyles.mobile;
+      ? { circle: circleStyles.tablet, icon: iconStyles.tablet }
+      : { circle: circleStyles.mobile, icon: iconStyles.mobile };
 
   return (
-    <div className="flex">
+    <div className="flex" data-testid={ICON_COMPONENT_TEST_ID}>
       <div
-        className={`rounded-full ${circleColor} ${transparency} relative flex items-center justify-center`}
-        style={{
-          ...currentCircleStyles,
-        }}
+        className={`rounded-full ${circleColor} relative flex items-center justify-center`}
+        style={deviceStyles.circle}
       >
         <Image
           src={iconURL}
@@ -44,10 +40,8 @@ const Icon = ({
           width={0}
           height={0}
           className="absolute"
-          style={{
-            ...currentIconStyles,
-          }}
-          priority
+          style={deviceStyles.icon}
+          data-testid={ICON_COMPONENT_IMAGE_TEST_ID}
         />
       </div>
     </div>
