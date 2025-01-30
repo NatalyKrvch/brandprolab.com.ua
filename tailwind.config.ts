@@ -15,6 +15,7 @@ export default {
         black: '#253737',
         teal: {
           dark: '#06BCAD',
+          darkOpacity: 'rgba(6, 188, 173, 0.1)',
           medium: '#0BDAC9',
           light: '#E7FAF9',
         },

@@ -12,11 +12,14 @@ export const ALL_DATA_QUERY = `
 }
 `;
 
+export const DESKTOP_MEDIA_QUERY = '(min-width: 1224px)';
+export const TABLET_MEDIA_QUERY = '(min-width: 600px)';
+
 export const REVALIDATE = 60;
 
-export const iconOffsetCoefficient = 3;
+export const ICON_OFFSET_COEFFICIENT = 3;
 
-export const backgroundCircleSizes = {
+export const BACKGROUND_CIRCLE_SIZES = {
   s: {
     mobile: 36,
     tablet: 42,
@@ -33,8 +36,7 @@ export const backgroundCircleSizes = {
     desktop: 108,
   },
 };
-
-export const iconSizes = {
+export const ICON_SIZES = {
   s: {
     mobile: 36,
     tablet: 42,
@@ -58,3 +60,5 @@ export const EXTERNAL_LINK_TEST_ID = 'external-link-test-id';
 export const FULL_WIDTH_CONTAINER_TEST_ID = 'full-width-container-test-id';
 export const LIMITED_WIDTH_CONTAINER_TEST_ID =
   'limited-width-container-test-id';
+export const ICON_COMPONENT_TEST_ID = 'icon-component-test-id';
+export const ICON_COMPONENT_IMAGE_TEST_ID = 'icon-component-image-test-id';
