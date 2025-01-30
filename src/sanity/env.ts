@@ -1,4 +1,4 @@
-import { assertValue } from '@/utils/assertValue';
+import { assertValue } from '@/utils';
 
 export const apiVersion =
   process.env.NEXT_PUBLIC_SANITY_API_VERSION || '2025-01-06';

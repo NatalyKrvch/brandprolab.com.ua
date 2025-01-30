@@ -1,4 +1,4 @@
-import { fetchDataFromSanity } from '@/utils/fetchDataFromSanity';
+import { fetchDataFromSanity } from '@/utils';
 import { ALL_DATA_QUERY, REVALIDATE } from '@/lib/constants';
 
 export const revalidate = REVALIDATE;

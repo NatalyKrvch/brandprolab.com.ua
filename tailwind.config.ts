@@ -6,6 +6,7 @@ export default {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
     './.storybook/**/*.{js,jsx,ts,tsx}',
+    './src/utils/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -14,6 +15,7 @@ export default {
         black: '#253737',
         teal: {
           dark: '#06BCAD',
+          darkOpacity: 'rgba(6, 188, 173, 0.1)',
           medium: '#0BDAC9',
           light: '#E7FAF9',
         },
