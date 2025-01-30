@@ -1,8 +1,8 @@
-import { iconSizes } from '@/lib/constants';
+import { ICON_SIZES } from '@/lib/constants';
 
 export function getIconSize(
   iconSize: 's' | 'm' | 'l',
   screen: 'mobile' | 'tablet' | 'desktop',
 ) {
-  return iconSizes[iconSize][screen];
+  return ICON_SIZES[iconSize][screen];
 }

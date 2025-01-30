@@ -1,10 +1,13 @@
-import { backgroundCircleSizes, iconOffsetCoefficient } from '@/lib/constants';
+import {
+  BACKGROUND_CIRCLE_SIZES,
+  ICON_OFFSET_COEFFICIENT,
+} from '@/lib/constants';
 
 export function getIconOffset(
   circleSize: 's' | 'm' | 'l',
   screen: 'mobile' | 'tablet' | 'desktop',
 ) {
   return Math.ceil(
-    backgroundCircleSizes[circleSize][screen] / iconOffsetCoefficient,
+    BACKGROUND_CIRCLE_SIZES[circleSize][screen] / ICON_OFFSET_COEFFICIENT,
   );
 }
