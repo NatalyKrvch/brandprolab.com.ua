@@ -10,6 +10,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mariupol: ['Mariupol', 'sans-serif'],
+        symbols: ['Mariupol-Symbols', 'sans-serif'],
+      },
+      fontSize: {
+        sm: '16px',
+        base: '18px',
+        lg: '22px',
+        xl: '32px',
+        '2xl': '52px',
+      },
       colors: {
         white: '#FFFFFF',
         black: '#253737',
@@ -18,6 +29,7 @@ export default {
           darkOpacity: 'rgba(6, 188, 173, 0.1)',
           medium: '#0BDAC9',
           light: '#E7FAF9',
+          lightOpacity: 'rgba(231, 250, 249, 0.8)',
         },
         gray: {
           dark: '#425A62',
