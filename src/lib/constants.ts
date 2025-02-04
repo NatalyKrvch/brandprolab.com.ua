@@ -63,3 +63,5 @@ export const LIMITED_WIDTH_CONTAINER_TEST_ID =
 export const ICON_COMPONENT_TEST_ID = 'icon-component-test-id';
 export const ICON_COMPONENT_IMAGE_TEST_ID = 'icon-component-image-test-id';
 export const LABEL_COMPONENT_TEST_ID = 'label-component-test-id';
+export const BUTTON_TEST_ID = 'button-test-id';
+export const UNDERLINED_TEXT_TEST_ID = 'underlined-text-test-id';
