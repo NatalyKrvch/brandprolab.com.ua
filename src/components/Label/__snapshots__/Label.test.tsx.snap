@@ -3,7 +3,7 @@
 exports[`Label component applies correct Tailwind styles 1`] = `
 <DocumentFragment>
   <div
-    class="font-mariupol flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity px-5 py-2 text-base font-normal leading-none text-blue-dark"
+    class="flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity px-5 py-2 font-mariupol text-base font-normal leading-none text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label
@@ -14,7 +14,7 @@ exports[`Label component applies correct Tailwind styles 1`] = `
 exports[`Label component displays the correct text 1`] = `
 <DocumentFragment>
   <div
-    class="font-mariupol flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity px-5 py-2 text-base font-normal leading-none text-blue-dark"
+    class="flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity px-5 py-2 font-mariupol text-base font-normal leading-none text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label
@@ -25,7 +25,7 @@ exports[`Label component displays the correct text 1`] = `
 exports[`Label component renders the Label component 1`] = `
 <DocumentFragment>
   <div
-    class="font-mariupol flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity px-5 py-2 text-base font-normal leading-none text-blue-dark"
+    class="flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity px-5 py-2 font-mariupol text-base font-normal leading-none text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label
