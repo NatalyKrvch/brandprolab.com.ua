@@ -24,7 +24,6 @@ export default {
         '52': '52px',
       },
       lineHeight: {
-        '24': '24px',
         '26': '26px',
       },
       letterSpacing: {

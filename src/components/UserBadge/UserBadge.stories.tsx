@@ -10,14 +10,22 @@ const meta: Meta<typeof UserBadge> = {
   argTypes: {
     userName: {
       control: 'text',
-      description: 'Name of the user displayed next to the badge.',
+      description: 'The name of the user to display.',
       table: {
         type: { summary: 'string' },
       },
     },
     userPhotoUrl: {
       control: 'text',
-      description: `URL of the user's profile picture.`,
+      description: 'The URL of the user’s profile image.',
+      table: {
+        type: { summary: 'string' },
+      },
+    },
+    userLink: {
+      control: 'text',
+      description:
+        'The external link to the user’s profile. If empty, the badge is not clickable.',
       table: {
         type: { summary: 'string' },
       },
@@ -28,9 +36,20 @@ const meta: Meta<typeof UserBadge> = {
 export default meta;
 type Story = StoryObj<typeof UserBadge>;
 
-export const Default: Story = {
+export const WithLink: Story = {
   args: {
-    userName: 'John Doe',
-    userPhotoUrl: 'https://via.placeholder.com/100',
+    userName: 'Jane Doe',
+    userPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    userLink: 'https://example.com/profile/jane',
+  },
+};
+
+export const WithoutLink: Story = {
+  args: {
+    userName: 'Anastasia Smith',
+    userPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    userLink: '',
   },
 };

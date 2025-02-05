@@ -5,15 +5,23 @@ import {
   USER_BADGE_IMAGE_TEST_ID,
   USER_BADGE_NAME_TEST_ID,
 } from '@/lib/constants';
+import { ExternalLink } from '../ExternalLink';
 
-const UserBadge = ({ userName, userPhotoUrl }: UserBadgeProps) => {
+const UserBadge = ({
+  userName,
+  userPhotoUrl,
+  userLink = '',
+}: UserBadgeProps) => {
+  const Wrapper = userLink ? ExternalLink : 'div';
+
   return (
-    <div
+    <Wrapper
       className="flex items-center justify-end gap-5 desktop:gap-6"
+      {...(userLink ? { href: userLink } : { href: '#' })}
       data-testid={USER_BADGE_TEST_ID}
     >
       <span
-        className="text-18 font-medium leading-24 text-gray-dark desktop:text-20"
+        className="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}
@@ -28,7 +36,7 @@ const UserBadge = ({ userName, userPhotoUrl }: UserBadgeProps) => {
           data-testid={USER_BADGE_IMAGE_TEST_ID}
         />
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
