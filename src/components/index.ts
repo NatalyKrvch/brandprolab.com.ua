@@ -4,3 +4,6 @@ export { InternalLink } from './InternalLink';
 export { Icon } from './Icon';
 export { Label } from './Label';
 export { Button } from './Button';
+export { UnderlinedText } from './UnderlinedText';
+export { UserBadge } from './UserBadge';
+export { TestimonialCard } from './Cards/TestimonialCard';
