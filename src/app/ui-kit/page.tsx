@@ -1,4 +1,4 @@
-import { Button, Container, UserBadge } from '@/components';
+import { Button, Container, TestimonialCard, UserBadge } from '@/components';
 import ExternalLink from '@/components/ExternalLink/ExternalLink';
 import Icon from '@/components/Icon/Icon';
 import InternalLink from '@/components/InternalLink/InternalLink';
@@ -8,31 +8,53 @@ import { UnderlinedText } from '@/components/UnderlinedText';
 const Uikit = () => {
   return (
     <>
+      <div className="m-4 h-[300] w-[442]">
+        <TestimonialCard
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          clientName="Anastasiia Kovalchuk"
+          clientPhotoUrl="https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg"
+          clientLink="https://www.google.com/"
+        />
+      </div>
+      <div className="m-4 w-[442]">
+        <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+      </div>
       <div className="w-50">
         <UserBadge
           userName="John Doe"
           userPhotoUrl="https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg"
         />
       </div>
-      <UnderlinedText>Underlined Text</UnderlinedText>
-      <div style={{ width: '464px' }}>
+      <div className="m-4">
+        <UnderlinedText>Underlined Text</UnderlinedText>
+      </div>
+
+      <div className="m-4 w-[464px]">
         <Button>Записатись</Button>
       </div>
-      <Label>Ваш розвиток починається тут!</Label>
-      <Icon size="l" iconURL="/icons/nav/hand.svg" iconAlt="icon" />
-      <Icon size="m" iconURL="/icons/nav/hand.svg" iconAlt="icon" />
-      <Icon
-        size="s"
-        iconURL="/icons/nav/hand.svg"
-        iconAlt="icon"
-        isIconCentered
-      />
-      <div>
+      <div className="m-4">
+        <Label>Ваш розвиток починається тут!</Label>
+      </div>
+      <div className="m-4">
+        <Icon size="l" iconURL="/icons/nav/hand.svg" iconAlt="icon" />
+      </div>
+      <div className="m-4">
+        <Icon size="m" iconURL="/icons/nav/hand.svg" iconAlt="icon" />
+      </div>
+      <div className="m-4">
+        <Icon
+          size="s"
+          iconURL="/icons/nav/hand.svg"
+          iconAlt="icon"
+          isIconCentered
+        />
+      </div>
+      <div className="m-4">
         <InternalLink href="/" className="font-bold underline">
           Back
         </InternalLink>
       </div>
-      <div>
+      <div className="m-4">
         <ExternalLink
           href="https://tailwindcss.com/"
           className="font-bold underline"
