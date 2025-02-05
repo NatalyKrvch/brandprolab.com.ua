@@ -78,8 +78,7 @@
     "ts-jest": "^29.2.5",
     "ts-loader": "^9.5.2",
     "typescript": "^5",
-    "url-loader": "^4.1.1",
-    "vite-tsconfig-paths": "^5.1.4"
+    "url-loader": "^4.1.1"
   },
   "config": {
     "commitizen": {
