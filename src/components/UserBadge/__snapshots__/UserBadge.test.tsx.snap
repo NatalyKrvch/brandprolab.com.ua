@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserBadge component displays the correct user name 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-end gap-5 desktop:gap-6"
+    data-testid="user-badge-test-id"
+  >
+    <span
+      class="text-18 font-medium leading-24 text-gray-dark desktop:text-20"
+      data-testid="user-badge-name-test-id"
+    >
+      John Doe
+    </span>
+    <div
+      class="relative aspect-square w-14 desktop:w-16"
+    >
+      <img
+        alt="John Doe"
+        class="rounded-full object-cover"
+        data-testid="user-badge-image-test-id"
+        src="/test-image.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`UserBadge component renders the UserBadge component 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-end gap-5 desktop:gap-6"
+    data-testid="user-badge-test-id"
+  >
+    <span
+      class="text-18 font-medium leading-24 text-gray-dark desktop:text-20"
+      data-testid="user-badge-name-test-id"
+    >
+      John Doe
+    </span>
+    <div
+      class="relative aspect-square w-14 desktop:w-16"
+    >
+      <img
+        alt="John Doe"
+        class="rounded-full object-cover"
+        data-testid="user-badge-image-test-id"
+        src="/test-image.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`UserBadge component renders the user image with correct attributes 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-end gap-5 desktop:gap-6"
+    data-testid="user-badge-test-id"
+  >
+    <span
+      class="text-18 font-medium leading-24 text-gray-dark desktop:text-20"
+      data-testid="user-badge-name-test-id"
+    >
+      John Doe
+    </span>
+    <div
+      class="relative aspect-square w-14 desktop:w-16"
+    >
+      <img
+        alt="John Doe"
+        class="rounded-full object-cover"
+        data-testid="user-badge-image-test-id"
+        src="/test-image.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

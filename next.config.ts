@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
         pathname: '/images/**',
       },
     ],
+    domains: ['media.vanityfair.com'],
   },
 };
 

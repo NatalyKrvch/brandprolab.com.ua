@@ -65,3 +65,6 @@ export const ICON_COMPONENT_IMAGE_TEST_ID = 'icon-component-image-test-id';
 export const LABEL_COMPONENT_TEST_ID = 'label-component-test-id';
 export const BUTTON_TEST_ID = 'button-test-id';
 export const UNDERLINED_TEXT_TEST_ID = 'underlined-text-test-id';
+export const USER_BADGE_TEST_ID = 'user-badge-test-id';
+export const USER_BADGE_IMAGE_TEST_ID = 'user-badge-image-test-id';
+export const USER_BADGE_NAME_TEST_ID = 'user-badge-name-test-id';
