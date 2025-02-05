@@ -24,6 +24,7 @@ export default {
         '52': '52px',
       },
       lineHeight: {
+        '24': '24px',
         '26': '26px',
       },
       letterSpacing: {
@@ -60,6 +61,11 @@ export default {
         red: {
           default: '#D44C62',
         },
+      },
+      borderRadius: {
+        '24': '24px',
+        '32': '32px',
+        '40': '40px',
       },
       screens: {
         mobile: { max: '599px' },
