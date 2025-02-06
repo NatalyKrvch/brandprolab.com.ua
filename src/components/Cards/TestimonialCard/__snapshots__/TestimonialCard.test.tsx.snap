@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialCard component renders UserBadge when clientName and clientPhotoUrl are provided 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-6 rounded-24 border border-teal-dark p-6 tablet:rounded-32 desktop:rounded-40 desktop:p-8"
+    data-testid="testimonials-card-test-id"
+  >
+    <div
+      class="text-20 font-normal leading-6 text-black desktop:text-22"
+      data-testid="testimonials-text-test-id"
+    >
+      This is a testimonial text.
+    </div>
+    <div
+      data-testid="user-badge-test-id"
+    >
+      <span>
+        John Doe
+      </span>
+      <img
+        alt="John Doe"
+        src="/john-doe.jpg"
+      />
+      <a
+        href="https://example.com"
+      >
+        Profile
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TestimonialCard component renders the TestimonialCard component 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-6 rounded-24 border border-teal-dark p-6 tablet:rounded-32 desktop:rounded-40 desktop:p-8"
+    data-testid="testimonials-card-test-id"
+  >
+    <div
+      class="text-20 font-normal leading-6 text-black desktop:text-22"
+      data-testid="testimonials-text-test-id"
+    >
+      This is a testimonial text.
+    </div>
+    <div
+      data-testid="user-badge-test-id"
+    >
+      <span>
+        John Doe
+      </span>
+      <img
+        alt="John Doe"
+        src="/john-doe.jpg"
+      />
+      <a
+        href="https://example.com"
+      >
+        Profile
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
