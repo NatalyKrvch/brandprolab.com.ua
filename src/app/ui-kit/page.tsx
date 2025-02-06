@@ -1,9 +1,14 @@
-import { Button, Container, TestimonialCard, UserBadge } from '@/components';
-import ExternalLink from '@/components/ExternalLink/ExternalLink';
-import Icon from '@/components/Icon/Icon';
-import InternalLink from '@/components/InternalLink/InternalLink';
-import Label from '@/components/Label/Label';
-import { UnderlinedText } from '@/components/UnderlinedText';
+import {
+  Button,
+  Container,
+  TestimonialCard,
+  UserBadge,
+  ExternalLink,
+  Icon,
+  InternalLink,
+  Label,
+  UnderlinedText,
+} from '@/components';
 
 const Uikit = () => {
   return (
