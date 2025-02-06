@@ -5,7 +5,9 @@
     "plugin:import/recommended",
     "plugin:playwright/recommended",
     "plugin:prettier/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "plugins": ["simple-import-sort"],
   "rules": {
