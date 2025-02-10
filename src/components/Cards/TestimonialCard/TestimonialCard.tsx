@@ -4,7 +4,7 @@ import { getReadMoreText } from '@/utils';
 import {
   TESTIMONIAL_CARD_TEST_ID,
   TESTIMONIAL_TEXT_TEST_ID,
-} from '@/lib/constants';
+} from '@/lib/testIDs';
 
 const TestimonialCard = ({
   text,

@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import {
   FULL_WIDTH_CONTAINER_TEST_ID,
   LIMITED_WIDTH_CONTAINER_TEST_ID,
-} from '@/lib/constants';
+} from '@/lib/testIDs';
 
 describe('Container component', () => {
   it('renders children inside the full-width container', () => {

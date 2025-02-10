@@ -1,4 +1,4 @@
-import { LABEL_COMPONENT_TEST_ID } from '@/lib/constants';
+import { LABEL_COMPONENT_TEST_ID } from '@/lib/testIDs';
 import { LabelProps } from './types';
 
 const Label = ({ children }: LabelProps) => {

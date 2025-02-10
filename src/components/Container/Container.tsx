@@ -1,7 +1,7 @@
 import {
   FULL_WIDTH_CONTAINER_TEST_ID,
   LIMITED_WIDTH_CONTAINER_TEST_ID,
-} from '@/lib/constants';
+} from '@/lib/testIDs';
 import { ContainerProps } from './types';
 
 const Container = ({ fullWidth, children }: ContainerProps) => {

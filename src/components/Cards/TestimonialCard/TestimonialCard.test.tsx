@@ -7,7 +7,7 @@ import {
   TESTIMONIAL_CARD_TEST_ID,
   TESTIMONIAL_TEXT_TEST_ID,
   USER_BADGE_TEST_ID,
-} from '@/lib/constants';
+} from '@/lib/testIDs';
 
 jest.mock('@/utils', () => ({
   getReadMoreText: jest.fn(text => text),

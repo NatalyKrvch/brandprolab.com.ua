@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { InternalLinkProps } from './types';
-import { INTERNAL_LINK_TEST_ID } from '@/lib/constants';
+import { INTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
 const InternalLink = ({ href, className, children }: InternalLinkProps) => {
   return (

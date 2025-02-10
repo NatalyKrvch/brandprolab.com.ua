@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { UserBadgeProps } from './types';
+import { ExternalLink } from '../ExternalLink';
 import {
-  USER_BADGE_TEST_ID,
   USER_BADGE_IMAGE_TEST_ID,
   USER_BADGE_NAME_TEST_ID,
-} from '@/lib/constants';
-import { ExternalLink } from '../ExternalLink';
+  USER_BADGE_TEST_ID,
+} from '@/lib/testIDs';
 
 const UserBadge = ({
   userName,
