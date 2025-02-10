@@ -1,7 +1,7 @@
 import {
   BACKGROUND_CIRCLE_SIZES,
   ICON_OFFSET_COEFFICIENT,
-} from '@/lib/constants';
+} from '@/styles/constants';
 
 export function getIconOffset(
   circleSize: 's' | 'm' | 'l',

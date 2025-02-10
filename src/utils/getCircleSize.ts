@@ -1,4 +1,4 @@
-import { BACKGROUND_CIRCLE_SIZES } from '@/lib/constants';
+import { BACKGROUND_CIRCLE_SIZES } from '@/styles/constants';
 
 export function getCircleSize(
   circleSize: 's' | 'm' | 'l',

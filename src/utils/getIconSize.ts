@@ -1,4 +1,4 @@
-import { ICON_SIZES } from '@/lib/constants';
+import { ICON_SIZES } from '@/styles/constants';
 
 export function getIconSize(
   iconSize: 's' | 'm' | 'l',
