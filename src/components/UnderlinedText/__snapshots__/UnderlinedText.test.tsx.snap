@@ -3,7 +3,7 @@
 exports[`UnderlinedText component displays the correct text 1`] = `
 <DocumentFragment>
   <span
-    class="relative inline-block cursor-pointer text-16 font-bold leading-none text-teal-dark underline"
+    class="relative inline-block cursor-pointer text-base font-bold leading-none text-teal-dark underline"
     data-testid="underlined-text-test-id"
   >
     Underlined Text
@@ -14,7 +14,7 @@ exports[`UnderlinedText component displays the correct text 1`] = `
 exports[`UnderlinedText component renders the UnderlinedText component correctly 1`] = `
 <DocumentFragment>
   <span
-    class="relative inline-block cursor-pointer text-16 font-bold leading-none text-teal-dark underline"
+    class="relative inline-block cursor-pointer text-base font-bold leading-none text-teal-dark underline"
     data-testid="underlined-text-test-id"
   >
     Underlined Text

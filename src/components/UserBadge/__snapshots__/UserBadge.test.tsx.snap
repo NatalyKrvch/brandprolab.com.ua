@@ -8,7 +8,7 @@ exports[`UserBadge component displays the correct user name 1`] = `
     href="https://example.com"
   >
     <span
-      class="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
       data-testid="user-badge-name-test-id"
     >
       John Doe
@@ -35,7 +35,7 @@ exports[`UserBadge component renders a div wrapper when no userLink is provided 
     href="#"
   >
     <span
-      class="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
       data-testid="user-badge-name-test-id"
     >
       John Doe
@@ -62,7 +62,7 @@ exports[`UserBadge component renders the UserBadge component 1`] = `
     href="https://example.com"
   >
     <span
-      class="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
       data-testid="user-badge-name-test-id"
     >
       John Doe
@@ -89,7 +89,7 @@ exports[`UserBadge component renders the correct wrapper element when userLink i
     href="https://example.com"
   >
     <span
-      class="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
       data-testid="user-badge-name-test-id"
     >
       John Doe
@@ -116,7 +116,7 @@ exports[`UserBadge component renders the user image with correct attributes 1`] 
     href="https://example.com"
   >
     <span
-      class="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
       data-testid="user-badge-name-test-id"
     >
       John Doe

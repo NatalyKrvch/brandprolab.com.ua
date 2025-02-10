@@ -15,11 +15,7 @@ export default {
         symbols: ['Mariupol-Symbols', 'sans-serif'],
       },
       fontSize: {
-        '16': '16px',
-        '18': '18px',
-        '20': '20px',
         '22': '22px',
-        '24': '24px',
         '32': '32px',
         '52': '52px',
       },
@@ -27,12 +23,12 @@ export default {
         '26': '26px',
       },
       letterSpacing: {
-        '0.4': '0.4px',
-        '0.44': '0.44px',
-        '0.48': '0.48px',
+        tight: '-0.02em',
+        normal: '0em',
+        wide: '0.02em',
+        wider: '0.05em',
       },
       colors: {
-        white: '#FFFFFF',
         whiteOpacity: 'rgba(255, 255, 255, 0.3)',
 
         black: '#253737',

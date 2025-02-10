@@ -21,7 +21,7 @@ const UserBadge = ({
       data-testid={USER_BADGE_TEST_ID}
     >
       <span
-        className="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+        className="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}
