@@ -1,8 +1,7 @@
 import { ICON_SIZES } from '@/styles/constants';
+import { getSizeFromConstants } from './getSizeFromConstants';
+import { Screen, Size } from '@/lib/types';
 
-export function getIconSize(
-  iconSize: 's' | 'm' | 'l',
-  screen: 'mobile' | 'tablet' | 'desktop',
-) {
-  return ICON_SIZES[iconSize][screen];
+export function getIconSize(iconSize: Size, screen: Screen) {
+  return getSizeFromConstants(ICON_SIZES, iconSize, screen);
 }
