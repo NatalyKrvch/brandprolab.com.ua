@@ -2,6 +2,7 @@ import eslintPluginNext from '@next/eslint-plugin-next';
 import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
 import eslintParserTypescript from '@typescript-eslint/parser';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import eslintPluginEslintComments from 'eslint-plugin-eslint-comments';
 import eslintPluginImport from 'eslint-plugin-import';
 import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
@@ -25,6 +26,7 @@ export default [
       react: eslintPluginReact,
       'react-hooks': eslintPluginReactHooks,
       '@next/next': eslintPluginNext,
+      'eslint-comments': eslintPluginEslintComments,
     },
     settings: {
       react: {
@@ -42,11 +44,14 @@ export default [
     },
     rules: {
       'prettier/prettier': 'error',
-      'react/react-in-jsx-scope': 'off',
+      '@next/next/no-html-link-for-pages': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_' },
       ],
+      'react/react-in-jsx-scope': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
       'import/order': [
         'error',
         {
@@ -62,9 +67,11 @@ export default [
       ],
       'tailwindcss/no-custom-classname': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
-      '@next/next/no-html-link-for-pages': 'off',
+      'no-warning-comments': [
+        'warn',
+        { terms: ['TODO', 'FIXME', 'BUG', 'HACK'], location: 'anywhere' },
+      ],
+      'eslint-comments/no-unused-disable': 'warn',
     },
   },
   eslintConfigPrettier,
