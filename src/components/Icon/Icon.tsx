@@ -1,13 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import { IconProps } from './types';
+
 import { useIconStyles, useMediaQuery } from '@/hooks';
-import { DESKTOP_MEDIA_QUERY, TABLET_MEDIA_QUERY } from '@/styles/constants';
 import {
   ICON_COMPONENT_IMAGE_TEST_ID,
   ICON_COMPONENT_TEST_ID,
 } from '@/lib/testIDs';
+import { DESKTOP_MEDIA_QUERY, TABLET_MEDIA_QUERY } from '@/styles/constants';
+
+import { IconProps } from './types';
 
 const Icon = ({
   size,

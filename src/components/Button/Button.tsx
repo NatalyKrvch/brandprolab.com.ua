@@ -1,6 +1,8 @@
 import classNames from 'classnames';
-import { ButtonProps } from './types';
+
 import { BUTTON_TEST_ID } from '@/lib/testIDs';
+
+import { ButtonProps } from './types';
 
 const Button = ({ children, color = 'teal', ...props }: ButtonProps) => {
   return (

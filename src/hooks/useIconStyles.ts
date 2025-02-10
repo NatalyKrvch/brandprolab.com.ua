@@ -1,5 +1,6 @@
-import { getIconComponentStyles } from '@/utils';
 import { useMemo } from 'react';
+
+import { getIconComponentStyles } from '@/utils';
 
 export const useIconStyles = (
   size: 's' | 'm' | 'l',

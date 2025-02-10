@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
+
 import UserBadge from './UserBadge';
+
 import '@testing-library/jest-dom';
 import {
   USER_BADGE_IMAGE_TEST_ID,

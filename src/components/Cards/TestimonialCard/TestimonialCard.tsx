@@ -1,10 +1,11 @@
 import { UserBadge } from '@/components';
-import { TestimonialCardProps } from './types';
-import { getReadMoreText } from '@/utils';
 import {
   TESTIMONIAL_CARD_TEST_ID,
   TESTIMONIAL_TEXT_TEST_ID,
 } from '@/lib/testIDs';
+import { getReadMoreText } from '@/utils';
+
+import { TestimonialCardProps } from './types';
 
 const TestimonialCard = ({
   text,

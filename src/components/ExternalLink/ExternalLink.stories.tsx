@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import ExternalLink from './ExternalLink';
 
 const meta: Meta<typeof ExternalLink> = {

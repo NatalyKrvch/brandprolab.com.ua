@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
+
 import Container from './Container';
+
 import '@testing-library/jest-dom';
 import {
   FULL_WIDTH_CONTAINER_TEST_ID,

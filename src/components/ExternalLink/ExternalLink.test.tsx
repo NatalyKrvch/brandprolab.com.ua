@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
+
 import ExternalLink from './ExternalLink';
 import '@testing-library/jest-dom';
 
 import { ExternalLinkProps } from './types';
+
 import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
 describe('ExternalLink component', () => {

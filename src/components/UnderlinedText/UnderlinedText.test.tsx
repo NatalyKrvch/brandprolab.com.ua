@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
+
 import UnderlinedText from './UnderlinedText';
+
 import '@testing-library/jest-dom';
 import { UNDERLINED_TEXT_TEST_ID } from '@/lib/testIDs';
 

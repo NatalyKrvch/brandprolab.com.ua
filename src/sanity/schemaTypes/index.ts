@@ -1,4 +1,5 @@
 import { type SchemaTypeDefinition } from 'sanity';
+
 import { casesSectionSchema } from './casesSectionSchema';
 import { diagnosticSectionSchema } from './diagnosticSectionSchema';
 import { expertiseSectionSchema } from './expertiseSectionSchema';

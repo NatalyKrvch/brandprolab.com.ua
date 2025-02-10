@@ -1,4 +1,5 @@
 import { UNDERLINED_TEXT_TEST_ID } from '@/lib/testIDs';
+
 import { UnderlinedTextProps } from './types';
 
 const UnderlinedText = ({ children }: UnderlinedTextProps) => {
