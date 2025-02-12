@@ -22,7 +22,7 @@ exports[`Button component applies correct styles for white color 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button component displays the correct text 1`] = `
+exports[`Button component renders the Button component 1`] = `
 <DocumentFragment>
   <button
     class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl bg-teal-dark text-white hover:outline-8 hover:outline-teal-darkTranslucent active:bg-black"
@@ -33,19 +33,18 @@ exports[`Button component displays the correct text 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button component passes additional props correctly 1`] = `
+exports[`Button component renders the correct children 1`] = `
 <DocumentFragment>
   <button
     class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl bg-teal-dark text-white hover:outline-8 hover:outline-teal-darkTranslucent active:bg-black"
     data-testid="button-test-id"
-    disabled=""
   >
     Click me
   </button>
 </DocumentFragment>
 `;
 
-exports[`Button component renders the Button component correctly 1`] = `
+exports[`Button component triggers onClick when clicked 1`] = `
 <DocumentFragment>
   <button
     class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl bg-teal-dark text-white hover:outline-8 hover:outline-teal-darkTranslucent active:bg-black"

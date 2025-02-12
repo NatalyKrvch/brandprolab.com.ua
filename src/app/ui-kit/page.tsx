@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Button,
   Container,
@@ -35,7 +37,7 @@ const Uikit = () => {
       </div>
 
       <div className="m-4 w-[464px]">
-        <Button>Записатись</Button>
+        <Button onClick={() => console.log('Click')}>Записатись</Button>
       </div>
       <div className="m-4">
         <Label>Ваш розвиток починається тут!</Label>

@@ -4,7 +4,7 @@ import { BUTTON_TEST_ID } from '@/lib/testIDs';
 
 import { ButtonProps } from './types';
 
-const Button = ({ children, color = 'teal', ...props }: ButtonProps) => {
+const Button = ({ children, onClick, color = 'teal' }: ButtonProps) => {
   return (
     <button
       data-testid={BUTTON_TEST_ID}
@@ -20,7 +20,7 @@ const Button = ({ children, color = 'teal', ...props }: ButtonProps) => {
             color === 'teal',
         },
       )}
-      {...props}
+      onClick={onClick}
     >
       {children}
     </button>
