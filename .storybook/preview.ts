@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import '../src/app/globals.css';
+import 'src/styles/globals.css';
 
 const customViewports = {
   smallMobile: {

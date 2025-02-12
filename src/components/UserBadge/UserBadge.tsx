@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import { UserBadgeProps } from './types';
+
 import {
-  USER_BADGE_TEST_ID,
   USER_BADGE_IMAGE_TEST_ID,
   USER_BADGE_NAME_TEST_ID,
-} from '@/lib/constants';
+  USER_BADGE_TEST_ID,
+} from '@/lib/testIDs';
+
+import { UserBadgeProps } from './types';
 import { ExternalLink } from '../ExternalLink';
 
 const UserBadge = ({
@@ -21,7 +23,7 @@ const UserBadge = ({
       data-testid={USER_BADGE_TEST_ID}
     >
       <span
-        className="text-18 font-medium leading-6 text-gray-dark desktop:text-20"
+        className="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}

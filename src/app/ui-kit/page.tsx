@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Button,
   Container,
@@ -35,21 +37,21 @@ const Uikit = () => {
       </div>
 
       <div className="m-4 w-[464px]">
-        <Button>Записатись</Button>
+        <Button onClick={() => console.log('Click')}>Записатись</Button>
       </div>
       <div className="m-4">
         <Label>Ваш розвиток починається тут!</Label>
       </div>
       <div className="m-4">
-        <Icon size="l" iconURL="/icons/nav/hand.svg" iconAlt="icon" />
+        <Icon size="l" iconURL="/icons/cards/hand.svg" iconAlt="icon" />
       </div>
       <div className="m-4">
-        <Icon size="m" iconURL="/icons/nav/hand.svg" iconAlt="icon" />
+        <Icon size="m" iconURL="/icons/cards/hand.svg" iconAlt="icon" />
       </div>
       <div className="m-4">
         <Icon
           size="s"
-          iconURL="/icons/nav/hand.svg"
+          iconURL="/icons/cards/hand.svg"
           iconAlt="icon"
           isIconCentered
         />

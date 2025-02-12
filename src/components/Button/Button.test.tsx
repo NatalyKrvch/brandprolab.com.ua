@@ -1,14 +1,16 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Button from './Button';
 import '@testing-library/jest-dom';
-import { BUTTON_TEST_ID } from '@/lib/constants';
+import { BUTTON_TEST_ID } from '@/lib/testIDs';
 
 describe('Button component', () => {
   const defaultProps = {
     children: 'Click me',
+    onClick: jest.fn(),
+    color: 'teal' as const,
   };
 
-  it('renders the Button component correctly', () => {
+  it('renders the Button component', () => {
     const { asFragment } = render(<Button {...defaultProps} />);
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
@@ -16,7 +18,7 @@ describe('Button component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('displays the correct text', () => {
+  it('renders the correct children', () => {
     const { asFragment } = render(<Button {...defaultProps} />);
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
@@ -31,7 +33,8 @@ describe('Button component', () => {
     expect(buttonElement).toHaveClass(
       'bg-teal-dark',
       'text-white',
-      'hover:outline',
+      'hover:outline-8',
+      'hover:outline-teal-darkTranslucent',
       'active:bg-black',
     );
     expect(asFragment()).toMatchSnapshot();
@@ -44,23 +47,19 @@ describe('Button component', () => {
     expect(buttonElement).toHaveClass(
       'bg-white',
       'text-blue-default',
-      'hover:outline',
+      'hover:outline-8',
+      'hover:outline-whiteOpacity',
       'active:bg-teal-light',
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('passes additional props correctly', () => {
-    const onClick = jest.fn();
-    const { asFragment } = render(
-      <Button {...defaultProps} onClick={onClick} disabled />,
-    );
+  it('triggers onClick when clicked', () => {
+    const { asFragment } = render(<Button {...defaultProps} />);
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
-    expect(buttonElement).toBeDisabled();
-    buttonElement.click();
-    expect(onClick).not.toHaveBeenCalled();
-
+    fireEvent.click(buttonElement);
+    expect(defaultProps.onClick).toHaveBeenCalledTimes(1);
     expect(asFragment()).toMatchSnapshot();
   });
 });

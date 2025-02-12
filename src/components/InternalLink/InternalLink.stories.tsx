@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import InternalLink from './InternalLink';
 
 const meta: Meta<typeof InternalLink> = {

@@ -1,10 +1,11 @@
 import { UserBadge } from '@/components';
-import { TestimonialCardProps } from './types';
-import { getReadMoreText } from '@/utils';
 import {
   TESTIMONIAL_CARD_TEST_ID,
   TESTIMONIAL_TEXT_TEST_ID,
-} from '@/lib/constants';
+} from '@/lib/testIDs';
+import { getReadMoreText } from '@/utils';
+
+import { TestimonialCardProps } from './types';
 
 const TestimonialCard = ({
   text,
@@ -18,7 +19,7 @@ const TestimonialCard = ({
       data-testid={TESTIMONIAL_CARD_TEST_ID}
     >
       <div
-        className="text-20 font-normal leading-6 text-black desktop:text-22"
+        className="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
         data-testid={TESTIMONIAL_TEXT_TEST_ID}
       >
         {getReadMoreText(text)}

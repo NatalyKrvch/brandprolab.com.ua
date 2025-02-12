@@ -1,7 +1,8 @@
+import { throwError } from './throwError';
+
 export function assertValue<T>(value: T | undefined, errorMessage: string): T {
   if (value === undefined) {
-    throw new Error(errorMessage);
+    throwError(errorMessage);
   }
-
   return value;
 }

@@ -1,6 +1,6 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import type { PropsWithChildren } from 'react';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
+export interface ButtonProps extends PropsWithChildren {
+  onClick: () => void;
   color?: 'white' | 'teal';
 }
