@@ -13,10 +13,10 @@ const Button = ({ children, color = 'teal', ...props }: ButtonProps) => {
         'tablet:py-5 tablet:text-22',
         'desktop:py-6 desktop:text-2xl',
         {
-          'bg-white text-blue-default hover:outline hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light':
+          'bg-white text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light':
             color === 'white',
 
-          'bg-teal-dark text-white hover:outline hover:outline-8 hover:outline-teal-darkTranslucent active:bg-black':
+          'bg-teal-dark text-white hover:outline-8 hover:outline-teal-darkTranslucent active:bg-black':
             color === 'teal',
         },
       )}

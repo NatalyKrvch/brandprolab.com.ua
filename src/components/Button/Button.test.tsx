@@ -33,7 +33,7 @@ describe('Button component', () => {
     expect(buttonElement).toHaveClass(
       'bg-teal-dark',
       'text-white',
-      'hover:outline',
+      'hover:outline-8',
       'active:bg-black',
     );
     expect(asFragment()).toMatchSnapshot();
@@ -46,7 +46,7 @@ describe('Button component', () => {
     expect(buttonElement).toHaveClass(
       'bg-white',
       'text-blue-default',
-      'hover:outline',
+      'hover:outline-8',
       'active:bg-teal-light',
     );
     expect(asFragment()).toMatchSnapshot();
