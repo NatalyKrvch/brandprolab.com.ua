@@ -1,6 +1,4 @@
-import type { PropsWithChildren } from 'react';
-
-export interface ButtonProps extends PropsWithChildren {
+export interface ButtonProps {
   onClick: () => void;
   color?: 'white' | 'teal';
 }

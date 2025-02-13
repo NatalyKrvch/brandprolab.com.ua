@@ -1,14 +1,15 @@
-import { render, screen } from '@testing-library/react';
-
-import ExternalLink from './ExternalLink';
 import '@testing-library/jest-dom';
 
-import { ExternalLinkProps } from './types';
+import { render, screen } from '@testing-library/react';
+import type { PropsWithChildren } from 'react';
 
 import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
+import ExternalLink from './ExternalLink';
+import { ExternalLinkProps } from './types';
+
 describe('ExternalLink component', () => {
-  const defaultProps: ExternalLinkProps = {
+  const defaultProps: PropsWithChildren<ExternalLinkProps> = {
     href: 'https://example.com',
     className: 'test-class',
     children: 'External Link',

@@ -1,7 +1,8 @@
-import { UserBadge, SimpleCard } from '@/components';
-import { TestimonialCardProps } from './types';
-import { getReadMoreText } from '@/utils';
+import { SimpleCard, UserBadge } from '@/components';
 import { TESTIMONIAL_TEXT_TEST_ID } from '@/lib/testIDs';
+import { getReadMoreText } from '@/utils';
+
+import { TestimonialCardProps } from './types';
 
 const TestimonialCard = ({
   text,

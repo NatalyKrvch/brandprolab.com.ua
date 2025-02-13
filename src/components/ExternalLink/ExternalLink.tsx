@@ -1,8 +1,14 @@
+import type { PropsWithChildren } from 'react';
+
 import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
 import { ExternalLinkProps } from './types';
 
-const ExternalLink = ({ href, className, children }: ExternalLinkProps) => {
+const ExternalLink = ({
+  href,
+  className,
+  children,
+}: PropsWithChildren<ExternalLinkProps>) => {
   return (
     <a
       href={href}

@@ -9,9 +9,11 @@ import eslintPluginPrettier from 'eslint-plugin-prettier';
 import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import eslintPluginTailwindcss from 'eslint-plugin-tailwindcss';
+import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
 
 export default [
   {
+    files: ['src/**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       parser: eslintParserTypescript,
       ecmaVersion: 'latest',
@@ -27,6 +29,7 @@ export default [
       'react-hooks': eslintPluginReactHooks,
       '@next/next': eslintPluginNext,
       'eslint-comments': eslintPluginEslintComments,
+      'simple-import-sort': eslintPluginSimpleImportSort,
     },
     settings: {
       react: {
@@ -52,19 +55,8 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
-      'import/order': [
-        'error',
-        {
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            ['parent', 'sibling', 'index'],
-          ],
-          'newlines-between': 'always',
-          alphabetize: { order: 'asc', caseInsensitive: true },
-        },
-      ],
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
       'tailwindcss/no-custom-classname': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
       'no-warning-comments': [

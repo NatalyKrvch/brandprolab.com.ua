@@ -1,8 +1,8 @@
+import type { PropsWithChildren } from 'react';
+
 import { UNDERLINED_TEXT_TEST_ID } from '@/lib/testIDs';
 
-import { UnderlinedTextProps } from './types';
-
-const UnderlinedText = ({ children }: UnderlinedTextProps) => {
+const UnderlinedText = ({ children }: PropsWithChildren) => {
   return (
     <span
       className="relative inline-block cursor-pointer text-base font-bold leading-none text-teal-dark underline"

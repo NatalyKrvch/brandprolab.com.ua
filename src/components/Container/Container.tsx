@@ -1,3 +1,5 @@
+import { PropsWithChildren } from 'react';
+
 import {
   FULL_WIDTH_CONTAINER_TEST_ID,
   LIMITED_WIDTH_CONTAINER_TEST_ID,
@@ -5,7 +7,10 @@ import {
 
 import { ContainerProps } from './types';
 
-const Container = ({ fullWidth, children }: ContainerProps) => {
+const Container = ({
+  fullWidth,
+  children,
+}: PropsWithChildren<ContainerProps>) => {
   if (fullWidth) {
     return (
       <div className="mx-auto" data-testid={FULL_WIDTH_CONTAINER_TEST_ID}>

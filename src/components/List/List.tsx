@@ -1,6 +1,8 @@
 import Image from 'next/image';
+
+import { LIST_ITEM_TEST_ID, LIST_TEST_ID } from '@/lib/testIDs';
+
 import { ListProps } from './types';
-import { LIST_TEST_ID, LIST_ITEM_TEST_ID } from '@/lib/testIDs';
 
 const List = ({ list }: ListProps) => {
   return (

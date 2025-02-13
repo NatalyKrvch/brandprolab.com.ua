@@ -1,6 +1,8 @@
+import type { PropsWithChildren } from 'react';
+
 import { {{pascalCase name}}Props } from './types';
 
-const {{pascalCase name}} = ({ children }: {{pascalCase name}}Props) => {
+const {{pascalCase name}} = ({ children }: PropsWithChildren<{{pascalCase name}}Props>) => {
   return <div>{children}</div>;
 };
 
