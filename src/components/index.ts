@@ -7,3 +7,4 @@ export { Button } from './Button';
 export { UnderlinedText } from './UnderlinedText';
 export { UserBadge } from './UserBadge';
 export { TestimonialCard } from './Cards/TestimonialCard';
+export { List } from './List';

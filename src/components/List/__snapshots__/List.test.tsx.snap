@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders checkmark images for each list item 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex flex-col gap-3 tablet:gap-4 desktop:gap-4"
+    data-testid="list-test-id"
+  >
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 1
+    </li>
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 2
+    </li>
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 3
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`List component renders the List component 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex flex-col gap-3 tablet:gap-4 desktop:gap-4"
+    data-testid="list-test-id"
+  >
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 1
+    </li>
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 2
+    </li>
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 3
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`List component renders the correct number of list items 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex flex-col gap-3 tablet:gap-4 desktop:gap-4"
+    data-testid="list-test-id"
+  >
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 1
+    </li>
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 2
+    </li>
+    <li
+      class="align-center flex gap-2 text-base tablet:gap-3 tablet:text-lg desktop:gap-4 desktop:text-lg"
+      data-testid="list-item-test-id"
+    >
+      <div
+        class="relative h-4 w-4 tablet:h-5 tablet:w-5 desktop:h-6 desktop:w-6"
+      >
+        <img
+          alt=""
+          src="/icons/cards/check.svg"
+        />
+      </div>
+      Item 3
+    </li>
+  </ul>
+</DocumentFragment>
+`;
