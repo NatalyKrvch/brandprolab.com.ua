@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/react';
+import type { PropsWithChildren } from 'react';
 
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
@@ -25,7 +26,7 @@ jest.mock('next/link', () => {
 });
 
 describe('InternalLink component', () => {
-  const defaultProps: InternalLinkProps = {
+  const defaultProps: PropsWithChildren<InternalLinkProps> = {
     href: '/example',
     className: 'test-class',
     children: 'Test Link',
