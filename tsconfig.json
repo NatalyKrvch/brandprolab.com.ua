@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@sanity-config": ["./sanity.config"]
     },
     "types": ["jest", "@testing-library/jest-dom"]
   },

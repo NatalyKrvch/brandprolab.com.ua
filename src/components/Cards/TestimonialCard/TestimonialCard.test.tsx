@@ -1,12 +1,14 @@
 import { render, screen } from '@testing-library/react';
+
 import TestimonialCard from './TestimonialCard';
 import '@testing-library/jest-dom';
+
+import { getReadMoreText } from '@/utils';
 import {
-  USER_BADGE_TEST_ID,
   TESTIMONIAL_CARD_TEST_ID,
   TESTIMONIAL_TEXT_TEST_ID,
-} from '@/lib/constants';
-import { getReadMoreText } from '@/utils';
+  USER_BADGE_TEST_ID,
+} from '@/lib/testIDs';
 
 jest.mock('@/utils', () => ({
   getReadMoreText: jest.fn(text => text),

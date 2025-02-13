@@ -13,5 +13,3 @@ export const USER_BADGE_IMAGE_TEST_ID = 'user-badge-image-test-id';
 export const USER_BADGE_NAME_TEST_ID = 'user-badge-name-test-id';
 export const TESTIMONIAL_CARD_TEST_ID = 'testimonials-card-test-id';
 export const TESTIMONIAL_TEXT_TEST_ID = 'testimonials-text-test-id';
-export const LIST_TEST_ID = 'list-test-id';
-export const LIST_ITEM_TEST_ID = 'list-item-test-id';

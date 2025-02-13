@@ -1,4 +1,5 @@
-import { EXTERNAL_LINK_TEST_ID } from '@/lib/constants';
+import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
+
 import { ExternalLinkProps } from './types';
 
 const ExternalLink = ({ href, className, children }: ExternalLinkProps) => {

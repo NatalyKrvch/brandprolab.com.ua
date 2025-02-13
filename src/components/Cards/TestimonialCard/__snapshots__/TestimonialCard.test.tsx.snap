@@ -7,7 +7,7 @@ exports[`TestimonialCard component renders UserBadge when clientName and clientP
     data-testid="testimonials-card-test-id"
   >
     <div
-      class="text-20 font-normal leading-6 text-black desktop:text-22"
+      class="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
       data-testid="testimonials-text-test-id"
     >
       This is a testimonial text.
@@ -39,7 +39,7 @@ exports[`TestimonialCard component renders the TestimonialCard component 1`] = `
     data-testid="testimonials-card-test-id"
   >
     <div
-      class="text-20 font-normal leading-6 text-black desktop:text-22"
+      class="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
       data-testid="testimonials-text-test-id"
     >
       This is a testimonial text.

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Button,
   Container,
@@ -47,9 +49,8 @@ const Uikit = () => {
         <UnderlinedText>Underlined Text</UnderlinedText>
       </div>
 
-      <div className="m-4 flex w-[464px] flex-col gap-5">
-        <span className="my-3 text-xl font-bold">Button component</span>
-        <Button>Записатись</Button>
+      <div className="m-4 w-[464px]">
+        <Button onClick={() => console.log('Click')}>Записатись</Button>
       </div>
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Label component</span>
