@@ -2,10 +2,9 @@ import { render, screen } from '@testing-library/react';
 
 import TestimonialCard from './TestimonialCard';
 import '@testing-library/jest-dom';
-
 import { getReadMoreText } from '@/utils';
 import {
-  TESTIMONIAL_CARD_TEST_ID,
+  SIMPLE_CARD_TEST_ID,
   TESTIMONIAL_TEXT_TEST_ID,
   USER_BADGE_TEST_ID,
 } from '@/lib/testIDs';
@@ -42,7 +41,7 @@ describe('TestimonialCard component', () => {
 
   it('renders the TestimonialCard component', () => {
     const { asFragment } = render(<TestimonialCard {...defaultProps} />);
-    const testimonialCard = screen.getByTestId(TESTIMONIAL_CARD_TEST_ID);
+    const testimonialCard = screen.getByTestId(SIMPLE_CARD_TEST_ID);
 
     expect(testimonialCard).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

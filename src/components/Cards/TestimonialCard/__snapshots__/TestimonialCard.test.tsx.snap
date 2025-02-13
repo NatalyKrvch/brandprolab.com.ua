@@ -3,8 +3,8 @@
 exports[`TestimonialCard component renders UserBadge when clientName and clientPhotoUrl are provided 1`] = `
 <DocumentFragment>
   <div
-    class="flex flex-col gap-6 rounded-24 border border-teal-dark p-6 tablet:rounded-32 desktop:rounded-40 desktop:p-8"
-    data-testid="testimonials-card-test-id"
+    class="flex flex-col gap-6 border border-teal-dark p-6 tablet:p-8  w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="simple-card-test-id"
   >
     <div
       class="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
@@ -35,8 +35,8 @@ exports[`TestimonialCard component renders UserBadge when clientName and clientP
 exports[`TestimonialCard component renders the TestimonialCard component 1`] = `
 <DocumentFragment>
   <div
-    class="flex flex-col gap-6 rounded-24 border border-teal-dark p-6 tablet:rounded-32 desktop:rounded-40 desktop:p-8"
-    data-testid="testimonials-card-test-id"
+    class="flex flex-col gap-6 border border-teal-dark p-6 tablet:p-8  w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="simple-card-test-id"
   >
     <div
       class="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
