@@ -1,4 +1,5 @@
 import { SIMPLE_CARD_TEST_ID } from '@/lib/testIDs';
+
 import { SimpleCardProps } from './types';
 
 const SimpleCard = ({

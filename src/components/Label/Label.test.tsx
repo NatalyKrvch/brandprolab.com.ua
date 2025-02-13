@@ -1,9 +1,10 @@
+import '@testing-library/jest-dom';
+
 import { render, screen } from '@testing-library/react';
 
-import Label from './Label';
-
-import '@testing-library/jest-dom';
 import { LABEL_COMPONENT_TEST_ID } from '@/lib/testIDs';
+
+import Label from './Label';
 
 describe('Label component', () => {
   const defaultProps = {

@@ -6,8 +6,8 @@ import {
   USER_BADGE_TEST_ID,
 } from '@/lib/testIDs';
 
-import { UserBadgeProps } from './types';
 import { ExternalLink } from '../ExternalLink';
+import { UserBadgeProps } from './types';
 
 const UserBadge = ({
   userName,

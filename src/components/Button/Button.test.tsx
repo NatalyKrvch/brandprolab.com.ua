@@ -1,7 +1,10 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import Button from './Button';
 import '@testing-library/jest-dom';
+
+import { fireEvent, render, screen } from '@testing-library/react';
+
 import { BUTTON_TEST_ID } from '@/lib/testIDs';
+
+import Button from './Button';
 
 describe('Button component', () => {
   const defaultProps = {

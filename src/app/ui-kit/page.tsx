@@ -3,15 +3,15 @@
 import {
   Button,
   Container,
-  TestimonialCard,
-  UserBadge,
   ExternalLink,
   Icon,
   InternalLink,
   Label,
-  UnderlinedText,
   List,
   SimpleCard,
+  TestimonialCard,
+  UnderlinedText,
+  UserBadge,
 } from '@/components';
 
 const Uikit = () => {

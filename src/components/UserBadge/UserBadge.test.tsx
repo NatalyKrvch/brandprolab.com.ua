@@ -1,13 +1,14 @@
+import '@testing-library/jest-dom';
+
 import { render, screen } from '@testing-library/react';
 
-import UserBadge from './UserBadge';
-
-import '@testing-library/jest-dom';
 import {
   USER_BADGE_IMAGE_TEST_ID,
   USER_BADGE_NAME_TEST_ID,
   USER_BADGE_TEST_ID,
 } from '@/lib/testIDs';
+
+import UserBadge from './UserBadge';
 
 jest.mock('next/image', () => {
   const MockImage = ({

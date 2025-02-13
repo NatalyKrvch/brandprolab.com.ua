@@ -1,10 +1,11 @@
+import '@testing-library/jest-dom';
+
 import { render, screen } from '@testing-library/react';
 
-import InternalLink from './InternalLink';
-import '@testing-library/jest-dom';
-import { InternalLinkProps } from './types';
-
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
+
+import InternalLink from './InternalLink';
+import { InternalLinkProps } from './types';
 
 jest.mock('next/link', () => {
   const MockLink = ({

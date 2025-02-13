@@ -1,7 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import SimpleCard from './SimpleCard';
 import '@testing-library/jest-dom';
+
+import { render, screen } from '@testing-library/react';
+
 import { SIMPLE_CARD_TEST_ID } from '@/lib/testIDs';
+
+import SimpleCard from './SimpleCard';
 
 describe('SimpleCard component', () => {
   const defaultProps = {

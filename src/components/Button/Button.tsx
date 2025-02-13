@@ -1,10 +1,15 @@
 import classNames from 'classnames';
+import type { PropsWithChildren } from 'react';
 
 import { BUTTON_TEST_ID } from '@/lib/testIDs';
 
 import { ButtonProps } from './types';
 
-const Button = ({ children, onClick, color = 'teal' }: ButtonProps) => {
+const Button = ({
+  children,
+  onClick,
+  color = 'teal',
+}: PropsWithChildren<ButtonProps>) => {
   return (
     <button
       data-testid={BUTTON_TEST_ID}

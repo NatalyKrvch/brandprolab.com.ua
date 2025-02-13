@@ -1,7 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import List from './List';
 import '@testing-library/jest-dom';
+
+import { render, screen } from '@testing-library/react';
+
 import { LIST_ITEM_TEST_ID, LIST_TEST_ID } from '@/lib/testIDs';
+
+import List from './List';
 
 jest.mock('next/image', () => {
   const MockImage = ({ src, alt }: { src: string; alt: string }) => (
