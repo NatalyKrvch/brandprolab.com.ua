@@ -1,11 +1,7 @@
-import { UserBadge } from '@/components';
-import {
-  TESTIMONIAL_CARD_TEST_ID,
-  TESTIMONIAL_TEXT_TEST_ID,
-} from '@/lib/testIDs';
-import { getReadMoreText } from '@/utils';
-
+import { UserBadge, SimpleCard } from '@/components';
 import { TestimonialCardProps } from './types';
+import { getReadMoreText } from '@/utils';
+import { TESTIMONIAL_TEXT_TEST_ID } from '@/lib/testIDs';
 
 const TestimonialCard = ({
   text,
@@ -14,10 +10,7 @@ const TestimonialCard = ({
   clientLink,
 }: TestimonialCardProps) => {
   return (
-    <div
-      className="flex flex-col gap-6 rounded-24 border border-teal-dark p-6 tablet:rounded-32 desktop:rounded-40 desktop:p-8"
-      data-testid={TESTIMONIAL_CARD_TEST_ID}
-    >
+    <SimpleCard className="flex flex-col gap-6 border border-teal-dark p-6 tablet:p-8">
       <div
         className="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
         data-testid={TESTIMONIAL_TEXT_TEST_ID}
@@ -31,7 +24,7 @@ const TestimonialCard = ({
           userLink={clientLink}
         />
       )}
-    </div>
+    </SimpleCard>
   );
 };
 

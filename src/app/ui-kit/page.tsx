@@ -11,11 +11,20 @@ import {
   Label,
   UnderlinedText,
   List,
+  SimpleCard,
 } from '@/components';
 
 const Uikit = () => {
   return (
     <>
+      <div className="m-4 flex w-[408] flex-col gap-5">
+        <span className="my-3 text-xl font-bold">SimpleCard component</span>
+        <SimpleCard backgroundColor="bg-teal-light" className="p-6">
+          <p className="mb-6 font-bold">SimpleCard content</p>
+          <List list={['Item 1', 'Item 2', 'Item 3']} />
+        </SimpleCard>
+      </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">List component</span>
         <List list={['Item 1', 'Item 2', 'Item 3']} />
