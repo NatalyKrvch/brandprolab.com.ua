@@ -11,7 +11,10 @@ const TestimonialCard = ({
   clientLink,
 }: TestimonialCardProps) => {
   return (
-    <SimpleCard className="flex flex-col gap-6 border border-teal-dark p-6 tablet:p-8">
+    <SimpleCard
+      borderColor="border-teal-dark"
+      className="flex flex-col gap-6 p-6 tablet:p-8"
+    >
       <div
         className="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
         data-testid={TESTIMONIAL_TEXT_TEST_ID}
