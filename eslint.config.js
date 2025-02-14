@@ -46,7 +46,7 @@ export default [
       },
     },
     rules: {
-      'prettier/prettier': 'error',
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
       '@next/next/no-html-link-for-pages': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',

@@ -3,6 +3,7 @@
 import {
   Button,
   Container,
+  DiplomaCard,
   ExternalLink,
   Icon,
   InternalLink,
@@ -17,6 +18,14 @@ import {
 const Uikit = () => {
   return (
     <>
+      <div className="m-4 flex flex-col gap-5">
+        <span className="my-3 text-xl font-bold">DiplomaCard component</span>
+        <DiplomaCard
+          onClick={() => console.log('Click')}
+          diplomaURL="https://media.vanityfair.com/photos/60073e65d507f0e0031b84c5/master/w_2560%2Cc_limit/VF0321_Cover_SUB-OPENER.png"
+        />
+        <DiplomaCard diplomaURL="https://media.vanityfair.com/photos/63e561bc4d9ea7ac2d152348/16:9/w_5791,h_3257,c_limit/VU0323_Cover_EdLetterPage.jpg" />
+      </div>
       <div className="m-4 flex w-[408] flex-col gap-5">
         <span className="my-3 text-xl font-bold">SimpleCard component</span>
         <SimpleCard backgroundColor="bg-teal-light" className="p-6">

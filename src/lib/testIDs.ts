@@ -16,3 +16,6 @@ export const TESTIMONIAL_TEXT_TEST_ID = 'testimonials-text-test-id';
 export const LIST_TEST_ID = 'list-test-id';
 export const LIST_ITEM_TEST_ID = 'list-item-test-id';
 export const SIMPLE_CARD_TEST_ID = 'simple-card-test-id';
+export const DIPLOMA_CARD_TEST_ID = 'diploma-card-test-id';
+export const DIPLOMA_IMAGE_TEST_ID = 'diploma-image-test-id';
+export const DIPLOMA_OVERLAY_TEST_ID = 'diploma-overlay-test-id';

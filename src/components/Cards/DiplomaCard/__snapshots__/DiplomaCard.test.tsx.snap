@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiplomaCard component renders the DiplomaCard component 1`] = `
+<DocumentFragment>
+  <div
+    class="w-fit rounded-24 border border-gray-medium p-2"
+    data-testid="diploma-card-test-id"
+  >
+    <div
+      class="relative h-40 w-auto max-w-full overflow-hidden rounded-3xl"
+    >
+      <div
+        class="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
+        data-testid="diploma-overlay-test-id"
+      />
+      <img
+        alt="Diploma"
+        class="h-full w-auto object-contain"
+        data-testid="diploma-image-test-id"
+        src="/test-diploma.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DiplomaCard component renders the diploma image correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="w-fit rounded-24 border border-gray-medium p-2"
+    data-testid="diploma-card-test-id"
+  >
+    <div
+      class="relative h-40 w-auto max-w-full overflow-hidden rounded-3xl"
+    >
+      <div
+        class="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
+        data-testid="diploma-overlay-test-id"
+      />
+      <img
+        alt="Diploma"
+        class="h-full w-auto object-contain"
+        data-testid="diploma-image-test-id"
+        src="/test-diploma.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DiplomaCard component triggers onClick when overlay is clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="w-fit rounded-24 border border-gray-medium p-2"
+    data-testid="diploma-card-test-id"
+  >
+    <div
+      class="relative h-40 w-auto max-w-full overflow-hidden rounded-3xl"
+    >
+      <div
+        class="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
+        data-testid="diploma-overlay-test-id"
+      />
+      <img
+        alt="Diploma"
+        class="h-full w-auto object-contain"
+        data-testid="diploma-image-test-id"
+        src="/test-diploma.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

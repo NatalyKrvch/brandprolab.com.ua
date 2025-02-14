@@ -39,6 +39,7 @@ export default {
           darkTranslucent: 'rgba(6, 188, 173, 0.3)',
           medium: '#0BDAC9',
           light: '#E7FAF9',
+          fog: '#47EDFF',
           lightOpacity: 'rgba(231, 250, 249, 0.8)',
         },
 
