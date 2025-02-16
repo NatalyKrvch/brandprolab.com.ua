@@ -1,4 +1,7 @@
+import clsx from 'clsx';
 import Image from 'next/image';
+import { useMemo } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 import { useIconStyles, useMediaQuery } from '@/hooks';
 import {
@@ -12,25 +15,31 @@ import { IconProps } from './types';
 const Icon = ({
   size,
   iconURL,
-  iconAlt = '',
+  iconAlt = 'Icon',
   isIconCentered = false,
   circleColor = 'bg-teal-darkOpacity',
 }: IconProps) => {
   const { circleStyles, iconStyles } = useIconStyles(size, isIconCentered);
-
   const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
   const isTablet = useMediaQuery(TABLET_MEDIA_QUERY);
 
-  const deviceStyles = isDesktop
-    ? { circle: circleStyles.desktop, icon: iconStyles.desktop }
-    : isTablet
-      ? { circle: circleStyles.tablet, icon: iconStyles.tablet }
-      : { circle: circleStyles.mobile, icon: iconStyles.mobile };
+  const deviceStyles = useMemo(() => {
+    if (isDesktop)
+      return { circle: circleStyles.desktop, icon: iconStyles.desktop };
+    if (isTablet)
+      return { circle: circleStyles.tablet, icon: iconStyles.tablet };
+    return { circle: circleStyles.mobile, icon: iconStyles.mobile };
+  }, [isDesktop, isTablet, circleStyles, iconStyles]);
 
   return (
     <div className="flex" data-testid={ICON_COMPONENT_TEST_ID}>
       <div
-        className={`rounded-full ${circleColor} relative flex items-center justify-center`}
+        className={twMerge(
+          clsx(
+            'relative flex items-center justify-center rounded-full',
+            circleColor,
+          ),
+        )}
         style={deviceStyles.circle}
       >
         <Image

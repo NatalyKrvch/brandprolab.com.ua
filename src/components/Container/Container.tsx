@@ -1,4 +1,6 @@
+import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 import {
   FULL_WIDTH_CONTAINER_TEST_ID,
@@ -11,18 +13,19 @@ const Container = ({
   fullWidth,
   children,
 }: PropsWithChildren<ContainerProps>) => {
-  if (fullWidth) {
-    return (
-      <div className="mx-auto" data-testid={FULL_WIDTH_CONTAINER_TEST_ID}>
-        {children}
-      </div>
-    );
-  }
-
   return (
     <div
-      className="mx-auto max-w-[1224px] px-4 tablet:px-12 desktop:px-12"
-      data-testid={LIMITED_WIDTH_CONTAINER_TEST_ID}
+      className={twMerge(
+        clsx(
+          'mx-auto',
+          !fullWidth && 'max-w-container px-4 tablet:px-12 desktop:px-12',
+        ),
+      )}
+      data-testid={
+        fullWidth
+          ? FULL_WIDTH_CONTAINER_TEST_ID
+          : LIMITED_WIDTH_CONTAINER_TEST_ID
+      }
     >
       {children}
     </div>

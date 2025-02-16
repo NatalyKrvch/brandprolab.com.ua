@@ -60,7 +60,7 @@ describe('Container component', () => {
 
     const container = screen.getByTestId(LIMITED_WIDTH_CONTAINER_TEST_ID);
     expect(container).toHaveClass('mx-auto');
-    expect(container).toHaveClass('max-w-[1224px]');
+    expect(container).toHaveClass('max-w-container');
     expect(container).toHaveClass('px-4');
 
     expect(asFragment()).toMatchSnapshot();
