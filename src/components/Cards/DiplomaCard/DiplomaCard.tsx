@@ -17,11 +17,14 @@ const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
       <div className="relative h-40 w-auto max-w-full overflow-hidden rounded-3xl">
         <div
           onClick={onClick}
+          onKeyDown={e => e.key === 'Enter' && onClick?.()}
           className="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
           data-testid={DIPLOMA_OVERLAY_TEST_ID}
         ></div>
         <Image
           src={diplomaURL}
+          role="button"
+          tabIndex={0}
           alt="Diploma"
           width={168}
           height={168}
