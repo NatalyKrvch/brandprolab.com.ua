@@ -68,6 +68,9 @@ export default {
         tablet: { min: '600px', max: '1223px' },
         desktop: { min: '1224px' },
       },
+      maxWidth: {
+        container: '1224px',
+      },
     },
   },
   plugins: [],

@@ -32,7 +32,6 @@ exports[`UserBadge component renders a div wrapper when no userLink is provided 
   <div
     class="flex items-center justify-end gap-5 desktop:gap-6"
     data-testid="user-badge-test-id"
-    href="#"
   >
     <span
       class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"

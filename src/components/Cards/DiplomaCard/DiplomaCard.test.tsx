@@ -11,7 +11,7 @@ import {
 import DiplomaCard from './DiplomaCard';
 
 jest.mock('next/image', () => {
-  return ({
+  const MockedImage = ({
     src,
     alt,
     className,
@@ -27,6 +27,8 @@ jest.mock('next/image', () => {
       data-testid={DIPLOMA_IMAGE_TEST_ID}
     />
   );
+  MockedImage.displayName = 'MockedNextImage';
+  return MockedImage;
 });
 
 describe('DiplomaCard component', () => {

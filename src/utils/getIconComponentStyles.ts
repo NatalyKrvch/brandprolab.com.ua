@@ -1,10 +1,6 @@
 import { getCircleSize, getIconOffset, getIconSize } from '@/utils';
 
-const screens: Array<'mobile' | 'tablet' | 'desktop'> = [
-  'mobile',
-  'tablet',
-  'desktop',
-];
+const screens = ['mobile', 'tablet', 'desktop'] as const;
 
 export function getIconComponentStyles(
   size: 's' | 'm' | 'l',
@@ -12,28 +8,32 @@ export function getIconComponentStyles(
 ) {
   return screens.reduce(
     (styles, screen) => {
-      styles.circleStyles[screen] = {
-        width: `${getCircleSize(size, screen)}px`,
-        height: `${getCircleSize(size, screen)}px`,
-      };
+      const circleSize = `${getCircleSize(size, screen)}px`;
+      const iconSize = `${getIconSize(size, screen)}px`;
+      const iconOffset = isIconCentered
+        ? '0'
+        : `${getIconOffset(size, screen)}px`;
 
-      styles.iconStyles[screen] = {
-        width: `${getIconSize(size, screen)}px`,
-        height: `${getIconSize(size, screen)}px`,
-        right: isIconCentered ? '0' : `${getIconOffset(size, screen)}px`,
+      return {
+        circleStyles: {
+          ...styles.circleStyles,
+          [screen]: { width: circleSize, height: circleSize },
+        },
+        iconStyles: {
+          ...styles.iconStyles,
+          [screen]: { width: iconSize, height: iconSize, right: iconOffset },
+        },
       };
-
-      return styles;
     },
-    {
-      circleStyles: {} as Record<
+    { circleStyles: {}, iconStyles: {} } as {
+      circleStyles: Record<
         'mobile' | 'tablet' | 'desktop',
         { width: string; height: string }
-      >,
-      iconStyles: {} as Record<
+      >;
+      iconStyles: Record<
         'mobile' | 'tablet' | 'desktop',
         { width: string; height: string; right: string }
-      >,
+      >;
     },
   );
 }

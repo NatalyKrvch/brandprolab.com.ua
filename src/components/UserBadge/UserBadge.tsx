@@ -1,4 +1,6 @@
+import clsx from 'clsx';
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 import {
   USER_BADGE_IMAGE_TEST_ID,
@@ -9,21 +11,24 @@ import {
 import { ExternalLink } from '../ExternalLink';
 import { UserBadgeProps } from './types';
 
-const UserBadge = ({
-  userName,
-  userPhotoUrl,
-  userLink = '',
-}: UserBadgeProps) => {
+const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
   const Wrapper = userLink ? ExternalLink : 'div';
 
   return (
     <Wrapper
-      className="flex items-center justify-end gap-5 desktop:gap-6"
-      {...(userLink ? { href: userLink } : { href: '#' })}
+      {...(userLink ? { href: userLink } : { href: '' })}
+      className={twMerge(
+        clsx('flex items-center justify-end', 'gap-5 desktop:gap-6'),
+      )}
       data-testid={USER_BADGE_TEST_ID}
     >
       <span
-        className="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
+        className={twMerge(
+          clsx(
+            'text-lg font-medium leading-6 text-gray-dark',
+            'desktop:text-xl',
+          ),
+        )}
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}
