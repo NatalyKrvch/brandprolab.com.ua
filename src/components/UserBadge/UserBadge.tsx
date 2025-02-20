@@ -9,19 +9,18 @@ import {
 } from '@/lib/testIDs';
 
 import { ExternalLink } from '../ExternalLink';
-import { UserBadgeProps } from './types';
+import type { UserBadgeProps } from './types';
 
 const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
-  const Wrapper = userLink ? ExternalLink : 'div';
+  const commonProps = {
+    className: twMerge(
+      clsx('flex items-center justify-end', 'gap-5 desktop:gap-6'),
+    ),
+    'data-testid': USER_BADGE_TEST_ID,
+  };
 
-  return (
-    <Wrapper
-      {...(userLink ? { href: userLink } : { href: '' })}
-      className={twMerge(
-        clsx('flex items-center justify-end', 'gap-5 desktop:gap-6'),
-      )}
-      data-testid={USER_BADGE_TEST_ID}
-    >
+  const content = (
+    <>
       <span
         className={twMerge(
           clsx(
@@ -39,12 +38,21 @@ const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
           src={userPhotoUrl}
           alt={userName}
           fill
-          priority
           data-testid={USER_BADGE_IMAGE_TEST_ID}
         />
       </div>
-    </Wrapper>
+    </>
   );
+
+  if (userLink && userLink.trim() !== '') {
+    return (
+      <ExternalLink href={userLink} {...commonProps}>
+        {content}
+      </ExternalLink>
+    );
+  }
+
+  return <div {...commonProps}>{content}</div>;
 };
 
 export default UserBadge;
