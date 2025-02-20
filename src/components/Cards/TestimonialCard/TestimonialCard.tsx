@@ -13,7 +13,7 @@ const TestimonialCard = ({
   clientPhotoUrl,
   clientLink,
 }: TestimonialCardProps) => {
-  const shouldRenderUserBadge = clientName && clientPhotoUrl;
+  const shouldRenderUserBadge = clientName && clientPhotoUrl && clientLink;
 
   return (
     <SimpleCard
