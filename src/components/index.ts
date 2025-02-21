@@ -1,5 +1,6 @@
 export { Button } from './Button';
 export { DiplomaCard } from './Cards/DiplomaCard';
+export { PhotoCard } from './Cards/PhotoCard';
 export { SimpleCard } from './Cards/SimpleCard';
 export { TestimonialCard } from './Cards/TestimonialCard';
 export { Container } from './Container';
