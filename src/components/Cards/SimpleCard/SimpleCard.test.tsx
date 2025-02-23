@@ -36,4 +36,18 @@ describe('SimpleCard component', () => {
     expect(cardElement).toHaveClass('custom-class', 'bg-gray-100');
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('applies background image styles when backgroundImage is provided', () => {
+    const backgroundImage = '/test-image.jpg';
+    const { asFragment } = render(
+      <SimpleCard {...defaultProps} backgroundImageUrl={backgroundImage} />,
+    );
+    const cardElement = screen.getByTestId(SIMPLE_CARD_TEST_ID);
+
+    expect(cardElement).toHaveStyle(
+      `background-image: url(${backgroundImage})`,
+    );
+    expect(cardElement).toHaveClass('bg-cover', 'bg-center');
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

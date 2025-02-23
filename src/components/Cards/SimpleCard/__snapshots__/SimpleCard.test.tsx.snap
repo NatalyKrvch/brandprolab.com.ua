@@ -1,9 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`SimpleCard component applies background image styles when backgroundImage is provided 1`] = `
+<DocumentFragment>
+  <div
+    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
+    data-testid="simple-card-test-id"
+    style="background-image: url(/test-image.jpg);"
+  >
+    <p>
+      Test Content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`SimpleCard component applies correct className and backgroundColor 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
     data-testid="simple-card-test-id"
   >
     <p>
@@ -16,7 +30,7 @@ exports[`SimpleCard component applies correct className and backgroundColor 1`] 
 exports[`SimpleCard component renders children inside the card 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
     data-testid="simple-card-test-id"
   >
     <p>
@@ -29,7 +43,7 @@ exports[`SimpleCard component renders children inside the card 1`] = `
 exports[`SimpleCard component renders the SimpleCard component 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="custom-class bg-gray-100 w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
     data-testid="simple-card-test-id"
   >
     <p>

@@ -19,3 +19,5 @@ export const SIMPLE_CARD_TEST_ID = 'simple-card-test-id';
 export const DIPLOMA_CARD_TEST_ID = 'diploma-card-test-id';
 export const DIPLOMA_IMAGE_TEST_ID = 'diploma-image-test-id';
 export const DIPLOMA_OVERLAY_TEST_ID = 'diploma-overlay-test-id';
+export const PHOTO_CARD_IMAGE_TEST_ID = 'photo-card-image-test-id';
+export const PHOTO_CARD_TEXT_TEST_ID = 'photo-card-text-test-id';

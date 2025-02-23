@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoCard component does not render text when not provided 1`] = `
+<DocumentFragment>
+  <div
+    class="relative h-[824px] bg-white w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
+    data-testid="simple-card-test-id"
+    style="background-image: url(/test-background.jpg);"
+  >
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2"
+    >
+      <img
+        alt="Photo"
+        data-testid="photo-card-image-test-id"
+        src="/test-photo.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PhotoCard component renders text when provided 1`] = `
+<DocumentFragment>
+  <div
+    class="relative h-[824px] bg-white w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
+    data-testid="simple-card-test-id"
+    style="background-image: url(/test-background.jpg);"
+  >
+    <div
+      class="leading-44 absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold tracking-tight text-black"
+      data-testid="photo-card-text-test-id"
+    >
+      Sample Text
+    </div>
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2"
+    >
+      <img
+        alt="Photo"
+        data-testid="photo-card-image-test-id"
+        src="/test-photo.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PhotoCard component renders the PhotoCard component 1`] = `
+<DocumentFragment>
+  <div
+    class="relative h-[824px] bg-white w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
+    data-testid="simple-card-test-id"
+    style="background-image: url(/test-background.jpg);"
+  >
+    <div
+      class="leading-44 absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold tracking-tight text-black"
+      data-testid="photo-card-text-test-id"
+    >
+      Sample Text
+    </div>
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2"
+    >
+      <img
+        alt="Photo"
+        data-testid="photo-card-image-test-id"
+        src="/test-photo.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PhotoCard component renders the photo correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="relative h-[824px] bg-white w-full rounded-24 tablet:rounded-32 desktop:rounded-40 bg-cover bg-center"
+    data-testid="simple-card-test-id"
+    style="background-image: url(/test-background.jpg);"
+  >
+    <div
+      class="leading-44 absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold tracking-tight text-black"
+      data-testid="photo-card-text-test-id"
+    >
+      Sample Text
+    </div>
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2"
+    >
+      <img
+        alt="Photo"
+        data-testid="photo-card-image-test-id"
+        src="/test-photo.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
