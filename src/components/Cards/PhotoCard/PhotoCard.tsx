@@ -1,4 +1,6 @@
+import clsx from 'clsx';
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 import {
   PHOTO_CARD_IMAGE_TEST_ID,
@@ -8,25 +10,36 @@ import {
 import { SimpleCard } from '../SimpleCard';
 import type { PhotoCardProps } from './types';
 
-const PhotoCard = ({ text, photoUrl, backgroundUrl }: PhotoCardProps) => {
+const PhotoCard = ({
+  photoUrl,
+  backgroundUrl,
+  cardHeight,
+  imageWidth,
+  imageHeight,
+  text,
+}: PhotoCardProps) => {
   return (
     <SimpleCard
       backgroundImageUrl={backgroundUrl}
-      className="relative h-[824px]"
+      className={twMerge(clsx('relative'))}
+      style={{ height: `${cardHeight}px` }}
     >
       {text && (
         <div
-          className="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-black"
+          className="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
           data-testid={PHOTO_CARD_TEXT_TEST_ID}
         >
           {text}
         </div>
       )}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+      <div
+        className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
+      >
         <Image
           src={photoUrl}
-          width={200}
-          height={200}
+          fill
+          className="object-cover"
           alt="Photo"
           data-testid={PHOTO_CARD_IMAGE_TEST_ID}
         />
