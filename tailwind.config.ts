@@ -17,10 +17,16 @@ export default {
       fontSize: {
         '22': '22px',
         '32': '32px',
+        '44': '44px',
         '52': '52px',
       },
       lineHeight: {
         '26': '26px',
+        '44': '44px',
+      },
+      spacing: {
+        '36': '36px',
+        '44': '44px',
       },
       letterSpacing: {
         tight: '-0.02em',
