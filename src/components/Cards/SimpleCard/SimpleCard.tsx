@@ -11,6 +11,7 @@ const SimpleCard = ({
   children,
   borderColor,
   className,
+  style,
   backgroundImageUrl,
   backgroundColor = 'bg-white',
 }: PropsWithChildren<SimpleCardProps>) => {
@@ -21,16 +22,17 @@ const SimpleCard = ({
           className,
           backgroundColor,
           borderColor && `border ${borderColor}`,
-          'w-full',
           ROUNDED_CLASSES,
+          'w-full',
           'bg-cover bg-center',
         ),
       )}
-      style={
-        backgroundImageUrl
+      style={{
+        ...(backgroundImageUrl
           ? { backgroundImage: `url(${backgroundImageUrl})` }
-          : {}
-      }
+          : {}),
+        ...style,
+      }}
       data-testid={SIMPLE_CARD_TEST_ID}
     >
       {children}

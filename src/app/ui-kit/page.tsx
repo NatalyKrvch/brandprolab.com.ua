@@ -27,12 +27,24 @@ const Uikit = () => {
           thumbnailSrc="/images/Screenshot.png"
         />
       </div>
-      <div className="m-4 flex w-[552px] flex-col gap-5">
+      <div className="m-4 flex w-[408px] flex-col gap-5">
         <span className="my-3 text-xl font-bold">PhotoCard component</span>
         <PhotoCard
           text="Чому мені можна довіряти?"
-          photoUrl="https://media.vanityfair.com/photos/60073e65d507f0e0031b84c5/master/w_2560%2Cc_limit/VF0321_Cover_SUB-OPENER.png"
+          photoUrl="/images/photo-expert.png"
+          backgroundUrl="/images/backgrounds/expert-bg.svg"
+          imageWidth={362}
+          imageHeight={600}
+          cardHeight={744}
+        />
+      </div>
+      <div className="m-4 flex w-[552px] flex-col gap-5">
+        <PhotoCard
+          photoUrl="/images/photo-hero.png"
           backgroundUrl="/images/backgrounds/hero-photocard-bg.svg"
+          imageWidth={512}
+          imageHeight={764}
+          cardHeight={824}
         />
       </div>
       <div className="m-4 flex flex-col gap-5">
