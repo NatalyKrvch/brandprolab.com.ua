@@ -9,15 +9,32 @@ import {
   InternalLink,
   Label,
   List,
+  PhotoCard,
   SimpleCard,
   TestimonialCard,
   UnderlinedText,
   UserBadge,
+  Video,
 } from '@/components';
 
 const Uikit = () => {
   return (
     <>
+      <div className="m-4">
+        <span className="my-3 text-xl font-bold">Video component</span>
+        <Video
+          videoUrl="https://www.youtube.com/watch?v=4glKLs5Py1A"
+          thumbnailSrc="/images/Screenshot.png"
+        />
+      </div>
+      <div className="m-4 flex w-[552px] flex-col gap-5">
+        <span className="my-3 text-xl font-bold">PhotoCard component</span>
+        <PhotoCard
+          text="Чому мені можна довіряти?"
+          photoUrl="https://media.vanityfair.com/photos/60073e65d507f0e0031b84c5/master/w_2560%2Cc_limit/VF0321_Cover_SUB-OPENER.png"
+          backgroundUrl="/images/backgrounds/hero-photocard-bg.svg"
+        />
+      </div>
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">DiplomaCard component</span>
         <DiplomaCard
