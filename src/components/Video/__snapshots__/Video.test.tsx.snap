@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video component does not render iframe initially 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="video-test-id"
+  >
+    <div
+      class="absolute inset-0 transition-opacity duration-500 opacity-100"
+    >
+      <div
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+      />
+      <img
+        alt="Video Thumbnail"
+        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        data-testid="video-thumbnail-test-id"
+        height="210"
+        src="/test-thumbnail.jpg"
+        width="280"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <button
+          aria-label="Play video"
+          class="rounded-full shadow-lg transition hover:scale-105"
+          data-testid="video-play-button-test-id"
+        >
+          <img
+            alt="Play Button"
+            class="h-20 w-20"
+            height="74"
+            src="/icons/nav/play.svg"
+            width="74"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Video component renders the Video component 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="video-test-id"
+  >
+    <div
+      class="absolute inset-0 transition-opacity duration-500 opacity-100"
+    >
+      <div
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+      />
+      <img
+        alt="Video Thumbnail"
+        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        data-testid="video-thumbnail-test-id"
+        height="210"
+        src="/test-thumbnail.jpg"
+        width="280"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <button
+          aria-label="Play video"
+          class="rounded-full shadow-lg transition hover:scale-105"
+          data-testid="video-play-button-test-id"
+        >
+          <img
+            alt="Play Button"
+            class="h-20 w-20"
+            height="74"
+            src="/icons/nav/play.svg"
+            width="74"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Video component renders the play button 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="video-test-id"
+  >
+    <div
+      class="absolute inset-0 transition-opacity duration-500 opacity-100"
+    >
+      <div
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+      />
+      <img
+        alt="Video Thumbnail"
+        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        data-testid="video-thumbnail-test-id"
+        height="210"
+        src="/test-thumbnail.jpg"
+        width="280"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <button
+          aria-label="Play video"
+          class="rounded-full shadow-lg transition hover:scale-105"
+          data-testid="video-play-button-test-id"
+        >
+          <img
+            alt="Play Button"
+            class="h-20 w-20"
+            height="74"
+            src="/icons/nav/play.svg"
+            width="74"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Video component renders the thumbnail correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="video-test-id"
+  >
+    <div
+      class="absolute inset-0 transition-opacity duration-500 opacity-100"
+    >
+      <div
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+      />
+      <img
+        alt="Video Thumbnail"
+        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        data-testid="video-thumbnail-test-id"
+        height="210"
+        src="/test-thumbnail.jpg"
+        width="280"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <button
+          aria-label="Play video"
+          class="rounded-full shadow-lg transition hover:scale-105"
+          data-testid="video-play-button-test-id"
+        >
+          <img
+            alt="Play Button"
+            class="h-20 w-20"
+            height="74"
+            src="/icons/nav/play.svg"
+            width="74"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Video component replaces thumbnail with iframe when play button is clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    data-testid="video-test-id"
+  >
+    <div
+      class="absolute inset-0 transition-opacity duration-500 pointer-events-none opacity-0"
+    >
+      <div
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+      />
+      <img
+        alt="Video Thumbnail"
+        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        data-testid="video-thumbnail-test-id"
+        height="210"
+        src="/test-thumbnail.jpg"
+        width="280"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <button
+          aria-label="Play video"
+          class="rounded-full shadow-lg transition hover:scale-105"
+          data-testid="video-play-button-test-id"
+        >
+          <img
+            alt="Play Button"
+            class="h-20 w-20"
+            height="74"
+            src="/icons/nav/play.svg"
+            width="74"
+          />
+        </button>
+      </div>
+    </div>
+    <iframe
+      allow="autoplay; encrypted-media"
+      allowfullscreen=""
+      class="h-full w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+      data-testid="video-iframe-test-id"
+      src="https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0"
+      title="Video"
+    />
+  </div>
+</DocumentFragment>
+`;

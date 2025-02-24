@@ -40,6 +40,7 @@ export default {
           medium: '#0BDAC9',
           light: '#E7FAF9',
           fog: '#47EDFF',
+          fogOpacity: '#1D81B2',
           lightOpacity: 'rgba(231, 250, 249, 0.8)',
         },
 
@@ -70,6 +71,16 @@ export default {
       },
       maxWidth: {
         container: '1224px',
+      },
+      width: {
+        '280': '280px',
+        '400': '400px',
+        '480': '480px',
+      },
+      height: {
+        '210': '210px',
+        '300': '300px',
+        '360': '360px',
       },
     },
   },

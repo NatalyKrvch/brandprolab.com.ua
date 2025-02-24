@@ -21,3 +21,7 @@ export const DIPLOMA_IMAGE_TEST_ID = 'diploma-image-test-id';
 export const DIPLOMA_OVERLAY_TEST_ID = 'diploma-overlay-test-id';
 export const PHOTO_CARD_IMAGE_TEST_ID = 'photo-card-image-test-id';
 export const PHOTO_CARD_TEXT_TEST_ID = 'photo-card-text-test-id';
+export const VIDEO_IFRAME_TEST_ID = 'video-iframe-test-id';
+export const VIDEO_PLAY_BUTTON_TEST_ID = 'video-play-button-test-id';
+export const VIDEO_TEST_ID = 'video-test-id';
+export const VIDEO_THUMBNAIL_TEST_ID = 'video-thumbnail-test-id';

@@ -3,6 +3,7 @@ import type { PropsWithChildren } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import { SIMPLE_CARD_TEST_ID } from '@/lib/testIDs';
+import { ROUNDED_CLASSES } from '@/styles/constants';
 
 import type { SimpleCardProps } from './types';
 
@@ -20,7 +21,8 @@ const SimpleCard = ({
           className,
           backgroundColor,
           borderColor && `border ${borderColor}`,
-          'w-full rounded-24 tablet:rounded-32 desktop:rounded-40',
+          'w-full',
+          ROUNDED_CLASSES,
           'bg-cover bg-center',
         ),
       )}

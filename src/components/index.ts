@@ -11,3 +11,4 @@ export { Label } from './Label';
 export { List } from './List';
 export { UnderlinedText } from './UnderlinedText';
 export { UserBadge } from './UserBadge';
+export { Video } from './Video';

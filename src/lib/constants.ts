@@ -13,3 +13,6 @@ export const ALL_DATA_QUERY = `
 `;
 
 export const REVALIDATE = 60;
+
+export const YOUTUBE_REGEX =
+  /(?:youtu\.be\/|youtube\.com\/(?:.*[?&]v=|embed\/|v\/|shorts\/|live\/))([^&?/]+)/;
