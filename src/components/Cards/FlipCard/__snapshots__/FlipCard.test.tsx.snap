@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlipCard component renders the FlipCard component 1`] = `
+<DocumentFragment>
+  <div
+    class="group relative h-40 w-40"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative p-20 text-center font-bold transition-transform duration-[1000ms] group-hover:[transform:rotateY(180deg)]"
+    >
+      <div
+        class="absolute inset-0 flex items-center justify-center p-8"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute inset-0 flex items-center justify-center p-8 [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlipCard component renders the back side content 1`] = `
+<DocumentFragment>
+  <div
+    class="group relative h-40 w-40"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative p-20 text-center font-bold transition-transform duration-[1000ms] group-hover:[transform:rotateY(180deg)]"
+    >
+      <div
+        class="absolute inset-0 flex items-center justify-center p-8"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute inset-0 flex items-center justify-center p-8 [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlipCard component renders the front side content 1`] = `
+<DocumentFragment>
+  <div
+    class="group relative h-40 w-40"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative p-20 text-center font-bold transition-transform duration-[1000ms] group-hover:[transform:rotateY(180deg)]"
+    >
+      <div
+        class="absolute inset-0 flex items-center justify-center p-8"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute inset-0 flex items-center justify-center p-8 [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
