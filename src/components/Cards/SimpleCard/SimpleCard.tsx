@@ -19,8 +19,8 @@ const SimpleCard = ({
     <div
       className={twMerge(
         clsx(
-          className,
           backgroundColor,
+          className,
           borderColor && `border ${borderColor}`,
           ROUNDED_CLASSES,
           'w-full',
