@@ -25,3 +25,6 @@ export const VIDEO_IFRAME_TEST_ID = 'video-iframe-test-id';
 export const VIDEO_PLAY_BUTTON_TEST_ID = 'video-play-button-test-id';
 export const VIDEO_TEST_ID = 'video-test-id';
 export const VIDEO_THUMBNAIL_TEST_ID = 'video-thumbnail-test-id';
+export const FLIP_CARD_BACK_TEST_ID = 'flip-card-back-test-id';
+export const FLIP_CARD_FRONT_TEST_ID = 'flip-card-front-test-id';
+export const FLIP_CARD_TEST_ID = 'flip-card-test-id';

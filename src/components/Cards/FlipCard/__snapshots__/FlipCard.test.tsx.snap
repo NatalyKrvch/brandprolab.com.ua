@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlipCard component renders the FlipCard component 1`] = `
+<DocumentFragment>
+  <div
+    class="group h-full w-full cursor-pointer [perspective:1000px]"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
+    >
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden]"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlipCard component renders the back side content 1`] = `
+<DocumentFragment>
+  <div
+    class="group h-full w-full cursor-pointer [perspective:1000px]"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
+    >
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden]"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlipCard component renders the front side content 1`] = `
+<DocumentFragment>
+  <div
+    class="group h-full w-full cursor-pointer [perspective:1000px]"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
+    >
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden]"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlipCard component toggles between front and back when clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="group h-full w-full cursor-pointer [perspective:1000px]"
+    data-testid="flip-card-test-id"
+  >
+    <div
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
+    >
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden]"
+        data-testid="flip-card-front-test-id"
+      >
+        Front Side
+      </div>
+      <div
+        class="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        data-testid="flip-card-back-test-id"
+      >
+        Back Side
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

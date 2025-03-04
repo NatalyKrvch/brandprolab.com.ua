@@ -3,7 +3,7 @@
 exports[`SimpleCard component applies background image styles when backgroundImage is provided 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="bg-gray-100 custom-class rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
     data-testid="simple-card-test-id"
     style="background-image: url(/test-image.jpg);"
   >
@@ -17,7 +17,7 @@ exports[`SimpleCard component applies background image styles when backgroundIma
 exports[`SimpleCard component applies correct className and backgroundColor 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="bg-gray-100 custom-class rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
     data-testid="simple-card-test-id"
   >
     <p>
@@ -30,7 +30,7 @@ exports[`SimpleCard component applies correct className and backgroundColor 1`] 
 exports[`SimpleCard component renders children inside the card 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="bg-gray-100 custom-class rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
     data-testid="simple-card-test-id"
   >
     <p>
@@ -43,7 +43,7 @@ exports[`SimpleCard component renders children inside the card 1`] = `
 exports[`SimpleCard component renders the SimpleCard component 1`] = `
 <DocumentFragment>
   <div
-    class="custom-class bg-gray-100 rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="bg-gray-100 custom-class rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
     data-testid="simple-card-test-id"
   >
     <p>
