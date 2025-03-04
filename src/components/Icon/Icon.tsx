@@ -10,18 +10,27 @@ import {
 } from '@/lib/testIDs';
 import { DESKTOP_MEDIA_QUERY, TABLET_MEDIA_QUERY } from '@/styles/constants';
 
-import { IconProps } from './types';
-
 const Icon = ({
-  size,
   iconURL,
   iconAlt = 'Icon',
   isIconCentered = false,
   circleColor = 'bg-teal-darkOpacity',
-}: IconProps) => {
-  const { circleStyles, iconStyles } = useIconStyles(size, isIconCentered);
+}: {
+  iconURL: string;
+  iconAlt?: string;
+  circleColor?: string;
+  isIconCentered?: boolean;
+}) => {
   const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
   const isTablet = useMediaQuery(TABLET_MEDIA_QUERY);
+
+  const size = useMemo(() => {
+    if (isDesktop) return 'l';
+    if (isTablet) return 'm';
+    return 's';
+  }, [isDesktop, isTablet]);
+
+  const { circleStyles, iconStyles } = useIconStyles(size, isIconCentered);
 
   const deviceStyles = useMemo(() => {
     if (isDesktop)

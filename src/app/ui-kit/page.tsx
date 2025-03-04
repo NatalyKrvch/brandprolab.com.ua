@@ -5,6 +5,9 @@ import {
   Container,
   DiplomaCard,
   ExternalLink,
+  FlipCard,
+  FlipCardBack,
+  FlipCardFront,
   Icon,
   InternalLink,
   Label,
@@ -20,6 +23,52 @@ import {
 const Uikit = () => {
   return (
     <>
+      <div className="relative mx-4 my-10 h-[500px] w-[480px]">
+        <span className="my-3 text-xl font-bold">FlipCard component</span>
+        <FlipCard
+          front={
+            <FlipCardFront
+              iconURL="/icons/cards/hand.svg"
+              header="Точкова кар’єрна консультація"
+              label="90 хв."
+              description="Онлайн-зустріч для вирішення конкретного запиту: аудит резюме, LinkedIn, підготовка до співбесіди чи боротьба з вигоранням."
+              callToAction="Що можна вирішити на консультації?"
+            />
+          }
+          back={
+            <FlipCardBack
+              header="Разова онлайн-зустріч (1,5-2 год.) для вирішення конкретного запиту:"
+              list={[
+                'Провести аудит резюме: що залишити, змінити чи додати, щоб воно стало результативним',
+                'Перевірити LinkedIn-профіль: надам рекомендації для його покращення та залучення рекрутерів',
+                'Розробити стратегію пошуку роботи: як і де шукати вакансії, яких помилок уникати',
+              ]}
+            />
+          }
+        />
+      </div>
+
+      <div className="m-4 w-[480px]">
+        <span className="my-3 text-xl font-bold">FlipCardFront component</span>
+        <FlipCardFront
+          iconURL="/icons/cards/hand.svg"
+          header="Точкова кар’єрна консультація"
+          label="90 хв."
+          description="Онлайн-зустріч для вирішення конкретного запиту: аудит резюме, LinkedIn, підготовка до співбесіди чи боротьба з вигоранням."
+          callToAction="Що можна вирішити на консультації?"
+        />
+      </div>
+      <div className="m-4 w-[480px]">
+        <span className="my-3 text-xl font-bold">FlipCardBack component</span>
+        <FlipCardBack
+          header="Разова онлайн-зустріч (1,5-2 год.) для вирішення конкретного запиту:"
+          list={[
+            'Провести аудит резюме: що залишити, змінити чи додати, щоб воно стало результативним',
+            'Перевірити LinkedIn-профіль: надам рекомендації для його покращення та залучення рекрутерів',
+            'Розробити стратегію пошуку роботи: як і де шукати вакансії, яких помилок уникати',
+          ]}
+        />
+      </div>
       <div className="m-4">
         <span className="my-3 text-xl font-bold">Video component</span>
         <Video
@@ -105,18 +154,7 @@ const Uikit = () => {
       </div>
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Icon component</span>
-        <Icon size="l" iconURL="/icons/cards/hand.svg" iconAlt="icon" />
-      </div>
-      <div className="m-4 flex flex-col gap-5">
-        <Icon size="m" iconURL="/icons/cards/hand.svg" iconAlt="icon" />
-      </div>
-      <div className="m-4">
-        <Icon
-          size="s"
-          iconURL="/icons/cards/hand.svg"
-          iconAlt="icon"
-          isIconCentered
-        />
+        <Icon iconURL="/icons/cards/hand.svg" iconAlt="icon" />
       </div>
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">InternalLink component</span>
