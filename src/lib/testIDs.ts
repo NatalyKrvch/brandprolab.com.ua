@@ -28,3 +28,10 @@ export const VIDEO_THUMBNAIL_TEST_ID = 'video-thumbnail-test-id';
 export const FLIP_CARD_BACK_TEST_ID = 'flip-card-back-test-id';
 export const FLIP_CARD_FRONT_TEST_ID = 'flip-card-front-test-id';
 export const FLIP_CARD_TEST_ID = 'flip-card-test-id';
+export const FLIP_CARD_FRONT_DESCRIPTION_TEST_ID =
+  'flip-card-front-description-test-id';
+export const FLIP_CARD_FRONT_HEADER_TEST_ID = 'flip-card-front-header-test-id';
+export const FLIP_CARD_BACK_HEADER_TEST_ID = 'flip-card-back-header-test-id';
+export const FLIP_CARD_BACK_LIST_ITEM_TEST_ID =
+  'flip-card-back-list-item-test-id';
+export const FLIP_CARD_BACK_LIST_TEST_ID = 'flip-card-back-list-test-id';
