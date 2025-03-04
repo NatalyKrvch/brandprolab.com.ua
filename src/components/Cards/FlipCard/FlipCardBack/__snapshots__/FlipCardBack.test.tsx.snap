@@ -13,7 +13,7 @@ exports[`FlipCardBack component renders the FlipCardBack component 1`] = `
       Test Header
     </p>
     <ul
-      class="list-disc pl-5 text-sm font-normal text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
+      class="list-disc pl-5 text-sm font-normal leading-18 text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
       data-testid="flip-card-back-list-test-id"
     >
       <li
@@ -52,7 +52,7 @@ exports[`FlipCardBack component renders the correct number of list items 1`] = `
       Test Header
     </p>
     <ul
-      class="list-disc pl-5 text-sm font-normal text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
+      class="list-disc pl-5 text-sm font-normal leading-18 text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
       data-testid="flip-card-back-list-test-id"
     >
       <li
@@ -91,7 +91,7 @@ exports[`FlipCardBack component renders the header correctly 1`] = `
       Test Header
     </p>
     <ul
-      class="list-disc pl-5 text-sm font-normal text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
+      class="list-disc pl-5 text-sm font-normal leading-18 text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
       data-testid="flip-card-back-list-test-id"
     >
       <li
@@ -130,7 +130,7 @@ exports[`FlipCardBack component renders the list correctly 1`] = `
       Test Header
     </p>
     <ul
-      class="list-disc pl-5 text-sm font-normal text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
+      class="list-disc pl-5 text-sm font-normal leading-18 text-white tablet:text-base tablet:leading-6 desktop:text-lg desktop:leading-5"
       data-testid="flip-card-back-list-test-id"
     >
       <li
