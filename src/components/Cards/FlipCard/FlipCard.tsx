@@ -1,3 +1,7 @@
+import clsx from 'clsx';
+import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
+
 import {
   FLIP_CARD_BACK_TEST_ID,
   FLIP_CARD_FRONT_TEST_ID,
@@ -6,19 +10,31 @@ import {
 
 import { FlipCardProps } from './types';
 
-export default function FlipCard({ front, back }: FlipCardProps) {
+const FlipCard = ({ front, back }: FlipCardProps) => {
+  const [flipped, setFlipped] = useState(false);
+
   return (
-    <div className="group relative h-40 w-40" data-testid={FLIP_CARD_TEST_ID}>
-      <div className="relative p-20 text-center font-bold transition-transform duration-[1000ms] group-hover:[transform:rotateY(180deg)]">
+    <div
+      className="group h-full w-full cursor-pointer [perspective:1000px]"
+      onClick={() => setFlipped(!flipped)}
+      data-testid={FLIP_CARD_TEST_ID}
+    >
+      <div
+        className={twMerge(
+          clsx(
+            'relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]',
+            flipped && '[transform:rotateY(180deg)]',
+          ),
+        )}
+      >
         <div
-          className="absolute inset-0 flex items-center justify-center p-8"
+          className="absolute flex h-full w-full [backface-visibility:hidden]"
           data-testid={FLIP_CARD_FRONT_TEST_ID}
         >
           {front}
         </div>
-
         <div
-          className="absolute inset-0 flex items-center justify-center p-8 [backface-visibility:hidden] [transform:rotateY(180deg)]"
+          className="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
           data-testid={FLIP_CARD_BACK_TEST_ID}
         >
           {back}
@@ -26,4 +42,6 @@ export default function FlipCard({ front, back }: FlipCardProps) {
       </div>
     </div>
   );
-}
+};
+
+export default FlipCard;

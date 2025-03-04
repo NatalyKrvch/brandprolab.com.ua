@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import {
   FLIP_CARD_BACK_TEST_ID,
@@ -39,6 +39,23 @@ describe('FlipCard component', () => {
 
     expect(backElement).toBeInTheDocument();
     expect(backElement).toHaveTextContent('Back Side');
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('toggles between front and back when clicked', () => {
+    const { asFragment } = render(<FlipCard {...defaultProps} />);
+    const cardElement = screen.getByTestId(FLIP_CARD_TEST_ID);
+
+    expect(cardElement).not.toHaveClass('[transform:rotateY(180deg)]');
+
+    fireEvent.click(cardElement);
+    expect(cardElement.firstChild).toHaveClass('[transform:rotateY(180deg)]');
+
+    fireEvent.click(cardElement);
+    expect(cardElement.firstChild).not.toHaveClass(
+      '[transform:rotateY(180deg)]',
+    );
+
     expect(asFragment()).toMatchSnapshot();
   });
 });
