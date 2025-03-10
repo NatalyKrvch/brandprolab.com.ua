@@ -1,7 +1,18 @@
+import { IconClassType } from '@/styles/constants';
+
 export interface IconProps {
-  size: 's' | 'm' | 'l';
   iconURL: string;
   iconAlt?: string;
   circleColor?: string;
-  isIconCentered?: boolean;
+  type: IconClassType;
+}
+
+export interface IconClassSet {
+  circleClass: string;
+  iconClass: string;
+  offsets: {
+    mobile: number;
+    tablet: number;
+    desktop: number;
+  };
 }

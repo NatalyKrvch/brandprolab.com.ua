@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { IconClassType } from '@/styles/constants';
+
 import Icon from './Icon';
 
 const meta: Meta<typeof Icon> = {
@@ -9,42 +11,26 @@ const meta: Meta<typeof Icon> = {
     controls: { expanded: true },
   },
   argTypes: {
-    size: {
-      control: { type: 'radio' },
-      options: ['s', 'm', 'l'],
-      description: 'Defines the size of the icon.',
-      table: {
-        type: { summary: 's | m | l' },
-      },
-    },
     iconURL: {
       control: 'text',
-      description: 'The URL of the icon image.',
-      table: {
-        type: { summary: 'string' },
-      },
+      description: 'URL of the icon image (SVG or raster).',
+      table: { type: { summary: 'string' } },
     },
     iconAlt: {
       control: 'text',
-      description: 'Alternative text for the icon.',
-      table: {
-        type: { summary: 'string' },
-      },
-    },
-    isIconCentered: {
-      control: 'boolean',
-      description: 'Determines if the icon is centered.',
-      table: {
-        type: { summary: 'boolean' },
-        defaultValue: { summary: 'false' },
-      },
+      description: 'Alt text for the image.',
+      table: { type: { summary: 'string' } },
     },
     circleColor: {
       control: 'text',
-      description: 'Defines the background color of the circle.',
-      table: {
-        type: { summary: 'string' },
-      },
+      description: 'Tailwind CSS class for circle background.',
+      table: { type: { summary: 'string' } },
+    },
+    type: {
+      control: { type: 'radio' },
+      options: [IconClassType.SERVICES, IconClassType.EXPERTISE],
+      description: 'Predefined size and offset classes.',
+      table: { type: { summary: 'SERVICES | EXPERTISE' } },
     },
   },
 };
@@ -52,31 +38,20 @@ const meta: Meta<typeof Icon> = {
 export default meta;
 type Story = StoryObj<typeof Icon>;
 
-export const Small: Story = {
+export const ServicesIcon: Story = {
   args: {
-    size: 's',
-    iconURL: '/icons/nav/hand.svg',
-    iconAlt: 'Small Icon',
-    isIconCentered: true,
-    circleColor: 'bg-red-500',
-  },
-};
-
-export const Medium: Story = {
-  args: {
-    size: 'm',
-    iconURL: '/icons/nav/hand.svg',
-    iconAlt: 'Medium Icon',
-    isIconCentered: false,
-    circleColor: 'bg-blue-500',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: 'l',
-    iconURL: '/icons/nav/hand.svg',
-    iconAlt: 'Large Icon',
+    iconURL: '/icons/cards/check.svg',
+    iconAlt: 'Check icon',
     circleColor: 'bg-teal-darkOpacity',
+    type: IconClassType.SERVICES,
+  },
+};
+
+export const ExpertiseIcon: Story = {
+  args: {
+    iconURL: '/icons/cards/check.svg',
+    iconAlt: 'Check icon',
+    circleColor: 'bg-teal-light',
+    type: IconClassType.EXPERTISE,
   },
 };

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component renders the Icon component with image inside and correct props 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center"
+    data-testid="icon-component-test-id"
+  >
+    <div
+      class="relative flex items-center justify-center rounded-full bg-teal-darkOpacity 
+          w-[68px] h-[68px]
+          tablet:w-[80px] tablet:h-[80px]
+          desktop:w-[108px] desktop:h-[108px]
+        "
+    >
+      <img
+        alt="Test Icon"
+        class="absolute 
+          w-[64px] h-[64px]
+          tablet:w-[72px] tablet:h-[72px]
+          desktop:w-[96px] desktop:h-[96px]
+        "
+        data-testid="icon-component-image-test-id"
+        src="/test-icon.svg"
+        style="transform: translateX(-36px);"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
