@@ -8,6 +8,7 @@ import {
   FLIP_CARD_FRONT_DESCRIPTION_TEST_ID,
   FLIP_CARD_FRONT_HEADER_TEST_ID,
 } from '@/lib/testIDs';
+import { IconClassType } from '@/styles/constants';
 
 import { SimpleCard } from '../../SimpleCard';
 import { FlipCardFrontProps } from './types';
@@ -25,7 +26,7 @@ const FlipCardFront = ({
       className="flex h-full flex-col gap-6 p-8"
     >
       <div className="flex items-center justify-end">
-        <Icon iconURL={iconURL} />
+        <Icon iconURL={iconURL} type={IconClassType.SERVICES} />
       </div>
       <p
         className={twMerge(

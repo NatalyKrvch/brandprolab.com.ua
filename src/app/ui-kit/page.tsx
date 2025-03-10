@@ -19,6 +19,7 @@ import {
   UserBadge,
   Video,
 } from '@/components';
+import { IconClassType } from '@/styles/constants';
 
 const Uikit = () => {
   return (
@@ -154,7 +155,16 @@ const Uikit = () => {
       </div>
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Icon component</span>
-        <Icon iconURL="/icons/cards/hand.svg" iconAlt="icon" />
+        <Icon
+          iconURL="/icons/cards/hand.svg"
+          iconAlt="icon"
+          type={IconClassType.SERVICES}
+        />
+        <Icon
+          iconURL="/icons/cards/hand.svg"
+          iconAlt="icon"
+          type={IconClassType.EXPERTISE}
+        />
       </div>
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">InternalLink component</span>

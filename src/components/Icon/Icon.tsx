@@ -1,63 +1,48 @@
-import clsx from 'clsx';
 import Image from 'next/image';
-import { useMemo } from 'react';
-import { twMerge } from 'tailwind-merge';
 
-import { useIconStyles, useMediaQuery } from '@/hooks';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import {
   ICON_COMPONENT_IMAGE_TEST_ID,
   ICON_COMPONENT_TEST_ID,
 } from '@/lib/testIDs';
-import { DESKTOP_MEDIA_QUERY, TABLET_MEDIA_QUERY } from '@/styles/constants';
+
+import { getIconClasses } from './helpers/getIconClasses';
+import { IconProps } from './types';
 
 const Icon = ({
   iconURL,
   iconAlt = 'Icon',
-  isIconCentered = false,
   circleColor = 'bg-teal-darkOpacity',
-}: {
-  iconURL: string;
-  iconAlt?: string;
-  circleColor?: string;
-  isIconCentered?: boolean;
-}) => {
-  const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
-  const isTablet = useMediaQuery(TABLET_MEDIA_QUERY);
+  type,
+}: IconProps) => {
+  const isTablet = useMediaQuery('(min-width: 600px) and (max-width: 1223px)');
+  const isDesktop = useMediaQuery('(min-width: 1224px)');
 
-  const size = useMemo(() => {
-    if (isDesktop) return 'l';
-    if (isTablet) return 'm';
-    return 's';
-  }, [isDesktop, isTablet]);
+  const { circleClass, iconClass, offsets } = getIconClasses(type);
 
-  const { circleStyles, iconStyles } = useIconStyles(size, isIconCentered);
-
-  const deviceStyles = useMemo(() => {
-    if (isDesktop)
-      return { circle: circleStyles.desktop, icon: iconStyles.desktop };
-    if (isTablet)
-      return { circle: circleStyles.tablet, icon: iconStyles.tablet };
-    return { circle: circleStyles.mobile, icon: iconStyles.mobile };
-  }, [isDesktop, isTablet, circleStyles, iconStyles]);
+  const offset = isDesktop
+    ? offsets.desktop
+    : isTablet
+      ? offsets.tablet
+      : offsets.mobile;
 
   return (
-    <div className="flex" data-testid={ICON_COMPONENT_TEST_ID}>
+    <div
+      className="flex items-center justify-center"
+      data-testid={ICON_COMPONENT_TEST_ID}
+    >
       <div
-        className={twMerge(
-          clsx(
-            'relative flex items-center justify-center rounded-full',
-            circleColor,
-          ),
-        )}
-        style={deviceStyles.circle}
+        className={`relative flex items-center justify-center rounded-full ${circleColor} ${circleClass}`}
       >
         <Image
           src={iconURL}
           alt={iconAlt}
           width={0}
           height={0}
-          className="absolute"
-          style={deviceStyles.icon}
+          className={`absolute ${iconClass}`}
+          style={{
+            transform: `translateX(-${offset}px)`,
+          }}
           data-testid={ICON_COMPONENT_IMAGE_TEST_ID}
         />
       </div>
