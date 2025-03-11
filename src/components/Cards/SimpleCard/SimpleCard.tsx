@@ -1,10 +1,8 @@
-import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import { SIMPLE_CARD_TEST_ID } from '@/lib/testIDs';
-import { ROUNDED_CLASSES } from '@/styles/constants';
 
+import { getSimpleCardClasses } from './helpers/getSimpleCardClasses';
 import type { SimpleCardProps } from './types';
 
 const SimpleCard = ({
@@ -17,16 +15,11 @@ const SimpleCard = ({
 }: PropsWithChildren<SimpleCardProps>) => {
   return (
     <div
-      className={twMerge(
-        clsx(
-          backgroundColor,
-          className,
-          borderColor && `border ${borderColor}`,
-          ROUNDED_CLASSES,
-          'w-full',
-          'bg-cover bg-center',
-        ),
-      )}
+      className={getSimpleCardClasses({
+        backgroundColor,
+        borderColor,
+        className,
+      })}
       style={{
         ...(backgroundImageUrl
           ? { backgroundImage: `url(${backgroundImageUrl})` }

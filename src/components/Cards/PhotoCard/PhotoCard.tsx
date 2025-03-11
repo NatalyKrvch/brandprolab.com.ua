@@ -1,6 +1,4 @@
-import clsx from 'clsx';
 import Image from 'next/image';
-import { twMerge } from 'tailwind-merge';
 
 import {
   PHOTO_CARD_IMAGE_TEST_ID,
@@ -8,6 +6,12 @@ import {
 } from '@/lib/testIDs';
 
 import { SimpleCard } from '../SimpleCard';
+import {
+  getPhotoCardClassName,
+  getPhotoCardImageWrapperClassName,
+  getPhotoCardTextClassName,
+  getPhotoClassName,
+} from './helpers/getPhotoCardClasses';
 import type { PhotoCardProps } from './types';
 
 const PhotoCard = ({
@@ -21,25 +25,25 @@ const PhotoCard = ({
   return (
     <SimpleCard
       backgroundImageUrl={backgroundUrl}
-      className={twMerge(clsx('relative'))}
+      className={getPhotoCardClassName()}
       style={{ height: `${cardHeight}px` }}
     >
       {text && (
         <div
-          className="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
+          className={getPhotoCardTextClassName()}
           data-testid={PHOTO_CARD_TEXT_TEST_ID}
         >
           {text}
         </div>
       )}
       <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        className={getPhotoCardImageWrapperClassName()}
         style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
       >
         <Image
           src={photoUrl}
           fill
-          className="object-cover"
+          className={getPhotoClassName()}
           alt="Photo"
           data-testid={PHOTO_CARD_IMAGE_TEST_ID}
         />

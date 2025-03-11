@@ -74,14 +74,14 @@ const Uikit = () => {
         <span className="my-3 text-xl font-bold">Video component</span>
         <Video
           videoUrl="https://www.youtube.com/watch?v=4glKLs5Py1A"
-          thumbnailSrc="/images/Screenshot.png"
+          thumbnailSrc="/images/temp/Screenshot.png"
         />
       </div>
       <div className="m-4 flex w-[408px] flex-col gap-5">
         <span className="my-3 text-xl font-bold">PhotoCard component</span>
         <PhotoCard
           text="Чому мені можна довіряти?"
-          photoUrl="/images/photo-expert.png"
+          photoUrl="/images/temp/photo-expert.png"
           backgroundUrl="/images/backgrounds/expert-bg.svg"
           imageWidth={362}
           imageHeight={600}
@@ -90,7 +90,7 @@ const Uikit = () => {
       </div>
       <div className="m-4 flex w-[552px] flex-col gap-5">
         <PhotoCard
-          photoUrl="/images/photo-hero.png"
+          photoUrl="/images/temp/photo-hero.png"
           backgroundUrl="/images/backgrounds/hero-photocard-bg.svg"
           imageWidth={512}
           imageHeight={764}

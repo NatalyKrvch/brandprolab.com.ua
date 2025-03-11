@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import {
@@ -8,49 +7,44 @@ import {
   VIDEO_TEST_ID,
   VIDEO_THUMBNAIL_TEST_ID,
 } from '@/lib/testIDs';
-import { ROUNDED_CLASSES } from '@/styles/constants';
 import { getYouTubeEmbedUrl } from '@/utils/getYouTubeEmbedUrl';
 
+import {
+  getIframeClass,
+  getPlayButtonClass,
+  getPlayButtonWrapperClass,
+  getPlayIconClass,
+  getThumbnailImageClass,
+  getVideoOverlayBackgroundClass,
+  getVideoOverlayWrapperClass,
+  getVideoWrapperClass,
+} from './helpers/getVideoClasses';
+import { useVideoPlayer } from './hooks/useVideoPlayer';
 import { VideoProps } from './types';
 
 const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const { isPlaying, handlePlay } = useVideoPlayer();
   const embedUrl = getYouTubeEmbedUrl(videoUrl);
 
   return (
     <div
-      className={twMerge(
-        'relative overflow-hidden',
-        'h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480',
-        ROUNDED_CLASSES,
-        className,
-      )}
+      className={twMerge(getVideoWrapperClass(), className)}
       data-testid={VIDEO_TEST_ID}
     >
-      <div
-        className={twMerge(
-          'absolute inset-0 transition-opacity duration-500',
-          isPlaying ? 'pointer-events-none opacity-0' : 'opacity-100',
-        )}
-      >
-        <div
-          className={twMerge(
-            'absolute inset-0 bg-teal-fogOpacity opacity-50',
-            ROUNDED_CLASSES,
-          )}
-        />
+      <div className={getVideoOverlayWrapperClass(isPlaying)}>
+        <div className={getVideoOverlayBackgroundClass()} />
         <Image
           src={thumbnailSrc}
           alt="Video Thumbnail"
           width={280}
           height={210}
-          className={twMerge('h-full w-full object-cover', ROUNDED_CLASSES)}
+          className={getThumbnailImageClass()}
           data-testid={VIDEO_THUMBNAIL_TEST_ID}
         />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className={getPlayButtonWrapperClass()}>
           <button
-            className="rounded-full shadow-lg transition hover:scale-105"
-            onClick={() => setIsPlaying(true)}
+            className={getPlayButtonClass()}
+            onClick={handlePlay}
             aria-label="Play video"
             data-testid={VIDEO_PLAY_BUTTON_TEST_ID}
           >
@@ -59,14 +53,14 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
               alt="Play Button"
               width={74}
               height={74}
-              className="h-20 w-20"
+              className={getPlayIconClass()}
             />
           </button>
         </div>
       </div>
       {isPlaying && (
         <iframe
-          className={twMerge('h-full w-full', ROUNDED_CLASSES)}
+          className={getIframeClass()}
           src={embedUrl}
           title="Video"
           allow="autoplay; encrypted-media"

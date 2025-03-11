@@ -16,7 +16,7 @@ exports[`FlipCardFront component renders the FlipCardFront component 1`] = `
       </div>
     </div>
     <p
-      class="font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
+      class="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
       data-testid="flip-card-front-header-test-id"
     >
       Test Header
@@ -57,7 +57,7 @@ exports[`FlipCardFront component renders the call to action correctly 1`] = `
       </div>
     </div>
     <p
-      class="font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
+      class="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
       data-testid="flip-card-front-header-test-id"
     >
       Test Header
@@ -98,7 +98,7 @@ exports[`FlipCardFront component renders the description correctly 1`] = `
       </div>
     </div>
     <p
-      class="font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
+      class="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
       data-testid="flip-card-front-header-test-id"
     >
       Test Header
@@ -139,7 +139,7 @@ exports[`FlipCardFront component renders the header correctly 1`] = `
       </div>
     </div>
     <p
-      class="font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
+      class="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
       data-testid="flip-card-front-header-test-id"
     >
       Test Header
@@ -180,7 +180,7 @@ exports[`FlipCardFront component renders the icon correctly 1`] = `
       </div>
     </div>
     <p
-      class="font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
+      class="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
       data-testid="flip-card-front-header-test-id"
     >
       Test Header
@@ -221,7 +221,7 @@ exports[`FlipCardFront component renders the label correctly 1`] = `
       </div>
     </div>
     <p
-      class="font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
+      class="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
       data-testid="flip-card-front-header-test-id"
     >
       Test Header
