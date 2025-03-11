@@ -60,7 +60,7 @@ type Story = StoryObj<typeof PhotoCard>;
 export const WithText: Story = {
   args: {
     text: 'Чому мені можна довіряти?',
-    photoUrl: '/images/photo-expert.png',
+    photoUrl: '/images/temp/photo-expert.png',
     backgroundUrl: '/images/backgrounds/expert-bg.svg',
     imageWidth: 362,
     imageHeight: 600,
@@ -70,7 +70,7 @@ export const WithText: Story = {
 
 export const WithoutText: Story = {
   args: {
-    photoUrl: '/images/photo-hero.png',
+    photoUrl: '/images/temp/photo-hero.png',
     backgroundUrl: '/images/backgrounds/hero-photocard-bg.svg',
     imageWidth: 512,
     imageHeight: 764,
