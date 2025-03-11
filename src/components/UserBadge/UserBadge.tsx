@@ -1,6 +1,4 @@
-import clsx from 'clsx';
 import Image from 'next/image';
-import { twMerge } from 'tailwind-merge';
 
 import {
   USER_BADGE_IMAGE_TEST_ID,
@@ -9,32 +7,26 @@ import {
 } from '@/lib/testIDs';
 
 import { ExternalLink } from '../ExternalLink';
+import {
+  getUserBadgeImageClass,
+  getUserBadgeImageWrapperClass,
+  getUserBadgeNameClass,
+  getUserBadgeWrapperClass,
+} from './helpers/getUserBadgeClasses';
 import type { UserBadgeProps } from './types';
 
 const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
-  const commonProps = {
-    className: twMerge(
-      clsx('flex items-center justify-end', 'gap-5 desktop:gap-6'),
-    ),
-    'data-testid': USER_BADGE_TEST_ID,
-  };
-
   const content = (
     <>
       <span
-        className={twMerge(
-          clsx(
-            'text-lg font-medium leading-6 text-gray-dark',
-            'desktop:text-xl',
-          ),
-        )}
+        className={getUserBadgeNameClass()}
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}
       </span>
-      <div className="relative aspect-square w-14 desktop:w-16">
+      <div className={getUserBadgeImageWrapperClass()}>
         <Image
-          className="rounded-full object-cover"
+          className={getUserBadgeImageClass()}
           src={userPhotoUrl}
           alt={userName}
           fill
@@ -44,7 +36,12 @@ const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
     </>
   );
 
-  if (userLink && userLink.trim() !== '') {
+  const commonProps = {
+    className: getUserBadgeWrapperClass(),
+    'data-testid': USER_BADGE_TEST_ID,
+  };
+
+  if (userLink?.trim()) {
     return (
       <ExternalLink href={userLink} {...commonProps}>
         {content}
