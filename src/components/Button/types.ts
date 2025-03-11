@@ -1,4 +1,6 @@
+export type ButtonColor = 'teal' | 'white';
+
 export interface ButtonProps {
-  onClick: () => void;
-  color?: 'white' | 'teal';
+  onClick?: () => void;
+  color?: ButtonColor;
 }
