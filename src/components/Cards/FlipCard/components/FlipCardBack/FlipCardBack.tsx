@@ -1,10 +1,10 @@
+import { SimpleCard } from '@/components/Cards/SimpleCard';
 import {
   FLIP_CARD_BACK_HEADER_TEST_ID,
   FLIP_CARD_BACK_LIST_ITEM_TEST_ID,
   FLIP_CARD_BACK_LIST_TEST_ID,
 } from '@/lib/testIDs';
 
-import { SimpleCard } from '../../SimpleCard';
 import {
   getCardWrapperClass,
   getHeaderClass,

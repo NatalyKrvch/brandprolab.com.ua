@@ -1,3 +1,4 @@
+import { SimpleCard } from '@/components/Cards/SimpleCard';
 import { Icon } from '@/components/Icon';
 import { Label } from '@/components/Label';
 import { UnderlinedText } from '@/components/UnderlinedText';
@@ -7,7 +8,6 @@ import {
 } from '@/lib/testIDs';
 import { IconClassType } from '@/styles/constants';
 
-import { SimpleCard } from '../../SimpleCard';
 import {
   getCardClass,
   getDescriptionClass,
