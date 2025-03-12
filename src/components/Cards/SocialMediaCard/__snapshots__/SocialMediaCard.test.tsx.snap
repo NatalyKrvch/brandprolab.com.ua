@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialMediaCard applies correct href to link 1`] = `
+<div>
+  <a
+    data-testid="external-link-test-id"
+    href="https://youtube.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      class="bg-gray-light flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+      data-testid="simple-card-test-id"
+    >
+      <div
+        class="flex items-center justify-center"
+        data-testid="icon-component-test-id"
+      >
+        <div
+          class="bg-red-default relative flex items-center justify-center rounded-full w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]"
+        >
+          <img
+            alt="Icon"
+            class="absolute w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]"
+            data-nimg="1"
+            data-testid="icon-component-image-test-id"
+            decoding="async"
+            height="0"
+            loading="lazy"
+            src="/icons/youtube.svg"
+            style="color: transparent; transform: translateX(-0px);"
+            width="0"
+          />
+        </div>
+      </div>
+      <div>
+        <h3
+          class="mb-1 text-base font-medium leading-5 tracking-wide tablet:text-base desktop:text-lg desktop:leading-22 text-red-default"
+          data-testid="social-media-label-test-id"
+        >
+          Viktoriia Zakharova
+        </h3>
+        <p
+          class="text-sm font-normal leading-4 tracking-wide text-gray-dark desktop:text-base desktop:leading-18"
+          data-testid="social-media-description-test-id"
+        >
+          Відео про саморозвиток і пошук роботи.
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`SocialMediaCard renders correct color class based on mainColor prop 1`] = `
+<div>
+  <a
+    data-testid="external-link-test-id"
+    href="https://youtube.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      class="bg-gray-light flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+      data-testid="simple-card-test-id"
+    >
+      <div
+        class="flex items-center justify-center"
+        data-testid="icon-component-test-id"
+      >
+        <div
+          class="bg-red-default relative flex items-center justify-center rounded-full w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]"
+        >
+          <img
+            alt="Icon"
+            class="absolute w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]"
+            data-nimg="1"
+            data-testid="icon-component-image-test-id"
+            decoding="async"
+            height="0"
+            loading="lazy"
+            src="/icons/youtube.svg"
+            style="color: transparent; transform: translateX(-0px);"
+            width="0"
+          />
+        </div>
+      </div>
+      <div>
+        <h3
+          class="mb-1 text-base font-medium leading-5 tracking-wide tablet:text-base desktop:text-lg desktop:leading-22 text-red-default"
+          data-testid="social-media-label-test-id"
+        >
+          Viktoriia Zakharova
+        </h3>
+        <p
+          class="text-sm font-normal leading-4 tracking-wide text-gray-dark desktop:text-base desktop:leading-18"
+          data-testid="social-media-description-test-id"
+        >
+          Відео про саморозвиток і пошук роботи.
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`SocialMediaCard renders correctly with given props 1`] = `
+<div>
+  <a
+    data-testid="external-link-test-id"
+    href="https://youtube.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      class="bg-gray-light flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+      data-testid="simple-card-test-id"
+    >
+      <div
+        class="flex items-center justify-center"
+        data-testid="icon-component-test-id"
+      >
+        <div
+          class="bg-red-default relative flex items-center justify-center rounded-full w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]"
+        >
+          <img
+            alt="Icon"
+            class="absolute w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]"
+            data-nimg="1"
+            data-testid="icon-component-image-test-id"
+            decoding="async"
+            height="0"
+            loading="lazy"
+            src="/icons/youtube.svg"
+            style="color: transparent; transform: translateX(-0px);"
+            width="0"
+          />
+        </div>
+      </div>
+      <div>
+        <h3
+          class="mb-1 text-base font-medium leading-5 tracking-wide tablet:text-base desktop:text-lg desktop:leading-22 text-red-default"
+          data-testid="social-media-label-test-id"
+        >
+          Viktoriia Zakharova
+        </h3>
+        <p
+          class="text-sm font-normal leading-4 tracking-wide text-gray-dark desktop:text-base desktop:leading-18"
+          data-testid="social-media-description-test-id"
+        >
+          Відео про саморозвиток і пошук роботи.
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+`;

@@ -5,6 +5,7 @@ export { FlipCardBack } from './Cards/FlipCard/components/FlipCardBack';
 export { FlipCardFront } from './Cards/FlipCard/components/FlipCardFront';
 export { PhotoCard } from './Cards/PhotoCard';
 export { SimpleCard } from './Cards/SimpleCard';
+export { SocialMediaCard } from './Cards/SocialMediaCard';
 export { TestimonialCard } from './Cards/TestimonialCard';
 export { Container } from './Container';
 export { ExternalLink } from './ExternalLink';

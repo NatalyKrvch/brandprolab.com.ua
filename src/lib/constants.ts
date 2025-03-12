@@ -16,3 +16,9 @@ export const REVALIDATE = 60;
 
 export const YOUTUBE_REGEX =
   /(?:youtu\.be\/|youtube\.com\/(?:.*[?&]v=|embed\/|v\/|shorts\/|live\/))([^&?/]+)/;
+
+export enum IconClassType {
+  SERVICES = 'services',
+  EXPERTISE = 'expertise',
+  SOCIAL_MEDIA = 'social-media',
+}

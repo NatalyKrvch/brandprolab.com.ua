@@ -14,16 +14,31 @@ import {
   List,
   PhotoCard,
   SimpleCard,
+  SocialMediaCard,
   TestimonialCard,
   UnderlinedText,
   UserBadge,
   Video,
 } from '@/components';
-import { IconClassType } from '@/styles/constants';
+import { IconClassType } from '@/lib/constants';
+import { MainSocialCardColor } from '@/styles/constants';
 
 const Uikit = () => {
   return (
     <>
+      <div className="m-4 w-[314px]">
+        <span className="my-3 text-xl font-bold">
+          SocialMediaCard component
+        </span>
+        <SocialMediaCard
+          iconURL="/icons/cards/socialMedia/insta.svg"
+          socialMediaURL="https://www.instagram.com/"
+          label="@zakharovavictoriiaa"
+          description="Публікації та відео про саморозвиток і пошук роботи."
+          mainColor={MainSocialCardColor.BLUE}
+        />
+      </div>
+
       <div className="relative mx-4 my-10 h-[500px] w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCard component</span>
         <FlipCard
@@ -59,6 +74,7 @@ const Uikit = () => {
           callToAction="Що можна вирішити на консультації?"
         />
       </div>
+
       <div className="m-4 w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCardBack component</span>
         <FlipCardBack
@@ -70,6 +86,7 @@ const Uikit = () => {
           ]}
         />
       </div>
+
       <div className="m-4">
         <span className="my-3 text-xl font-bold">Video component</span>
         <Video
@@ -77,6 +94,7 @@ const Uikit = () => {
           thumbnailSrc="/images/temp/Screenshot.png"
         />
       </div>
+
       <div className="m-4 flex w-[408px] flex-col gap-5">
         <span className="my-3 text-xl font-bold">PhotoCard component</span>
         <PhotoCard
@@ -88,6 +106,7 @@ const Uikit = () => {
           cardHeight={744}
         />
       </div>
+
       <div className="m-4 flex w-[552px] flex-col gap-5">
         <PhotoCard
           photoUrl="/images/temp/photo-hero.png"
@@ -97,6 +116,7 @@ const Uikit = () => {
           cardHeight={824}
         />
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">DiplomaCard component</span>
         <DiplomaCard
@@ -105,6 +125,7 @@ const Uikit = () => {
         />
         <DiplomaCard diplomaURL="https://media.vanityfair.com/photos/63e561bc4d9ea7ac2d152348/16:9/w_5791,h_3257,c_limit/VU0323_Cover_EdLetterPage.jpg" />
       </div>
+
       <div className="m-4 flex w-[408] flex-col gap-5">
         <span className="my-3 text-xl font-bold">SimpleCard component</span>
         <SimpleCard backgroundColor="bg-teal-light" className="p-6">
@@ -117,6 +138,7 @@ const Uikit = () => {
         <span className="my-3 text-xl font-bold">List component</span>
         <List list={['Item 1', 'Item 2', 'Item 3']} />
       </div>
+
       <div className="m-4 flex h-[300] w-[442] flex-col gap-5">
         <span className="my-3 text-xl font-bold">
           TestimonialCard component
@@ -128,12 +150,14 @@ const Uikit = () => {
           clientLink="https://www.google.com/"
         />
       </div>
+
       <div className="m-4 flex w-[442] flex-col gap-5">
         <span className="my-3 text-xl font-bold">
           TestimonialCard with no client component
         </span>
         <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
       </div>
+
       <div className="w-50 m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">UserBadge component</span>
         <UserBadge
@@ -141,6 +165,7 @@ const Uikit = () => {
           userPhotoUrl="https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg"
         />
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">UnderlinedText component</span>
         <UnderlinedText>Underlined Text</UnderlinedText>
@@ -149,10 +174,12 @@ const Uikit = () => {
       <div className="m-4 w-[464px]">
         <Button onClick={() => console.log('Click')}>Записатись</Button>
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Label component</span>
         <Label>Ваш розвиток починається тут!</Label>
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Icon component</span>
         <Icon
@@ -166,12 +193,14 @@ const Uikit = () => {
           type={IconClassType.EXPERTISE}
         />
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">InternalLink component</span>
         <InternalLink href="/" className="font-bold underline">
           Back
         </InternalLink>
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">ExternalLink component</span>
         <ExternalLink
@@ -200,6 +229,7 @@ const Uikit = () => {
           </svg>
         </ExternalLink>
       </div>
+
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Container component</span>
         <Container>

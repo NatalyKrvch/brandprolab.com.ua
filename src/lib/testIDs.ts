@@ -35,3 +35,6 @@ export const FLIP_CARD_BACK_HEADER_TEST_ID = 'flip-card-back-header-test-id';
 export const FLIP_CARD_BACK_LIST_ITEM_TEST_ID =
   'flip-card-back-list-item-test-id';
 export const FLIP_CARD_BACK_LIST_TEST_ID = 'flip-card-back-list-test-id';
+export const SOCIAL_MEDIA_LABEL_TEST_ID = 'social-media-label-test-id';
+export const SOCIAL_MEDIA_DESCRIPTION_TEST_ID =
+  'social-media-description-test-id';
