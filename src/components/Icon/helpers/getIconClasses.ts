@@ -1,4 +1,4 @@
-import { IconClassType } from '@/styles/constants';
+import { IconClassType } from '@/lib/constants';
 
 import { IconClassSet } from '../types';
 
@@ -27,6 +27,17 @@ export const getIconClasses = (type: IconClassType): IconClassSet => {
           mobile: 24,
           tablet: 30,
           desktop: 18,
+        },
+      };
+
+    case IconClassType.SOCIAL_MEDIA:
+      return {
+        circleClass: `${baseCircleClass} w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]`,
+        iconClass: `${baseIconClass} w-[36px] h-[36px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]`,
+        offsets: {
+          mobile: 0,
+          tablet: 0,
+          desktop: 0,
         },
       };
 

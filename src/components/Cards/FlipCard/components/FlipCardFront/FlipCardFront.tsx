@@ -2,11 +2,11 @@ import { SimpleCard } from '@/components/Cards/SimpleCard';
 import { Icon } from '@/components/Icon';
 import { Label } from '@/components/Label';
 import { UnderlinedText } from '@/components/UnderlinedText';
+import { IconClassType } from '@/lib/constants';
 import {
   FLIP_CARD_FRONT_DESCRIPTION_TEST_ID,
   FLIP_CARD_FRONT_HEADER_TEST_ID,
 } from '@/lib/testIDs';
-import { IconClassType } from '@/styles/constants';
 
 import {
   getCardClass,

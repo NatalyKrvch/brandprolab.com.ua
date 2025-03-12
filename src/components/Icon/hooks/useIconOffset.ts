@@ -1,5 +1,5 @@
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-import { IconClassType } from '@/styles/constants';
+import { IconClassType } from '@/lib/constants';
 
 import { getIconClasses } from '../helpers/getIconClasses';
 

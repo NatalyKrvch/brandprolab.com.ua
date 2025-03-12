@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { IconClassType } from '@/styles/constants';
+import { IconClassType } from '@/lib/constants';
 
 import Icon from './Icon';
 
