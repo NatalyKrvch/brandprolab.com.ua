@@ -6,7 +6,6 @@ import {
 } from '@/lib/testIDs';
 
 import { getIconClasses } from './helpers/getIconClasses';
-import { useIconOffset } from './hooks/useIconOffset';
 import { IconProps } from './types';
 
 const Icon = ({
@@ -16,7 +15,6 @@ const Icon = ({
   type,
 }: IconProps) => {
   const { circleClass, iconClass } = getIconClasses(type);
-  const offset = useIconOffset(type);
 
   return (
     <div
@@ -30,9 +28,6 @@ const Icon = ({
           width={0}
           height={0}
           className={iconClass}
-          style={{
-            transform: `translateX(-${offset}px)`,
-          }}
           data-testid={ICON_COMPONENT_IMAGE_TEST_ID}
         />
       </div>
