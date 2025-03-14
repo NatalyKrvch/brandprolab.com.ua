@@ -16,22 +16,14 @@ jest.mock('next/image', () => ({
     src,
     alt,
     className,
-    style,
     'data-testid': dataTestId,
   }: {
     src: string;
     alt: string;
     className?: string;
-    style?: React.CSSProperties;
     'data-testid'?: string;
   }) => (
-    <img
-      src={src}
-      alt={alt}
-      className={className}
-      style={style}
-      data-testid={dataTestId}
-    />
+    <img src={src} alt={alt} className={className} data-testid={dataTestId} />
   ),
 }));
 
@@ -61,7 +53,11 @@ describe('Icon component', () => {
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute('src', '/test-icon.svg');
     expect(image).toHaveAttribute('alt', 'Test Icon');
-    expect(image).toHaveStyle('transform: translateX(-36px)');
+    expect(image).toHaveClass(
+      'translate-x-[-24px]',
+      'tablet:translate-x-[-30px]',
+      'desktop:translate-x-[-36px]',
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

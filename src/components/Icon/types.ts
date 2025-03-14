@@ -1,4 +1,4 @@
-import { IconClassType } from '@/styles/constants';
+import { IconClassType } from '@/lib/constants';
 
 export interface IconProps {
   iconURL: string;
@@ -7,12 +7,7 @@ export interface IconProps {
   type: IconClassType;
 }
 
-export interface IconClassSet {
+export type IconClassSet = {
   circleClass: string;
   iconClass: string;
-  offsets: {
-    mobile: number;
-    tablet: number;
-    desktop: number;
-  };
-}
+};

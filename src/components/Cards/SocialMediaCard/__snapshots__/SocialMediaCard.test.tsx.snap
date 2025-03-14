@@ -28,7 +28,7 @@ exports[`SocialMediaCard applies correct href to link 1`] = `
             height="0"
             loading="lazy"
             src="/icons/youtube.svg"
-            style="color: transparent; transform: translateX(-0px);"
+            style="color: transparent;"
             width="0"
           />
         </div>
@@ -80,7 +80,7 @@ exports[`SocialMediaCard renders correct color class based on mainColor prop 1`]
             height="0"
             loading="lazy"
             src="/icons/youtube.svg"
-            style="color: transparent; transform: translateX(-0px);"
+            style="color: transparent;"
             width="0"
           />
         </div>
@@ -132,7 +132,7 @@ exports[`SocialMediaCard renders correctly with given props 1`] = `
             height="0"
             loading="lazy"
             src="/icons/youtube.svg"
-            style="color: transparent; transform: translateX(-0px);"
+            style="color: transparent;"
             width="0"
           />
         </div>
