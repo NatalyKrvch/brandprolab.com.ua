@@ -11,10 +11,9 @@ exports[`Icon component renders the Icon component with image inside and correct
     >
       <img
         alt="Test Icon"
-        class="absolute w-[64px] h-[64px] tablet:w-[72px] tablet:h-[72px] desktop:w-[96px] desktop:h-[96px]"
+        class="absolute w-[64px] h-[64px] tablet:w-[72px] tablet:h-[72px] desktop:w-[96px] desktop:h-[96px] translate-x-[-24px] tablet:translate-x-[-30px] desktop:translate-x-[-36px]"
         data-testid="icon-component-image-test-id"
         src="/test-icon.svg"
-        style="transform: translateX(-36px);"
       />
     </div>
   </div>
