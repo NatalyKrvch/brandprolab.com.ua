@@ -38,3 +38,4 @@ export const FLIP_CARD_BACK_LIST_TEST_ID = 'flip-card-back-list-test-id';
 export const SOCIAL_MEDIA_LABEL_TEST_ID = 'social-media-label-test-id';
 export const SOCIAL_MEDIA_DESCRIPTION_TEST_ID =
   'social-media-description-test-id';
+export const FOOTER_SECTION_TEST_ID = 'footer-section-test-id';
