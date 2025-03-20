@@ -3,7 +3,7 @@
 exports[`Container component applies default styles when fullWidth is false 1`] = `
 <DocumentFragment>
   <div
-    class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12"
+    class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12 "
     data-testid="limited-width-container-test-id"
   >
     <p>
@@ -16,7 +16,7 @@ exports[`Container component applies default styles when fullWidth is false 1`] 
 exports[`Container component applies fullWidth styles when fullWidth is true 1`] = `
 <DocumentFragment>
   <div
-    class="mx-auto"
+    class="mx-auto "
     data-testid="full-width-container-test-id"
   >
     <p>
@@ -29,7 +29,7 @@ exports[`Container component applies fullWidth styles when fullWidth is true 1`]
 exports[`Container component applies tablet and desktop styles correctly 1`] = `
 <DocumentFragment>
   <div
-    class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12"
+    class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12 "
     data-testid="limited-width-container-test-id"
   >
     <p>
@@ -42,7 +42,7 @@ exports[`Container component applies tablet and desktop styles correctly 1`] = `
 exports[`Container component renders children inside the full-width container 1`] = `
 <DocumentFragment>
   <div
-    class="mx-auto"
+    class="mx-auto "
     data-testid="full-width-container-test-id"
   >
     <p>
@@ -55,7 +55,7 @@ exports[`Container component renders children inside the full-width container 1`
 exports[`Container component renders children inside the limited-width container 1`] = `
 <DocumentFragment>
   <div
-    class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12"
+    class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12 "
     data-testid="limited-width-container-test-id"
   >
     <p>
