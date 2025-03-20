@@ -10,11 +10,12 @@ import { ContainerProps } from './types';
 
 const Container = ({
   children,
+  className,
   fullWidth = false,
 }: PropsWithChildren<ContainerProps>) => {
   return (
     <div
-      className={getContainerClass(fullWidth)}
+      className={`${getContainerClass(fullWidth)} ${className ?? ''}`}
       data-testid={
         fullWidth
           ? FULL_WIDTH_CONTAINER_TEST_ID
