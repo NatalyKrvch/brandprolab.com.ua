@@ -13,13 +13,14 @@ const TestimonialCard = ({
   clientName,
   clientPhotoUrl,
   clientLink,
+  className,
 }: TestimonialCardProps) => {
   const shouldRenderUserBadge = clientName && clientPhotoUrl && clientLink;
 
   return (
     <SimpleCard
       borderColor="border-teal-dark"
-      className={getTestimonialCardClasses()}
+      className={`${getTestimonialCardClasses()} ${className}`}
     >
       <div
         className={getTestimonialTextClasses()}
