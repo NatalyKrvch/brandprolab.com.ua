@@ -1,6 +1,12 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 
+import {
+  CAROUSEL_NAV_NEXT_TEST_ID,
+  CAROUSEL_NAV_PREV_TEST_ID,
+  CAROUSEL_NAV_WRAPPER_TEST_ID,
+} from '@/lib/testIDs';
+
 import { CarouselNavButtonsProps } from './types';
 
 const CarouselNavButtons = ({
@@ -10,7 +16,10 @@ const CarouselNavButtons = ({
   onNext,
 }: CarouselNavButtonsProps) => {
   return (
-    <div className="absolute right-0 hidden gap-2 tablet:-top-[60px] tablet:flex desktop:-top-[80px] desktop:flex">
+    <div
+      className="absolute right-0 hidden gap-2 tablet:-top-[60px] tablet:flex desktop:-top-[80px] desktop:flex"
+      data-testid={CAROUSEL_NAV_WRAPPER_TEST_ID}
+    >
       <AnimatePresence mode="wait">
         {!isFirstSlide && (
           <motion.button
@@ -20,6 +29,7 @@ const CarouselNavButtons = ({
             animate={{ opacity: 1, rotate: 0 }}
             exit={{ opacity: 0, rotate: -15 }}
             transition={{ duration: 0.3 }}
+            data-testid={CAROUSEL_NAV_PREV_TEST_ID}
           >
             <Image
               src="/icons/nav/row.svg"
@@ -39,6 +49,7 @@ const CarouselNavButtons = ({
             animate={{ opacity: 1, rotate: 0 }}
             exit={{ opacity: 0, rotate: 15 }}
             transition={{ duration: 0.3 }}
+            data-testid={CAROUSEL_NAV_NEXT_TEST_ID}
           >
             <Image
               src="/icons/nav/row.svg"
