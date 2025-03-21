@@ -24,6 +24,8 @@
     "@storybook/addon-viewport": "^8.5.0",
     "clsx": "^2.1.1",
     "esbuild": "^0.25.0",
+    "framer-motion": "^12.5.0",
+    "keen-slider": "^6.8.6",
     "next": "15.1.2",
     "next-sanity": "^9.8.31",
     "react": "^19.0.0",
