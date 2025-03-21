@@ -6,6 +6,14 @@ import { PAGINATION_DOT_TEST_ID } from '@/lib/testIDs';
 
 import PaginationDots from './PaginationDots';
 
+beforeAll(() => {
+  Object.defineProperty(global, 'crypto', {
+    value: {
+      randomUUID: () => 'mocked-uuid',
+    },
+  });
+});
+
 describe('PaginationDots component', () => {
   const defaultProps = {
     total: 5,
