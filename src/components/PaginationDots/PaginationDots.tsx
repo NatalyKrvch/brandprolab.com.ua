@@ -1,5 +1,7 @@
 import clsx from 'clsx';
-import { useId } from 'react';
+import { useMemo } from 'react';
+
+import { generateRandomId } from '@/utils/generateRandomId';
 
 import { PaginationDotsProps } from './types';
 
@@ -9,7 +11,7 @@ const PaginationDots = ({
   onDotClick,
   className,
 }: PaginationDotsProps) => {
-  const uniqueId = useId();
+  const uniqueId = useMemo(() => generateRandomId(), []);
 
   return (
     <div className={clsx('flex justify-center gap-2', className)}>
