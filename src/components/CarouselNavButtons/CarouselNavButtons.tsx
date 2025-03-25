@@ -7,28 +7,29 @@ import {
   CAROUSEL_NAV_WRAPPER_TEST_ID,
 } from '@/lib/testIDs';
 
+import {
+  fadeMotionProps,
+  fadeNextButtonMotionProps,
+} from './configs/motionConfig';
 import { CarouselNavButtonsProps } from './types';
 
 const CarouselNavButtons = ({
   isFirstSlide,
   isLastSlide,
-  onPrev,
-  onNext,
+  onPreviousSlide,
+  onNextSlide,
 }: CarouselNavButtonsProps) => {
   return (
     <div
-      className="absolute right-0 hidden gap-2 tablet:-top-[60px] tablet:flex desktop:-top-[80px] desktop:flex"
+      className="absolute right-0 hidden gap-2 tablet:-top-60 tablet:flex desktop:-top-80 desktop:flex"
       data-testid={CAROUSEL_NAV_WRAPPER_TEST_ID}
     >
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {!isFirstSlide && (
           <motion.button
             key="prev"
-            onClick={onPrev}
-            initial={{ opacity: 0, rotate: -15 }}
-            animate={{ opacity: 1, rotate: 0 }}
-            exit={{ opacity: 0, rotate: -15 }}
-            transition={{ duration: 0.3 }}
+            onClick={onPreviousSlide}
+            {...fadeMotionProps}
             data-testid={CAROUSEL_NAV_PREV_TEST_ID}
           >
             <Image
@@ -36,7 +37,7 @@ const CarouselNavButtons = ({
               alt="Попередній слайд"
               width={0}
               height={0}
-              className="h-[40px] w-[40px] rotate-180 desktop:h-[44px] desktop:w-[44px]"
+              className="h-40 w-40 rotate-180 desktop:h-44 desktop:w-44"
             />
           </motion.button>
         )}
@@ -44,11 +45,8 @@ const CarouselNavButtons = ({
         {!isLastSlide && (
           <motion.button
             key="next"
-            onClick={onNext}
-            initial={{ opacity: 0, rotate: 15 }}
-            animate={{ opacity: 1, rotate: 0 }}
-            exit={{ opacity: 0, rotate: 15 }}
-            transition={{ duration: 0.3 }}
+            onClick={onNextSlide}
+            {...fadeNextButtonMotionProps}
             data-testid={CAROUSEL_NAV_NEXT_TEST_ID}
           >
             <Image
@@ -56,7 +54,7 @@ const CarouselNavButtons = ({
               alt="Наступний слайд"
               width={0}
               height={0}
-              className="h-[40px] w-[40px] desktop:h-[44px] desktop:w-[44px]"
+              className="h-40 w-40 desktop:h-44 desktop:w-44"
             />
           </motion.button>
         )}
