@@ -10,3 +10,6 @@ export enum MainSocialCardColor {
   RED = 'red-default',
   BLUE = 'blue-default',
 }
+
+export const SLIDER_CLASSNAME = 'keen-slider';
+export const SLIDE_CLASSNAME = 'keen-slider__slide';
