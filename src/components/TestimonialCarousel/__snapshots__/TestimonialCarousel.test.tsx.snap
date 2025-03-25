@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialCarousel component renders all testimonial cards 1`] = `
+<DocumentFragment>
+  <div
+    class="relative"
+  >
+    <div
+      data-testid="carousel-nav-buttons-mock"
+    >
+      Mocked Nav Buttons
+    </div>
+    <div
+      class="keen-slider"
+    >
+      <div
+        class="keen-slider__slide"
+      >
+        <div
+          class="h-240 desktop:h-300"
+          data-testid="testimonials-card-test-id"
+        >
+          Mocked Testimonial Card
+        </div>
+      </div>
+      <div
+        class="keen-slider__slide"
+      >
+        <div
+          class="h-240 desktop:h-300"
+          data-testid="testimonials-card-test-id"
+        >
+          Mocked Testimonial Card
+        </div>
+      </div>
+      <div
+        class="keen-slider__slide"
+      >
+        <div
+          class="h-240 desktop:h-300"
+          data-testid="testimonials-card-test-id"
+        >
+          Mocked Testimonial Card
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="pagination-dots-mock"
+    >
+      Mocked Pagination Dots
+    </div>
+  </div>
+</DocumentFragment>
+`;
