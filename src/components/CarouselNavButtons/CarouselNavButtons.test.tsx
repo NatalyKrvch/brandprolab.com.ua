@@ -6,8 +6,8 @@ import CarouselNavButtons from './CarouselNavButtons';
 
 describe('CarouselNavButtons component', () => {
   const defaultProps = {
-    onPrev: jest.fn(),
-    onNext: jest.fn(),
+    onPreviousSlide: jest.fn(),
+    onNextSlide: jest.fn(),
   };
 
   beforeEach(() => {
@@ -27,7 +27,7 @@ describe('CarouselNavButtons component', () => {
     expect(prevButton).toBeInTheDocument();
 
     fireEvent.click(prevButton);
-    expect(defaultProps.onPrev).toHaveBeenCalled();
+    expect(defaultProps.onPreviousSlide).toHaveBeenCalled();
 
     expect(document.body).toMatchSnapshot();
   });
@@ -45,7 +45,7 @@ describe('CarouselNavButtons component', () => {
     expect(nextButton).toBeInTheDocument();
 
     fireEvent.click(nextButton);
-    expect(defaultProps.onNext).toHaveBeenCalled();
+    expect(defaultProps.onNextSlide).toHaveBeenCalled();
 
     expect(document.body).toMatchSnapshot();
   });
