@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EndlessCarousel applies custom className to wrapper 1`] = `
+<div>
+  <div
+    class="overflow-hidden custom-class"
+    data-testid="endless-carousel-test-id"
+  >
+    <div
+      class="rfm-marquee-container "
+      style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;"
+    >
+      <div
+        class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+      >
+        <div
+          class="rfm-initial-child-container"
+        >
+          <div
+            class="rfm-child"
+            style="--transform: none;"
+          >
+            <div>
+              Content
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+      >
+        <div
+          class="rfm-child"
+          style="--transform: none;"
+        >
+          <div>
+            Content
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EndlessCarousel renders children inside the marquee 1`] = `
+<div>
+  <div
+    class="overflow-hidden "
+    data-testid="endless-carousel-test-id"
+  >
+    <div
+      class="rfm-marquee-container "
+      style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;"
+    >
+      <div
+        class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+      >
+        <div
+          class="rfm-initial-child-container"
+        >
+          <div
+            class="rfm-child"
+            style="--transform: none;"
+          >
+            <div
+              data-testid="child"
+            >
+              Test Content
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+      >
+        <div
+          class="rfm-child"
+          style="--transform: none;"
+        >
+          <div
+            data-testid="child"
+          >
+            Test Content
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EndlessCarousel respects default props if not provided 1`] = `
+<div>
+  <div
+    class="overflow-hidden "
+    data-testid="endless-carousel-test-id"
+  >
+    <div
+      class="rfm-marquee-container "
+      style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;"
+    >
+      <div
+        class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+      >
+        <div
+          class="rfm-initial-child-container"
+        >
+          <div
+            class="rfm-child"
+            style="--transform: none;"
+          >
+            <div>
+              Content
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rfm-marquee"
+        style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+      >
+        <div
+          class="rfm-child"
+          style="--transform: none;"
+        >
+          <div>
+            Content
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
