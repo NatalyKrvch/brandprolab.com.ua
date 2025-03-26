@@ -6,6 +6,7 @@ import {
   Button,
   Container,
   DiplomaCard,
+  EndlessCarousel,
   ExternalLink,
   FlipCard,
   FlipCardBack,
@@ -30,9 +31,46 @@ const TestimonialCarousel = dynamic(
   { ssr: false },
 );
 
+const TESTIMONIALS = [
+  {
+    text: 'Цей сервіс перевершив усі мої очікування! Рекомендую кожному, хто шукає якість і турботу.',
+  },
+  {
+    text: 'Неймовірний досвід! Команда дуже уважна до деталей.',
+  },
+  {
+    text: 'Я отримала більше, ніж очікувала. Дуже вдячна!',
+  },
+  {
+    text: 'Швидко, зручно і професійно. Однозначно 10 з 10.',
+  },
+  {
+    text: 'Це найкраще рішення, яке я приймала для свого проєкту.',
+  },
+  {
+    text: 'Дякую за індивідуальний підхід та чудовий результат!',
+  },
+];
+
 const Uikit = () => {
   return (
     <>
+      <div className="">
+        <span className="my-3 text-xl font-bold">
+          EndlessCarousel component
+        </span>
+        <EndlessCarousel>
+          {TESTIMONIALS.map((testimonial, index) => (
+            <div key={index} className="mx-4">
+              <TestimonialCard
+                {...testimonial}
+                className="desktop:h-216 desktop:w-336"
+              />
+            </div>
+          ))}
+        </EndlessCarousel>
+      </div>
+
       <div className="mx-4 my-16">
         <span className="my-3 text-xl font-bold">
           TestimonialCarousel component
