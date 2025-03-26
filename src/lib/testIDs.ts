@@ -39,3 +39,7 @@ export const SOCIAL_MEDIA_LABEL_TEST_ID = 'social-media-label-test-id';
 export const SOCIAL_MEDIA_DESCRIPTION_TEST_ID =
   'social-media-description-test-id';
 export const FOOTER_SECTION_TEST_ID = 'footer-section-test-id';
+export const PAGINATION_DOT_TEST_ID = 'pagination-dot-test-id';
+export const CAROUSEL_NAV_WRAPPER_TEST_ID = 'carousel-nav-wrapper-test-id';
+export const CAROUSEL_NAV_NEXT_TEST_ID = 'carousel-nav-next-test-id';
+export const CAROUSEL_NAV_PREV_TEST_ID = 'carousel-nav-prev-test-id';

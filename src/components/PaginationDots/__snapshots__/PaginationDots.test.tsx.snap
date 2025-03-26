@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationDots component applies active class to the current dot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center gap-2"
+  >
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-0"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-1"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      data-testid="pagination-dot-test-id-2"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-3"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-4"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PaginationDots component applies inactive classes to other dots 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center gap-2"
+  >
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-0"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-1"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      data-testid="pagination-dot-test-id-2"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-3"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-4"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PaginationDots component calls onDotClick with correct index 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center gap-2"
+  >
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-0"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-1"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      data-testid="pagination-dot-test-id-2"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-3"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-4"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PaginationDots component renders the correct number of dots 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center gap-2"
+  >
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-0"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-1"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      data-testid="pagination-dot-test-id-2"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-3"
+    />
+    <button
+      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      data-testid="pagination-dot-test-id-4"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -3,4 +3,5 @@ export interface TestimonialCardProps {
   clientName?: string;
   clientPhotoUrl?: string;
   clientLink?: string;
+  className?: string;
 }

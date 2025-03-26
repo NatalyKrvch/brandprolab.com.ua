@@ -1,5 +1,7 @@
 'use client';
 
+import dynamic from 'next/dynamic';
+
 import {
   Button,
   Container,
@@ -23,9 +25,80 @@ import {
 import { IconClassType } from '@/lib/constants';
 import { MainSocialCardColor } from '@/styles/constants';
 
+const TestimonialCarousel = dynamic(
+  () => import('@/components/TestimonialCarousel'),
+  { ssr: false },
+);
+
 const Uikit = () => {
   return (
     <>
+      <div className="mx-4 my-16">
+        <span className="my-3 text-xl font-bold">
+          TestimonialCarousel component
+        </span>
+        <TestimonialCarousel
+          testimonials={[
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+              clientName: 'Іван',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/ivan',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+              clientName: 'Олена',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/olena',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+              clientName: 'Іван',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/ivan',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+              clientName: 'Олена',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/olena',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+              clientName: 'Іван',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/ivan',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+              clientName: 'Олена',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/olena',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+              clientName: 'Іван',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/ivan',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+              clientName: 'Олена',
+              clientPhotoUrl:
+                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+              clientLink: 'https://linkedin.com/in/olena',
+            },
+          ]}
+        />
+      </div>
+
       <div className="m-4 w-[314px]">
         <span className="my-3 text-xl font-bold">
           SocialMediaCard component

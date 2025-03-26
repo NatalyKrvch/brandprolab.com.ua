@@ -28,8 +28,13 @@ export default {
         '44': '44px',
       },
       spacing: {
+        '240': '240px',
+        '300': '300px',
+        '40': '40px',
         '36': '36px',
         '44': '44px',
+        '60': '60px',
+        '80': '80px',
       },
       letterSpacing: {
         tight: '-0.02em',
