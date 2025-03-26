@@ -8,6 +8,7 @@ export { SimpleCard } from './Cards/SimpleCard';
 export { SocialMediaCard } from './Cards/SocialMediaCard';
 export { TestimonialCard } from './Cards/TestimonialCard';
 export { Container } from './Container';
+export { EndlessCarousel } from './EndlessCarousel';
 export { ExternalLink } from './ExternalLink';
 export { Icon } from './Icon';
 export { InternalLink } from './InternalLink';
