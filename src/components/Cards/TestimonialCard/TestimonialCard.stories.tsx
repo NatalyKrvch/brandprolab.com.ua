@@ -54,17 +54,6 @@ export const WithClientLink: Story = {
   },
 };
 
-export const WithoutClientLink: Story = {
-  args: {
-    text: 'Absolutely wonderful experience. Will use again!',
-    clientName: 'John Smith',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-
-    clientLink: '',
-  },
-};
-
 export const NoClientInfo: Story = {
   args: {
     text: 'Great product! It exceeded my expectations.',

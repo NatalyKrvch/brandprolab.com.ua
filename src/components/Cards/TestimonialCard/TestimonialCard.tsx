@@ -1,4 +1,5 @@
-import { SimpleCard, UserBadge } from '@/components';
+import { SimpleCard } from '@/components/Cards/SimpleCard';
+import { UserBadge } from '@/components/UserBadge';
 import { TESTIMONIAL_TEXT_TEST_ID } from '@/lib/testIDs';
 import { getReadMoreText } from '@/utils';
 
