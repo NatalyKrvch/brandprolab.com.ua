@@ -27,7 +27,10 @@ import { IconClassType } from '@/lib/constants';
 import { MainSocialCardColor } from '@/styles/constants';
 
 const ControlledCarousel = dynamic(
-  () => import('@/components/ControlledCarousel/ControlledCarousel'),
+  () =>
+    import('@/components/Carousels/ControlledCarousel').then(
+      mod => mod.ControlledCarousel,
+    ),
   { ssr: false },
 );
 

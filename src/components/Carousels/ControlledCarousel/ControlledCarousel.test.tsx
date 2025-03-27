@@ -16,13 +16,13 @@ jest.mock('./hooks/useControlledCarousel', () => ({
   }),
 }));
 
-jest.mock('../CarouselNavButtons', () => ({
+jest.mock('./components/CarouselNavButtons', () => ({
   CarouselNavButtons: () => (
     <div data-testid="carousel-nav-buttons-mock">Mocked Nav Buttons</div>
   ),
 }));
 
-jest.mock('../PaginationDots', () => ({
+jest.mock('@/components/PaginationDots', () => ({
   PaginationDots: () => (
     <div data-testid="pagination-dots-mock">Mocked Pagination Dots</div>
   ),

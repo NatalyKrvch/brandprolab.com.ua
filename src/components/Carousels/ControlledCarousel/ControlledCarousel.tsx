@@ -7,11 +7,11 @@ import {
   useMemo,
 } from 'react';
 
+import { PaginationDots } from '@/components/PaginationDots';
 import { SLIDE_CLASSNAME, SLIDER_CLASSNAME } from '@/styles/constants';
 import { generateRandomId } from '@/utils/generateRandomId';
 
-import { CarouselNavButtons } from '../CarouselNavButtons';
-import { PaginationDots } from '../PaginationDots';
+import { CarouselNavButtons } from './components/CarouselNavButtons';
 import { useControlledCarousel } from './hooks/useControlledCarousel';
 
 const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {

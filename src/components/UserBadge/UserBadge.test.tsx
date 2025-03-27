@@ -31,7 +31,7 @@ jest.mock('next/image', () => {
   return MockImage;
 });
 
-jest.mock('../ExternalLink', () => {
+jest.mock('../Links/ExternalLink', () => {
   return {
     ExternalLink: ({
       href,

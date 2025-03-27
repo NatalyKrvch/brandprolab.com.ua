@@ -1,5 +1,5 @@
-import { ExternalLink } from '@/components/ExternalLink';
 import { Icon } from '@/components/Icon';
+import { ExternalLink } from '@/components/Links';
 import { IconClassType } from '@/lib/constants';
 import {
   SOCIAL_MEDIA_DESCRIPTION_TEST_ID,

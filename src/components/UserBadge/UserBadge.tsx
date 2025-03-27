@@ -6,7 +6,7 @@ import {
   USER_BADGE_TEST_ID,
 } from '@/lib/testIDs';
 
-import { ExternalLink } from '../ExternalLink';
+import { ExternalLink } from '../Links';
 import {
   getUserBadgeImageClass,
   getUserBadgeImageWrapperClass,
