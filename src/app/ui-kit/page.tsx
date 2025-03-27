@@ -26,12 +26,15 @@ import {
 import { IconClassType } from '@/lib/constants';
 import { MainSocialCardColor } from '@/styles/constants';
 
-const TestimonialCarousel = dynamic(
-  () => import('@/components/TestimonialCarousel'),
+const ControlledCarousel = dynamic(
+  () =>
+    import('@/components/Carousels/ControlledCarousel').then(
+      mod => mod.ControlledCarousel,
+    ),
   { ssr: false },
 );
 
-const TESTIMONIALS = [
+const TESTIMONIALS_ONE = [
   {
     text: 'Цей сервіс перевершив усі мої очікування! Рекомендую кожному, хто шукає якість і турботу.',
   },
@@ -52,6 +55,51 @@ const TESTIMONIALS = [
   },
 ];
 
+const TESTIMONIALS_TWO = [
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+    clientName: 'Іван',
+    clientPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    clientLink: 'https://linkedin.com/in/ivan',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+    clientName: 'Олена',
+    clientPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    clientLink: 'https://linkedin.com/in/olena',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+    clientName: 'Іван',
+    clientPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    clientLink: 'https://linkedin.com/in/ivan',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+    clientName: 'Олена',
+    clientPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    clientLink: 'https://linkedin.com/in/olena',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+    clientName: 'Іван',
+    clientPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    clientLink: 'https://linkedin.com/in/ivan',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+    clientName: 'Олена',
+    clientPhotoUrl:
+      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+    clientLink: 'https://linkedin.com/in/olena',
+  },
+];
+
 const Uikit = () => {
   return (
     <>
@@ -60,7 +108,7 @@ const Uikit = () => {
           EndlessCarousel component
         </span>
         <EndlessCarousel>
-          {TESTIMONIALS.map((testimonial, index) => (
+          {TESTIMONIALS_ONE.map((testimonial, index) => (
             <div key={index} className="mx-4">
               <TestimonialCard
                 {...testimonial}
@@ -75,66 +123,11 @@ const Uikit = () => {
         <span className="my-3 text-xl font-bold">
           TestimonialCarousel component
         </span>
-        <TestimonialCarousel
-          testimonials={[
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-              clientName: 'Іван',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/ivan',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-              clientName: 'Олена',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/olena',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-              clientName: 'Іван',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/ivan',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-              clientName: 'Олена',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/olena',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-              clientName: 'Іван',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/ivan',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-              clientName: 'Олена',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/olena',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-              clientName: 'Іван',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/ivan',
-            },
-            {
-              text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-              clientName: 'Олена',
-              clientPhotoUrl:
-                'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-              clientLink: 'https://linkedin.com/in/olena',
-            },
-          ]}
-        />
+        <ControlledCarousel>
+          {TESTIMONIALS_TWO.map((t, i) => (
+            <TestimonialCard key={i} {...t} className="h-240 desktop:h-300" />
+          ))}
+        </ControlledCarousel>
       </div>
 
       <div className="m-4 w-[314px]">

@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
 import {
   FULL_WIDTH_CONTAINER_TEST_ID,

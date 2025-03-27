@@ -1,4 +1,4 @@
-import { ExternalLink } from '@/components/ExternalLink';
+import { ExternalLink } from '@/components';
 import { FOOTER_SECTION_TEST_ID } from '@/lib/testIDs';
 import { getCurrentYear } from '@/utils/getCurrentYear';
 

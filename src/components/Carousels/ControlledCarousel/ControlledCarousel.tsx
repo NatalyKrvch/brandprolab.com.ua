@@ -1,17 +1,20 @@
 import 'keen-slider/keen-slider.min.css';
 
-import { useMemo } from 'react';
+import {
+  Children,
+  isValidElement,
+  type PropsWithChildren,
+  useMemo,
+} from 'react';
 
+import { PaginationDots } from '@/components/PaginationDots';
 import { SLIDE_CLASSNAME, SLIDER_CLASSNAME } from '@/styles/constants';
 import { generateRandomId } from '@/utils/generateRandomId';
 
-import { TestimonialCard } from '../Cards/TestimonialCard';
-import { CarouselNavButtons } from '../CarouselNavButtons';
-import { PaginationDots } from '../PaginationDots';
-import { useTestimonialCarousel } from './hooks/useTestimonialCarousel';
-import { TestimonialCarouselProps } from './types';
+import { CarouselNavButtons } from './components/CarouselNavButtons';
+import { useControlledCarousel } from './hooks/useControlledCarousel';
 
-const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
+const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
   const sliderId = useMemo(() => generateRandomId(), []);
 
   const {
@@ -22,7 +25,9 @@ const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
     handleNextSlide,
     handlePreviousSlide,
     goToSlide,
-  } = useTestimonialCarousel();
+  } = useControlledCarousel();
+
+  const validChildren = Children.toArray(children).filter(isValidElement);
 
   return (
     <div className="relative">
@@ -34,15 +39,15 @@ const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
       />
 
       <div ref={sliderRef} className={SLIDER_CLASSNAME}>
-        {testimonials.map((testimonial, index) => (
+        {validChildren.map((child, index) => (
           <div key={`${sliderId}-slide-${index}`} className={SLIDE_CLASSNAME}>
-            <TestimonialCard {...testimonial} className="h-240 desktop:h-300" />
+            {child}
           </div>
         ))}
       </div>
 
       <PaginationDots
-        total={testimonials.length}
+        total={validChildren.length}
         current={currentSlideIndex}
         onDotClick={goToSlide}
         className="mt-4 hidden mobile:flex"
@@ -51,4 +56,4 @@ const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
   );
 };
 
-export default TestimonialCarousel;
+export default ControlledCarousel;

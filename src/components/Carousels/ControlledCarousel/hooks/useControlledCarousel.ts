@@ -8,7 +8,7 @@ import {
 } from '../configs/carouselConfig';
 import { createOnSlideChanged } from '../helpers/onSlideChanged';
 
-export const useTestimonialCarousel = () => {
+export const useControlledCarousel = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isFirstSlide, setIsFirstSlide] = useState(true);
   const [isLastSlide, setIsLastSlide] = useState(false);
