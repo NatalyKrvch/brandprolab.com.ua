@@ -1,3 +1,5 @@
+'use client';
+
 import type { KeenSliderOptions } from 'keen-slider';
 import { useKeenSlider } from 'keen-slider/react';
 import { useState } from 'react';
