@@ -13,6 +13,7 @@ export { Icon } from './Icon';
 export { Label } from './Label';
 export { ExternalLink, InternalLink } from './Links';
 export { List } from './List';
+export { SprayBackground } from './SprayBackground';
 export { UnderlinedText } from './UnderlinedText';
 export { UserBadge } from './UserBadge';
 export { Video } from './Video';
