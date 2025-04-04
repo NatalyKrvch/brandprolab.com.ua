@@ -1,4 +1,10 @@
-import { Button, ExternalLink, List, SimpleCard } from '@/components';
+import {
+  Button,
+  ExternalLink,
+  List,
+  SimpleCard,
+  SprayBackground,
+} from '@/components';
 
 import { DiagnosticSectionProps } from './types';
 
@@ -15,12 +21,6 @@ const DiagnosticSection = ({ diagnostic }: DiagnosticSectionProps) => {
 
   return (
     <section className="relative w-full desktop:px-72">
-      <img
-        src="/images/backgrounds/spray.svg"
-        alt=""
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-[-1] select-none object-cover blur-2xl tablet:top-[-50px] tablet:w-[600px] desktop:left-[408px] desktop:top-[-230px] desktop:h-[800px] desktop:w-[800px]"
-      />
       <div className="grid desktop:grid-cols-2 desktop:gap-24">
         <div className="flex flex-col items-center text-center desktop:w-[464px] desktop:items-start desktop:px-2 desktop:text-left">
           <h2 className="mb-2 text-4xl font-bold leading-9 tracking-tight text-black tablet:mb-3 tablet:text-44 tablet:leading-44 desktop:mb-5 desktop:text-52 desktop:leading-54">
@@ -40,11 +40,13 @@ const DiagnosticSection = ({ diagnostic }: DiagnosticSectionProps) => {
             <Button>{buttonText}</Button>
           </ExternalLink>
         </div>
-        <div className="flex items-center justify-center">
+
+        <div className="relative flex items-center justify-center">
           <SimpleCard
             backgroundColor="bg-teal-light"
             className="w-full max-w-[400px] p-6 tablet:max-w-[482px] desktop:max-w-[408px]"
           >
+            <SprayBackground className="left-[-20px] top-[-250px] h-[700px] w-full tablet:left-[-30px] tablet:top-[-280px] tablet:h-[800px] tablet:w-full desktop:top-[-200px] desktop:h-[800px] desktop:w-[800px]" />
             <p className="mb-6 font-normal text-black tablet:text-2xl tablet:leading-6 desktop:text-2xl desktop:leading-6">
               {benefitsTitle}
             </p>
