@@ -8,27 +8,20 @@ export const casesSectionSchema = defineType({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'array',
-      of: [
-        defineField({
-          name: 'regularText',
-          title: 'Regular Text',
-          type: 'string',
-          validation: rule => rule.required(),
-        }),
-        defineField({
-          name: 'boldColoredText',
-          title: 'Bold Colored Text',
-          type: 'string',
-          validation: rule => rule.required(),
-        }),
-        defineField({
-          name: 'boldBlackText',
-          title: 'Bold Black Text',
-          type: 'string',
-          validation: rule => rule.required(),
-        }),
-      ],
+      type: 'string',
+      validation: rule => rule.required(),
+    }),
+    defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+      validation: rule => rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      validation: rule => rule.required(),
     }),
     defineField({
       name: 'cases',
@@ -44,19 +37,6 @@ export const casesSectionSchema = defineType({
               name: 'caseText',
               title: 'Case Text',
               type: 'string',
-              validation: rule => rule.required(),
-            }),
-            defineField({
-              name: 'personName',
-              title: 'Person Name',
-              type: 'string',
-              validation: rule => rule.required(),
-            }),
-            defineField({
-              name: 'personPhoto',
-              title: 'Person Photo',
-              type: 'image',
-              options: { hotspot: true },
               validation: rule => rule.required(),
             }),
           ],

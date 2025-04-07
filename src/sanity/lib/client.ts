@@ -1,10 +1,12 @@
 import { createClient } from 'next-sanity';
 
-import { apiVersion, dataset, projectId, shouldUseCdn } from '../env';
+import { getSanityConfig } from '../env';
+
+const { apiVersion, dataset, projectId, useCdn } = getSanityConfig();
 
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: shouldUseCdn === 'true',
+  useCdn,
 });
