@@ -34,6 +34,18 @@ export const testimonialsSectionSchema = defineType({
               validation: rule => rule.required(),
             }),
             defineField({
+              name: 'personTitle',
+              title: 'Person Title',
+              type: 'string',
+              validation: rule => rule.required(),
+            }),
+            defineField({
+              name: 'link',
+              title: 'Link',
+              type: 'url',
+              validation: rule => rule.required(),
+            }),
+            defineField({
               name: 'smallPhoto',
               title: 'Small Photo',
               type: 'image',

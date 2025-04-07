@@ -35,5 +35,18 @@ export const videoSectionSchema = defineType({
       type: 'url',
       validation: rule => rule.required(),
     }),
+    defineField({
+      name: 'VideoLink',
+      title: 'Video Link',
+      type: 'url',
+      validation: rule => rule.required(),
+    }),
+    defineField({
+      name: 'videoCover',
+      title: 'Video Cover',
+      type: 'image',
+      options: { hotspot: true },
+      validation: rule => rule.required(),
+    }),
   ],
 });
