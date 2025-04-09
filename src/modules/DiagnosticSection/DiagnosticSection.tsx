@@ -8,7 +8,7 @@ import {
 
 import { DiagnosticSectionProps } from './types';
 
-const DiagnosticSection = ({ diagnostic }: DiagnosticSectionProps) => {
+const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
   const {
     title,
     subtitle,
@@ -17,7 +17,7 @@ const DiagnosticSection = ({ diagnostic }: DiagnosticSectionProps) => {
     benefits,
     buttonText,
     buttonLink,
-  } = diagnostic;
+  } = diagnosticData;
 
   return (
     <section className="relative w-full desktop:px-72">
