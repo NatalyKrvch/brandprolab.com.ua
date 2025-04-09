@@ -52,9 +52,8 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
             <Image
               src="/icons/nav/play.svg"
               alt="Play Button"
-              width={0}
-              height={0}
-              className="h-80 w-80"
+              width={74}
+              height={74}
             />
           </button>
         </div>

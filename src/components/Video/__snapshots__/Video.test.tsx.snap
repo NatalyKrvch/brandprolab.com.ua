@@ -30,10 +30,9 @@ exports[`Video component does not render iframe initially 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-80 w-80"
-            height="0"
+            height="74"
             src="/icons/nav/play.svg"
-            width="0"
+            width="74"
           />
         </button>
       </div>
@@ -72,10 +71,9 @@ exports[`Video component renders the Video component 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-80 w-80"
-            height="0"
+            height="74"
             src="/icons/nav/play.svg"
-            width="0"
+            width="74"
           />
         </button>
       </div>
@@ -114,10 +112,9 @@ exports[`Video component renders the play button 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-80 w-80"
-            height="0"
+            height="74"
             src="/icons/nav/play.svg"
-            width="0"
+            width="74"
           />
         </button>
       </div>
@@ -156,10 +153,9 @@ exports[`Video component renders the thumbnail correctly 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-80 w-80"
-            height="0"
+            height="74"
             src="/icons/nav/play.svg"
-            width="0"
+            width="74"
           />
         </button>
       </div>
@@ -198,10 +194,9 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
         >
           <img
             alt="Play Button"
-            class="h-80 w-80"
-            height="0"
+            height="74"
             src="/icons/nav/play.svg"
-            width="0"
+            width="74"
           />
         </button>
       </div>
