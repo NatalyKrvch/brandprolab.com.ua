@@ -24,20 +24,20 @@ const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
       <div className="grid desktop:grid-cols-2 desktop:gap-24">
         <div className="flex flex-col items-center text-center desktop:w-464 desktop:items-start desktop:px-2 desktop:text-left">
           <h2 className="mb-2 text-4xl font-bold leading-9 tracking-tight text-black tablet:mb-3 tablet:text-44 tablet:leading-44 desktop:mb-5 desktop:text-52 desktop:leading-54">
-            {title}
+            {title.trim()}
           </h2>
           <p className="mb-8 w-190 text-xl font-normal leading-5 tracking-normal text-blue-default tablet:mb-9 tablet:w-400 tablet:px-16 tablet:text-left tablet:text-28 tablet:leading-7 desktop:mb-10 desktop:w-442 desktop:px-16 desktop:text-32 desktop:leading-8">
-            {subtitle}
+            {subtitle.trim()}
           </p>
           <p className="mb-8 w-full max-w-400 text-base font-normal leading-5 tracking-normal text-gray-dark tablet:mb-5 tablet:max-w-482 tablet:text-lg tablet:leading-6 desktop:mb-12 desktop:max-w-full desktop:leading-6">
-            {description}
+            {description.trim()}
           </p>
 
           <ExternalLink
             className="hidden desktop:block desktop:w-400"
-            href={buttonLink}
+            href={buttonLink.trim()}
           >
-            <Button>{buttonText}</Button>
+            <Button>{buttonText.trim()}</Button>
           </ExternalLink>
         </div>
 
@@ -48,7 +48,7 @@ const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
           >
             <SprayBackground className="-left-20 -top-250 h-700 w-full tablet:-left-30 tablet:-top-280 tablet:h-800 tablet:w-full desktop:-top-200 desktop:h-800 desktop:w-800" />
             <p className="mb-6 font-normal text-black tablet:text-2xl tablet:leading-6 desktop:text-2xl desktop:leading-6">
-              {benefitsTitle}
+              {benefitsTitle.trim()}
             </p>
             <List list={benefits} />
           </SimpleCard>
@@ -57,9 +57,9 @@ const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
         <div className="mt-4 flex justify-center desktop:hidden">
           <ExternalLink
             className="w-full max-w-400 tablet:max-w-482 desktop:max-w-314"
-            href={buttonLink}
+            href={buttonLink.trim()}
           >
-            <Button>{buttonText}</Button>
+            <Button>{buttonText.trim()}</Button>
           </ExternalLink>
         </div>
       </div>
