@@ -36,6 +36,7 @@ const PhotoCard = ({
           {text}
         </div>
       )}
+
       <div
         className={getPhotoCardImageWrapperClassName()}
         style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}

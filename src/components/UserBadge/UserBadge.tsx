@@ -24,6 +24,7 @@ const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
       >
         {userName}
       </span>
+
       <div className={getUserBadgeImageWrapperClass()}>
         <Image
           className={getUserBadgeImageClass()}

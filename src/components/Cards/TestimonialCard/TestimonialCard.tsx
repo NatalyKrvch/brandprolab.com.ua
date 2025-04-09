@@ -29,6 +29,7 @@ const TestimonialCard = ({
       >
         {getReadMoreText(text)}
       </div>
+
       {shouldRenderUserBadge && (
         <UserBadge
           userName={clientName}

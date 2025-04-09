@@ -29,6 +29,7 @@ const FlipCard = ({ front, back }: FlipCardProps) => {
         >
           {front}
         </div>
+
         <div
           className={`${getFlipCardSideClass()} ${getBackSideTransformClass()}`}
           data-testid={FLIP_CARD_BACK_TEST_ID}

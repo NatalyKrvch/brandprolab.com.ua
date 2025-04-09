@@ -27,6 +27,7 @@ const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
           className={getDiplomaCardOverlayClass()}
           data-testid={DIPLOMA_OVERLAY_TEST_ID}
         ></div>
+
         <Image
           src={diplomaURL}
           role="button"

@@ -28,6 +28,7 @@ const SocialMediaCard = ({
           circleColor={getSocialMediaCardColorClass(mainColor, 'bg')}
           type={IconClassType.SOCIAL_MEDIA}
         />
+
         <div>
           <h3
             className={`mb-1 text-base font-medium leading-5 tracking-wide tablet:text-base desktop:text-lg desktop:leading-22 ${getSocialMediaCardColorClass(
@@ -38,6 +39,7 @@ const SocialMediaCard = ({
           >
             {label}
           </h3>
+
           <p
             className="text-sm font-normal leading-4 tracking-wide text-gray-dark desktop:text-base desktop:leading-18"
             data-testid={SOCIAL_MEDIA_DESCRIPTION_TEST_ID}
