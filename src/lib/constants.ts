@@ -8,7 +8,8 @@ export const ALL_DATA_QUERY = `
   "subscribe": *[_type == "subscribeSection"][0],
   "video": *[_type == "videoSection"][0],
   "expertise": *[_type == "expertiseSection"][0],
-  "diagnostic": *[_type == "diagnosticSection"][0]
+  "diagnostic": *[_type == "diagnosticSection"][0],
+  "footer": *[_type == "footerSection"][0]
 }
 `;
 

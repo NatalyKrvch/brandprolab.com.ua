@@ -43,7 +43,10 @@ export const testimonialsSectionSchema = defineType({
               name: 'link',
               title: 'Link',
               type: 'url',
-              validation: rule => rule.required(),
+              validation: rule =>
+                rule.required().uri({
+                  scheme: ['http', 'https'],
+                }),
             }),
             defineField({
               name: 'smallPhoto',

@@ -4,7 +4,8 @@ import { getCurrentYear } from '@/utils/getCurrentYear';
 
 import { FooterSectionProps } from './types';
 
-const FooterSection = ({ offerURL }: FooterSectionProps) => {
+const FooterSection = ({ footerData }: FooterSectionProps) => {
+  const { offerLink } = footerData;
   const year = getCurrentYear();
 
   return (
@@ -19,7 +20,7 @@ const FooterSection = ({ offerURL }: FooterSectionProps) => {
         </div>
 
         <ExternalLink
-          href={offerURL}
+          href={offerLink}
           className="whitespace-nowrap underline transition hover:text-teal-dark"
         >
           Договір оферти

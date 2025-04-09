@@ -1,3 +1,5 @@
+import { FooterSectionType } from '@/sanity/lib/types';
+
 export interface FooterSectionProps {
-  offerURL: string;
+  footerData: FooterSectionType;
 }

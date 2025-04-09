@@ -244,6 +244,11 @@ export type TestimonialsSectionType = {
   }[];
 };
 
+export type FooterSectionType = {
+  title: string;
+  offerLink: string;
+};
+
 export type AllData = {
   cases: CasesSectionType;
   diagnostic: DiagnosticSectionType;
@@ -254,4 +259,5 @@ export type AllData = {
   subscribe: SubscribeSectionType;
   testimonials: TestimonialsSectionType;
   video: VideoSectionType;
+  footer: FooterSectionType;
 };
