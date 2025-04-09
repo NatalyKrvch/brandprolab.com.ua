@@ -1,5 +1,5 @@
-import { Diagnostic } from '@/sanity/lib/types';
+import { DiagnosticSectionType } from '@/sanity/lib/types';
 
 export interface DiagnosticSectionProps {
-  diagnostic: Diagnostic;
+  diagnosticData: DiagnosticSectionType;
 }

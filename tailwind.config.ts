@@ -5,62 +5,29 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
-    './.storybook/**/*.{js,jsx,ts,tsx}',
     './src/utils/**/*.{js,ts,jsx,tsx}',
+    './.storybook/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
-      fontFamily: {
-        mariupol: ['Mariupol', 'sans-serif'],
-        symbols: ['Mariupol-Symbols', 'sans-serif'],
-      },
-      fontSize: {
-        '22': '22px',
-        '28': '28px',
-        '32': '32px',
-        '44': '44px',
-        '52': '52px',
-      },
-      lineHeight: {
-        '18': '18px',
-        '22': '22px',
-        '26': '26px',
-        '44': '44px',
-        '54': '54px',
-      },
-      spacing: {
-        '40': '40px',
-        '36': '36px',
-        '44': '44px',
-        '52': '52px',
-        '60': '60px',
-        '72': '72px',
-        '80': '80px',
-        '190': '190px',
-        '216': '216px',
-        '240': '240px',
-        '300': '300px',
-        '314': '314px',
-        '336': '336px',
-        '400': '400px',
-        '408': '408px',
-        '482': '482px',
-        '20': '20px',
-        '30': '30px',
-        '200': '200px',
-        '250': '250px',
-        '280': '280px',
-      },
-      letterSpacing: {
-        tight: '-0.02em',
-        normal: '0em',
-        wide: '0.02em',
-        wider: '0.05em',
-      },
       colors: {
+        black: '#253737',
         whiteOpacity: 'rgba(255, 255, 255, 0.3)',
 
-        black: '#253737',
+        blue: {
+          default: '#156FBA',
+          dark: '#32607D',
+        },
+
+        gray: {
+          dark: '#425A62',
+          medium: '#B2DCDC',
+          light: '#F5F9F9',
+        },
+
+        red: {
+          default: '#D44C62',
+        },
 
         teal: {
           dark: '#06BCAD',
@@ -72,63 +39,122 @@ export default {
           fogOpacity: '#1D81B2',
           lightOpacity: 'rgba(231, 250, 249, 0.8)',
         },
-
-        gray: {
-          dark: '#425A62',
-          medium: '#B2DCDC',
-          light: '#F5F9F9',
-        },
-
-        blue: {
-          default: '#156FBA',
-          dark: '#32607D',
-        },
-
-        red: {
-          default: '#D44C62',
-        },
       },
-      borderRadius: {
-        '24': '24px',
+
+      fontFamily: {
+        mariupol: ['Mariupol', 'sans-serif'],
+        symbols: ['Mariupol-Symbols', 'sans-serif'],
+      },
+
+      fontSize: {
+        '22': '22px',
+        '28': '28px',
         '32': '32px',
+        '42': '42px',
+        '44': '44px',
+        '52': '52px',
+      },
+
+      letterSpacing: {
+        tight: '-0.02em',
+        normal: '0em',
+        wide: '0.02em',
+        wider: '0.05em',
+      },
+
+      lineHeight: {
+        '14': '14px',
+        '18': '18px',
+        '22': '22px',
+        '26': '26px',
+        '34': '34px',
+        '44': '44px',
+        '54': '54px',
+      },
+
+      spacing: {
+        '20': '20px',
+        '28': '28px',
+        '30': '30px',
+        '36': '36px',
         '40': '40px',
+        '44': '44px',
+        '52': '52px',
+        '60': '60px',
+        '72': '72px',
+        '80': '80px',
+        '190': '190px',
+        '200': '200px',
+        '216': '216px',
+        '240': '240px',
+        '250': '250px',
+        '280': '280px',
+        '300': '300px',
+        '314': '314px',
+        '336': '336px',
+        '350': '350px',
+        '400': '400px',
+        '408': '408px',
+        '482': '482px',
       },
-      screens: {
-        mobile: { max: '599px' },
-        tablet: { min: '600px', max: '1224px' },
-        desktop: { min: '1224px' },
+
+      width: {
+        '200': '200px',
+        '280': '280px',
+        '314': '314px',
+        '400': '400px',
+        '408': '408px',
+        '442': '442px',
+        '456': '456px',
+        '464': '464px',
+        '480': '480px',
+        '800': '800px',
       },
+
+      height: {
+        '210': '210px',
+        '300': '300px',
+        '360': '360px',
+        '600': '600px',
+        '650': '650px',
+        '700': '700px',
+        '800': '800px',
+        '1000': '1000px',
+        '1020': '1020px',
+      },
+
       maxWidth: {
         container: '1224px',
         '314': '314px',
         '400': '400px',
         '408': '408px',
         '442': '442px',
+        '456': '456px',
         '482': '482px',
+        '610': '610px',
         '800': '800px',
       },
-      width: {
-        '280': '280px',
-        '400': '400px',
-        '480': '480px',
-        '314': '314px',
-        '408': '408px',
-        '442': '442px',
-        '464': '464px',
-        '800': '800px',
+
+      borderRadius: {
+        '24': '24px',
+        '32': '32px',
+        '40': '40px',
       },
-      height: {
-        '210': '210px',
-        '300': '300px',
-        '360': '360px',
-        '700': '700px',
-        '800': '800px',
-      },
+
       translate: {
         '-18': '-18px',
         '-24': '-24px',
         '-30': '-30px',
         '-36': '-36px',
+      },
+      rotate: {
+        '30': '30deg',
+      },
+
+      screens: {
+        mobile: { max: '599px' },
+        tablet: { min: '600px', max: '1224px' },
+        desktop: { min: '1224px' },
       },
     },
   },

@@ -3,7 +3,7 @@
 exports[`Video component does not render iframe initially 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="relative h-210 w-280 overflow-hidden tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
     data-testid="video-test-id"
   >
     <div
@@ -30,7 +30,6 @@ exports[`Video component does not render iframe initially 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-20 w-20"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -45,7 +44,7 @@ exports[`Video component does not render iframe initially 1`] = `
 exports[`Video component renders the Video component 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="relative h-210 w-280 overflow-hidden tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
     data-testid="video-test-id"
   >
     <div
@@ -72,7 +71,6 @@ exports[`Video component renders the Video component 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-20 w-20"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -87,7 +85,7 @@ exports[`Video component renders the Video component 1`] = `
 exports[`Video component renders the play button 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="relative h-210 w-280 overflow-hidden tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
     data-testid="video-test-id"
   >
     <div
@@ -114,7 +112,6 @@ exports[`Video component renders the play button 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-20 w-20"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -129,7 +126,7 @@ exports[`Video component renders the play button 1`] = `
 exports[`Video component renders the thumbnail correctly 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="relative h-210 w-280 overflow-hidden tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
     data-testid="video-test-id"
   >
     <div
@@ -156,7 +153,6 @@ exports[`Video component renders the thumbnail correctly 1`] = `
         >
           <img
             alt="Play Button"
-            class="h-20 w-20"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -171,7 +167,7 @@ exports[`Video component renders the thumbnail correctly 1`] = `
 exports[`Video component replaces thumbnail with iframe when play button is clicked 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden h-210 w-280 tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
+    class="relative h-210 w-280 overflow-hidden tablet:h-300 tablet:w-400 desktop:h-360 desktop:w-480 rounded-24 tablet:rounded-32 desktop:rounded-40"
     data-testid="video-test-id"
   >
     <div
@@ -198,7 +194,6 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
         >
           <img
             alt="Play Button"
-            class="h-20 w-20"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
