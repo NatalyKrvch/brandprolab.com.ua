@@ -6,6 +6,11 @@ export const footerSectionSchema = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+    }),
+    defineField({
       name: 'offerLink',
       title: 'Offer Link',
       type: 'url',

@@ -27,7 +27,7 @@ const Modules = async () => {
         </Container>
 
         <Container className="mb-4">
-          <FooterSection offerURL="https://drive.google.com/file/d/19b3gy_p3hxoSTFomCbQsI7ZL4L20iyIB/view?usp=sharing" />
+          <FooterSection footerData={data.footer} />
         </Container>
       </div>
     </>

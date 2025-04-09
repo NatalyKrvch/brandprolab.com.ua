@@ -3,6 +3,7 @@ import { type SchemaTypeDefinition } from 'sanity';
 import { casesSectionSchema } from './casesSectionSchema';
 import { diagnosticSectionSchema } from './diagnosticSectionSchema';
 import { expertiseSectionSchema } from './expertiseSectionSchema';
+import { footerSectionSchema } from './footerSectionSchema';
 import { headerSectionSchema } from './headerSectionSchema';
 import { heroSectionSchema } from './heroSectionSchema';
 import { servicesSectionSchema } from './servicesSectionSchema';
@@ -21,5 +22,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     subscribeSectionSchema,
     testimonialsSectionSchema,
     videoSectionSchema,
+    footerSectionSchema,
   ],
 };
