@@ -81,21 +81,15 @@ export const expertiseSectionSchema = defineType({
           type: 'object',
           fields: [
             defineField({
-              name: 'type',
-              title: 'Type',
+              name: 'title',
+              title: 'Title',
               type: 'string',
               validation: rule => rule.required(),
             }),
             defineField({
-              name: 'institution',
-              title: 'Institution',
-              type: 'string',
-              validation: rule => rule.required(),
-            }),
-            defineField({
-              name: 'diplomaName',
-              title: 'Diploma Name',
-              type: 'string',
+              name: 'image',
+              title: 'Diploma Image',
+              type: 'image',
               validation: rule => rule.required(),
             }),
           ],

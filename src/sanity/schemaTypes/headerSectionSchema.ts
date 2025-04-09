@@ -73,7 +73,10 @@ export const headerSectionSchema = defineType({
               name: 'url',
               title: 'URL',
               type: 'url',
-              validation: rule => rule.required(),
+              validation: rule =>
+                rule.required().uri({
+                  scheme: ['http', 'https'],
+                }),
             }),
           ],
         }),

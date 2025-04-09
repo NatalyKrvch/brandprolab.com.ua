@@ -47,7 +47,10 @@ export const heroSectionSchema = defineType({
       name: 'buttonLink',
       title: 'Button Link',
       type: 'url',
-      validation: rule => rule.required(),
+      validation: rule =>
+        rule.required().uri({
+          scheme: ['http', 'https'],
+        }),
     }),
     defineField({
       name: 'photo',
