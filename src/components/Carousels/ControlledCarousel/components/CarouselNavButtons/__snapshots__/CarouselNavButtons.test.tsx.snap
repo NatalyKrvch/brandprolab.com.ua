@@ -4,7 +4,7 @@ exports[`CarouselNavButtons component renders both buttons when not on first or 
 <body>
   <div>
     <div
-      class="absolute right-0 hidden gap-2 tablet:-top-60 tablet:flex desktop:-top-80 desktop:flex"
+      class="absolute hidden gap-2 tablet:-top-[80px] tablet:right-16 tablet:flex desktop:-top-[130px] desktop:right-56 desktop:flex"
       data-testid="carousel-nav-wrapper-test-id"
     >
       <button
@@ -48,7 +48,7 @@ exports[`CarouselNavButtons component renders no buttons when on first and last 
 <body>
   <div>
     <div
-      class="absolute right-0 hidden gap-2 tablet:-top-60 tablet:flex desktop:-top-80 desktop:flex"
+      class="absolute hidden gap-2 tablet:-top-[80px] tablet:right-16 tablet:flex desktop:-top-[130px] desktop:right-56 desktop:flex"
       data-testid="carousel-nav-wrapper-test-id"
     />
   </div>
@@ -59,7 +59,7 @@ exports[`CarouselNavButtons component renders the next button when not on the la
 <body>
   <div>
     <div
-      class="absolute right-0 hidden gap-2 tablet:-top-60 tablet:flex desktop:-top-80 desktop:flex"
+      class="absolute hidden gap-2 tablet:-top-[80px] tablet:right-16 tablet:flex desktop:-top-[130px] desktop:right-56 desktop:flex"
       data-testid="carousel-nav-wrapper-test-id"
     >
       <button
@@ -87,7 +87,7 @@ exports[`CarouselNavButtons component renders the previous button when not on th
 <body>
   <div>
     <div
-      class="absolute right-0 hidden gap-2 tablet:-top-60 tablet:flex desktop:-top-80 desktop:flex"
+      class="absolute hidden gap-2 tablet:-top-[80px] tablet:right-16 tablet:flex desktop:-top-[130px] desktop:right-56 desktop:flex"
       data-testid="carousel-nav-wrapper-test-id"
     >
       <button

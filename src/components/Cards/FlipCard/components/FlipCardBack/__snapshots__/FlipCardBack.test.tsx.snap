@@ -3,7 +3,7 @@
 exports[`FlipCardBack component renders the FlipCardBack component 1`] = `
 <DocumentFragment>
   <div
-    class="flex h-full flex-col gap-6 p-10 bg-blue-dark rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-col gap-6 bg-blue-dark p-10"
     data-testid="simple-card-test-id"
   >
     <p
@@ -42,7 +42,7 @@ exports[`FlipCardBack component renders the FlipCardBack component 1`] = `
 exports[`FlipCardBack component renders the correct number of list items 1`] = `
 <DocumentFragment>
   <div
-    class="flex h-full flex-col gap-6 p-10 bg-blue-dark rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-col gap-6 bg-blue-dark p-10"
     data-testid="simple-card-test-id"
   >
     <p
@@ -81,7 +81,7 @@ exports[`FlipCardBack component renders the correct number of list items 1`] = `
 exports[`FlipCardBack component renders the header correctly 1`] = `
 <DocumentFragment>
   <div
-    class="flex h-full flex-col gap-6 p-10 bg-blue-dark rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-col gap-6 bg-blue-dark p-10"
     data-testid="simple-card-test-id"
   >
     <p
@@ -120,7 +120,7 @@ exports[`FlipCardBack component renders the header correctly 1`] = `
 exports[`FlipCardBack component renders the list correctly 1`] = `
 <DocumentFragment>
   <div
-    class="flex h-full flex-col gap-6 p-10 bg-blue-dark rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+    class="rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-col gap-6 bg-blue-dark p-10"
     data-testid="simple-card-test-id"
   >
     <p

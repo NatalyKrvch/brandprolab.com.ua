@@ -6,25 +6,19 @@ import {
   DIPLOMA_OVERLAY_TEST_ID,
 } from '@/lib/testIDs';
 
-import {
-  getDiplomaCardImageClass,
-  getDiplomaCardImageWrapperClass,
-  getDiplomaCardOverlayClass,
-  getDiplomaCardWrapperClass,
-} from './helpers/getDiplomaCardClasses';
 import { DiplomaCardProps } from './types';
 
 const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
   return (
     <div
-      className={getDiplomaCardWrapperClass()}
+      className="w-fit rounded-24 border border-gray-medium p-2"
       data-testid={DIPLOMA_CARD_TEST_ID}
     >
-      <div className={getDiplomaCardImageWrapperClass()}>
+      <div className="relative h-40 w-auto max-w-full overflow-hidden rounded-3xl">
         <div
           onClick={onClick}
           onKeyDown={e => e.key === 'Enter' && onClick?.()}
-          className={getDiplomaCardOverlayClass()}
+          className="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
           data-testid={DIPLOMA_OVERLAY_TEST_ID}
         ></div>
 
@@ -35,7 +29,7 @@ const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
           alt="Diploma"
           width={168}
           height={168}
-          className={getDiplomaCardImageClass()}
+          className="h-full w-auto object-contain"
           loading="lazy"
           data-testid={DIPLOMA_IMAGE_TEST_ID}
         />

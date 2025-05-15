@@ -53,11 +53,6 @@ describe('Icon component', () => {
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute('src', '/test-icon.svg');
     expect(image).toHaveAttribute('alt', 'Test Icon');
-    expect(image).toHaveClass(
-      'translate-x-[-24px]',
-      'tablet:translate-x-[-30px]',
-      'desktop:translate-x-[-36px]',
-    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

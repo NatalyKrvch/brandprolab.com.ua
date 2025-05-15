@@ -1,15 +1,11 @@
+import clsx from 'clsx';
+
 import {
   FLIP_CARD_BACK_TEST_ID,
   FLIP_CARD_FRONT_TEST_ID,
   FLIP_CARD_TEST_ID,
 } from '@/lib/testIDs';
 
-import {
-  getBackSideTransformClass,
-  getFlipCardInnerClass,
-  getFlipCardSideClass,
-  getFlipCardWrapperClass,
-} from './helpers/getFlipCardClasses';
 import { useFlipCard } from './hooks/useFlipCard';
 import { FlipCardProps } from './types';
 
@@ -18,20 +14,25 @@ const FlipCard = ({ front, back }: FlipCardProps) => {
 
   return (
     <div
-      className={getFlipCardWrapperClass()}
+      className="group h-full w-full cursor-pointer [perspective:1000px]"
       onClick={handleFlip}
       data-testid={FLIP_CARD_TEST_ID}
     >
-      <div className={getFlipCardInnerClass(flipped)}>
+      <div
+        className={clsx(
+          'relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]',
+          flipped && '[transform:rotateY(180deg)]',
+        )}
+      >
         <div
-          className={getFlipCardSideClass()}
+          className="absolute flex h-full w-full [backface-visibility:hidden]"
           data-testid={FLIP_CARD_FRONT_TEST_ID}
         >
           {front}
         </div>
 
         <div
-          className={`${getFlipCardSideClass()} ${getBackSideTransformClass()}`}
+          className="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
           data-testid={FLIP_CARD_BACK_TEST_ID}
         >
           {back}

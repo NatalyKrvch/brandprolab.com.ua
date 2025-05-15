@@ -9,7 +9,7 @@ exports[`SocialMediaCard applies correct href to link 1`] = `
     target="_blank"
   >
     <div
-      class="bg-gray-light flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       data-testid="simple-card-test-id"
     >
       <div
@@ -17,11 +17,11 @@ exports[`SocialMediaCard applies correct href to link 1`] = `
         data-testid="icon-component-test-id"
       >
         <div
-          class="bg-red-default relative flex items-center justify-center rounded-full w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]"
+          class="bg-red-default relative flex items-center justify-center rounded-full w-36 h-36 tablet:w-42 tablet:h-42 desktop:w-48 desktop:h-48"
         >
           <img
             alt="Icon"
-            class="absolute w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]"
+            class="absolute w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-32 desktop:h-32"
             data-nimg="1"
             data-testid="icon-component-image-test-id"
             decoding="async"
@@ -61,7 +61,7 @@ exports[`SocialMediaCard renders correct color class based on mainColor prop 1`]
     target="_blank"
   >
     <div
-      class="bg-gray-light flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       data-testid="simple-card-test-id"
     >
       <div
@@ -69,11 +69,11 @@ exports[`SocialMediaCard renders correct color class based on mainColor prop 1`]
         data-testid="icon-component-test-id"
       >
         <div
-          class="bg-red-default relative flex items-center justify-center rounded-full w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]"
+          class="bg-red-default relative flex items-center justify-center rounded-full w-36 h-36 tablet:w-42 tablet:h-42 desktop:w-48 desktop:h-48"
         >
           <img
             alt="Icon"
-            class="absolute w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]"
+            class="absolute w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-32 desktop:h-32"
             data-nimg="1"
             data-testid="icon-component-image-test-id"
             decoding="async"
@@ -113,7 +113,7 @@ exports[`SocialMediaCard renders correctly with given props 1`] = `
     target="_blank"
   >
     <div
-      class="bg-gray-light flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center"
+      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       data-testid="simple-card-test-id"
     >
       <div
@@ -121,11 +121,11 @@ exports[`SocialMediaCard renders correctly with given props 1`] = `
         data-testid="icon-component-test-id"
       >
         <div
-          class="bg-red-default relative flex items-center justify-center rounded-full w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]"
+          class="bg-red-default relative flex items-center justify-center rounded-full w-36 h-36 tablet:w-42 tablet:h-42 desktop:w-48 desktop:h-48"
         >
           <img
             alt="Icon"
-            class="absolute w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]"
+            class="absolute w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-32 desktop:h-32"
             data-nimg="1"
             data-testid="icon-component-image-test-id"
             decoding="async"

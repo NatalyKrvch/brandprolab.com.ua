@@ -10,20 +10,20 @@ export const getIconClasses = (type: IconClassType): IconClassSet => {
   switch (type) {
     case IconClassType.SERVICES:
       return {
-        circleClass: `${baseCircleClass} w-[68px] h-[68px] tablet:w-[80px] tablet:h-[80px] desktop:w-[108px] desktop:h-[108px]`,
-        iconClass: `${baseIconClass} w-[64px] h-[64px] tablet:w-[72px] tablet:h-[72px] desktop:w-[96px] desktop:h-[96px] translate-x-[-24px] tablet:translate-x-[-30px] desktop:translate-x-[-36px]`,
+        circleClass: `${baseCircleClass} w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-108 desktop:h-108`,
+        iconClass: `${baseIconClass} w-64 h-64 tablet:w-72 tablet:h-72 desktop:w-96 desktop:h-96 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-36`,
       };
 
     case IconClassType.EXPERTISE:
       return {
-        circleClass: `${baseCircleClass} w-[68px] h-[68px] tablet:w-[80px] tablet:h-[80px] desktop:w-[64px] desktop:h-[64px]`,
-        iconClass: `${baseIconClass} w-[64px] h-[64px] tablet:w-[72px] tablet:h-[72px] desktop:w-[64px] desktop:h-[64px] translate-x-[-24px] tablet:translate-x-[-30px] desktop:translate-x-[-18px]`,
+        circleClass: `${baseCircleClass} w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-64 desktop:h-64`,
+        iconClass: `${baseIconClass} w-64 h-64 tablet:w-72 tablet:h-72 desktop:w-64 desktop:h-64 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-18`,
       };
 
     case IconClassType.SOCIAL_MEDIA:
       return {
-        circleClass: `${baseCircleClass} w-[36px] h-[36px] tablet:w-[42px] tablet:h-[42px] desktop:w-[48px] desktop:h-[48px]`,
-        iconClass: `${baseIconClass} w-[22px] h-[22px] tablet:w-[28px] tablet:h-[28px] desktop:w-[32px] desktop:h-[32px]`,
+        circleClass: `${baseCircleClass} w-36 h-36 tablet:w-42 tablet:h-42 desktop:w-48 desktop:h-48`,
+        iconClass: `${baseIconClass} w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-32 desktop:h-32`,
       };
 
     default:
