@@ -1,7 +1,11 @@
 import { Container } from '@/components';
 import { ALL_DATA_QUERY } from '@/lib/constants';
-import { FooterSection, VideoSection } from '@/modules';
-import DiagnosticSection from '@/modules/DiagnosticSection/DiagnosticSection';
+import {
+  DiagnosticSection,
+  FooterSection,
+  TestimonialsSection,
+  VideoSection,
+} from '@/modules';
 import { AllData } from '@/sanity/lib/types';
 import { fetchDataFromSanity } from '@/utils';
 
@@ -18,6 +22,10 @@ const Modules = async () => {
         <h1 className="text-3xl font-bold">Modules</h1>
       </div>
       <div>
+        <Container variant="full" className="mb-96">
+          <TestimonialsSection testimonialsData={data.testimonials} />
+        </Container>
+
         <Container className="mb-96">
           <VideoSection videoData={data.video} />
         </Container>

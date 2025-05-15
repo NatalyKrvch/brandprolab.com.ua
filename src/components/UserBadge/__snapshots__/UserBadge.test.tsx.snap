@@ -7,21 +7,25 @@ exports[`UserBadge component displays the correct user name 1`] = `
     data-testid="user-badge-test-id"
     href="https://example.com"
   >
-    <span
-      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
-      data-testid="user-badge-name-test-id"
-    >
-      John Doe
-    </span>
     <div
-      class="relative aspect-square w-14 desktop:w-16"
+      class="flex items-center gap-5"
     >
-      <img
-        alt="John Doe"
-        class="rounded-full object-cover"
-        data-testid="user-badge-image-test-id"
-        src="/test-image.jpg"
-      />
+      <span
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        data-testid="user-badge-name-test-id"
+      >
+        John Doe
+      </span>
+      <div
+        class="relative aspect-square w-14 desktop:w-16"
+      >
+        <img
+          alt="John Doe"
+          class="rounded-full object-cover"
+          data-testid="user-badge-image-test-id"
+          src="/test-image.jpg"
+        />
+      </div>
     </div>
   </a>
 </DocumentFragment>
@@ -33,21 +37,25 @@ exports[`UserBadge component renders a div wrapper when no userLink is provided 
     class="flex items-center justify-end gap-5 desktop:gap-6"
     data-testid="user-badge-test-id"
   >
-    <span
-      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
-      data-testid="user-badge-name-test-id"
-    >
-      John Doe
-    </span>
     <div
-      class="relative aspect-square w-14 desktop:w-16"
+      class="flex items-center gap-5"
     >
-      <img
-        alt="John Doe"
-        class="rounded-full object-cover"
-        data-testid="user-badge-image-test-id"
-        src="/test-image.jpg"
-      />
+      <span
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        data-testid="user-badge-name-test-id"
+      >
+        John Doe
+      </span>
+      <div
+        class="relative aspect-square w-14 desktop:w-16"
+      >
+        <img
+          alt="John Doe"
+          class="rounded-full object-cover"
+          data-testid="user-badge-image-test-id"
+          src="/test-image.jpg"
+        />
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -60,21 +68,25 @@ exports[`UserBadge component renders the UserBadge component 1`] = `
     data-testid="user-badge-test-id"
     href="https://example.com"
   >
-    <span
-      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
-      data-testid="user-badge-name-test-id"
-    >
-      John Doe
-    </span>
     <div
-      class="relative aspect-square w-14 desktop:w-16"
+      class="flex items-center gap-5"
     >
-      <img
-        alt="John Doe"
-        class="rounded-full object-cover"
-        data-testid="user-badge-image-test-id"
-        src="/test-image.jpg"
-      />
+      <span
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        data-testid="user-badge-name-test-id"
+      >
+        John Doe
+      </span>
+      <div
+        class="relative aspect-square w-14 desktop:w-16"
+      >
+        <img
+          alt="John Doe"
+          class="rounded-full object-cover"
+          data-testid="user-badge-image-test-id"
+          src="/test-image.jpg"
+        />
+      </div>
     </div>
   </a>
 </DocumentFragment>
@@ -87,21 +99,25 @@ exports[`UserBadge component renders the correct wrapper element when userLink i
     data-testid="user-badge-test-id"
     href="https://example.com"
   >
-    <span
-      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
-      data-testid="user-badge-name-test-id"
-    >
-      John Doe
-    </span>
     <div
-      class="relative aspect-square w-14 desktop:w-16"
+      class="flex items-center gap-5"
     >
-      <img
-        alt="John Doe"
-        class="rounded-full object-cover"
-        data-testid="user-badge-image-test-id"
-        src="/test-image.jpg"
-      />
+      <span
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        data-testid="user-badge-name-test-id"
+      >
+        John Doe
+      </span>
+      <div
+        class="relative aspect-square w-14 desktop:w-16"
+      >
+        <img
+          alt="John Doe"
+          class="rounded-full object-cover"
+          data-testid="user-badge-image-test-id"
+          src="/test-image.jpg"
+        />
+      </div>
     </div>
   </a>
 </DocumentFragment>
@@ -114,21 +130,25 @@ exports[`UserBadge component renders the user image with correct attributes 1`] 
     data-testid="user-badge-test-id"
     href="https://example.com"
   >
-    <span
-      class="text-lg font-medium leading-6 text-gray-dark desktop:text-xl"
-      data-testid="user-badge-name-test-id"
-    >
-      John Doe
-    </span>
     <div
-      class="relative aspect-square w-14 desktop:w-16"
+      class="flex items-center gap-5"
     >
-      <img
-        alt="John Doe"
-        class="rounded-full object-cover"
-        data-testid="user-badge-image-test-id"
-        src="/test-image.jpg"
-      />
+      <span
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        data-testid="user-badge-name-test-id"
+      >
+        John Doe
+      </span>
+      <div
+        class="relative aspect-square w-14 desktop:w-16"
+      >
+        <img
+          alt="John Doe"
+          class="rounded-full object-cover"
+          data-testid="user-badge-image-test-id"
+          src="/test-image.jpg"
+        />
+      </div>
     </div>
   </a>
 </DocumentFragment>

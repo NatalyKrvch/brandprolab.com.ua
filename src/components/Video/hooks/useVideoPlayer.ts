@@ -6,7 +6,7 @@ import { getYouTubeEmbedUrl } from '@/utils/getYouTubeEmbedUrl';
 
 export const useVideoPlayer = (videoUrl: string) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const embedUrl = getYouTubeEmbedUrl(videoUrl);
+  const embedUrl = getYouTubeEmbedUrl(videoUrl).trim();
 
   const handlePlay = () => {
     setIsPlaying(true);

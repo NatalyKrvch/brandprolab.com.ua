@@ -7,37 +7,32 @@ import {
 } from '@/lib/testIDs';
 
 import { ExternalLink } from '../Links';
-import {
-  getUserBadgeImageClass,
-  getUserBadgeImageWrapperClass,
-  getUserBadgeNameClass,
-  getUserBadgeWrapperClass,
-} from './helpers/getUserBadgeClasses';
 import type { UserBadgeProps } from './types';
 
 const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
   const content = (
-    <>
+    <div className="flex items-center gap-5">
       <span
-        className={getUserBadgeNameClass()}
+        className="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}
       </span>
-      <div className={getUserBadgeImageWrapperClass()}>
+
+      <div className="relative aspect-square w-14 desktop:w-16">
         <Image
-          className={getUserBadgeImageClass()}
+          className="rounded-full object-cover"
           src={userPhotoUrl}
           alt={userName}
           fill
           data-testid={USER_BADGE_IMAGE_TEST_ID}
         />
       </div>
-    </>
+    </div>
   );
 
   const commonProps = {
-    className: getUserBadgeWrapperClass(),
+    className: 'flex items-center justify-end gap-5 desktop:gap-6',
     'data-testid': USER_BADGE_TEST_ID,
   };
 

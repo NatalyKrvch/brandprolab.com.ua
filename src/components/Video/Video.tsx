@@ -34,6 +34,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
         <div
           className={`absolute inset-0 bg-teal-fogOpacity opacity-50 ${ROUNDED_CLASSES}`}
         />
+
         <Image
           src={thumbnailSrc}
           alt="Video Thumbnail"
@@ -42,6 +43,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           className={`h-full w-full object-cover ${ROUNDED_CLASSES}`}
           data-testid={VIDEO_THUMBNAIL_TEST_ID}
         />
+
         <div className="absolute inset-0 flex items-center justify-center">
           <button
             className="rounded-full shadow-lg transition hover:scale-105"
@@ -58,6 +60,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           </button>
         </div>
       </div>
+
       {isPlaying && (
         <iframe
           className={`h-full w-full ${ROUNDED_CLASSES}`}

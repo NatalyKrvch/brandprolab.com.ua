@@ -21,7 +21,7 @@ const CarouselNavButtons = ({
 }: CarouselNavButtonsProps) => {
   return (
     <div
-      className="absolute right-0 hidden gap-2 tablet:-top-60 tablet:flex desktop:-top-80 desktop:flex"
+      className="absolute hidden gap-2 tablet:-top-[80px] tablet:right-16 tablet:flex desktop:-top-[130px] desktop:right-56 desktop:flex"
       data-testid={CAROUSEL_NAV_WRAPPER_TEST_ID}
     >
       <AnimatePresence>

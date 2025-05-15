@@ -12,7 +12,7 @@ import Container from './Container';
 describe('Container component', () => {
   it('renders children inside the full-width container', () => {
     const { asFragment } = render(
-      <Container fullWidth>
+      <Container variant="full">
         <p>Test content</p>
       </Container>,
     );
@@ -40,13 +40,13 @@ describe('Container component', () => {
 
   it('applies fullWidth styles when fullWidth is true', () => {
     const { asFragment } = render(
-      <Container fullWidth>
+      <Container variant="full">
         <p>Full width content</p>
       </Container>,
     );
 
     const container = screen.getByTestId(FULL_WIDTH_CONTAINER_TEST_ID);
-    expect(container).toHaveClass('mx-auto');
+    expect(container).toHaveClass('w-full');
 
     expect(asFragment()).toMatchSnapshot();
   });

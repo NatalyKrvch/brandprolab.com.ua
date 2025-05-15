@@ -3,10 +3,6 @@ import { UserBadge } from '@/components/UserBadge';
 import { TESTIMONIAL_TEXT_TEST_ID } from '@/lib/testIDs';
 import { getReadMoreText } from '@/utils';
 
-import {
-  getTestimonialCardClasses,
-  getTestimonialTextClasses,
-} from './helpers/getTestimonialCardClasses';
 import type { TestimonialCardProps } from './types';
 
 const TestimonialCard = ({
@@ -21,14 +17,15 @@ const TestimonialCard = ({
   return (
     <SimpleCard
       borderColor="border-teal-dark"
-      className={`${getTestimonialCardClasses()} ${className}`}
+      className={`flex flex-col justify-between p-6 tablet:p-8 ${className}`}
     >
       <div
-        className={getTestimonialTextClasses()}
+        className="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
         data-testid={TESTIMONIAL_TEXT_TEST_ID}
       >
         {getReadMoreText(text)}
       </div>
+
       {shouldRenderUserBadge && (
         <UserBadge
           userName={clientName}

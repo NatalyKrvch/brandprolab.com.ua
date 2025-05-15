@@ -8,13 +8,6 @@ import {
   FLIP_CARD_FRONT_HEADER_TEST_ID,
 } from '@/lib/testIDs';
 
-import {
-  getCardClass,
-  getDescriptionClass,
-  getHeaderClass,
-  getIconWrapperClass,
-  getLabelClass,
-} from './helpers/getFlipCardFrontClasses';
 import type { FlipCardFrontProps } from './types';
 
 const FlipCardFront = ({
@@ -25,19 +18,24 @@ const FlipCardFront = ({
   callToAction,
 }: FlipCardFrontProps) => {
   return (
-    <SimpleCard borderColor="border-teal-dark" className={getCardClass()}>
-      <div className={getIconWrapperClass()}>
+    <SimpleCard
+      borderColor="border-teal-dark"
+      className="flex h-full flex-col gap-6 p-8"
+    >
+      <div className="flex items-center justify-end">
         <Icon iconURL={iconURL} type={IconClassType.SERVICES} />
       </div>
       <p
-        className={getHeaderClass()}
+        className="text-26 font-bold leading-26 text-black tablet:text-28 tablet:leading-7 desktop:text-32 desktop:leading-8"
         data-testid={FLIP_CARD_FRONT_HEADER_TEST_ID}
       >
         {header}
       </p>
-      <Label className={getLabelClass()}>{label}</Label>
+      <Label className="text-14 text-blue-dark tablet:text-base desktop:text-lg">
+        {label}
+      </Label>
       <p
-        className={getDescriptionClass()}
+        className="text-base font-normal leading-22 text-black desktop:text-lg"
         data-testid={FLIP_CARD_FRONT_DESCRIPTION_TEST_ID}
       >
         {description}

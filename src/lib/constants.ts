@@ -13,8 +13,6 @@ export const ALL_DATA_QUERY = `
 }
 `;
 
-export const REVALIDATE = 60;
-
 export const YOUTUBE_REGEX =
   /(?:youtu\.be\/|youtube\.com\/(?:.*[?&]v=|embed\/|v\/|shorts\/|live\/))([^&?/]+)/;
 
@@ -23,3 +21,7 @@ export enum IconClassType {
   EXPERTISE = 'expertise',
   SOCIAL_MEDIA = 'social-media',
 }
+export const REVALIDATE = 60;
+export const ENDLESS_CAROUSEL_SPEED = 50;
+export const SLIDER_RIGHT_SHIFT = 2;
+export const SLIDER_LEFT_SHIFT = -1;

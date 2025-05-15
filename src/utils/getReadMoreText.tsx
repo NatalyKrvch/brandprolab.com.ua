@@ -1,16 +1,17 @@
 export const getReadMoreText = (text: string, onClick?: () => void) => {
   const words = text.split(' ');
 
-  if (words.length > 12) {
+  if (words.length > 15) {
     return (
       <>
-        {words.slice(0, 12).join(' ')}
+        {words.slice(0, 15).join(' ')}
+        <span>...</span>
         <span
           onClick={onClick}
-          className="cursor-pointer text-gray-dark transition-colors duration-200 hover:text-gray-medium"
+          className="cursor-pointer text-lg text-gray-dark transition-colors duration-200 hover:text-gray-medium"
         >
           {' '}
-          ...читати більше
+          Читати більше
         </span>
       </>
     );

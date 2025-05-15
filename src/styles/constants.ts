@@ -1,3 +1,4 @@
+export const MAX_DESKTOP_MEDIA_QUERY = '(min-width: 1224px)';
 export const DESKTOP_MEDIA_QUERY = '(min-width: 1224px)';
 export const MID_TABLET_MEDIA_QUERY = '(min-width: 800px)';
 export const TABLET_MEDIA_QUERY = '(min-width: 600px)';

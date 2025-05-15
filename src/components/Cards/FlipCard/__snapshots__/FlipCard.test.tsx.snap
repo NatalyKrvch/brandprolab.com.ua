@@ -7,7 +7,7 @@ exports[`FlipCard component renders the FlipCard component 1`] = `
     data-testid="flip-card-test-id"
   >
     <div
-      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] "
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
     >
       <div
         class="absolute flex h-full w-full [backface-visibility:hidden]"
@@ -33,7 +33,7 @@ exports[`FlipCard component renders the back side content 1`] = `
     data-testid="flip-card-test-id"
   >
     <div
-      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] "
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
     >
       <div
         class="absolute flex h-full w-full [backface-visibility:hidden]"
@@ -59,7 +59,7 @@ exports[`FlipCard component renders the front side content 1`] = `
     data-testid="flip-card-test-id"
   >
     <div
-      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] "
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
     >
       <div
         class="absolute flex h-full w-full [backface-visibility:hidden]"
@@ -85,7 +85,7 @@ exports[`FlipCard component toggles between front and back when clicked 1`] = `
     data-testid="flip-card-test-id"
   >
     <div
-      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] "
+      class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
     >
       <div
         class="absolute flex h-full w-full [backface-visibility:hidden]"
