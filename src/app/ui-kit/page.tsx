@@ -111,6 +111,7 @@ const Uikit = () => {
           {TESTIMONIALS_ONE.map((testimonial, index) => (
             <div key={index} className="mx-4">
               <TestimonialCard
+                amountOfWordsToDisplay={12}
                 {...testimonial}
                 className="desktop:h-216 desktop:w-336"
               />
@@ -125,7 +126,12 @@ const Uikit = () => {
         </span>
         <ControlledCarousel>
           {TESTIMONIALS_TWO.map((t, i) => (
-            <TestimonialCard key={i} {...t} className="h-240 desktop:h-300" />
+            <TestimonialCard
+              amountOfWordsToDisplay={15}
+              key={i}
+              {...t}
+              className="h-240 desktop:h-300"
+            />
           ))}
         </ControlledCarousel>
       </div>
@@ -248,6 +254,7 @@ const Uikit = () => {
           TestimonialCard component
         </span>
         <TestimonialCard
+          amountOfWordsToDisplay={15}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           clientName="Anastasiia Kovalchuk"
           clientPhotoUrl="https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg"
@@ -259,7 +266,10 @@ const Uikit = () => {
         <span className="my-3 text-xl font-bold">
           TestimonialCard with no client component
         </span>
-        <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+        <TestimonialCard
+          amountOfWordsToDisplay={12}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
       </div>
 
       <div className="w-50 m-4 flex flex-col gap-5">

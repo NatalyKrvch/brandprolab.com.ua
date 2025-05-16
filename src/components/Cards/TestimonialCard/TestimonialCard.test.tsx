@@ -36,6 +36,7 @@ jest.mock('@/components/UserBadge', () => ({
 describe('TestimonialCard component', () => {
   const defaultProps = {
     text: 'This is a testimonial text.',
+    amountOfWordsToDisplay: 12,
     clientName: 'John Doe',
     clientPhotoUrl: '/john-doe.jpg',
     clientLink: 'https://example.com',
@@ -59,7 +60,10 @@ describe('TestimonialCard component', () => {
 
   it('applies getReadMoreText to the testimonial text', () => {
     render(<TestimonialCard {...defaultProps} />);
-    expect(getReadMoreText).toHaveBeenCalledWith('This is a testimonial text.');
+    expect(getReadMoreText).toHaveBeenCalledWith(
+      'This is a testimonial text.',
+      12,
+    );
   });
 
   it('renders UserBadge when clientName and clientPhotoUrl are provided', () => {
@@ -80,7 +84,7 @@ describe('TestimonialCard component', () => {
   });
 
   it('does not render UserBadge if clientName or clientPhotoUrl is missing', () => {
-    render(<TestimonialCard text="Test text" />);
+    render(<TestimonialCard amountOfWordsToDisplay={12} text="Test text" />);
     expect(screen.queryByTestId(USER_BADGE_TEST_ID)).not.toBeInTheDocument();
   });
 });

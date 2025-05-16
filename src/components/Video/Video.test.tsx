@@ -1,5 +1,17 @@
 import '@testing-library/jest-dom';
 
+jest.mock('@/sanity/lib/client', () => ({
+  client: {
+    fetch: jest.fn().mockResolvedValue({}),
+  },
+}));
+
+jest.mock('@sanity/client', () => ({
+  createClient: () => ({
+    fetch: jest.fn().mockResolvedValue({}),
+  }),
+}));
+
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import {
