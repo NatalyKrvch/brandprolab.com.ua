@@ -1,6 +1,6 @@
 import { ExternalLink } from '@/components';
 import { FOOTER_SECTION_TEST_ID } from '@/lib/testIDs';
-import { getCurrentYear } from '@/utils/getCurrentYear';
+import { getCurrentYear } from '@/utils';
 
 import { FooterSectionProps } from './types';
 

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { getYouTubeEmbedUrl } from '@/utils/getYouTubeEmbedUrl';
+import { getYouTubeEmbedUrl } from '@/utils';
 
 export const useVideoPlayer = (videoUrl: string) => {
   const [isPlaying, setIsPlaying] = useState(false);

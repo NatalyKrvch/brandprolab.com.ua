@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useMemo } from 'react';
 
 import { PAGINATION_DOT_TEST_ID } from '@/lib/testIDs';
-import { generateRandomId } from '@/utils/generateRandomId';
+import { generateRandomId } from '@/utils';
 
 import { PaginationDotsProps } from './types';
 

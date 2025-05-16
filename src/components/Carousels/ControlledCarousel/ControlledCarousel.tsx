@@ -11,7 +11,7 @@ import {
 
 import { PaginationDots } from '@/components/PaginationDots';
 import { SLIDE_CLASSNAME, SLIDER_CLASSNAME } from '@/styles/constants';
-import { generateRandomId } from '@/utils/generateRandomId';
+import { generateRandomId } from '@/utils';
 
 import { CarouselNavButtons } from './components/CarouselNavButtons';
 import { useControlledCarousel } from './hooks/useControlledCarousel';
