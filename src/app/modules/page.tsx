@@ -1,6 +1,7 @@
 import { Container } from '@/components';
 import { ALL_DATA_QUERY } from '@/lib/constants';
 import {
+  CasesSection,
   DiagnosticSection,
   FooterSection,
   TestimonialsSection,
@@ -22,6 +23,10 @@ const Modules = async () => {
         <h1 className="text-3xl font-bold">Modules</h1>
       </div>
       <div>
+        <Container variant="full" className="mb-96">
+          <CasesSection casesData={data.cases} />
+        </Container>
+
         <Container variant="full" className="mb-96">
           <TestimonialsSection testimonialsData={data.testimonials} />
         </Container>
