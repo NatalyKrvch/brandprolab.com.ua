@@ -11,6 +11,7 @@ const TestimonialCard = ({
   clientPhotoUrl,
   clientLink,
   className,
+  amountOfWordsToDisplay,
 }: TestimonialCardProps) => {
   const shouldRenderUserBadge = clientName && clientPhotoUrl && clientLink;
 
@@ -23,7 +24,7 @@ const TestimonialCard = ({
         className="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
         data-testid={TESTIMONIAL_TEXT_TEST_ID}
       >
-        {getReadMoreText(text)}
+        {getReadMoreText(text, amountOfWordsToDisplay)}
       </div>
 
       {shouldRenderUserBadge && (

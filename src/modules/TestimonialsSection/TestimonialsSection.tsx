@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 
 import { TestimonialCard } from '@/components';
+import { AMOUNT_OF_TESTIMONIALS_WORDS } from '@/lib/constants';
 import { urlFor } from '@/sanity/lib/image';
 
 import { TestimonialsSectionProps } from './types';
@@ -37,6 +38,7 @@ const TestimonialsSection = ({
               clientName={person.personName}
               clientPhotoUrl={smallPhotoSrc}
               clientLink={person.link}
+              amountOfWordsToDisplay={AMOUNT_OF_TESTIMONIALS_WORDS}
               className="h-300"
             />
           );
