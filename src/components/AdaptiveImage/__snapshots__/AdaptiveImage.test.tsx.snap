@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdaptiveImage component renders a <picture> with multiple <source> and a fallback <img> 1`] = `
+<DocumentFragment>
+  <picture
+    class="test-class"
+  >
+    <source
+      media="(max-width: 600px)"
+      srcset="/img-small.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/img-large.jpg"
+    />
+    <img
+      alt="Test Alt"
+      class="test-class"
+      src="/fallback.jpg"
+    />
+  </picture>
+</DocumentFragment>
+`;
+
+exports[`AdaptiveImage component returns nothing when sources array is empty 1`] = `<DocumentFragment />`;
+
+exports[`AdaptiveImage component returns null when no fallbackSrc is provided 1`] = `<DocumentFragment />`;

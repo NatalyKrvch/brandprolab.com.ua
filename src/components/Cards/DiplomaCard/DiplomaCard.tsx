@@ -14,7 +14,7 @@ const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
       className="w-fit rounded-24 border border-gray-medium p-2"
       data-testid={DIPLOMA_CARD_TEST_ID}
     >
-      <div className="relative h-40 w-auto max-w-full overflow-hidden rounded-3xl">
+      <div className="relative h-108 w-auto max-w-full overflow-hidden rounded-3xl">
         <div
           onClick={onClick}
           onKeyDown={e => e.key === 'Enter' && onClick?.()}

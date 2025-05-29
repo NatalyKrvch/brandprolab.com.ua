@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Image from 'next/image';
 
 import {
@@ -10,15 +11,16 @@ import { IconProps } from './types';
 
 const Icon = ({
   iconURL,
+  type,
+  className = '',
   iconAlt = 'Icon',
   circleColor = 'bg-teal-darkOpacity',
-  type,
 }: IconProps) => {
   const { circleClass, iconClass } = getIconClasses(type);
 
   return (
     <div
-      className="flex items-center justify-center"
+      className={clsx('flex items-center justify-center', className)}
       data-testid={ICON_COMPONENT_TEST_ID}
     >
       <div className={`${circleColor} ${circleClass}`}>
