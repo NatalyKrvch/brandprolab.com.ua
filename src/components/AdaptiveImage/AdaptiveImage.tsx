@@ -1,0 +1,28 @@
+import clsx from 'clsx';
+
+import { AdaptiveImageProps } from './types';
+
+export default function AdaptiveImage({
+  alt,
+  sources,
+  fallbackSrc,
+  className,
+}: AdaptiveImageProps) {
+  if (!fallbackSrc) return null;
+
+  if (sources.length > 0) {
+    return (
+      <picture className={clsx(className)}>
+        {sources.map(srcObj => (
+          <source
+            key={srcObj.media}
+            srcSet={srcObj.srcSet}
+            media={srcObj.media}
+          />
+        ))}
+
+        <img src={fallbackSrc} alt={alt} className={clsx(className)} />
+      </picture>
+    );
+  }
+}
