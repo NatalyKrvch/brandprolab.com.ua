@@ -7,11 +7,11 @@ exports[`Icon component renders the Icon component with image inside and correct
     data-testid="icon-component-test-id"
   >
     <div
-      class="bg-teal-darkOpacity relative flex items-center justify-center rounded-full w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-108 desktop:h-108"
+      class="bg-teal-darkOpacity relative flex items-center justify-center rounded-full w-68 h-68 tablet:w-20 tablet:h-20 desktop:w-108 desktop:h-108"
     >
       <img
         alt="Test Icon"
-        class="absolute w-64 h-64 tablet:w-72 tablet:h-72 desktop:w-96 desktop:h-96 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-36"
+        class="absolute w-16 h-16 tablet:w-72 tablet:h-72 desktop:w-96 desktop:h-96 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-36"
         data-testid="icon-component-image-test-id"
         src="/test-icon.svg"
       />

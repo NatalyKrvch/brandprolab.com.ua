@@ -2,9 +2,10 @@ import { IconClassType } from '@/lib/constants';
 
 export interface IconProps {
   iconURL: string;
+  type: IconClassType;
+  className?: string;
   iconAlt?: string;
   circleColor?: string;
-  type: IconClassType;
 }
 
 export type IconClassSet = {
