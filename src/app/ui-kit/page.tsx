@@ -1,109 +1,125 @@
 'use client';
 
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 import {
-  Button,
+  // Button,
   Container,
   DiplomaCard,
-  EndlessCarousel,
+  // EndlessCarousel,
   ExternalLink,
-  FlipCard,
-  FlipCardBack,
-  FlipCardFront,
+  // FlipCard,
+  // FlipCardBack,
+  // FlipCardFront,
   Icon,
   InternalLink,
   Label,
   List,
-  PhotoCard,
-  SimpleCard,
-  SocialMediaCard,
-  TestimonialCard,
+  MainSocialMediaCard,
+  // PhotoCard,
+  // SimpleCard,
+  // SocialMediaCard,
+  // TestimonialCard,
   UnderlinedText,
   UserBadge,
-  Video,
+  // Video,
 } from '@/components';
 import { IconClassType } from '@/lib/constants';
-import { MainSocialCardColor } from '@/styles/constants';
+// import { MainSocialCardColor } from '@/styles/constants';
 
-const ControlledCarousel = dynamic(
-  () =>
-    import('@/components/Carousels/ControlledCarousel').then(
-      mod => mod.ControlledCarousel,
-    ),
-  { ssr: false },
-);
+// const ControlledCarousel = dynamic(
+//   () =>
+//     import('@/components/Carousels/ControlledCarousel').then(
+//       mod => mod.ControlledCarousel,
+//     ),
+//   { ssr: false },
+// );
 
-const TESTIMONIALS_ONE = [
-  {
-    text: 'Цей сервіс перевершив усі мої очікування! Рекомендую кожному, хто шукає якість і турботу.',
-  },
-  {
-    text: 'Неймовірний досвід! Команда дуже уважна до деталей.',
-  },
-  {
-    text: 'Я отримала більше, ніж очікувала. Дуже вдячна!',
-  },
-  {
-    text: 'Швидко, зручно і професійно. Однозначно 10 з 10.',
-  },
-  {
-    text: 'Це найкраще рішення, яке я приймала для свого проєкту.',
-  },
-  {
-    text: 'Дякую за індивідуальний підхід та чудовий результат!',
-  },
-];
+// const TESTIMONIALS_ONE = [
+//   {
+//     text: 'Цей сервіс перевершив усі мої очікування! Рекомендую кожному, хто шукає якість і турботу.',
+//   },
+//   {
+//     text: 'Неймовірний досвід! Команда дуже уважна до деталей.',
+//   },
+//   {
+//     text: 'Я отримала більше, ніж очікувала. Дуже вдячна!',
+//   },
+//   {
+//     text: 'Швидко, зручно і професійно. Однозначно 10 з 10.',
+//   },
+//   {
+//     text: 'Це найкраще рішення, яке я приймала для свого проєкту.',
+//   },
+//   {
+//     text: 'Дякую за індивідуальний підхід та чудовий результат!',
+//   },
+// ];
 
-const TESTIMONIALS_TWO = [
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-    clientName: 'Іван',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-    clientLink: 'https://linkedin.com/in/ivan',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-    clientName: 'Олена',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-    clientLink: 'https://linkedin.com/in/olena',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-    clientName: 'Іван',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-    clientLink: 'https://linkedin.com/in/ivan',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-    clientName: 'Олена',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-    clientLink: 'https://linkedin.com/in/olena',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
-    clientName: 'Іван',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-    clientLink: 'https://linkedin.com/in/ivan',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
-    clientName: 'Олена',
-    clientPhotoUrl:
-      'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
-    clientLink: 'https://linkedin.com/in/olena',
-  },
-];
+// const TESTIMONIALS_TWO = [
+//   {
+//     text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+//     clientName: 'Іван',
+//     clientPhotoUrl:
+//       'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+//     clientLink: 'https://linkedin.com/in/ivan',
+//   },
+//   {
+//     text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+//     clientName: 'Олена',
+//     clientPhotoUrl:
+//       'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+//     clientLink: 'https://linkedin.com/in/olena',
+//   },
+//   {
+//     text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+//     clientName: 'Іван',
+//     clientPhotoUrl:
+//       'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+//     clientLink: 'https://linkedin.com/in/ivan',
+//   },
+//   {
+//     text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+//     clientName: 'Олена',
+//     clientPhotoUrl:
+//       'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+//     clientLink: 'https://linkedin.com/in/olena',
+//   },
+//   {
+//     text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet...',
+//     clientName: 'Іван',
+//     clientPhotoUrl:
+//       'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+//     clientLink: 'https://linkedin.com/in/ivan',
+//   },
+//   {
+//     text: 'Lorem ipsum dolor sit amet consectetur. Eget turpis ut eget ante leo lacus amet',
+//     clientName: 'Олена',
+//     clientPhotoUrl:
+//       'https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg',
+//     clientLink: 'https://linkedin.com/in/olena',
+//   },
+// ];
 
 const Uikit = () => {
   return (
     <>
-      <div className="">
+      <div className="mb-4">
+        {/* <span className="my-3 text-xl font-bold">
+          MainSocialMediaCard component
+        </span> */}
+        <MainSocialMediaCard
+          desktopPhotoURL="/images/temp/photo_desktop.png"
+          tabletPhotoURL="/images/temp/photo_tablet.png"
+          mobilePhotoURL="/images/temp/photo_mobile.png"
+          iconURL="/icons/cards/socialMedia/insta.svg"
+          description="– основна платформа для кар’єрних порад, інформації про ринок праці."
+          platformName="LinkedIn"
+          platformURL="https://linkedin.com"
+        />
+      </div>
+
+      {/* <div className="mb-4">
         <span className="my-3 text-xl font-bold">
           EndlessCarousel component
         </span>
@@ -118,9 +134,9 @@ const Uikit = () => {
             </div>
           ))}
         </EndlessCarousel>
-      </div>
+      </div> */}
 
-      <div className="mx-4 my-16">
+      {/* <div className="mx-4 my-16">
         <span className="my-3 text-xl font-bold">
           TestimonialCarousel component
         </span>
@@ -134,8 +150,8 @@ const Uikit = () => {
             />
           ))}
         </ControlledCarousel>
-      </div>
-
+      </div> */}
+      {/* 
       <div className="m-4 w-[314px]">
         <span className="my-3 text-xl font-bold">
           SocialMediaCard component
@@ -147,9 +163,9 @@ const Uikit = () => {
           description="Публікації та відео про саморозвиток і пошук роботи."
           mainColor={MainSocialCardColor.BLUE}
         />
-      </div>
+      </div> */}
 
-      <div className="relative mx-4 my-10 h-[500px] w-[480px]">
+      {/* <div className="relative mx-4 my-10 h-[500px] w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCard component</span>
         <FlipCard
           front={
@@ -172,9 +188,9 @@ const Uikit = () => {
             />
           }
         />
-      </div>
+      </div> */}
 
-      <div className="m-4 w-[480px]">
+      {/* <div className="m-4 w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCardFront component</span>
         <FlipCardFront
           iconURL="/icons/cards/hand.svg"
@@ -183,8 +199,8 @@ const Uikit = () => {
           description="Онлайн-зустріч для вирішення конкретного запиту: аудит резюме, LinkedIn, підготовка до співбесіди чи боротьба з вигоранням."
           callToAction="Що можна вирішити на консультації?"
         />
-      </div>
-
+      </div> */}
+      {/* 
       <div className="m-4 w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCardBack component</span>
         <FlipCardBack
@@ -195,17 +211,17 @@ const Uikit = () => {
             'Розробити стратегію пошуку роботи: як і де шукати вакансії, яких помилок уникати',
           ]}
         />
-      </div>
+      </div> */}
 
-      <div className="m-4">
+      {/* <div className="m-4">
         <span className="my-3 text-xl font-bold">Video component</span>
         <Video
           videoUrl="https://www.youtube.com/watch?v=4glKLs5Py1A"
           thumbnailSrc="/images/temp/Screenshot.png"
         />
-      </div>
+      </div> */}
 
-      <div className="m-4 flex w-[408px] flex-col gap-5">
+      {/* <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">PhotoCard component</span>
         <PhotoCard
           text="Чому мені можна довіряти?"
@@ -215,9 +231,9 @@ const Uikit = () => {
           imageHeight={600}
           cardHeight={744}
         />
-      </div>
-
-      <div className="m-4 flex w-[552px] flex-col gap-5">
+      </div> */}
+      {/* 
+      <div className="m-4 flex flex-col gap-5">
         <PhotoCard
           photoUrl="/images/temp/photo-hero.png"
           backgroundUrl="/images/backgrounds/hero-photocard-bg.svg"
@@ -225,7 +241,7 @@ const Uikit = () => {
           imageHeight={764}
           cardHeight={824}
         />
-      </div>
+      </div> */}
 
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">DiplomaCard component</span>
@@ -236,20 +252,20 @@ const Uikit = () => {
         <DiplomaCard diplomaURL="https://media.vanityfair.com/photos/63e561bc4d9ea7ac2d152348/16:9/w_5791,h_3257,c_limit/VU0323_Cover_EdLetterPage.jpg" />
       </div>
 
-      <div className="m-4 flex w-[408] flex-col gap-5">
+      {/* <div className="m-4 flex w-[408] flex-col gap-5">
         <span className="my-3 text-xl font-bold">SimpleCard component</span>
         <SimpleCard backgroundColor="bg-teal-light" className="p-6">
           <p className="mb-6 font-bold">SimpleCard content</p>
           <List list={['Item 1', 'Item 2', 'Item 3']} />
         </SimpleCard>
-      </div>
+      </div> */}
 
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">List component</span>
         <List list={['Item 1', 'Item 2', 'Item 3']} />
       </div>
 
-      <div className="m-4 flex h-[300] w-[442] flex-col gap-5">
+      {/* <div className="m-4 flex h-[300] w-[442] flex-col gap-5">
         <span className="my-3 text-xl font-bold">
           TestimonialCard component
         </span>
@@ -260,9 +276,9 @@ const Uikit = () => {
           clientPhotoUrl="https://media.vanityfair.com/photos/659d6933b6da4325190e2751/1:1/w_1333,h_1333,c_limit/Lindsay-Lohan.jpg"
           clientLink="https://www.google.com/"
         />
-      </div>
+      </div> */}
 
-      <div className="m-4 flex w-[442] flex-col gap-5">
+      {/* <div className="m-4 flex w-[442] flex-col gap-5">
         <span className="my-3 text-xl font-bold">
           TestimonialCard with no client component
         </span>
@@ -270,7 +286,7 @@ const Uikit = () => {
           amountOfWordsToDisplay={12}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
-      </div>
+      </div> */}
 
       <div className="w-50 m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">UserBadge component</span>
@@ -285,9 +301,9 @@ const Uikit = () => {
         <UnderlinedText>Underlined Text</UnderlinedText>
       </div>
 
-      <div className="m-4 w-[464px]">
+      {/* <div className="m-4 w-[464px]">
         <Button onClick={() => console.log('Click')}>Записатись</Button>
-      </div>
+      </div> */}
 
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">Label component</span>

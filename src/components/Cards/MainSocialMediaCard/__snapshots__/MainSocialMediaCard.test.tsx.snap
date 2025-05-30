@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainSocialMediaCard displays platformName and description text and matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="https://example.com"
+  >
+    <div>
+      <div
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+      >
+        <svg
+          aria-label="icon"
+          data-circle-color="bg-blue-default"
+          data-icon-url="/icon.svg"
+          data-type="social-media-main"
+          role="img"
+        />
+        <div
+          class="z-10"
+        >
+          <p
+            class="mb-1 text-28 font-bold leading-none tracking-normal text-blue-default tablet:text-4xl tablet:leading-none tablet:tracking-normal desktop:px-2 desktop:text-5xl desktop:leading-none desktop:tracking-normal"
+          >
+            Test Platform
+          </p>
+          <p
+            class="min-w-196 text-sm font-normal leading-4 tracking-normal text-gray-dark mobile:max-w-250 tablet:min-w-150 tablet:max-w-320 tablet:text-base tablet:leading-5 desktop:px-2 desktop:text-lg desktop:leading-22"
+          >
+            Test description
+          </p>
+        </div>
+      </div>
+      <div
+        class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
+      >
+        <img
+          alt="Photo"
+          src="/mobile.jpg"
+        />
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`MainSocialMediaCard renders a link with correct href and matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="https://example.com"
+  >
+    <div>
+      <div
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+      >
+        <svg
+          aria-label="icon"
+          data-circle-color="bg-blue-default"
+          data-icon-url="/icon.svg"
+          data-type="social-media-main"
+          role="img"
+        />
+        <div
+          class="z-10"
+        >
+          <p
+            class="mb-1 text-28 font-bold leading-none tracking-normal text-blue-default tablet:text-4xl tablet:leading-none tablet:tracking-normal desktop:px-2 desktop:text-5xl desktop:leading-none desktop:tracking-normal"
+          >
+            Test Platform
+          </p>
+          <p
+            class="min-w-196 text-sm font-normal leading-4 tracking-normal text-gray-dark mobile:max-w-250 tablet:min-w-150 tablet:max-w-320 tablet:text-base tablet:leading-5 desktop:px-2 desktop:text-lg desktop:leading-22"
+          >
+            Test description
+          </p>
+        </div>
+      </div>
+      <div
+        class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
+      >
+        <img
+          alt="Photo"
+          src="/mobile.jpg"
+        />
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`MainSocialMediaCard renders the fallback image with correct src and alt and matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="https://example.com"
+  >
+    <div>
+      <div
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+      >
+        <svg
+          aria-label="icon"
+          data-circle-color="bg-blue-default"
+          data-icon-url="/icon.svg"
+          data-type="social-media-main"
+          role="img"
+        />
+        <div
+          class="z-10"
+        >
+          <p
+            class="mb-1 text-28 font-bold leading-none tracking-normal text-blue-default tablet:text-4xl tablet:leading-none tablet:tracking-normal desktop:px-2 desktop:text-5xl desktop:leading-none desktop:tracking-normal"
+          >
+            Test Platform
+          </p>
+          <p
+            class="min-w-196 text-sm font-normal leading-4 tracking-normal text-gray-dark mobile:max-w-250 tablet:min-w-150 tablet:max-w-320 tablet:text-base tablet:leading-5 desktop:px-2 desktop:text-lg desktop:leading-22"
+          >
+            Test description
+          </p>
+        </div>
+      </div>
+      <div
+        class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
+      >
+        <img
+          alt="Photo"
+          src="/mobile.jpg"
+        />
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`MainSocialMediaCard renders the icon SVG with correct attributes and matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="https://example.com"
+  >
+    <div>
+      <div
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+      >
+        <svg
+          aria-label="icon"
+          data-circle-color="bg-blue-default"
+          data-icon-url="/icon.svg"
+          data-type="social-media-main"
+          role="img"
+        />
+        <div
+          class="z-10"
+        >
+          <p
+            class="mb-1 text-28 font-bold leading-none tracking-normal text-blue-default tablet:text-4xl tablet:leading-none tablet:tracking-normal desktop:px-2 desktop:text-5xl desktop:leading-none desktop:tracking-normal"
+          >
+            Test Platform
+          </p>
+          <p
+            class="min-w-196 text-sm font-normal leading-4 tracking-normal text-gray-dark mobile:max-w-250 tablet:min-w-150 tablet:max-w-320 tablet:text-base tablet:leading-5 desktop:px-2 desktop:text-lg desktop:leading-22"
+          >
+            Test description
+          </p>
+        </div>
+      </div>
+      <div
+        class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
+      >
+        <img
+          alt="Photo"
+          src="/mobile.jpg"
+        />
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;
