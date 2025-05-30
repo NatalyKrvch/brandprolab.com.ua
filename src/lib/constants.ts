@@ -20,6 +20,7 @@ export enum IconClassType {
   SERVICES = 'services',
   EXPERTISE = 'expertise',
   SOCIAL_MEDIA = 'social-media',
+  SOCIAL_MEDIA_MAIN = 'social-media-main',
 }
 export const REVALIDATE = 60;
 export const ENDLESS_CAROUSEL_SPEED = 50;

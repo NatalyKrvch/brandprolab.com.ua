@@ -1,8 +1,10 @@
+export { AdaptiveImage } from './AdaptiveImage';
 export { Button } from './Button';
 export { DiplomaCard } from './Cards/DiplomaCard';
 export { FlipCard } from './Cards/FlipCard';
 export { FlipCardBack } from './Cards/FlipCard/components/FlipCardBack';
 export { FlipCardFront } from './Cards/FlipCard/components/FlipCardFront';
+export { MainSocialMediaCard } from './Cards/MainSocialMediaCard';
 export { PhotoCard } from './Cards/PhotoCard';
 export { SimpleCard } from './Cards/SimpleCard';
 export { SocialMediaCard } from './Cards/SocialMediaCard';
