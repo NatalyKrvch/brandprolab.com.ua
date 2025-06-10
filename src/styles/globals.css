@@ -34,8 +34,19 @@
   font-style: normal;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Mariupol', sans-serif;
   color: var(--main-text);
   background: var(--background);
+}
+
+@media (max-width: 480px) {
+  .keen-slider__slide {
+    flex: 0 0 auto;
+  }
 }
