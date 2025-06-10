@@ -18,7 +18,6 @@ import { useControlledCarousel } from './hooks/useControlledCarousel';
 
 const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
   const sliderId = useMemo(() => generateRandomId(), []);
-
   const {
     sliderRef,
     currentSlideIndex,
@@ -40,9 +39,12 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
         onNextSlide={handleNextSlide}
       />
 
-      <div ref={sliderRef} className={SLIDER_CLASSNAME}>
+      <div ref={sliderRef} className={`${SLIDER_CLASSNAME}`}>
         {validChildren.map((child, index) => (
-          <div key={`${sliderId}-slide-${index}`} className={SLIDE_CLASSNAME}>
+          <div
+            key={`${sliderId}-slide-${index}`}
+            className={`${SLIDE_CLASSNAME} mobile:flex mobile:w-full mobile:items-center mobile:justify-center`}
+          >
             {child}
           </div>
         ))}
