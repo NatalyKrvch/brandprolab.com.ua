@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import { SimpleCard } from '@/components/Cards/SimpleCard';
 import { UserBadge } from '@/components/UserBadge';
 import { TESTIMONIAL_TEXT_TEST_ID } from '@/lib/testIDs';
@@ -18,7 +20,10 @@ const TestimonialCard = ({
   return (
     <SimpleCard
       borderColor="border-teal-dark"
-      className={`flex flex-col justify-between p-6 tablet:p-8 ${className}`}
+      className={clsx(
+        'flex flex-col justify-between p-28 desktop:p-8',
+        className,
+      )}
     >
       <div
         className="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
