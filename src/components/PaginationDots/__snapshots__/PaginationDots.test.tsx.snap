@@ -6,23 +6,23 @@ exports[`PaginationDots component applies active class to the current dot 1`] = 
     class="flex justify-center gap-2"
   >
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
   </div>
@@ -35,23 +35,23 @@ exports[`PaginationDots component applies inactive classes to other dots 1`] = `
     class="flex justify-center gap-2"
   >
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
   </div>
@@ -64,23 +64,23 @@ exports[`PaginationDots component calls onDotClick with correct index 1`] = `
     class="flex justify-center gap-2"
   >
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
   </div>
@@ -93,23 +93,23 @@ exports[`PaginationDots component renders the correct number of dots 1`] = `
     class="flex justify-center gap-2"
   >
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors bg-teal-dark"
+      class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
-      class="duration-400 h-2 w-2 rounded-full transition-colors border border-teal-dark bg-gray-light"
+      class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
   </div>

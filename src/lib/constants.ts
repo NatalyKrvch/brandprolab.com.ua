@@ -25,8 +25,7 @@ export enum IconClassType {
 export const REVALIDATE = 60;
 export const ENDLESS_CAROUSEL_SPEED = 50;
 export const SLIDER_RIGHT_SHIFT = 2;
-export const SLIDER_LEFT_SHIFT = -1;
-export const AMOUNT_OF_TESTIMONIALS_WORDS = 15;
+export const AMOUNT_OF_TESTIMONIALS_WORDS = 12;
 export const AMOUNT_OF_CASES_WORDS_DESKTOP = 13;
 export const AMOUNT_OF_CASES_WORDS_TABLET = 9;
 export const AMOUNT_OF_CASES_WORDS_MOBILE = 13;

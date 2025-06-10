@@ -1,31 +1,33 @@
 'use client';
 
-import type { KeenSliderOptions } from 'keen-slider';
+import type { KeenSliderInstance, KeenSliderOptions } from 'keen-slider';
 import { useKeenSlider } from 'keen-slider/react';
 import { useState } from 'react';
+
+import { SLIDER_RIGHT_SHIFT } from '@/lib/constants';
 
 import {
   BASE_SLIDES_CONFIG,
   SLIDER_BREAKPOINTS,
 } from '../configs/carouselConfig';
-import { createOnSlideChanged } from '../helpers/onSlideChanged';
 
 export const useControlledCarousel = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isFirstSlide, setIsFirstSlide] = useState(true);
   const [isLastSlide, setIsLastSlide] = useState(false);
 
-  const onSlideChanged = createOnSlideChanged({
-    setCurrentSlideIndex,
-    setIsFirstSlide,
-    setIsLastSlide,
-  });
+  const onSlideChanged = (slider: KeenSliderInstance) => {
+    const idx = slider.track.details.rel;
+    const slidesCount = slider.track.details.slides.length;
+    setCurrentSlideIndex(idx);
+    setIsFirstSlide(idx === 0);
+    setIsLastSlide(idx === slidesCount - SLIDER_RIGHT_SHIFT);
+  };
 
   const [sliderRef, instanceRef] = useKeenSlider<
     HTMLDivElement,
     KeenSliderOptions
   >({
-    mode: 'free-snap',
     slides: BASE_SLIDES_CONFIG,
     breakpoints: SLIDER_BREAKPOINTS,
     slideChanged: onSlideChanged,

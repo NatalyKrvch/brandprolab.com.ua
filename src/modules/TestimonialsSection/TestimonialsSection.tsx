@@ -39,7 +39,7 @@ const TestimonialsSection = ({
               clientPhotoUrl={smallPhotoSrc}
               clientLink={person.link}
               amountOfWordsToDisplay={AMOUNT_OF_TESTIMONIALS_WORDS}
-              className="h-300"
+              className="h-240 w-314 tablet:h-280 tablet:w-330 desktop:h-300 desktop:w-442"
             />
           );
         })}
