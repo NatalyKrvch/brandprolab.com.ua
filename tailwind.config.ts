@@ -4,7 +4,10 @@ export default {
   content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/hooks/**/*.{js,ts,jsx,tsx}',
+    './src/lib/**/*.{js,ts,jsx,tsx}',
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/styles/**/*.{js,ts,jsx,tsx}',
     './src/utils/**/*.{js,ts,jsx,tsx}',
     './.storybook/**/*.{js,jsx,ts,tsx}',
   ],
@@ -120,6 +123,7 @@ export default {
         '200': '200px',
         '280': '280px',
         '314': '314px',
+        '330': '330px',
         '400': '400px',
         '408': '408px',
         '442': '442px',
