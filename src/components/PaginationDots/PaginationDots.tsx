@@ -21,7 +21,7 @@ const PaginationDots = ({
           key={`${uniqueId}-dot-${index}`}
           data-testid={`${PAGINATION_DOT_TEST_ID}-${index}`}
           className={clsx(
-            'duration-400 h-2 w-2 rounded-full transition-colors',
+            'duration-400 h-4 w-4 rounded-full transition-colors',
             current === index
               ? 'bg-teal-dark'
               : 'border border-teal-dark bg-gray-light',
