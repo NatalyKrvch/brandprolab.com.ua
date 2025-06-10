@@ -31,16 +31,14 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           isPlaying ? 'pointer-events-none opacity-0' : 'opacity-100',
         )}
       >
-        <div
-          className={`absolute inset-0 bg-teal-fogOpacity opacity-50 ${ROUNDED_CLASSES}`}
-        />
+        <div className={`absolute inset-0 bg-teal-fogOpacity opacity-50`} />
 
         <Image
           src={thumbnailSrc}
           alt="Video Thumbnail"
           width={280}
           height={210}
-          className={`h-full w-full object-cover ${ROUNDED_CLASSES}`}
+          className={`h-full w-full object-cover`}
           data-testid={VIDEO_THUMBNAIL_TEST_ID}
         />
 
@@ -63,7 +61,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
 
       {isPlaying && (
         <iframe
-          className={`h-full w-full ${ROUNDED_CLASSES}`}
+          className={`h-full w-full`}
           src={embedUrl}
           title="Video"
           allow="autoplay; encrypted-media"

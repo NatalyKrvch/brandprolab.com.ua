@@ -10,11 +10,11 @@ exports[`Video component does not render iframe initially 1`] = `
       class="absolute inset-0 transition-opacity duration-500 opacity-100"
     >
       <div
-        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
         alt="Video Thumbnail"
-        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
         src="/test-thumbnail.jpg"
@@ -51,11 +51,11 @@ exports[`Video component renders the Video component 1`] = `
       class="absolute inset-0 transition-opacity duration-500 opacity-100"
     >
       <div
-        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
         alt="Video Thumbnail"
-        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
         src="/test-thumbnail.jpg"
@@ -92,11 +92,11 @@ exports[`Video component renders the play button 1`] = `
       class="absolute inset-0 transition-opacity duration-500 opacity-100"
     >
       <div
-        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
         alt="Video Thumbnail"
-        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
         src="/test-thumbnail.jpg"
@@ -133,11 +133,11 @@ exports[`Video component renders the thumbnail correctly 1`] = `
       class="absolute inset-0 transition-opacity duration-500 opacity-100"
     >
       <div
-        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
         alt="Video Thumbnail"
-        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
         src="/test-thumbnail.jpg"
@@ -174,11 +174,11 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
       class="absolute inset-0 transition-opacity duration-500 pointer-events-none opacity-0"
     >
       <div
-        class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
         alt="Video Thumbnail"
-        class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+        class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
         src="/test-thumbnail.jpg"
@@ -204,7 +204,7 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
     <iframe
       allow="autoplay; encrypted-media"
       allowfullscreen=""
-      class="h-full w-full rounded-24 tablet:rounded-32 desktop:rounded-40"
+      class="h-full w-full"
       data-testid="video-iframe-test-id"
       src="https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0"
       title="Video"

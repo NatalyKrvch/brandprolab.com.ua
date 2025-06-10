@@ -37,11 +37,11 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
             class="absolute inset-0 transition-opacity duration-500 opacity-100"
           >
             <div
-              class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+              class="absolute inset-0 bg-teal-fogOpacity opacity-50"
             />
             <img
               alt="Video Thumbnail"
-              class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+              class="h-full w-full object-cover"
               data-nimg="1"
               data-testid="video-thumbnail-test-id"
               decoding="async"
@@ -113,11 +113,11 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
           class="absolute inset-0 transition-opacity duration-500 opacity-100"
         >
           <div
-            class="absolute inset-0 bg-teal-fogOpacity opacity-50 rounded-24 tablet:rounded-32 desktop:rounded-40"
+            class="absolute inset-0 bg-teal-fogOpacity opacity-50"
           />
           <img
             alt="Video Thumbnail"
-            class="h-full w-full object-cover rounded-24 tablet:rounded-32 desktop:rounded-40"
+            class="h-full w-full object-cover"
             data-nimg="1"
             data-testid="video-thumbnail-test-id"
             decoding="async"
