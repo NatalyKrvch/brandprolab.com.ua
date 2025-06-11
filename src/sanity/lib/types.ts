@@ -182,7 +182,7 @@ export type SubscribeSectionType = {
         _type: 'reference';
       };
     };
-    mobileImageReversed: {
+    tabletImage: {
       _type: 'image';
       asset: {
         _ref: string;

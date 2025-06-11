@@ -5,6 +5,12 @@ import { render, screen } from '@testing-library/react';
 import DiagnosticSection from './DiagnosticSection';
 import { DiagnosticSectionProps } from './types';
 
+jest.mock('@/sanity/lib/client', () => ({
+  client: {
+    fetch: jest.fn(),
+  },
+}));
+
 jest.mock('@/components', () => ({
   Button: ({ children }: { children: React.ReactNode }) => (
     <button>{children}</button>
