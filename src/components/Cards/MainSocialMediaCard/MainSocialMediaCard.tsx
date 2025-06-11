@@ -32,7 +32,7 @@ const MainSocialMediaCard = ({
         backgroundColor="bg-gradient-to-bl overflow-hidden tablet:bg-gradient-to-br desktop:bg-gradient-to-br from-teal-light to-gray-light"
         className="flex h-auto flex-wrap content-start items-start justify-between tablet:flex-row-reverse tablet:flex-nowrap tablet:items-center tablet:justify-center tablet:pr-8 desktop:relative desktop:flex-row-reverse desktop:flex-nowrap desktop:items-start desktop:justify-end desktop:gap-0 desktop:pr-8"
       >
-        <div className="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9">
+        <div className="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 tablet:pl-0 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9">
           <Icon
             circleColor={`bg-${MainSocialCardColor.BLUE}`}
             iconURL={iconURL}

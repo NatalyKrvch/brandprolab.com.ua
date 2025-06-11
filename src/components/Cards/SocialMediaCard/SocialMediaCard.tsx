@@ -37,7 +37,7 @@ const SocialMediaCard = ({
     <ExternalLink href={socialMediaURL}>
       <SimpleCard
         backgroundColor="bg-gray-light"
-        className="flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
+        className="flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       >
         <Icon
           iconURL={iconURL}

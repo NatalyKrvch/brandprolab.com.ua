@@ -9,7 +9,7 @@ exports[`SocialMediaCard applies correct href to link 1`] = `
     target="_blank"
   >
     <div
-      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
+      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       data-testid="simple-card-test-id"
     >
       <div
@@ -61,7 +61,7 @@ exports[`SocialMediaCard renders correct color class based on mainColor prop 1`]
     target="_blank"
   >
     <div
-      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
+      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       data-testid="simple-card-test-id"
     >
       <div
@@ -113,7 +113,7 @@ exports[`SocialMediaCard renders correctly with given props 1`] = `
     target="_blank"
   >
     <div
-      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
+      class="bg-gray-light rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       data-testid="simple-card-test-id"
     >
       <div
