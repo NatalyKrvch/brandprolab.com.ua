@@ -7,7 +7,7 @@ exports[`MainSocialMediaCard displays platformName and description text and matc
   >
     <div>
       <div
-        class="flex items-start gap-4 pl-4 tablet:pl-0 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 tablet:pl-0 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
       >
         <svg
           aria-label="icon"
@@ -51,7 +51,7 @@ exports[`MainSocialMediaCard renders a link with correct href and matches snapsh
   >
     <div>
       <div
-        class="flex items-start gap-4 pl-4 tablet:pl-0 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 tablet:pl-0 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
       >
         <svg
           aria-label="icon"
@@ -95,7 +95,7 @@ exports[`MainSocialMediaCard renders the fallback image with correct src and alt
   >
     <div>
       <div
-        class="flex items-start gap-4 pl-4 tablet:pl-0 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 tablet:pl-0 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
       >
         <svg
           aria-label="icon"
@@ -139,7 +139,7 @@ exports[`MainSocialMediaCard renders the icon SVG with correct attributes and ma
   >
     <div>
       <div
-        class="flex items-start gap-4 pl-4 tablet:pl-0 pt-6 mobile:min-w-0 mobile:flex-1 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
+        class="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 tablet:pl-0 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9"
       >
         <svg
           aria-label="icon"
