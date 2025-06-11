@@ -4,5 +4,7 @@ export { generateRandomId } from './generateRandomId';
 export { getCurrentYear } from './getCurrentYear';
 export { getReadMoreText } from './getReadMoreText';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';
+export { normalizeImageURL } from './normalizeImageURL';
+export { normalizeText } from './normalizeText';
 export { splitFirstWord } from './splitFirstWord';
 export { throwError } from './throwError';
