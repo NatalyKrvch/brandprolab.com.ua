@@ -25,24 +25,24 @@ const Modules = async () => {
       </div>
 
       <div>
-        <Container className="mb-96">
-          <SubscribeSection subscribeData={data.subscribe} />
-        </Container>
-
-        <Container variant="full" className="mb-96">
+        <Container variant="full" className="mb-24 desktop:mb-144">
           <CasesSection casesData={data.cases} />
         </Container>
 
-        <Container variant="full" className="mb-96">
-          <TestimonialsSection testimonialsData={data.testimonials} />
-        </Container>
-
-        <Container className="mb-96">
+        <Container className="mb-108 tablet:mb-120 desktop:mb-48">
           <VideoSection videoData={data.video} />
         </Container>
 
-        <Container className="mb-96">
+        <Container variant="full" className="mb-80 tablet:mb-32 desktop:mb-180">
+          <TestimonialsSection testimonialsData={data.testimonials} />
+        </Container>
+
+        <Container className="mb-24 tablet:mb-136 desktop:mb-48">
           <DiagnosticSection diagnosticData={data.diagnostic} />
+        </Container>
+
+        <Container className="mb-8 tablet:mb-12 desktop:mb-80">
+          <SubscribeSection subscribeData={data.subscribe} />
         </Container>
 
         <Container className="mb-4">
