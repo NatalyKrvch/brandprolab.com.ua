@@ -3,7 +3,7 @@
 exports[`Label component displays the correct text 1`] = `
 <DocumentFragment>
   <div
-    class="flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity text-blue-dark"
+    class="flex max-w-max items-center justify-center rounded-40 py-2 px-4 bg-teal-lightOpacity text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label
@@ -14,7 +14,7 @@ exports[`Label component displays the correct text 1`] = `
 exports[`Label component renders the Label component 1`] = `
 <DocumentFragment>
   <div
-    class="flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity text-blue-dark"
+    class="flex max-w-max items-center justify-center rounded-40 py-2 px-4 bg-teal-lightOpacity text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label

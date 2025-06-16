@@ -10,7 +10,7 @@ const Label = ({ children, className }: PropsWithChildren<LabelProps>) => {
     <div
       data-testid={LABEL_COMPONENT_TEST_ID}
       className={twMerge(
-        'flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity text-blue-dark',
+        'flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity px-4 py-2 text-blue-dark',
         className,
       )}
     >
