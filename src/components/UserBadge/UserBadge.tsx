@@ -38,7 +38,11 @@ const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
 
   if (userLink?.trim()) {
     return (
-      <ExternalLink href={userLink} {...commonProps}>
+      <ExternalLink
+        aria-label={`Профіль користувача ${userName}`}
+        href={userLink}
+        {...commonProps}
+      >
         {content}
       </ExternalLink>
     );
