@@ -12,50 +12,43 @@ import FlipCard from './FlipCard';
 
 describe('FlipCard component', () => {
   const defaultProps = {
-    front: 'Front Side',
-    back: 'Back Side',
+    front: <div>Front Side</div>,
+    back: <div>Back Side</div>,
   };
 
   it('renders the FlipCard component', () => {
     const { asFragment } = render(<FlipCard {...defaultProps} />);
-    const cardElement = screen.getByTestId(FLIP_CARD_TEST_ID);
-
-    expect(cardElement).toBeInTheDocument();
+    expect(screen.getByTestId(FLIP_CARD_TEST_ID)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders the front side content', () => {
-    const { asFragment } = render(<FlipCard {...defaultProps} />);
+    render(<FlipCard {...defaultProps} />);
     const frontElement = screen.getByTestId(FLIP_CARD_FRONT_TEST_ID);
 
     expect(frontElement).toBeInTheDocument();
     expect(frontElement).toHaveTextContent('Front Side');
-    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders the back side content', () => {
-    const { asFragment } = render(<FlipCard {...defaultProps} />);
+    render(<FlipCard {...defaultProps} />);
     const backElement = screen.getByTestId(FLIP_CARD_BACK_TEST_ID);
 
     expect(backElement).toBeInTheDocument();
     expect(backElement).toHaveTextContent('Back Side');
-    expect(asFragment()).toMatchSnapshot();
   });
 
-  it('toggles between front and back when clicked', () => {
-    const { asFragment } = render(<FlipCard {...defaultProps} />);
-    const cardElement = screen.getByTestId(FLIP_CARD_TEST_ID);
+  it('toggles class on click (flips the card)', () => {
+    render(<FlipCard {...defaultProps} />);
+    const wrapper = screen.getByTestId(FLIP_CARD_TEST_ID);
+    const inner = wrapper.firstChild as HTMLElement;
 
-    expect(cardElement).not.toHaveClass('[transform:rotateY(180deg)]');
+    expect(inner).not.toHaveClass('[transform:rotateX(-180deg)]');
 
-    fireEvent.click(cardElement);
-    expect(cardElement.firstChild).toHaveClass('[transform:rotateY(180deg)]');
+    fireEvent.click(wrapper);
+    expect(inner).toHaveClass('[transform:rotateX(-180deg)]');
 
-    fireEvent.click(cardElement);
-    expect(cardElement.firstChild).not.toHaveClass(
-      '[transform:rotateY(180deg)]',
-    );
-
-    expect(asFragment()).toMatchSnapshot();
+    fireEvent.click(wrapper);
+    expect(inner).not.toHaveClass('[transform:rotateX(-180deg)]');
   });
 });
