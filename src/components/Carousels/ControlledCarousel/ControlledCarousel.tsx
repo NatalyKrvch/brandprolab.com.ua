@@ -31,7 +31,7 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
   const validChildren = Children.toArray(children).filter(isValidElement);
 
   return (
-    <div className="relative">
+    <div className="relative" role="group">
       <CarouselNavButtons
         isFirstSlide={isFirstSlide}
         isLastSlide={isLastSlide}
@@ -39,9 +39,10 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
         onNextSlide={handleNextSlide}
       />
 
-      <div ref={sliderRef} className={`${SLIDER_CLASSNAME}`}>
+      <div ref={sliderRef} aria-live="polite" className={SLIDER_CLASSNAME}>
         {validChildren.map((child, index) => (
           <div
+            tabIndex={0}
             key={`${sliderId}-slide-${index}`}
             className={`${SLIDE_CLASSNAME} mobile:flex mobile:w-full mobile:items-center mobile:justify-center`}
           >
