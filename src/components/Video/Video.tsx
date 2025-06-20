@@ -35,7 +35,9 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
 
         <Image
           src={thumbnailSrc}
-          alt="Video Thumbnail"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
           width={280}
           height={210}
           className={`h-full w-full object-cover`}
@@ -50,8 +52,9 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
             data-testid={VIDEO_PLAY_BUTTON_TEST_ID}
           >
             <Image
+              aria-hidden="true"
               src="/icons/nav/play.svg"
-              alt="Play Button"
+              alt=""
               width={74}
               height={74}
             />
@@ -63,7 +66,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
         <iframe
           className={`h-full w-full`}
           src={embedUrl}
-          title="Video"
+          title="Відео"
           allow="autoplay; encrypted-media"
           allowFullScreen
           data-testid={VIDEO_IFRAME_TEST_ID}

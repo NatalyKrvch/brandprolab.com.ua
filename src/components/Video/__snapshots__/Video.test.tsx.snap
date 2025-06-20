@@ -13,10 +13,12 @@ exports[`Video component does not render iframe initially 1`] = `
         class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
-        alt="Video Thumbnail"
+        alt=""
+        aria-hidden="true"
         class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
+        loading="lazy"
         src="/test-thumbnail.jpg"
         width="280"
       />
@@ -29,7 +31,8 @@ exports[`Video component does not render iframe initially 1`] = `
           data-testid="video-play-button-test-id"
         >
           <img
-            alt="Play Button"
+            alt=""
+            aria-hidden="true"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -54,10 +57,12 @@ exports[`Video component renders the Video component 1`] = `
         class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
-        alt="Video Thumbnail"
+        alt=""
+        aria-hidden="true"
         class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
+        loading="lazy"
         src="/test-thumbnail.jpg"
         width="280"
       />
@@ -70,7 +75,8 @@ exports[`Video component renders the Video component 1`] = `
           data-testid="video-play-button-test-id"
         >
           <img
-            alt="Play Button"
+            alt=""
+            aria-hidden="true"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -95,10 +101,12 @@ exports[`Video component renders the play button 1`] = `
         class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
-        alt="Video Thumbnail"
+        alt=""
+        aria-hidden="true"
         class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
+        loading="lazy"
         src="/test-thumbnail.jpg"
         width="280"
       />
@@ -111,7 +119,8 @@ exports[`Video component renders the play button 1`] = `
           data-testid="video-play-button-test-id"
         >
           <img
-            alt="Play Button"
+            alt=""
+            aria-hidden="true"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -136,10 +145,12 @@ exports[`Video component renders the thumbnail correctly 1`] = `
         class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
-        alt="Video Thumbnail"
+        alt=""
+        aria-hidden="true"
         class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
+        loading="lazy"
         src="/test-thumbnail.jpg"
         width="280"
       />
@@ -152,7 +163,8 @@ exports[`Video component renders the thumbnail correctly 1`] = `
           data-testid="video-play-button-test-id"
         >
           <img
-            alt="Play Button"
+            alt=""
+            aria-hidden="true"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -177,10 +189,12 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
         class="absolute inset-0 bg-teal-fogOpacity opacity-50"
       />
       <img
-        alt="Video Thumbnail"
+        alt=""
+        aria-hidden="true"
         class="h-full w-full object-cover"
         data-testid="video-thumbnail-test-id"
         height="210"
+        loading="lazy"
         src="/test-thumbnail.jpg"
         width="280"
       />
@@ -193,7 +207,8 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
           data-testid="video-play-button-test-id"
         >
           <img
-            alt="Play Button"
+            alt=""
+            aria-hidden="true"
             height="74"
             src="/icons/nav/play.svg"
             width="74"
@@ -207,7 +222,7 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
       class="h-full w-full"
       data-testid="video-iframe-test-id"
       src="https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0"
-      title="Video"
+      title="Відео"
     />
   </div>
 </DocumentFragment>
