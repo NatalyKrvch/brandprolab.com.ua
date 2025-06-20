@@ -2,17 +2,16 @@ import clsx from 'clsx';
 import { useMemo } from 'react';
 
 import { PAGINATION_DOT_TEST_ID } from '@/lib/testIDs';
-import { generateRandomId } from '@/utils';
 
 import { PaginationDotsProps } from './types';
 
 const PaginationDots = ({
-  total,
+  amount,
   current,
   onDotClick,
   className,
 }: PaginationDotsProps) => {
-  const uniqueId = useMemo(() => generateRandomId(), []);
+  const uniqueId = useMemo(() => crypto.randomUUID(), []);
 
   return (
     <div
@@ -20,7 +19,7 @@ const PaginationDots = ({
       aria-label="Навігація каруселі"
       className={clsx('flex justify-center gap-2', className)}
     >
-      {Array.from({ length: total }).map((_, index) => (
+      {Array.from({ length: amount }).map((_, index) => (
         <button
           key={`${uniqueId}-dot-${index}`}
           data-testid={`${PAGINATION_DOT_TEST_ID}-${index}`}

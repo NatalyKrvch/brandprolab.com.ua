@@ -28,7 +28,7 @@ beforeAll(() => {
 
 describe('PaginationDots component', () => {
   const defaultProps = {
-    total: 5,
+    amount: 5,
     current: 2,
     onDotClick: jest.fn(),
   };
@@ -43,7 +43,7 @@ describe('PaginationDots component', () => {
       id.startsWith(PAGINATION_DOT_TEST_ID),
     );
 
-    expect(dots).toHaveLength(defaultProps.total);
+    expect(dots).toHaveLength(defaultProps.amount);
     expect(asFragment()).toMatchSnapshot();
   });
 

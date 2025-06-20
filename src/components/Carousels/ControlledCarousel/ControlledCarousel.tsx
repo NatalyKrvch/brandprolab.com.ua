@@ -2,22 +2,15 @@
 
 import 'keen-slider/keen-slider.min.css';
 
-import {
-  Children,
-  isValidElement,
-  type PropsWithChildren,
-  useMemo,
-} from 'react';
+import { Children, isValidElement, type PropsWithChildren } from 'react';
 
 import { PaginationDots } from '@/components/PaginationDots';
 import { SLIDE_CLASSNAME, SLIDER_CLASSNAME } from '@/styles/constants';
-import { generateRandomId } from '@/utils';
 
 import { CarouselNavButtons } from './components/CarouselNavButtons';
 import { useControlledCarousel } from './hooks/useControlledCarousel';
 
 const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
-  const sliderId = useMemo(() => generateRandomId(), []);
   const {
     sliderRef,
     currentSlideIndex,
@@ -31,7 +24,7 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
   const validChildren = Children.toArray(children).filter(isValidElement);
 
   return (
-    <div className="relative" role="group">
+    <div className="relative" role="group" aria-roledescription="carousel">
       <CarouselNavButtons
         isFirstSlide={isFirstSlide}
         isLastSlide={isLastSlide}
@@ -40,10 +33,10 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
       />
 
       <div ref={sliderRef} aria-live="polite" className={SLIDER_CLASSNAME}>
-        {validChildren.map((child, index) => (
+        {validChildren.map(child => (
           <div
             tabIndex={0}
-            key={`${sliderId}-slide-${index}`}
+            key={child.key}
             className={`${SLIDE_CLASSNAME} mobile:flex mobile:w-full mobile:items-center mobile:justify-center`}
           >
             {child}
@@ -52,7 +45,7 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
       </div>
 
       <PaginationDots
-        total={validChildren.length}
+        amount={validChildren.length}
         current={currentSlideIndex}
         onDotClick={goToSlide}
         className="mt-4 hidden mobile:flex"

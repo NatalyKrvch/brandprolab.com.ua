@@ -1,7 +1,7 @@
 'use client';
 
 import { Container, TestimonialCard } from '@/components';
-import { generateRandomId, normalizeText } from '@/utils';
+import { normalizeText } from '@/utils';
 
 import { useCasesSection } from './hooks/useCasesSection';
 import { CasesSectionProps } from './types';
@@ -27,9 +27,8 @@ const CasesSection = ({ casesData }: CasesSectionProps) => {
 
       <CarouselComponent>
         {cases.map(caseItem => {
-          const randomKey = generateRandomId();
           return (
-            <div key={randomKey} className="mx-4">
+            <div key={caseItem._key} className="mx-4">
               <TestimonialCard
                 text={normalizeText(caseItem.caseText)}
                 amountOfWordsToDisplay={wordsToDisplay}

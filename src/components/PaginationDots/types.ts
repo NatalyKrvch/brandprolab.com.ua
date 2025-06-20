@@ -1,5 +1,5 @@
 export interface PaginationDotsProps {
-  total: number;
+  amount: number;
   current: number;
   onDotClick: (index: number) => void;
   className?: string;
