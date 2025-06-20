@@ -5,5 +5,6 @@ export interface SimpleCardProps {
   className?: string;
   backgroundColor?: string;
   backgroundImageUrl?: string;
+  backgroundImageOpacity?: number;
   style?: CSSProperties;
 }

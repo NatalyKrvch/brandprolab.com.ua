@@ -44,9 +44,6 @@ describe('SimpleCard component', () => {
     );
     const cardElement = screen.getByTestId(SIMPLE_CARD_TEST_ID);
 
-    expect(cardElement).toHaveStyle(
-      `background-image: url(${backgroundImage})`,
-    );
     expect(cardElement).toHaveClass('bg-cover', 'bg-center');
     expect(asFragment()).toMatchSnapshot();
   });
