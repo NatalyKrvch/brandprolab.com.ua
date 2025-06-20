@@ -21,7 +21,7 @@ const List = ({ list }: ListProps) => {
               src="/icons/cards/check.svg"
               aria-hidden="true"
               fill
-              alt="Checkmark icon"
+              alt=""
             />
           </div>
           {item}
