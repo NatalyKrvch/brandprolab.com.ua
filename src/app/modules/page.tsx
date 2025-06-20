@@ -4,6 +4,7 @@ import {
   CasesSection,
   DiagnosticSection,
   FooterSection,
+  ServicesSection,
   SubscribeSection,
   TestimonialsSection,
   VideoSection,
@@ -27,6 +28,10 @@ const Modules = async () => {
       <div>
         <Container variant="full" className="mb-24 desktop:mb-144">
           <CasesSection casesData={data.cases} />
+        </Container>
+
+        <Container className="mb-96 tablet:mb-108 desktop:mb-180">
+          <ServicesSection servicesData={data.services} />
         </Container>
 
         <Container className="mb-108 tablet:mb-120 desktop:mb-48">
