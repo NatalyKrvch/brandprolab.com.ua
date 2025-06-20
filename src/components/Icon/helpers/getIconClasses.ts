@@ -10,7 +10,7 @@ export const getIconClasses = (type: IconClassType): IconClassSet => {
   switch (type) {
     case IconClassType.SERVICES:
       return {
-        circleClass: `${baseCircleClass} w-68 h-68 tablet:w-20 tablet:h-20 desktop:w-108 desktop:h-108`,
+        circleClass: `${baseCircleClass} w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-108 desktop:h-108`,
         iconClass: `${baseIconClass} w-16 h-16 tablet:w-72 tablet:h-72 desktop:w-96 desktop:h-96 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-36`,
       };
 

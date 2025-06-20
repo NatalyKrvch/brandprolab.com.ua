@@ -7,7 +7,7 @@ exports[`Icon component renders the Icon component with image inside and correct
     data-testid="icon-component-test-id"
   >
     <div
-      class="bg-teal-darkOpacity relative flex items-center justify-center rounded-full w-68 h-68 tablet:w-20 tablet:h-20 desktop:w-108 desktop:h-108"
+      class="bg-teal-darkOpacity relative flex items-center justify-center rounded-full w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-108 desktop:h-108"
     >
       <img
         alt="Test Icon"
