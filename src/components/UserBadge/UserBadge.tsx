@@ -25,6 +25,7 @@ const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
           src={userPhotoUrl}
           alt={userName}
           fill
+          loading="lazy"
           data-testid={USER_BADGE_IMAGE_TEST_ID}
         />
       </div>
