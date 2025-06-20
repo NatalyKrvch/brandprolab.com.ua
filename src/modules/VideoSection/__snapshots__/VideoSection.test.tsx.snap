@@ -8,12 +8,12 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
     <div
       class="flex flex-col items-center text-center desktop:items-start desktop:text-left"
     >
-      <div
+      <label
         class="flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity text-blue-dark mb-6 px-5 py-2 text-sm font-normal leading-none tracking-normal tablet:mb-10 tablet:text-lg desktop:mb-8 desktop:text-lg desktop:leading-none"
         data-testid="label-component-test-id"
       >
         Test Label
-      </div>
+      </label>
       <h2
         class="mb-4 px-10 text-center text-32 font-bold leading-34 tracking-tight text-black tablet:mb-8 tablet:max-w-610 tablet:text-42 tablet:leading-none desktop:mb-8 desktop:max-w-456 desktop:px-0 desktop:text-left desktop:text-52 desktop:leading-54"
       >
@@ -40,7 +40,8 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
               class="absolute inset-0 bg-teal-fogOpacity opacity-50"
             />
             <img
-              alt="Video Thumbnail"
+              alt=""
+              aria-hidden="true"
               class="h-full w-full object-cover"
               data-nimg="1"
               data-testid="video-thumbnail-test-id"
@@ -61,7 +62,8 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
                 data-testid="video-play-button-test-id"
               >
                 <img
-                  alt="Play Button"
+                  alt=""
+                  aria-hidden="true"
                   data-nimg="1"
                   decoding="async"
                   height="74"
@@ -116,7 +118,8 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
             class="absolute inset-0 bg-teal-fogOpacity opacity-50"
           />
           <img
-            alt="Video Thumbnail"
+            alt=""
+            aria-hidden="true"
             class="h-full w-full object-cover"
             data-nimg="1"
             data-testid="video-thumbnail-test-id"
@@ -137,7 +140,8 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
               data-testid="video-play-button-test-id"
             >
               <img
-                alt="Play Button"
+                alt=""
+                aria-hidden="true"
                 data-nimg="1"
                 decoding="async"
                 height="74"
