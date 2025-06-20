@@ -9,7 +9,7 @@ exports[`VideoSection component renders VideoSection correctly 1`] = `
       class="flex flex-col items-center text-center desktop:items-start desktop:text-left"
     >
       <div
-        class="flex max-w-max items-center justify-center rounded-full bg-teal-lightOpacity text-blue-dark mb-6 px-5 py-2 text-sm font-normal leading-none tracking-normal tablet:mb-10 tablet:text-lg desktop:mb-8 desktop:text-lg desktop:leading-none"
+        class="flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity text-blue-dark mb-6 px-5 py-2 text-sm font-normal leading-none tracking-normal tablet:mb-10 tablet:text-lg desktop:mb-8 desktop:text-lg desktop:leading-none"
         data-testid="label-component-test-id"
       >
         Test Label

@@ -3,10 +3,15 @@
 exports[`PhotoCard component applies correct styles for dimensions 1`] = `
 <DocumentFragment>
   <div
-    class="bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center relative"
+    class="w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 relative"
     data-testid="simple-card-test-id"
-    style="background-image: url(/test-background.jpg); height: 500px;"
+    style="height: 500px;"
   >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
+      style="background-image: url(/test-background.jpg); opacity: 1;"
+    />
     <div
       class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
@@ -31,10 +36,15 @@ exports[`PhotoCard component applies correct styles for dimensions 1`] = `
 exports[`PhotoCard component does not render text when not provided 1`] = `
 <DocumentFragment>
   <div
-    class="bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center relative"
+    class="w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 relative"
     data-testid="simple-card-test-id"
-    style="background-image: url(/test-background.jpg); height: 500px;"
+    style="height: 500px;"
   >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
+      style="background-image: url(/test-background.jpg); opacity: 1;"
+    />
     <div
       class="absolute bottom-0 left-1/2 -translate-x-1/2"
       style="width: 200px; height: 200px;"
@@ -53,10 +63,15 @@ exports[`PhotoCard component does not render text when not provided 1`] = `
 exports[`PhotoCard component renders text when provided 1`] = `
 <DocumentFragment>
   <div
-    class="bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center relative"
+    class="w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 relative"
     data-testid="simple-card-test-id"
-    style="background-image: url(/test-background.jpg); height: 500px;"
+    style="height: 500px;"
   >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
+      style="background-image: url(/test-background.jpg); opacity: 1;"
+    />
     <div
       class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
@@ -81,10 +96,15 @@ exports[`PhotoCard component renders text when provided 1`] = `
 exports[`PhotoCard component renders the PhotoCard component 1`] = `
 <DocumentFragment>
   <div
-    class="bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center relative"
+    class="w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 relative"
     data-testid="simple-card-test-id"
-    style="background-image: url(/test-background.jpg); height: 500px;"
+    style="height: 500px;"
   >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
+      style="background-image: url(/test-background.jpg); opacity: 1;"
+    />
     <div
       class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
@@ -109,10 +129,15 @@ exports[`PhotoCard component renders the PhotoCard component 1`] = `
 exports[`PhotoCard component renders the photo with correct attributes 1`] = `
 <DocumentFragment>
   <div
-    class="bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 w-full bg-cover bg-center relative"
+    class="w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 relative"
     data-testid="simple-card-test-id"
-    style="background-image: url(/test-background.jpg); height: 500px;"
+    style="height: 500px;"
   >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
+      style="background-image: url(/test-background.jpg); opacity: 1;"
+    />
     <div
       class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
