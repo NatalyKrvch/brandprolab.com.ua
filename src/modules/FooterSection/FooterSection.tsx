@@ -21,7 +21,7 @@ const FooterSection = ({ footerData }: FooterSectionProps) => {
 
         <ExternalLink
           href={offerLink.trim()}
-          className="whitespace-nowrap underline transition hover:text-teal-dark"
+          className="whitespace-nowrap underline underline-offset-2 transition hover:text-teal-dark"
         >
           Договір оферти
         </ExternalLink>
