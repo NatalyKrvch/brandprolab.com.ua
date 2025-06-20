@@ -40,6 +40,7 @@ const SocialMediaCard = ({
         className="flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       >
         <Icon
+          aria-hidden="true"
           iconURL={iconURL}
           circleColor={bgColorClass}
           type={IconClassType.SOCIAL_MEDIA}
