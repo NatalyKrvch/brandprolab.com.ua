@@ -22,6 +22,7 @@ export enum IconClassType {
   SOCIAL_MEDIA = 'social-media',
   SOCIAL_MEDIA_MAIN = 'social-media-main',
 }
+
 export const REVALIDATE = 60;
 export const ENDLESS_CAROUSEL_SPEED = 50;
 export const SLIDER_RIGHT_SHIFT = 2;
