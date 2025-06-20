@@ -20,6 +20,8 @@ const EndlessCarousel = ({
     <div
       data-testid={ENDLESS_CAROUSEL_TEST_ID}
       className={`overflow-hidden ${className}`}
+      aria-roledescription="carousel"
+      role="group"
     >
       <Marquee
         data-testid={ENDLESS_CAROUSEL_CONTENT_TEST_ID}
