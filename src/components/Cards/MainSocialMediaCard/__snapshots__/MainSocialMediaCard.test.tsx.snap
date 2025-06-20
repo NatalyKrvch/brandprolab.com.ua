@@ -35,7 +35,7 @@ exports[`MainSocialMediaCard displays platformName and description text and matc
         class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
       >
         <img
-          alt="Photo"
+          alt="Фото з платформи Test Platform"
           src="/mobile.jpg"
         />
       </div>
@@ -79,7 +79,7 @@ exports[`MainSocialMediaCard renders a link with correct href and matches snapsh
         class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
       >
         <img
-          alt="Photo"
+          alt="Фото з платформи Test Platform"
           src="/mobile.jpg"
         />
       </div>
@@ -123,7 +123,7 @@ exports[`MainSocialMediaCard renders the fallback image with correct src and alt
         class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
       >
         <img
-          alt="Photo"
+          alt="Фото з платформи Test Platform"
           src="/mobile.jpg"
         />
       </div>
@@ -167,7 +167,7 @@ exports[`MainSocialMediaCard renders the icon SVG with correct attributes and ma
         class="ml-auto h-230 min-w-150 flex-shrink-0 overflow-hidden tablet:ml-0 tablet:h-220 desktop:ml-0 desktop:h-416"
       >
         <img
-          alt="Photo"
+          alt="Фото з платформи Test Platform"
           src="/mobile.jpg"
         />
       </div>
