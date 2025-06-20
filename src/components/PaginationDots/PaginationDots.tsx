@@ -15,11 +15,16 @@ const PaginationDots = ({
   const uniqueId = useMemo(() => generateRandomId(), []);
 
   return (
-    <div className={clsx('flex justify-center gap-2', className)}>
+    <div
+      role="group"
+      aria-label="Навігація каруселі"
+      className={clsx('flex justify-center gap-2', className)}
+    >
       {Array.from({ length: total }).map((_, index) => (
         <button
           key={`${uniqueId}-dot-${index}`}
           data-testid={`${PAGINATION_DOT_TEST_ID}-${index}`}
+          aria-label={`Перейти до слайду номер ${index + 1}`}
           className={clsx(
             'duration-400 h-4 w-4 rounded-full transition-colors',
             current === index
