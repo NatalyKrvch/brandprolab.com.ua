@@ -142,10 +142,24 @@ export type ServicesSectionType = {
   _type: 'services';
   title: string;
   description: string;
+  backgroundImage: {
+    _type: 'image';
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+  };
   cards: {
     _key: string;
     _type: 'card';
     icon: {
+      _type: 'image';
+      asset: {
+        _ref: string;
+        _type: 'reference';
+      };
+    };
+    whiteIcon?: {
       _type: 'image';
       asset: {
         _ref: string;

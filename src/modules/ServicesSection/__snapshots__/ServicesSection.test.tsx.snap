@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServicesSection component renders the component correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="flex flex-col gap-12"
+  >
+    <div
+      class="flex flex-col gap-4 px-1 text-left tablet:gap-4 tablet:px-2 desktop:gap-6 desktop:px-2"
+    >
+      <h2
+        class="font-bold leading-9 -tracking-wide text-teal-dark tablet:text-5xl tablet:leading-48 desktop:text-6xl"
+      >
+        Наші послуги
+      </h2>
+      <p
+        class="max-w-530 text-base font-normal leading-5 tracking-wider text-gray-dark tablet:text-xl desktop:max-w-610 desktop:text-22 desktop:leading-8"
+      >
+        Ми пропонуємо різні сервіси для клієнтів
+      </p>
+    </div>
+    <article
+      class="grid grid-cols-1 items-stretch gap-4 mid_tablet:grid-cols-2 desktop:grid-cols-[1fr_1.302fr] desktop:gap-6"
+    >
+      <div
+        aria-label="Показати деталі"
+        aria-pressed="false"
+        class="group relative cursor-pointer overflow-hidden [perspective:10000px] h-full max-h-462 min-h-424 w-full min_mobile:max-h-462 min_mobile:min-h-462 tablet:max-h-424 tablet:min-h-400 desktop:h-500 desktop:max-h-500"
+        data-testid="flip-card-test-id"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]"
+        >
+          <div
+            class="absolute inset-0 flex h-full w-full [backface-visibility:hidden]"
+            data-testid="flip-card-front-test-id"
+          >
+            <div
+              class="relative w-full bg-cover bg-center bg-white border border-teal-dark rounded-24 tablet:rounded-32 desktop:rounded-40 flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
+              data-testid="simple-card-test-id"
+            >
+              <div
+                aria-hidden="true"
+                class="flex items-center justify-end"
+              >
+                <div
+                  class="flex items-center justify-center block"
+                  data-testid="icon-component-test-id"
+                >
+                  <div
+                    class="bg-teal-darkOpacity relative flex items-center justify-center rounded-full w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-108 desktop:h-108"
+                  >
+                    <img
+                      alt=""
+                      class="absolute w-16 h-16 tablet:w-72 tablet:h-72 desktop:w-96 desktop:h-96 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-36"
+                      data-nimg="1"
+                      data-testid="icon-component-image-test-id"
+                      decoding="async"
+                      height="0"
+                      loading="lazy"
+                      style="color: transparent;"
+                      width="0"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center hidden"
+                  data-testid="icon-component-test-id"
+                >
+                  <div
+                    class="bg-whiteOpacity relative flex items-center justify-center rounded-full w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-108 desktop:h-108"
+                  >
+                    <img
+                      alt=""
+                      class="absolute w-16 h-16 tablet:w-72 tablet:h-72 desktop:w-96 desktop:h-96 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-36"
+                      data-nimg="1"
+                      data-testid="icon-component-image-test-id"
+                      decoding="async"
+                      height="0"
+                      loading="lazy"
+                      style="color: transparent;"
+                      width="0"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-col justify-between"
+              >
+                <div
+                  class="flex flex-col gap-4"
+                >
+                  <h3
+                    class="max-w-300 px-1 text-26 font-bold leading-26 tablet:max-w-350 tablet:text-28 tablet:leading-7 desktop:max-w-350 desktop:text-32 desktop:leading-8 text-black"
+                    data-testid="service-card-front-header-test-id"
+                  >
+                    Послуга 1
+                  </h3>
+                  <div
+                    class="flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity px-4 py-2 font-normal leading-14 tracking-normal text-blue-dark tablet:text-base tablet:leading-4 desktop:px-5 desktop:text-lg desktop:leading-18"
+                    data-testid="label-component-test-id"
+                  >
+                    Етикетка 1
+                  </div>
+                  <p
+                    class="px-1 pt-3 text-base font-normal leading-22 tablet:max-w-[500px] desktop:max-w-[500px] desktop:text-lg text-black"
+                    data-testid="service-card-front-description-test-id"
+                  >
+                    Короткий опис послуги 1
+                  </p>
+                </div>
+                <button
+                  aria-label="Переглянути деталі про Послуга 1"
+                  class="px-1 text-left desktop:px-2"
+                >
+                  <span
+                    class="relative inline-block cursor-pointer text-base leading-5 text-teal-dark underline underline-offset-4 font-bold desktop:text-lg"
+                    data-testid="underlined-text-test-id"
+                  >
+                    Дізнатись більше
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-0 flex h-full w-full [backface-visibility:hidden] [transform:rotateX(180deg)]"
+            data-testid="flip-card-back-test-id"
+          >
+            <div
+              class="relative w-full bg-cover bg-center rounded-24 tablet:rounded-32 desktop:rounded-40 flex h-full flex-col gap-4 bg-blue-dark p-6 tablet:p-8 mid_tablet:border-none desktop:gap-6 desktop:border-none desktop:p-10"
+              data-testid="simple-card-test-id"
+            >
+              <h3
+                class="text-lg font-bold leading-5 text-teal-medium min_mobile:text-base tablet:text-2xl tablet:leading-6 mid_tablet:max-w-600 mid_tablet:text-xl desktop:max-w-600 desktop:text-2xl desktop:leading-6"
+                data-testid="service-card-back-header-test-id"
+              >
+                Деталі послуги 1
+              </h3>
+              <ul
+                class="list-disc space-y-1.5 pl-5 text-sm font-extralight leading-18 tracking-normal text-white min_mobile:text-xs tablet:text-base tablet:leading-6 mid_tablet:max-w-540 mid_tablet:text-sm mid_tablet:leading-4 desktop:max-w-544 desktop:text-lg desktop:leading-5"
+                data-testid="service-card-back-list-test-id"
+              >
+                <li
+                  data-testid="service-card-back-list-item-test-id"
+                >
+                  Пункт 1
+                </li>
+                <li
+                  data-testid="service-card-back-list-item-test-id"
+                >
+                  Пункт 2
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</DocumentFragment>
+`;

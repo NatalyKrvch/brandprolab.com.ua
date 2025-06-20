@@ -8,9 +8,9 @@ import {
   DiplomaCard,
   // EndlessCarousel,
   ExternalLink,
-  // FlipCard,
-  // FlipCardBack,
-  // FlipCardFront,
+  FlipCard,
+  FlipCardBack,
+  FlipCardFront,
   Icon,
   InternalLink,
   Label,
@@ -165,7 +165,7 @@ const Uikit = () => {
         />
       </div> */}
 
-      {/* <div className="relative mx-4 my-10 h-[500px] w-[480px]">
+      <div className="relative mx-4 my-10 h-[500px] w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCard component</span>
         <FlipCard
           front={
@@ -174,7 +174,7 @@ const Uikit = () => {
               header="Точкова кар’єрна консультація"
               label="90 хв."
               description="Онлайн-зустріч для вирішення конкретного запиту: аудит резюме, LinkedIn, підготовка до співбесіди чи боротьба з вигоранням."
-              callToAction="Що можна вирішити на консультації?"
+              callToActionText="Що можна вирішити на консультації?"
             />
           }
           back={
@@ -188,7 +188,7 @@ const Uikit = () => {
             />
           }
         />
-      </div> */}
+      </div>
 
       {/* <div className="m-4 w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCardFront component</span>

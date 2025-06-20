@@ -1,3 +1,5 @@
+'use client';
+
 import clsx from 'clsx';
 
 import {
@@ -9,30 +11,38 @@ import {
 import { useFlipCard } from './hooks/useFlipCard';
 import { FlipCardProps } from './types';
 
-const FlipCard = ({ front, back }: FlipCardProps) => {
-  const { flipped, handleFlip } = useFlipCard();
+const FlipCard = ({ front, back, className }: FlipCardProps) => {
+  const { flipped, handleFlip, handleKeyDown } = useFlipCard();
 
   return (
     <div
-      className="group h-full w-full cursor-pointer [perspective:1000px]"
+      className={clsx(
+        'group relative cursor-pointer overflow-hidden [perspective:10000px]',
+        className,
+      )}
+      role="button"
+      tabIndex={0}
+      aria-pressed={flipped}
+      aria-label="Показати деталі"
       onClick={handleFlip}
+      onKeyDown={handleKeyDown}
       data-testid={FLIP_CARD_TEST_ID}
     >
       <div
         className={clsx(
           'relative h-full w-full transition-all duration-500 [transform-style:preserve-3d]',
-          flipped && '[transform:rotateY(180deg)]',
+          flipped && '[transform:rotateX(-180deg)]',
         )}
       >
         <div
-          className="absolute flex h-full w-full [backface-visibility:hidden]"
+          className="absolute inset-0 flex h-full w-full [backface-visibility:hidden]"
           data-testid={FLIP_CARD_FRONT_TEST_ID}
         >
           {front}
         </div>
 
         <div
-          className="absolute flex h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
+          className="absolute inset-0 flex h-full w-full [backface-visibility:hidden] [transform:rotateX(180deg)]"
           data-testid={FLIP_CARD_BACK_TEST_ID}
         >
           {back}

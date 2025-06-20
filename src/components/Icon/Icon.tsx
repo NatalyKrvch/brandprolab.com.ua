@@ -13,7 +13,7 @@ const Icon = ({
   iconURL,
   type,
   className = '',
-  iconAlt = 'Icon',
+  iconAlt = '',
   circleColor = 'bg-teal-darkOpacity',
 }: IconProps) => {
   const { circleClass, iconClass } = getIconClasses(type);
@@ -30,6 +30,7 @@ const Icon = ({
           width={0}
           height={0}
           className={iconClass}
+          loading="lazy"
           data-testid={ICON_COMPONENT_IMAGE_TEST_ID}
         />
       </div>

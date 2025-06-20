@@ -18,6 +18,13 @@ export const servicesSectionSchema = defineType({
       validation: rule => rule.required(),
     }),
     defineField({
+      name: 'backgroundImage',
+      title: 'Background Image',
+      type: 'image',
+      options: { hotspot: true },
+      validation: rule => rule.required(),
+    }),
+    defineField({
       name: 'cards',
       title: 'Cards',
       type: 'array',
@@ -33,6 +40,14 @@ export const servicesSectionSchema = defineType({
               type: 'image',
               options: { hotspot: true },
               validation: rule => rule.required(),
+            }),
+            defineField({
+              name: 'whiteIcon',
+              title: 'Icon (white version)',
+              type: 'image',
+              options: { hotspot: true },
+              description:
+                'Optional white version of the icon for dark backgrounds',
             }),
             defineField({
               name: 'title',

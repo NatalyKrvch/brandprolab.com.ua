@@ -9,7 +9,7 @@ const SubscribeSection = ({ subscribeData }: SubscribeSectionProps) => {
 
   return (
     <section>
-      <h2 className="mb-4 px-1 pb-4 text-32 font-bold leading-none tracking-tight tablet:mb-5 tablet:px-2 tablet:text-40 tablet:leading-40 desktop:mb-12 desktop:px-2 desktop:pb-0 desktop:text-52 desktop:leading-52">
+      <h2 className="mb-4 px-1 pb-4 text-32 font-bold leading-none tracking-tight text-black tablet:mb-5 tablet:px-2 tablet:text-40 tablet:leading-40 desktop:mb-12 desktop:px-2 desktop:pb-0 desktop:text-52 desktop:leading-52">
         {title}
       </h2>
       <div className="flex flex-col gap-4 desktop:grid desktop:grid-cols-[1fr_1fr] desktop:gap-6">
