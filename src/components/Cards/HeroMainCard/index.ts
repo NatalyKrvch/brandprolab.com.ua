@@ -1,1 +1,1 @@
-export { default } from './HeroMainCard';
+export { default as HeroMainCard } from './HeroMainCard';
