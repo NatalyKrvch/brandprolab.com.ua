@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import { Button } from '@/components/Button';
 import { ExternalLink } from '@/components/Links';
+import { HERO_MAIN_CARD_ICON_TEST_ID } from '@/lib/testIDs';
 
 import { SimpleCard } from '../SimpleCard';
 import { HeroMainCardProps } from './types';
@@ -20,6 +21,7 @@ const HeroMainCard = ({
       backgroundImageUrl="./images/backgrounds/hero-maincard-bg.svg"
     >
       <Image
+        data-testid={HERO_MAIN_CARD_ICON_TEST_ID}
         className="mb-6 ml-11"
         width={84}
         height={84}
