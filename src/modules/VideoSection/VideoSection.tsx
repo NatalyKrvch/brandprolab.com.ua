@@ -44,6 +44,7 @@ const VideoSection = ({ videoData }: VideoSectionProps) => {
         </p>
 
         <ExternalLink
+          aria-label="Перейти до запису на консультацію"
           className="w-200 tablet:w-314 desktop:w-400"
           href={buttonLink.trim()}
         >

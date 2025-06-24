@@ -51,7 +51,6 @@ describe('Video component', () => {
 
     expect(thumbnailElement).toBeInTheDocument();
     expect(thumbnailElement).toHaveAttribute('src', '/test-thumbnail.jpg');
-    expect(thumbnailElement).toHaveAttribute('alt', 'Video Thumbnail');
     expect(asFragment()).toMatchSnapshot();
   });
 

@@ -98,12 +98,12 @@ exports[`ServicesSection component renders the component correctly 1`] = `
                   >
                     Послуга 1
                   </h3>
-                  <div
+                  <label
                     class="flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity px-4 py-2 font-normal leading-14 tracking-normal text-blue-dark tablet:text-base tablet:leading-4 desktop:px-5 desktop:text-lg desktop:leading-18"
                     data-testid="label-component-test-id"
                   >
                     Етикетка 1
-                  </div>
+                  </label>
                   <p
                     class="px-1 pt-3 text-base font-normal leading-22 tablet:max-w-[500px] desktop:max-w-[500px] desktop:text-lg text-black"
                     data-testid="service-card-front-description-test-id"

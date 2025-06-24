@@ -2,22 +2,22 @@
 
 exports[`Label component displays the correct text 1`] = `
 <DocumentFragment>
-  <div
+  <label
     class="flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity px-4 py-2 text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label
-  </div>
+  </label>
 </DocumentFragment>
 `;
 
 exports[`Label component renders the Label component 1`] = `
 <DocumentFragment>
-  <div
+  <label
     class="flex max-w-max items-center justify-center rounded-40 bg-teal-lightOpacity px-4 py-2 text-blue-dark"
     data-testid="label-component-test-id"
   >
     Test Label
-  </div>
+  </label>
 </DocumentFragment>
 `;

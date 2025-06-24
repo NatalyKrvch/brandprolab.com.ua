@@ -3,10 +3,10 @@ import clsx from 'clsx';
 import { AdaptiveImageProps } from './types';
 
 export default function AdaptiveImage({
-  alt,
   sources,
   fallbackSrc,
   className,
+  alt = '',
 }: AdaptiveImageProps) {
   if (!fallbackSrc) return null;
 

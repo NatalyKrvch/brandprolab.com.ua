@@ -28,7 +28,7 @@ const TestimonialsSection = ({
           {normalizeText(title)}
         </h2>
       </div>
-      <ControlledCarousel>
+      <ControlledCarousel aria-label="Відгуки" aria-roledescription="carousel">
         {testimonials.map(person => (
           <TestimonialCard
             key={person._key}

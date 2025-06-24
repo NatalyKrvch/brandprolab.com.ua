@@ -20,6 +20,7 @@ const FooterSection = ({ footerData }: FooterSectionProps) => {
         </div>
 
         <ExternalLink
+          aria-label="Відкрити договір оферти у новій вкладці"
           href={offerLink.trim()}
           className="whitespace-nowrap underline underline-offset-2 transition hover:text-teal-dark"
         >

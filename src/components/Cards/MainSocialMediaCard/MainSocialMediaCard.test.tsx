@@ -87,10 +87,11 @@ describe('MainSocialMediaCard', () => {
 
   it('renders the fallback image with correct src and alt and matches snapshot', () => {
     const { asFragment } = render(<MainSocialMediaCard {...defaultProps} />);
-    const img = screen.getByAltText('Photo') as HTMLImageElement;
+    const img = screen.getByAltText(
+      `Фото з платформи ${defaultProps.platformName}`,
+    ) as HTMLImageElement;
     expect(img).toBeInTheDocument();
     expect(img).toHaveAttribute('src', defaultProps.mobilePhotoURL);
-    expect(img).toHaveAttribute('alt', 'Photo');
     expect(asFragment()).toMatchSnapshot();
   });
 });

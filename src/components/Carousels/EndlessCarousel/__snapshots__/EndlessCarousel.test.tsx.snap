@@ -3,8 +3,10 @@
 exports[`EndlessCarousel applies custom className to wrapper 1`] = `
 <div>
   <div
+    aria-roledescription="carousel"
     class="overflow-hidden custom-class"
     data-testid="endless-carousel-test-id"
+    role="group"
   >
     <div
       class="rfm-marquee-container "
@@ -48,8 +50,10 @@ exports[`EndlessCarousel applies custom className to wrapper 1`] = `
 exports[`EndlessCarousel renders children inside the marquee 1`] = `
 <div>
   <div
+    aria-roledescription="carousel"
     class="overflow-hidden "
     data-testid="endless-carousel-test-id"
+    role="group"
   >
     <div
       class="rfm-marquee-container "
@@ -97,8 +101,10 @@ exports[`EndlessCarousel renders children inside the marquee 1`] = `
 exports[`EndlessCarousel respects default props if not provided 1`] = `
 <div>
   <div
+    aria-roledescription="carousel"
     class="overflow-hidden "
     data-testid="endless-carousel-test-id"
+    role="group"
   >
     <div
       class="rfm-marquee-container "

@@ -3,25 +3,32 @@
 exports[`PaginationDots component applies active class to the current dot 1`] = `
 <DocumentFragment>
   <div
+    aria-label="Навігація каруселі"
     class="flex justify-center gap-2"
+    role="group"
   >
     <button
+      aria-label="Перейти до слайду номер 1"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
+      aria-label="Перейти до слайду номер 2"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
+      aria-label="Перейти до слайду номер 3"
       class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
+      aria-label="Перейти до слайду номер 4"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
+      aria-label="Перейти до слайду номер 5"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
@@ -32,25 +39,32 @@ exports[`PaginationDots component applies active class to the current dot 1`] = 
 exports[`PaginationDots component applies inactive classes to other dots 1`] = `
 <DocumentFragment>
   <div
+    aria-label="Навігація каруселі"
     class="flex justify-center gap-2"
+    role="group"
   >
     <button
+      aria-label="Перейти до слайду номер 1"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
+      aria-label="Перейти до слайду номер 2"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
+      aria-label="Перейти до слайду номер 3"
       class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
+      aria-label="Перейти до слайду номер 4"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
+      aria-label="Перейти до слайду номер 5"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
@@ -61,25 +75,32 @@ exports[`PaginationDots component applies inactive classes to other dots 1`] = `
 exports[`PaginationDots component calls onDotClick with correct index 1`] = `
 <DocumentFragment>
   <div
+    aria-label="Навігація каруселі"
     class="flex justify-center gap-2"
+    role="group"
   >
     <button
+      aria-label="Перейти до слайду номер 1"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
+      aria-label="Перейти до слайду номер 2"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
+      aria-label="Перейти до слайду номер 3"
       class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
+      aria-label="Перейти до слайду номер 4"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
+      aria-label="Перейти до слайду номер 5"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
@@ -90,25 +111,32 @@ exports[`PaginationDots component calls onDotClick with correct index 1`] = `
 exports[`PaginationDots component renders the correct number of dots 1`] = `
 <DocumentFragment>
   <div
+    aria-label="Навігація каруселі"
     class="flex justify-center gap-2"
+    role="group"
   >
     <button
+      aria-label="Перейти до слайду номер 1"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-0"
     />
     <button
+      aria-label="Перейти до слайду номер 2"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-1"
     />
     <button
+      aria-label="Перейти до слайду номер 3"
       class="duration-400 h-4 w-4 rounded-full transition-colors bg-teal-dark"
       data-testid="pagination-dot-test-id-2"
     />
     <button
+      aria-label="Перейти до слайду номер 4"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-3"
     />
     <button
+      aria-label="Перейти до слайду номер 5"
       class="duration-400 h-4 w-4 rounded-full transition-colors border border-teal-dark bg-gray-light"
       data-testid="pagination-dot-test-id-4"
     />
