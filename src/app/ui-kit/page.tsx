@@ -13,7 +13,6 @@ import {
   InternalLink,
   Label,
   List,
-  MainSocialMediaCard,
   // ServiceCardBack,
   // ServiceCardFront,
   PhotoCard,
@@ -22,8 +21,8 @@ import {
   // TestimonialCard,
   UnderlinedText,
   UserBadge,
-  // Video,
 } from '@/components';
+import HeroMainCard from '@/components/Cards/HeroMainCard';
 import { IconClassType } from '@/lib/constants';
 import {
   EXPERTISE_CARD_HEIGHT,
@@ -112,11 +111,23 @@ import {
 const Uikit = () => {
   return (
     <>
-      <div className="mb-4">
+      <div className="mb-4 w-[552px]">
+        <span className="my-3 text-xl font-bold">HeroMainCard component</span>
+        <HeroMainCard
+          title="Емоційний стан, кар’єра, бренд"
+          subtitle="— все під контролем!"
+          description="Запишіться на безкоштовну консультацію, яка допоможе вам знайти нові можливості, побудувати особистий бренд і досягти успіху в ІТ."
+          buttonText="Записатись"
+          buttonLink="https://google.com"
+          iconURL="./icons/cards/shield.svg"
+        />
+      </div>
+
+      {/* <div className="mb-4">
         {/* <span className="my-3 text-xl font-bold">
           MainSocialMediaCard component
         </span> */}
-        <MainSocialMediaCard
+      {/* <MainSocialMediaCard
           desktopPhotoURL="/images/temp/photo_desktop.png"
           tabletPhotoURL="/images/temp/photo_tablet.png"
           mobilePhotoURL="/images/temp/photo_mobile.png"
@@ -125,7 +136,7 @@ const Uikit = () => {
           platformName="LinkedIn"
           platformURL="https://linkedin.com"
         />
-      </div>
+      </div>  */}
 
       {/* <div className="mb-4">
         <span className="my-3 text-xl font-bold">
