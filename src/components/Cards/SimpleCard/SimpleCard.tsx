@@ -13,7 +13,8 @@ const SimpleCard = ({
   className,
   style,
   backgroundImageUrl,
-  backgroundImageOpacity = 1,
+  decorativeBgImageUrl,
+  decorativeBgImageOpacity = 1,
   backgroundColor = 'bg-white',
 }: PropsWithChildren<SimpleCardProps>) => {
   const containerClasses = twMerge(
@@ -26,19 +27,31 @@ const SimpleCard = ({
     ),
   );
 
+  const containerStyle: React.CSSProperties = {
+    ...style,
+    ...(backgroundImageUrl
+      ? {
+          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }
+      : {}),
+  };
+
   return (
     <div
       className={containerClasses}
-      style={style}
+      style={containerStyle}
       data-testid={SIMPLE_CARD_TEST_ID}
     >
-      {backgroundImageUrl && (
+      {decorativeBgImageUrl && (
         <div
           aria-hidden="true"
           className="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
           style={{
-            backgroundImage: `url(${backgroundImageUrl})`,
-            opacity: backgroundImageOpacity,
+            backgroundImage: `url(${decorativeBgImageUrl})`,
+            opacity: decorativeBgImageOpacity,
           }}
         />
       )}

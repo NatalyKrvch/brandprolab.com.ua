@@ -8,15 +8,15 @@ import {
   DiplomaCard,
   // EndlessCarousel,
   ExternalLink,
-  FlipCard,
-  FlipCardBack,
-  FlipCardFront,
+  // FlipCard,
   Icon,
   InternalLink,
   Label,
   List,
   MainSocialMediaCard,
-  // PhotoCard,
+  // ServiceCardBack,
+  // ServiceCardFront,
+  PhotoCard,
   // SimpleCard,
   // SocialMediaCard,
   // TestimonialCard,
@@ -25,6 +25,14 @@ import {
   // Video,
 } from '@/components';
 import { IconClassType } from '@/lib/constants';
+import {
+  EXPERTISE_CARD_HEIGHT,
+  EXPERTISE_CARD_PHOTO_HEIGHT,
+  EXPERTISE_CARD_PHOTO_WIDTH,
+  HERO_CARD_HEIGHT,
+  HERO_CARD_PHOTO_HEIGHT,
+  HERO_CARD_PHOTO_WIDTH,
+} from '@/styles/constants';
 // import { MainSocialCardColor } from '@/styles/constants';
 
 // const ControlledCarousel = dynamic(
@@ -165,20 +173,21 @@ const Uikit = () => {
         />
       </div> */}
 
-      <div className="relative mx-4 my-10 h-[500px] w-[480px]">
+      {/* <div className="relative mx-4 my-10 h-[500px] w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCard component</span>
         <FlipCard
           front={
-            <FlipCardFront
+            <ServiceCardFront
               iconURL="/icons/cards/hand.svg"
               header="Точкова кар’єрна консультація"
               label="90 хв."
               description="Онлайн-зустріч для вирішення конкретного запиту: аудит резюме, LinkedIn, підготовка до співбесіди чи боротьба з вигоранням."
               callToActionText="Що можна вирішити на консультації?"
+              whiteIconURL=''
             />
           }
           back={
-            <FlipCardBack
+            <ServiceCardBack
               header="Разова онлайн-зустріч (1,5-2 год.) для вирішення конкретного запиту:"
               list={[
                 'Провести аудит резюме: що залишити, змінити чи додати, щоб воно стало результативним',
@@ -188,7 +197,7 @@ const Uikit = () => {
             />
           }
         />
-      </div>
+      </div> */}
 
       {/* <div className="m-4 w-[480px]">
         <span className="my-3 text-xl font-bold">FlipCardFront component</span>
@@ -221,27 +230,27 @@ const Uikit = () => {
         />
       </div> */}
 
-      {/* <div className="m-4 flex flex-col gap-5">
+      <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">PhotoCard component</span>
         <PhotoCard
           text="Чому мені можна довіряти?"
           photoUrl="/images/temp/photo-expert.png"
           backgroundUrl="/images/backgrounds/expert-bg.svg"
-          imageWidth={362}
-          imageHeight={600}
-          cardHeight={744}
+          imageWidth={EXPERTISE_CARD_PHOTO_WIDTH}
+          imageHeight={EXPERTISE_CARD_PHOTO_HEIGHT}
+          cardHeight={EXPERTISE_CARD_HEIGHT}
         />
-      </div> */}
-      {/* 
+      </div>
+
       <div className="m-4 flex flex-col gap-5">
         <PhotoCard
           photoUrl="/images/temp/photo-hero.png"
           backgroundUrl="/images/backgrounds/hero-photocard-bg.svg"
-          imageWidth={512}
-          imageHeight={764}
-          cardHeight={824}
+          imageWidth={HERO_CARD_PHOTO_WIDTH}
+          imageHeight={HERO_CARD_PHOTO_HEIGHT}
+          cardHeight={HERO_CARD_HEIGHT}
         />
-      </div> */}
+      </div>
 
       <div className="m-4 flex flex-col gap-5">
         <span className="my-3 text-xl font-bold">DiplomaCard component</span>

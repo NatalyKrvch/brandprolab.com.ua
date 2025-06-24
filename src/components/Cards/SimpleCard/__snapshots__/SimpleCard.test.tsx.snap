@@ -5,12 +5,8 @@ exports[`SimpleCard component applies background image styles when backgroundIma
   <div
     class="relative w-full bg-cover bg-center bg-gray-100 rounded-24 tablet:rounded-32 desktop:rounded-40 custom-class"
     data-testid="simple-card-test-id"
+    style="background-image: url(/test-image.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
-    <div
-      aria-hidden="true"
-      class="pointer-events-none absolute hidden bg-contain bg-no-repeat mid_tablet:bottom-neg-170 mid_tablet:right-neg-50 mid_tablet:block mid_tablet:h-400 mid_tablet:w-532 desktop:bottom-neg-60 desktop:right-neg-50 desktop:block desktop:h-350 desktop:w-690"
-      style="background-image: url(/test-image.jpg); opacity: 1;"
-    />
     <p>
       Test Content
     </p>
