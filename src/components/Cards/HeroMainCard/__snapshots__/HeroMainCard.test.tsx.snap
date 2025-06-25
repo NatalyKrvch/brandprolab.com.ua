@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroMainCard component renders button with correct text and link 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
+    data-testid="simple-card-test-id"
+    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  >
+    <img
+      alt=""
+      class="mb-6 ml-11"
+      data-testid="hero-main-card-icon-test-id"
+      src="/test-icon.svg"
+    />
+    <h1
+      class="px-54 text-54 font-bold leading-54 tracking-tight text-white"
+    >
+      <span
+        class="mb-4 block"
+      >
+        Test Title
+      </span>
+      <span
+        class="block text-right text-40 font-normal leading-40 tracking-normal"
+      >
+        Test Subtitle
+      </span>
+    </h1>
+    <div
+      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+    >
+      <strong
+        class="max-w-408 px-2 text-xl font-normal"
+      >
+        This is the main card description.
+      </strong>
+      <a
+        data-testid="external-link-test-id"
+        href="/test-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          data-testid="button-test-id"
+        >
+          Click Me
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`HeroMainCard component renders description 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
+    data-testid="simple-card-test-id"
+    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  >
+    <img
+      alt=""
+      class="mb-6 ml-11"
+      data-testid="hero-main-card-icon-test-id"
+      src="/test-icon.svg"
+    />
+    <h1
+      class="px-54 text-54 font-bold leading-54 tracking-tight text-white"
+    >
+      <span
+        class="mb-4 block"
+      >
+        Test Title
+      </span>
+      <span
+        class="block text-right text-40 font-normal leading-40 tracking-normal"
+      >
+        Test Subtitle
+      </span>
+    </h1>
+    <div
+      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+    >
+      <strong
+        class="max-w-408 px-2 text-xl font-normal"
+      >
+        This is the main card description.
+      </strong>
+      <a
+        data-testid="external-link-test-id"
+        href="/test-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          data-testid="button-test-id"
+        >
+          Click Me
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`HeroMainCard component renders icon image with correct src 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
+    data-testid="simple-card-test-id"
+    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  >
+    <img
+      alt=""
+      class="mb-6 ml-11"
+      data-testid="hero-main-card-icon-test-id"
+      src="/test-icon.svg"
+    />
+    <h1
+      class="px-54 text-54 font-bold leading-54 tracking-tight text-white"
+    >
+      <span
+        class="mb-4 block"
+      >
+        Test Title
+      </span>
+      <span
+        class="block text-right text-40 font-normal leading-40 tracking-normal"
+      >
+        Test Subtitle
+      </span>
+    </h1>
+    <div
+      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+    >
+      <strong
+        class="max-w-408 px-2 text-xl font-normal"
+      >
+        This is the main card description.
+      </strong>
+      <a
+        data-testid="external-link-test-id"
+        href="/test-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          data-testid="button-test-id"
+        >
+          Click Me
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`HeroMainCard component renders the component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
+    data-testid="simple-card-test-id"
+    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  >
+    <img
+      alt=""
+      class="mb-6 ml-11"
+      data-testid="hero-main-card-icon-test-id"
+      src="/test-icon.svg"
+    />
+    <h1
+      class="px-54 text-54 font-bold leading-54 tracking-tight text-white"
+    >
+      <span
+        class="mb-4 block"
+      >
+        Test Title
+      </span>
+      <span
+        class="block text-right text-40 font-normal leading-40 tracking-normal"
+      >
+        Test Subtitle
+      </span>
+    </h1>
+    <div
+      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+    >
+      <strong
+        class="max-w-408 px-2 text-xl font-normal"
+      >
+        This is the main card description.
+      </strong>
+      <a
+        data-testid="external-link-test-id"
+        href="/test-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          data-testid="button-test-id"
+        >
+          Click Me
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`HeroMainCard component renders title and subtitle 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
+    data-testid="simple-card-test-id"
+    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  >
+    <img
+      alt=""
+      class="mb-6 ml-11"
+      data-testid="hero-main-card-icon-test-id"
+      src="/test-icon.svg"
+    />
+    <h1
+      class="px-54 text-54 font-bold leading-54 tracking-tight text-white"
+    >
+      <span
+        class="mb-4 block"
+      >
+        Test Title
+      </span>
+      <span
+        class="block text-right text-40 font-normal leading-40 tracking-normal"
+      >
+        Test Subtitle
+      </span>
+    </h1>
+    <div
+      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+    >
+      <strong
+        class="max-w-408 px-2 text-xl font-normal"
+      >
+        This is the main card description.
+      </strong>
+      <a
+        data-testid="external-link-test-id"
+        href="/test-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          data-testid="button-test-id"
+        >
+          Click Me
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

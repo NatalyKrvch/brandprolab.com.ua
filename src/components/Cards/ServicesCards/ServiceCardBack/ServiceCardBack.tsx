@@ -18,8 +18,8 @@ const ServiceCardBack = ({
 
   return (
     <SimpleCard
-      backgroundImageUrl={bgImageURL}
-      backgroundImageOpacity={BACK_CARD_BG_IMAGE_OPACITY}
+      decorativeBgImageUrl={bgImageURL}
+      decorativeBgImageOpacity={BACK_CARD_BG_IMAGE_OPACITY}
       className="flex h-full flex-col gap-4 bg-blue-dark p-6 tablet:p-8 mid_tablet:border-none desktop:gap-6 desktop:border-none desktop:p-10"
     >
       <h3

@@ -10,7 +10,7 @@ describe('Button component', () => {
   const defaultProps = {
     children: 'Click me',
     onClick: jest.fn(),
-    color: 'teal' as const,
+    variant: 'teal' as const,
   };
 
   it('renders the Button component', () => {
@@ -30,7 +30,7 @@ describe('Button component', () => {
   });
 
   it('applies correct styles for teal color', () => {
-    const { asFragment } = render(<Button {...defaultProps} color="teal" />);
+    const { asFragment } = render(<Button {...defaultProps} variant="teal" />);
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
     expect(buttonElement).toHaveClass(
@@ -44,7 +44,7 @@ describe('Button component', () => {
   });
 
   it('applies correct styles for white color', () => {
-    const { asFragment } = render(<Button {...defaultProps} color="white" />);
+    const { asFragment } = render(<Button {...defaultProps} variant="white" />);
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
     expect(buttonElement).toHaveClass(

@@ -29,8 +29,8 @@ const ServiceCardFront = ({
     <SimpleCard
       borderColor="border-teal-dark"
       backgroundColor={styles.background}
-      backgroundImageUrl={bgImageURL}
-      backgroundImageOpacity={FRONT_CARD_BG_IMAGE_OPACITY}
+      decorativeBgImageUrl={bgImageURL}
+      decorativeBgImageOpacity={FRONT_CARD_BG_IMAGE_OPACITY}
       className="flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
     >
       <div aria-hidden="true" className="flex items-center justify-end">

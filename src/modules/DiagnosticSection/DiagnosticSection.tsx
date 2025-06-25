@@ -50,7 +50,7 @@ const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
             backgroundColor="bg-teal-light"
             className="w-full max-w-400 p-6 tablet:max-w-482 desktop:max-w-408"
           >
-            <SprayBackground className="-left-20 -top-250 h-700 w-full tablet:-left-30 tablet:-top-280 tablet:h-800 tablet:w-full desktop:-top-200 desktop:h-800 desktop:w-800" />
+            <SprayBackground className="-left-20 -top-250 h-700 w-full -rotate-30 tablet:-left-30 tablet:-top-336 tablet:h-900 tablet:w-full desktop:-top-270 desktop:h-800 desktop:w-800" />
 
             <p className="mb-6 font-normal text-black tablet:text-2xl tablet:leading-6 desktop:text-2xl desktop:leading-6">
               {normalizeText(benefitsTitle)}

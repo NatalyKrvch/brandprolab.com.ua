@@ -2,6 +2,7 @@ export { AdaptiveImage } from './AdaptiveImage';
 export { Button } from './Button';
 export { DiplomaCard } from './Cards/DiplomaCard';
 export { FlipCard } from './Cards/FlipCard';
+export { HeroMainCard } from './Cards/HeroMainCard';
 export { MainSocialMediaCard } from './Cards/MainSocialMediaCard';
 export { PhotoCard } from './Cards/PhotoCard';
 export { ServiceCardBack } from './Cards/ServicesCards/ServiceCardBack';
