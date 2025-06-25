@@ -6,11 +6,6 @@ export const TABLET_MEDIA_QUERY = '(min-width: 600px)';
 export const ROUNDED_CLASSES =
   'rounded-24 tablet:rounded-32 desktop:rounded-40';
 
-export enum MainSocialCardColor {
-  RED = 'red-default',
-  BLUE = 'blue-default',
-}
-
 export const SLIDER_CLASSNAME = 'keen-slider';
 export const SLIDE_CLASSNAME = 'keen-slider__slide';
 
