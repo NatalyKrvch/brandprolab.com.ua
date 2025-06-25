@@ -20,7 +20,7 @@ exports[`FooterSection component renders the component correctly 1`] = `
         </div>
       </div>
       <a
-        class="whitespace-nowrap underline underline-offset-2 transition hover:text-teal-dark"
+        class="whitespace-nowrap underline underline-offset-3 transition hover:text-teal-dark"
         data-testid="external-link-test-id"
         href="https://example.com/offer"
         rel="noopener noreferrer"
