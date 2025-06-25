@@ -58,10 +58,10 @@ exports[`ServicesSection component renders the component correctly 1`] = `
                       data-nimg="1"
                       data-testid="icon-component-image-test-id"
                       decoding="async"
-                      height="0"
+                      height="68"
                       loading="lazy"
                       style="color: transparent;"
-                      width="0"
+                      width="68"
                     />
                   </div>
                 </div>
@@ -78,10 +78,10 @@ exports[`ServicesSection component renders the component correctly 1`] = `
                       data-nimg="1"
                       data-testid="icon-component-image-test-id"
                       decoding="async"
-                      height="0"
+                      height="68"
                       loading="lazy"
                       style="color: transparent;"
-                      width="0"
+                      width="68"
                     />
                   </div>
                 </div>

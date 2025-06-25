@@ -27,8 +27,8 @@ const Icon = ({
         <Image
           src={iconURL}
           alt={iconAlt}
-          width={0}
-          height={0}
+          width={68}
+          height={68}
           className={iconClass}
           loading="lazy"
           data-testid={ICON_COMPONENT_IMAGE_TEST_ID}

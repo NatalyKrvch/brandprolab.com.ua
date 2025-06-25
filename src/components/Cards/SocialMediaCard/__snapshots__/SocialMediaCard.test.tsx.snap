@@ -25,11 +25,11 @@ exports[`SocialMediaCard applies correct href to link 1`] = `
             data-nimg="1"
             data-testid="icon-component-image-test-id"
             decoding="async"
-            height="0"
+            height="68"
             loading="lazy"
             src="/icons/youtube.svg"
             style="color: transparent;"
-            width="0"
+            width="68"
           />
         </div>
       </div>
@@ -77,11 +77,11 @@ exports[`SocialMediaCard renders correct color class based on mainColor prop 1`]
             data-nimg="1"
             data-testid="icon-component-image-test-id"
             decoding="async"
-            height="0"
+            height="68"
             loading="lazy"
             src="/icons/youtube.svg"
             style="color: transparent;"
-            width="0"
+            width="68"
           />
         </div>
       </div>
@@ -129,11 +129,11 @@ exports[`SocialMediaCard renders correctly with given props 1`] = `
             data-nimg="1"
             data-testid="icon-component-image-test-id"
             decoding="async"
-            height="0"
+            height="68"
             loading="lazy"
             src="/icons/youtube.svg"
             style="color: transparent;"
-            width="0"
+            width="68"
           />
         </div>
       </div>
