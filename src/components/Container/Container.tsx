@@ -11,8 +11,8 @@ import { ContainerProps } from './types';
 
 const Container = ({
   children,
-  variant = 'centered',
   className,
+  variant = 'centered',
 }: PropsWithChildren<ContainerProps>) => {
   const testId = {
     full: FULL_WIDTH_CONTAINER_TEST_ID,
