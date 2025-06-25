@@ -6,7 +6,7 @@ export const getServiceCardFrontStyles = (variant: 'default' | 'gradient') => {
   return {
     background: isGradient
       ? 'mid_tablet:bg-gradient-to-r mid_tablet:from-teal-dark mid_tablet:to-blue-default desktop:bg-gradient-to-r desktop:from-teal-dark desktop:to-blue-default'
-      : 'bg-white',
+      : 'bg-white desktop:hover:bg-gradient-to-b desktop:hover:from-white desktop:hover:via-white desktop:hover:to-gray-light transition-colors duration-500',
 
     header: clsx(
       'max-w-300 px-1 text-26 font-bold leading-26 tablet:max-w-350 tablet:text-28 tablet:leading-7 desktop:max-w-350 desktop:text-32 desktop:leading-8',
@@ -25,7 +25,7 @@ export const getServiceCardFrontStyles = (variant: 'default' | 'gradient') => {
 
     underlined: isGradient
       ? 'font-bold mid_tablet:text-white desktop:text-lg desktop:text-white'
-      : 'font-bold desktop:text-lg',
+      : 'font-bold desktop:text-lg desktop:group-hover:text-blue-dark',
 
     icon: isGradient ? 'block mid_tablet:hidden desktop:hidden' : 'block',
 
