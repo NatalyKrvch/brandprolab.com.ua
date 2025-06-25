@@ -24,14 +24,18 @@ const ServiceCardFront = ({
 }: ServiceCardFrontProps) => {
   const styles = getServiceCardFrontStyles(variant);
   const bgImageURL = variant === 'gradient' ? backgroundImageUrl : undefined;
+  const borderColor =
+    variant === 'default'
+      ? 'border-teal-dark'
+      : 'border-teal-dark mid_tablet:border-none desktop:border-none';
 
   return (
     <SimpleCard
-      borderColor="border-teal-dark"
+      borderColor={borderColor}
       backgroundColor={styles.background}
       decorativeBgImageUrl={bgImageURL}
       decorativeBgImageOpacity={FRONT_CARD_BG_IMAGE_OPACITY}
-      className="flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
+      className="group flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
     >
       <div aria-hidden="true" className="flex items-center justify-end">
         <Icon

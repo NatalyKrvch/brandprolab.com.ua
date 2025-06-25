@@ -2,14 +2,12 @@ import { AdaptiveImage } from '@/components/AdaptiveImage';
 import { PictureSource } from '@/components/AdaptiveImage/types';
 import { Icon } from '@/components/Icon';
 import { ExternalLink } from '@/components/Links';
+import { socialMediaColorClassMap } from '@/lib/colorMaps';
 import { IconClassType } from '@/lib/constants';
-import {
-  DESKTOP_MEDIA_QUERY,
-  MainSocialCardColor,
-  TABLET_MEDIA_QUERY,
-} from '@/styles/constants';
+import { DESKTOP_MEDIA_QUERY, TABLET_MEDIA_QUERY } from '@/styles/constants';
 
 import { SimpleCard } from '../SimpleCard';
+import { MainSocialCardColor } from '../SocialMediaCard/types';
 import { MainSocialMediaCardProps } from './types';
 
 const MainSocialMediaCard = ({
@@ -26,6 +24,9 @@ const MainSocialMediaCard = ({
     { srcSet: tabletPhotoURL, media: TABLET_MEDIA_QUERY },
   ];
 
+  const mainColor = MainSocialCardColor.BLUE;
+  const iconCircleColor = socialMediaColorClassMap[mainColor]?.bg ?? '';
+
   return (
     <ExternalLink href={platformURL} aria-label={`Відкрити ${platformName}`}>
       <SimpleCard
@@ -35,7 +36,7 @@ const MainSocialMediaCard = ({
         <div className="flex items-start gap-4 pl-4 pt-6 mobile:min-w-0 mobile:flex-1 tablet:pl-0 desktop:absolute desktop:left-240 desktop:flex-col desktop:gap-6 desktop:pb-9 desktop:pr-9 desktop:pt-9">
           <Icon
             aria-hidden="true"
-            circleColor={`bg-${MainSocialCardColor.BLUE}`}
+            circleColor={iconCircleColor}
             iconURL={iconURL}
             type={IconClassType.SOCIAL_MEDIA_MAIN}
           />

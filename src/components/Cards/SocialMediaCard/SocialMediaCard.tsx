@@ -2,15 +2,15 @@ import clsx from 'clsx';
 
 import { Icon } from '@/components/Icon';
 import { ExternalLink } from '@/components/Links';
+import { socialMediaColorClassMap } from '@/lib/colorMaps';
 import { IconClassType } from '@/lib/constants';
 import {
   SOCIAL_MEDIA_DESCRIPTION_TEST_ID,
   SOCIAL_MEDIA_LABEL_TEST_ID,
 } from '@/lib/testIDs';
-import { MainSocialCardColor } from '@/styles/constants';
 
 import { SimpleCard } from '../SimpleCard';
-import type { SocialMediaCardProps } from './types';
+import { SocialMediaCardProps } from './types';
 
 const SocialMediaCard = ({
   iconURL,
@@ -19,30 +19,19 @@ const SocialMediaCard = ({
   description,
   mainColor,
 }: SocialMediaCardProps) => {
-  const bgColorClass =
-    mainColor === MainSocialCardColor.RED
-      ? 'bg-red-default'
-      : mainColor === MainSocialCardColor.BLUE
-        ? 'bg-blue-default'
-        : '';
-
-  const textColorClass =
-    mainColor === MainSocialCardColor.RED
-      ? 'text-red-default'
-      : mainColor === MainSocialCardColor.BLUE
-        ? 'text-blue-default'
-        : '';
+  const bgColorClasses = socialMediaColorClassMap[mainColor]?.bg ?? '';
+  const textColorClasses = socialMediaColorClassMap[mainColor]?.text ?? '';
 
   return (
     <ExternalLink href={socialMediaURL}>
       <SimpleCard
         backgroundColor="bg-gray-light"
-        className="flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
+        className="flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 transition-colors duration-200 hover:bg-teal-lightOpacity tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       >
         <Icon
           aria-hidden="true"
           iconURL={iconURL}
-          circleColor={bgColorClass}
+          circleColor={bgColorClasses}
           type={IconClassType.SOCIAL_MEDIA}
         />
 
@@ -50,7 +39,7 @@ const SocialMediaCard = ({
           <h3
             className={clsx(
               'mb-1 text-base font-medium leading-5 tracking-wide tablet:text-base desktop:text-lg desktop:leading-22',
-              textColorClass,
+              textColorClasses,
             )}
             data-testid={SOCIAL_MEDIA_LABEL_TEST_ID}
           >

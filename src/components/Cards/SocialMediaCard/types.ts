@@ -1,4 +1,14 @@
-import { MainSocialCardColor } from '@/styles/constants';
+export enum MainSocialCardColor {
+  RED = 'red',
+  BLUE = 'blue',
+}
+
+export type socialMediaColorClassMapType = {
+  [key in MainSocialCardColor]: {
+    bg: string;
+    text: string;
+  };
+};
 
 export interface SocialMediaCardProps {
   iconURL: string;

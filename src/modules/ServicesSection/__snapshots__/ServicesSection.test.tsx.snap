@@ -38,7 +38,7 @@ exports[`ServicesSection component renders the component correctly 1`] = `
             data-testid="flip-card-front-test-id"
           >
             <div
-              class="relative w-full bg-cover bg-center bg-white border border-teal-dark rounded-24 tablet:rounded-32 desktop:rounded-40 flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
+              class="relative w-full bg-cover bg-center bg-white mid_tablet:hover:bg-gradient-to-b mid_tablet:hover:from-white mid_tablet:hover:via-white mid_tablet:hover:to-gray-light desktop:hover:bg-gradient-to-b desktop:hover:from-white desktop:hover:via-white desktop:hover:to-gray-light border border-teal-dark rounded-24 tablet:rounded-32 desktop:rounded-40 group flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
               data-testid="simple-card-test-id"
             >
               <div
@@ -58,10 +58,10 @@ exports[`ServicesSection component renders the component correctly 1`] = `
                       data-nimg="1"
                       data-testid="icon-component-image-test-id"
                       decoding="async"
-                      height="0"
+                      height="68"
                       loading="lazy"
                       style="color: transparent;"
-                      width="0"
+                      width="68"
                     />
                   </div>
                 </div>
@@ -78,10 +78,10 @@ exports[`ServicesSection component renders the component correctly 1`] = `
                       data-nimg="1"
                       data-testid="icon-component-image-test-id"
                       decoding="async"
-                      height="0"
+                      height="68"
                       loading="lazy"
                       style="color: transparent;"
-                      width="0"
+                      width="68"
                     />
                   </div>
                 </div>
@@ -116,7 +116,7 @@ exports[`ServicesSection component renders the component correctly 1`] = `
                   class="px-1 text-left desktop:px-2"
                 >
                   <span
-                    class="relative inline-block cursor-pointer text-base leading-5 text-teal-dark underline underline-offset-4 font-bold desktop:text-lg"
+                    class="relative inline-block cursor-pointer text-base leading-5 text-teal-dark underline underline-offset-4 font-bold desktop:text-lg mid_tablet:group-hover:text-blue-dark desktop:group-hover:text-blue-dark"
                     data-testid="underlined-text-test-id"
                   >
                     Дізнатись більше

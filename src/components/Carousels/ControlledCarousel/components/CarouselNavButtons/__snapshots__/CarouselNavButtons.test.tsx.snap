@@ -20,11 +20,11 @@ exports[`CarouselNavButtons component renders both buttons when not on first or 
           class="h-40 w-40 rotate-180 desktop:h-44 desktop:w-44"
           data-nimg="1"
           decoding="async"
-          height="0"
+          height="40"
           loading="lazy"
           src="/icons/nav/row.svg"
           style="color: transparent;"
-          width="0"
+          width="40"
         />
       </button>
       <button
@@ -38,11 +38,11 @@ exports[`CarouselNavButtons component renders both buttons when not on first or 
           class="h-40 w-40 desktop:h-44 desktop:w-44"
           data-nimg="1"
           decoding="async"
-          height="0"
+          height="40"
           loading="lazy"
           src="/icons/nav/row.svg"
           style="color: transparent;"
-          width="0"
+          width="40"
         />
       </button>
     </div>
@@ -83,11 +83,11 @@ exports[`CarouselNavButtons component renders the next button when not on the la
           class="h-40 w-40 desktop:h-44 desktop:w-44"
           data-nimg="1"
           decoding="async"
-          height="0"
+          height="40"
           loading="lazy"
           src="/icons/nav/row.svg"
           style="color: transparent;"
-          width="0"
+          width="40"
         />
       </button>
     </div>
@@ -115,11 +115,11 @@ exports[`CarouselNavButtons component renders the previous button when not on th
           class="h-40 w-40 rotate-180 desktop:h-44 desktop:w-44"
           data-nimg="1"
           decoding="async"
-          height="0"
+          height="40"
           loading="lazy"
           src="/icons/nav/row.svg"
           style="color: transparent;"
-          width="0"
+          width="40"
         />
       </button>
     </div>

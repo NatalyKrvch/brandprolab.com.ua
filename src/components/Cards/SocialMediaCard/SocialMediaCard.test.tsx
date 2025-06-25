@@ -5,9 +5,9 @@ import {
   SOCIAL_MEDIA_DESCRIPTION_TEST_ID,
   SOCIAL_MEDIA_LABEL_TEST_ID,
 } from '@/lib/testIDs';
-import { MainSocialCardColor } from '@/styles/constants';
 
 import SocialMediaCard from './SocialMediaCard';
+import { MainSocialCardColor } from './types';
 
 describe('SocialMediaCard', () => {
   const defaultProps = {

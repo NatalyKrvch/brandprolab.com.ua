@@ -41,8 +41,8 @@ const CarouselNavButtons = ({
               src="/icons/nav/row.svg"
               alt=""
               aria-hidden="true"
-              width={0}
-              height={0}
+              width={40}
+              height={40}
               className="h-40 w-40 rotate-180 desktop:h-44 desktop:w-44"
             />
           </motion.button>
@@ -60,8 +60,8 @@ const CarouselNavButtons = ({
               src="/icons/nav/row.svg"
               alt=""
               aria-hidden="true"
-              width={0}
-              height={0}
+              width={40}
+              height={40}
               className="h-40 w-40 desktop:h-44 desktop:w-44"
             />
           </motion.button>
