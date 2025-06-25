@@ -26,7 +26,7 @@ const SocialMediaCard = ({
     <ExternalLink href={socialMediaURL}>
       <SimpleCard
         backgroundColor="bg-gray-light"
-        className="flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 transition-colors duration-500 hover:bg-teal-lightOpacity tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
+        className="flex h-full flex-row items-center gap-5 px-4 pb-6 pt-4 transition-colors duration-200 hover:bg-teal-lightOpacity tablet:flex-col tablet:items-start desktop:flex-col desktop:items-start"
       >
         <Icon
           aria-hidden="true"
