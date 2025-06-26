@@ -7,7 +7,8 @@ import {
   LIMITED_WIDTH_CONTAINER_TEST_ID,
 } from '@/lib/testIDs';
 
-import { ContainerProps } from './types';
+import { containerClassMap } from './styleMaps';
+import type { ContainerProps } from './types';
 
 const Container = ({
   children,
@@ -20,12 +21,7 @@ const Container = ({
     leftLimited: LEFT_LIMITED_CONTAINER_TEST_ID,
   }[variant];
 
-  const baseClasses = {
-    full: 'w-full',
-    centered: 'mx-auto max-w-container px-4 tablet:px-12 desktop:px-12',
-    leftLimited:
-      'mx-auto max-w-container pl-4 tablet:pl-12 desktop:pl-12 overflow-x-visible',
-  }[variant];
+  const baseClasses = containerClassMap[variant];
 
   const containerClasses = clsx(baseClasses, className);
 

@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { UNDERLINED_TEXT_TEST_ID } from '@/lib/testIDs';
 
-import { UnderlinedTextProps } from './types';
+import type { UnderlinedTextProps } from './types';
 
 const UnderlinedText = ({
   children,

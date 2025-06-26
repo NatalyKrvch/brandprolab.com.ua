@@ -1,15 +1,17 @@
 import { SimpleCard } from '@/components/Cards/SimpleCard';
-import { Icon } from '@/components/Icon';
+import { Icon, IconClassType } from '@/components/Icon';
 import { Label } from '@/components/Label';
 import { UnderlinedText } from '@/components/UnderlinedText';
-import { IconClassType } from '@/lib/constants';
 import {
   SERVICE_CARD_FRONT_DESCRIPTION_TEST_ID,
   SERVICE_CARD_FRONT_HEADER_TEST_ID,
 } from '@/lib/testIDs';
 import { FRONT_CARD_BG_IMAGE_OPACITY } from '@/styles/constants';
 
-import { getServiceCardFrontStyles } from './helpers/getServiceCardFrontStyles';
+import {
+  serviceCardFrontBorderColorMap,
+  serviceCardFrontStyleMap,
+} from './styleMaps';
 import type { ServiceCardFrontProps } from './types';
 
 const ServiceCardFront = ({
@@ -22,12 +24,10 @@ const ServiceCardFront = ({
   backgroundImageUrl,
   variant = 'default',
 }: ServiceCardFrontProps) => {
-  const styles = getServiceCardFrontStyles(variant);
   const bgImageURL = variant === 'gradient' ? backgroundImageUrl : undefined;
-  const borderColor =
-    variant === 'default'
-      ? 'border-teal-dark'
-      : 'border-teal-dark mid_tablet:border-none desktop:border-none';
+  const variantValue = variant ?? 'default';
+  const borderColor = serviceCardFrontBorderColorMap[variantValue];
+  const styles = serviceCardFrontStyleMap[variantValue];
 
   return (
     <SimpleCard

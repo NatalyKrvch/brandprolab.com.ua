@@ -9,7 +9,7 @@ import {
 } from '@/lib/testIDs';
 
 import { useFlipCard } from './hooks/useFlipCard';
-import { FlipCardProps } from './types';
+import type { FlipCardProps } from './types';
 
 const FlipCard = ({ front, back, className }: FlipCardProps) => {
   const { flipped, handleFlip, handleKeyDown } = useFlipCard();

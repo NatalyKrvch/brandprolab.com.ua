@@ -5,7 +5,6 @@ exports[`HeroMainCard component renders button with correct text and link 1`] = 
   <div
     class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
     data-testid="simple-card-test-id"
-    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <img
       alt=""
@@ -28,7 +27,7 @@ exports[`HeroMainCard component renders button with correct text and link 1`] = 
       </span>
     </h1>
     <div
-      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+      class="flex flex-col gap-10 px-11 pb-160 pt-11"
     >
       <strong
         class="max-w-408 px-2 text-xl font-normal"
@@ -42,7 +41,7 @@ exports[`HeroMainCard component renders button with correct text and link 1`] = 
         target="_blank"
       >
         <button
-          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
           data-testid="button-test-id"
         >
           Click Me
@@ -58,7 +57,6 @@ exports[`HeroMainCard component renders description 1`] = `
   <div
     class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
     data-testid="simple-card-test-id"
-    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <img
       alt=""
@@ -81,7 +79,7 @@ exports[`HeroMainCard component renders description 1`] = `
       </span>
     </h1>
     <div
-      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+      class="flex flex-col gap-10 px-11 pb-160 pt-11"
     >
       <strong
         class="max-w-408 px-2 text-xl font-normal"
@@ -95,7 +93,7 @@ exports[`HeroMainCard component renders description 1`] = `
         target="_blank"
       >
         <button
-          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
           data-testid="button-test-id"
         >
           Click Me
@@ -111,7 +109,6 @@ exports[`HeroMainCard component renders icon image with correct src 1`] = `
   <div
     class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
     data-testid="simple-card-test-id"
-    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <img
       alt=""
@@ -134,7 +131,7 @@ exports[`HeroMainCard component renders icon image with correct src 1`] = `
       </span>
     </h1>
     <div
-      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+      class="flex flex-col gap-10 px-11 pb-160 pt-11"
     >
       <strong
         class="max-w-408 px-2 text-xl font-normal"
@@ -148,7 +145,7 @@ exports[`HeroMainCard component renders icon image with correct src 1`] = `
         target="_blank"
       >
         <button
-          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
           data-testid="button-test-id"
         >
           Click Me
@@ -164,7 +161,6 @@ exports[`HeroMainCard component renders the component correctly 1`] = `
   <div
     class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
     data-testid="simple-card-test-id"
-    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <img
       alt=""
@@ -187,7 +183,7 @@ exports[`HeroMainCard component renders the component correctly 1`] = `
       </span>
     </h1>
     <div
-      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+      class="flex flex-col gap-10 px-11 pb-160 pt-11"
     >
       <strong
         class="max-w-408 px-2 text-xl font-normal"
@@ -201,7 +197,7 @@ exports[`HeroMainCard component renders the component correctly 1`] = `
         target="_blank"
       >
         <button
-          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
           data-testid="button-test-id"
         >
           Click Me
@@ -217,7 +213,6 @@ exports[`HeroMainCard component renders title and subtitle 1`] = `
   <div
     class="relative w-full bg-cover bg-center bg-white rounded-24 tablet:rounded-32 desktop:rounded-40 pt-130 text-white"
     data-testid="simple-card-test-id"
-    style="background-image: url(./images/backgrounds/hero-maincard-bg.svg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <img
       alt=""
@@ -240,7 +235,7 @@ exports[`HeroMainCard component renders title and subtitle 1`] = `
       </span>
     </h1>
     <div
-      class="pb-160 flex flex-col gap-10 px-11 pt-11"
+      class="flex flex-col gap-10 px-11 pb-160 pt-11"
     >
       <strong
         class="max-w-408 px-2 text-xl font-normal"
@@ -254,7 +249,7 @@ exports[`HeroMainCard component renders title and subtitle 1`] = `
         target="_blank"
       >
         <button
-          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-300 hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+          class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
           data-testid="button-test-id"
         >
           Click Me

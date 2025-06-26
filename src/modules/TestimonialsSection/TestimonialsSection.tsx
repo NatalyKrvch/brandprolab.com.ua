@@ -6,7 +6,7 @@ import { TestimonialCard } from '@/components';
 import { AMOUNT_OF_TESTIMONIALS_WORDS } from '@/lib/constants';
 import { normalizeImageURL, normalizeText } from '@/utils';
 
-import { TestimonialsSectionProps } from './types';
+import type { TestimonialsSectionProps } from './types';
 
 const TestimonialsSection = ({
   testimonialsData,

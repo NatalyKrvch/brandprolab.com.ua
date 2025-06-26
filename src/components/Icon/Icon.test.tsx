@@ -2,13 +2,13 @@ import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/react';
 
-import { IconClassType } from '@/lib/constants';
 import {
   ICON_COMPONENT_IMAGE_TEST_ID,
   ICON_COMPONENT_TEST_ID,
 } from '@/lib/testIDs';
 
 import Icon from './Icon';
+import { IconClassType } from './types';
 
 jest.mock('next/image', () => ({
   __esModule: true,

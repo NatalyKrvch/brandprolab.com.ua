@@ -10,3 +10,13 @@ export interface ServiceCardFrontProps {
   backgroundImageUrl?: string;
   variant?: ServiceCardFrontVariant;
 }
+
+export type ServiceCardComponentsListType = {
+  background: string;
+  header: string;
+  description: string;
+  label: string;
+  underlined: string;
+  icon: string;
+  whiteIcon: string;
+};

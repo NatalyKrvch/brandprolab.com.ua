@@ -7,7 +7,7 @@ import {
 } from '@/components';
 import { normalizeImageURL, normalizeText } from '@/utils';
 
-import { VideoSectionProps } from './types';
+import type { VideoSectionProps } from './types';
 
 const VideoSection = ({ videoData }: VideoSectionProps) => {
   const {

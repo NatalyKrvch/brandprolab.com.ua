@@ -1,14 +1,13 @@
 import { AdaptiveImage } from '@/components/AdaptiveImage';
 import { PictureSource } from '@/components/AdaptiveImage/types';
-import { Icon } from '@/components/Icon';
+import { Icon, IconClassType } from '@/components/Icon';
 import { ExternalLink } from '@/components/Links';
-import { socialMediaColorClassMap } from '@/lib/colorMaps';
-import { IconClassType } from '@/lib/constants';
 import { DESKTOP_MEDIA_QUERY, TABLET_MEDIA_QUERY } from '@/styles/constants';
 
 import { SimpleCard } from '../SimpleCard';
+import { socialMediaColorClassMap } from '../SocialMediaCard/styleMaps';
 import { MainSocialCardColor } from '../SocialMediaCard/types';
-import { MainSocialMediaCardProps } from './types';
+import type { MainSocialMediaCardProps } from './types';
 
 const MainSocialMediaCard = ({
   desktopPhotoURL,

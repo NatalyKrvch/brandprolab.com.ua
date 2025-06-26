@@ -17,6 +17,12 @@ jest.mock('@/components/Icon', () => ({
   Icon: ({ iconURL }: { iconURL: string }) => (
     <div data-testid={ICON_COMPONENT_TEST_ID}>{iconURL}</div>
   ),
+  IconClassType: {
+    SERVICES: 'services',
+    EXPERTISE: 'expertise',
+    SOCIAL_MEDIA: 'social-media',
+    SOCIAL_MEDIA_MAIN: 'social-media-main',
+  },
 }));
 
 jest.mock('@/components/Label', () => ({

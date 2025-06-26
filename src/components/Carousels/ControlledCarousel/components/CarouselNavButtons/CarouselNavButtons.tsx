@@ -13,7 +13,7 @@ import {
   fadeMotionProps,
   fadeNextButtonMotionProps,
 } from './configs/motionConfig';
-import { CarouselNavButtonsProps } from './types';
+import type { CarouselNavButtonsProps } from './types';
 
 const CarouselNavButtons = ({
   isFirstSlide,
@@ -25,7 +25,7 @@ const CarouselNavButtons = ({
     <div
       role="group"
       aria-label="Навігація каруселі"
-      className="absolute hidden gap-2 tablet:-top-[80px] tablet:right-16 tablet:flex desktop:-top-[130px] desktop:right-56 desktop:flex"
+      className="absolute hidden gap-2 tablet:-top-80 tablet:right-16 tablet:flex desktop:-top-130 desktop:right-56 desktop:flex"
       data-testid={CAROUSEL_NAV_WRAPPER_TEST_ID}
     >
       <AnimatePresence>

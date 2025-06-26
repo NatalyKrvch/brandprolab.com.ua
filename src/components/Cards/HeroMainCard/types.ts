@@ -5,4 +5,5 @@ export interface HeroMainCardProps {
   buttonText: string;
   buttonLink: string;
   iconURL: string;
+  hasBackground?: boolean;
 }

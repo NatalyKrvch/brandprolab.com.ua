@@ -2,7 +2,7 @@ import { ExternalLink } from '@/components';
 import { FOOTER_SECTION_TEST_ID } from '@/lib/testIDs';
 import { getCurrentYear } from '@/utils';
 
-import { FooterSectionProps } from './types';
+import type { FooterSectionProps } from './types';
 
 const FooterSection = ({ footerData }: FooterSectionProps) => {
   const { offerLink } = footerData;

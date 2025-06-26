@@ -1,11 +1,9 @@
 import { FlipCard, ServiceCardBack, ServiceCardFront } from '@/components';
 import { normalizeImageURL, normalizeText } from '@/utils';
 
-import {
-  getFrontCardClasses,
-  getFrontCardVariantClasses,
-} from './helpers/servicesCardStyles';
-import { ServicesSectionProps } from './types';
+import { getCardVariantByIndex } from './helpers/getCardVariantByIndex';
+import { serviceCardClassMap } from './styleMaps';
+import type { ServicesSectionProps } from './types';
 
 const ServicesSection = ({ servicesData }: ServicesSectionProps) => {
   const { title, description, cards, backgroundImage } = servicesData;
@@ -23,32 +21,37 @@ const ServicesSection = ({ servicesData }: ServicesSectionProps) => {
       </div>
 
       <article className="grid grid-cols-1 items-stretch gap-4 mid_tablet:grid-cols-2 desktop:grid-cols-[1fr_1.302fr] desktop:gap-6">
-        {cards.map((card, index) => (
-          <FlipCard
-            key={card._key}
-            className={getFrontCardClasses(index)}
-            front={
-              <ServiceCardFront
-                iconURL={normalizeImageURL(card.icon)}
-                whiteIconURL={normalizeImageURL(card.whiteIcon ?? card.icon)}
-                callToActionText={card.flipText}
-                header={card.title}
-                label={card.label}
-                description={card.shortDescription}
-                backgroundImageUrl={normalizeImageURL(backgroundImage)}
-                variant={getFrontCardVariantClasses(index)}
-              />
-            }
-            back={
-              <ServiceCardBack
-                header={card.detailedDescription.title}
-                list={card.detailedDescription.points}
-                variant={getFrontCardVariantClasses(index)}
-                backgroundImageUrl={normalizeImageURL(backgroundImage)}
-              />
-            }
-          />
-        ))}
+        {cards.map((card, index) => {
+          const variant = getCardVariantByIndex(index);
+          const cardClass = serviceCardClassMap[variant];
+
+          return (
+            <FlipCard
+              key={card._key}
+              className={cardClass}
+              front={
+                <ServiceCardFront
+                  iconURL={normalizeImageURL(card.icon)}
+                  whiteIconURL={normalizeImageURL(card.whiteIcon ?? card.icon)}
+                  callToActionText={card.flipText}
+                  header={card.title}
+                  label={card.label}
+                  description={card.shortDescription}
+                  backgroundImageUrl={normalizeImageURL(backgroundImage)}
+                  variant={variant}
+                />
+              }
+              back={
+                <ServiceCardBack
+                  header={card.detailedDescription.title}
+                  list={card.detailedDescription.points}
+                  backgroundImageUrl={normalizeImageURL(backgroundImage)}
+                  variant={variant}
+                />
+              }
+            />
+          );
+        })}
       </article>
     </section>
   );

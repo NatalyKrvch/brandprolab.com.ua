@@ -4,5 +4,6 @@ export interface PhotoCardProps {
   imageWidth: number;
   imageHeight: number;
   backgroundUrl: string;
+  hasPriority?: boolean;
   text?: string;
 }

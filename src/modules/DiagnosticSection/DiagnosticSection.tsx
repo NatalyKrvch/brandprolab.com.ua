@@ -7,7 +7,7 @@ import {
 } from '@/components';
 import { normalizeText } from '@/utils';
 
-import { DiagnosticSectionProps } from './types';
+import type { DiagnosticSectionProps } from './types';
 
 const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
   const {

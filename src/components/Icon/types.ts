@@ -1,4 +1,9 @@
-import { IconClassType } from '@/lib/constants';
+export enum IconClassType {
+  SERVICES = 'services',
+  EXPERTISE = 'expertise',
+  SOCIAL_MEDIA = 'social-media',
+  SOCIAL_MEDIA_MAIN = 'social-media-main',
+}
 
 export interface IconProps {
   iconURL: string;

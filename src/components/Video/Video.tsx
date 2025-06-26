@@ -1,5 +1,6 @@
 'use client';
 
+import clsx from 'clsx';
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
@@ -12,7 +13,7 @@ import {
 import { ROUNDED_CLASSES } from '@/styles/constants';
 
 import { useVideoPlayer } from './hooks/useVideoPlayer';
-import { VideoProps } from './types';
+import type { VideoProps } from './types';
 
 const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
   const { isPlaying, handlePlay, embedUrl } = useVideoPlayer(videoUrl);
@@ -26,7 +27,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
       data-testid={VIDEO_TEST_ID}
     >
       <div
-        className={twMerge(
+        className={clsx(
           'absolute inset-0 transition-opacity duration-500',
           isPlaying ? 'pointer-events-none opacity-0' : 'opacity-100',
         )}

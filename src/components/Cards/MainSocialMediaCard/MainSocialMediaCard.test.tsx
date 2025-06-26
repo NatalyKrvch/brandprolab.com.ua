@@ -28,6 +28,12 @@ jest.mock('@/components/Icon', () => ({
       data-type={type}
     />
   ),
+  IconClassType: {
+    SERVICES: 'services',
+    EXPERTISE: 'expertise',
+    SOCIAL_MEDIA: 'social-media',
+    SOCIAL_MEDIA_MAIN: 'social-media-main',
+  },
 }));
 
 jest.mock('@/components/Links', () => ({

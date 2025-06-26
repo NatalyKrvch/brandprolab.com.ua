@@ -7,7 +7,7 @@ import {
   ENDLESS_CAROUSEL_TEST_ID,
 } from '@/lib/testIDs';
 
-import { EndlessCarouselProps } from './types';
+import type { EndlessCarouselProps } from './types';
 
 const EndlessCarousel = ({
   children,
