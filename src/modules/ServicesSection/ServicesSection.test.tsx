@@ -19,8 +19,8 @@ describe('ServicesSection component', () => {
         servicesData={{
           _id: 'mock-id',
           _type: 'services',
-          title: 'Наші послуги',
-          description: 'Ми пропонуємо різні сервіси для клієнтів',
+          title: 'Our Services',
+          description: 'We offer various services to our clients',
           backgroundImage: {
             _type: 'image',
             asset: {
@@ -46,13 +46,13 @@ describe('ServicesSection component', () => {
                   _type: 'reference',
                 },
               },
-              title: 'Послуга 1',
-              label: 'Етикетка 1',
-              shortDescription: 'Короткий опис послуги 1',
-              flipText: 'Дізнатись більше',
+              title: 'Service 1',
+              label: 'Label 1',
+              shortDescription: 'Short description of service 1',
+              flipText: 'Learn more',
               detailedDescription: {
-                title: 'Деталі послуги 1',
-                points: ['Пункт 1', 'Пункт 2'],
+                title: 'Details of service 1',
+                points: ['Point 1', 'Point 2'],
               },
             },
           ],

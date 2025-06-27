@@ -1,5 +1,6 @@
-import { cardIndexToVariantMap } from '../styleMaps';
-import type { ServiceCardVariant } from '../types';
+import { ServiceCardFrontVariant } from '@/components/Cards/ServicesCards';
 
-export const getCardVariantByIndex = (index: number): ServiceCardVariant =>
-  cardIndexToVariantMap[index] ?? 'default';
+import { cardIndexToVariantMap } from '../styleMaps';
+
+export const getCardVariantByIndex = (index: number): ServiceCardFrontVariant =>
+  cardIndexToVariantMap[index] ?? ServiceCardFrontVariant.DEFAULT;

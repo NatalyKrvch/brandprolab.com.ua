@@ -1,4 +1,7 @@
-export type ServiceCardFrontVariant = 'default' | 'gradient';
+export enum ServiceCardFrontVariant {
+  DEFAULT = 'default',
+  GRADIENT = 'gradient',
+}
 
 export interface ServiceCardFrontProps {
   iconURL: string;

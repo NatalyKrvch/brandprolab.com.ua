@@ -8,11 +8,12 @@ import {
 } from '@/lib/testIDs';
 
 import Container from './Container';
+import { ContainerVariant } from './types';
 
 describe('Container component', () => {
   it('renders children inside the full-width container', () => {
     const { asFragment } = render(
-      <Container variant="full">
+      <Container variant={ContainerVariant.FULL}>
         <p>Test content</p>
       </Container>,
     );
@@ -40,7 +41,7 @@ describe('Container component', () => {
 
   it('applies fullWidth styles when fullWidth is true', () => {
     const { asFragment } = render(
-      <Container variant="full">
+      <Container variant={ContainerVariant.FULL}>
         <p>Full width content</p>
       </Container>,
     );

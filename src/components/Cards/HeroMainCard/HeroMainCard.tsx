@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Button } from '@/components/Button';
+import { Button, ButtonColor } from '@/components/Button';
 import { ExternalLink } from '@/components/Links';
 import { HERO_MAIN_CARD_ICON_TEST_ID } from '@/lib/testIDs';
 
@@ -52,7 +52,7 @@ const HeroMainCard = ({
           href={buttonLink}
           aria-label={`Перейти, щоб ${buttonText}`}
         >
-          <Button variant="white">{buttonText}</Button>
+          <Button variant={ButtonColor.WHITE}>{buttonText}</Button>
         </ExternalLink>
       </div>
     </SimpleCard>

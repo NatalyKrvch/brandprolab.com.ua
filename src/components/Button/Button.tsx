@@ -4,12 +4,12 @@ import type { PropsWithChildren } from 'react';
 import { BUTTON_TEST_ID } from '@/lib/testIDs';
 
 import { buttonVariantClassMap } from './styleMaps';
-import type { ButtonProps } from './types';
+import { ButtonColor, type ButtonProps } from './types';
 
 const Button = ({
   children,
   onClick,
-  variant = 'teal',
+  variant = ButtonColor.TEAL,
 }: PropsWithChildren<ButtonProps>) => {
   return (
     <button

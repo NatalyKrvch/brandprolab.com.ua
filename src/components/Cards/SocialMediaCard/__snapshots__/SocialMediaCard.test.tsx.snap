@@ -21,6 +21,7 @@ exports[`SocialMediaCard applies correct href to link 1`] = `
         >
           <img
             alt=""
+            aria-hidden="true"
             class="absolute w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-8 desktop:h-8"
             data-nimg="1"
             data-testid="icon-component-image-test-id"
@@ -73,6 +74,7 @@ exports[`SocialMediaCard renders correct color class based on mainColor prop 1`]
         >
           <img
             alt=""
+            aria-hidden="true"
             class="absolute w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-8 desktop:h-8"
             data-nimg="1"
             data-testid="icon-component-image-test-id"
@@ -125,6 +127,7 @@ exports[`SocialMediaCard renders correctly with given props 1`] = `
         >
           <img
             alt=""
+            aria-hidden="true"
             class="absolute w-22 h-22 tablet:w-28 tablet:h-28 desktop:w-8 desktop:h-8"
             data-nimg="1"
             data-testid="icon-component-image-test-id"

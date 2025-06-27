@@ -12,7 +12,7 @@ import {
   serviceCardFrontBorderColorMap,
   serviceCardFrontStyleMap,
 } from './styleMaps';
-import type { ServiceCardFrontProps } from './types';
+import { ServiceCardFrontProps, ServiceCardFrontVariant } from './types';
 
 const ServiceCardFront = ({
   label,
@@ -22,12 +22,14 @@ const ServiceCardFront = ({
   whiteIconURL,
   callToActionText,
   backgroundImageUrl,
-  variant = 'default',
+  variant = ServiceCardFrontVariant.DEFAULT,
 }: ServiceCardFrontProps) => {
-  const bgImageURL = variant === 'gradient' ? backgroundImageUrl : undefined;
-  const variantValue = variant ?? 'default';
-  const borderColor = serviceCardFrontBorderColorMap[variantValue];
-  const styles = serviceCardFrontStyleMap[variantValue];
+  const bgImageURL =
+    variant === ServiceCardFrontVariant.GRADIENT
+      ? backgroundImageUrl
+      : undefined;
+  const borderColor = serviceCardFrontBorderColorMap[variant];
+  const styles = serviceCardFrontStyleMap[variant];
 
   return (
     <SimpleCard

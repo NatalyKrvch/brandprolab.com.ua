@@ -9,7 +9,7 @@ export const serviceCardFrontStyleMap: Record<
   ServiceCardFrontVariant,
   ServiceCardComponentsListType
 > = {
-  default: {
+  [ServiceCardFrontVariant.DEFAULT]: {
     background:
       'bg-white mid_tablet:hover:bg-gradient-to-b mid_tablet:hover:from-white mid_tablet:hover:via-white mid_tablet:hover:to-gray-light desktop:hover:bg-gradient-to-b desktop:hover:from-white desktop:hover:via-white desktop:hover:to-gray-light',
 
@@ -34,7 +34,7 @@ export const serviceCardFrontStyleMap: Record<
     whiteIcon: 'hidden',
   },
 
-  gradient: {
+  [ServiceCardFrontVariant.GRADIENT]: {
     background:
       'mid_tablet:bg-gradient-to-r mid_tablet:from-teal-dark mid_tablet:to-blue-default desktop:bg-gradient-to-r desktop:from-teal-dark desktop:to-blue-default',
 
@@ -64,6 +64,7 @@ export const serviceCardFrontBorderColorMap: Record<
   ServiceCardFrontVariant,
   string
 > = {
-  default: 'border-teal-dark',
-  gradient: 'border-teal-dark mid_tablet:border-none desktop:border-none',
+  [ServiceCardFrontVariant.DEFAULT]: 'border-teal-dark',
+  [ServiceCardFrontVariant.GRADIENT]:
+    'border-teal-dark mid_tablet:border-none desktop:border-none',
 };
