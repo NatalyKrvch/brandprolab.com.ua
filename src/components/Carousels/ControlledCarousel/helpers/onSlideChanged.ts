@@ -1,7 +1,7 @@
 import { KeenSliderInstance } from 'keen-slider';
 import { Dispatch, SetStateAction } from 'react';
 
-import { SLIDER_LEFT_SHIFT, SLIDER_RIGHT_SHIFT } from '@/lib/constants';
+import { SLIDER_RIGHT_SHIFT } from '@/lib/constants';
 
 interface OnSlideChangedParams {
   setCurrentSlideIndex: Dispatch<SetStateAction<number>>;
@@ -20,6 +20,6 @@ export const createOnSlideChanged =
     const maxIndex = slider.track.details.maxIdx - SLIDER_RIGHT_SHIFT;
 
     setCurrentSlideIndex(index);
-    setIsFirstSlide(index === SLIDER_LEFT_SHIFT);
+    setIsFirstSlide(index === 1);
     setIsLastSlide(index === maxIndex);
   };

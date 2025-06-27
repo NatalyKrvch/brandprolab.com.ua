@@ -4,7 +4,7 @@ import { Container, TestimonialCard } from '@/components';
 import { normalizeText } from '@/utils';
 
 import { useCasesSection } from './hooks/useCasesSection';
-import { CasesSectionProps } from './types';
+import type { CasesSectionProps } from './types';
 
 const CasesSection = ({ casesData }: CasesSectionProps) => {
   const { subtitle, description, cases } = casesData;

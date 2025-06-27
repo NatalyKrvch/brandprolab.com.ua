@@ -9,7 +9,7 @@ export const ROUNDED_CLASSES =
 export const SLIDER_CLASSNAME = 'keen-slider';
 export const SLIDE_CLASSNAME = 'keen-slider__slide';
 
-export const SERVICE_CARD_FULL_WIDTH_INDEX = 2;
+export const SERVICE_CARD_GRADIENT_INDEX = 2;
 
 export const FRONT_CARD_BG_IMAGE_OPACITY = 0.66;
 export const BACK_CARD_BG_IMAGE_OPACITY = 0.16;

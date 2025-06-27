@@ -12,11 +12,18 @@ import {
 } from '@/lib/testIDs';
 
 import ServiceCardFront from './ServiceCardFront';
+import { ServiceCardFrontVariant } from './types';
 
 jest.mock('@/components/Icon', () => ({
   Icon: ({ iconURL }: { iconURL: string }) => (
     <div data-testid={ICON_COMPONENT_TEST_ID}>{iconURL}</div>
   ),
+  IconClassType: {
+    SERVICES: 'services',
+    EXPERTISE: 'expertise',
+    SOCIAL_MEDIA: 'social-media',
+    SOCIAL_MEDIA_MAIN: 'social-media-main',
+  },
 }));
 
 jest.mock('@/components/Label', () => ({
@@ -43,7 +50,12 @@ describe('ServiceCardFront component', () => {
   };
 
   it('renders correctly with default variant (no background image)', () => {
-    render(<ServiceCardFront {...defaultProps} variant="default" />);
+    render(
+      <ServiceCardFront
+        {...defaultProps}
+        variant={ServiceCardFrontVariant.DEFAULT}
+      />,
+    );
     expect(screen.getByTestId(SIMPLE_CARD_TEST_ID)).toBeInTheDocument();
     expect(screen.getByTestId(LABEL_COMPONENT_TEST_ID)).toHaveTextContent(
       'Test Label',
@@ -61,7 +73,10 @@ describe('ServiceCardFront component', () => {
 
   it('renders backgroundImageUrl and opacity when variant is gradient', () => {
     const { container } = render(
-      <ServiceCardFront {...defaultProps} variant="gradient" />,
+      <ServiceCardFront
+        {...defaultProps}
+        variant={ServiceCardFrontVariant.GRADIENT}
+      />,
     );
 
     const bgImageDiv = container.querySelector(

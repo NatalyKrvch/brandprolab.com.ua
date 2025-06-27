@@ -6,8 +6,8 @@ import {
   ICON_COMPONENT_TEST_ID,
 } from '@/lib/testIDs';
 
-import { getIconClasses } from './helpers/getIconClasses';
-import { IconProps } from './types';
+import { iconClassMap } from './styleMaps';
+import type { IconProps } from './types';
 
 const Icon = ({
   iconURL,
@@ -16,7 +16,7 @@ const Icon = ({
   iconAlt = '',
   circleColor = 'bg-teal-darkOpacity',
 }: IconProps) => {
-  const { circleClass, iconClass } = getIconClasses(type);
+  const { circleClass, iconClass } = iconClassMap[type];
 
   return (
     <div
@@ -25,6 +25,7 @@ const Icon = ({
     >
       <div className={`${circleColor} ${circleClass}`}>
         <Image
+          aria-hidden={true}
           src={iconURL}
           alt={iconAlt}
           width={68}

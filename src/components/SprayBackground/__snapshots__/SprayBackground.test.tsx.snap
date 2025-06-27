@@ -17,7 +17,7 @@ exports[`SprayBackground renders an img with correct default attributes 1`] = `
   <img
     alt=""
     aria-hidden="true"
-    class="pointer-events-none absolute inset-0 z-[-1] select-none overflow-hidden object-cover blur-2xl "
+    class="pointer-events-none absolute inset-0 z-[-1] select-none overflow-hidden object-cover blur-2xl"
     data-testid="spray-bg-test-id"
     src="/images/backgrounds/spray.svg"
   />

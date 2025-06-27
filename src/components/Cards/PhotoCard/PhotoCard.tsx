@@ -15,6 +15,7 @@ const PhotoCard = ({
   imageWidth,
   imageHeight,
   text,
+  hasPriority = false,
 }: PhotoCardProps) => {
   return (
     <SimpleCard
@@ -40,6 +41,7 @@ const PhotoCard = ({
           fill
           className="object-cover"
           alt="Photo"
+          priority={hasPriority}
           data-testid={PHOTO_CARD_IMAGE_TEST_ID}
         />
       </div>

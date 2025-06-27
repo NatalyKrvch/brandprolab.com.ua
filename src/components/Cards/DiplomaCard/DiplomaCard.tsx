@@ -6,9 +6,12 @@ import {
   DIPLOMA_OVERLAY_TEST_ID,
 } from '@/lib/testIDs';
 
-import { DiplomaCardProps } from './types';
-
+import type { DiplomaCardProps } from './types';
 const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'Enter') onClick?.();
+  };
+
   return (
     <div
       className="w-fit rounded-24 border border-gray-medium p-2"
@@ -17,7 +20,7 @@ const DiplomaCard = ({ diplomaURL, onClick }: DiplomaCardProps) => {
       <div className="relative h-108 w-auto max-w-full overflow-hidden rounded-3xl">
         <div
           onClick={onClick}
-          onKeyDown={e => e.key === 'Enter' && onClick?.()}
+          onKeyDown={handleKeyDown}
           className="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
           data-testid={DIPLOMA_OVERLAY_TEST_ID}
         ></div>

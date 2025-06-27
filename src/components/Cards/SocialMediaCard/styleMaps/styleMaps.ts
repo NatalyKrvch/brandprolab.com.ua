@@ -1,7 +1,4 @@
-import {
-  MainSocialCardColor,
-  socialMediaColorClassMapType,
-} from '@/components/Cards/SocialMediaCard/types';
+import { MainSocialCardColor, socialMediaColorClassMapType } from '../types';
 
 export const socialMediaColorClassMap: socialMediaColorClassMapType = {
   [MainSocialCardColor.RED]: {

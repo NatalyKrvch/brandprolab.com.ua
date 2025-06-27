@@ -6,15 +6,19 @@ import {
 } from '@/lib/testIDs';
 import { BACK_CARD_BG_IMAGE_OPACITY } from '@/styles/constants';
 
+import { ServiceCardFrontVariant } from '../ServiceCardFront';
 import type { ServiceCardBackProps } from './types';
 
 const ServiceCardBack = ({
   header,
   list,
   backgroundImageUrl,
-  variant = 'default',
+  variant = ServiceCardFrontVariant.DEFAULT,
 }: ServiceCardBackProps) => {
-  const bgImageURL = variant === 'gradient' ? backgroundImageUrl : undefined;
+  const bgImageURL =
+    variant === ServiceCardFrontVariant.GRADIENT
+      ? backgroundImageUrl
+      : undefined;
 
   return (
     <SimpleCard

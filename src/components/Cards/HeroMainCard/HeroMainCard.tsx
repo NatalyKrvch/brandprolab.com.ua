@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import { Button } from '@/components/Button';
+import { Button, ButtonColor } from '@/components/Button';
 import { ExternalLink } from '@/components/Links';
 import { HERO_MAIN_CARD_ICON_TEST_ID } from '@/lib/testIDs';
 
 import { SimpleCard } from '../SimpleCard';
-import { HeroMainCardProps } from './types';
+import type { HeroMainCardProps } from './types';
 
 const HeroMainCard = ({
   title,
@@ -14,11 +14,16 @@ const HeroMainCard = ({
   buttonText,
   buttonLink,
   iconURL,
+  hasBackground = false,
 }: HeroMainCardProps) => {
+  const backgroundImageUrl = hasBackground
+    ? '/images/backgrounds/hero/maincard-bg.svg'
+    : undefined;
+
   return (
     <SimpleCard
       className="pt-130 text-white"
-      backgroundImageUrl="./images/backgrounds/hero-maincard-bg.svg"
+      backgroundImageUrl={backgroundImageUrl}
     >
       <Image
         data-testid={HERO_MAIN_CARD_ICON_TEST_ID}
@@ -47,7 +52,7 @@ const HeroMainCard = ({
           href={buttonLink}
           aria-label={`Перейти, щоб ${buttonText}`}
         >
-          <Button variant="white">{buttonText}</Button>
+          <Button variant={ButtonColor.WHITE}>{buttonText}</Button>
         </ExternalLink>
       </div>
     </SimpleCard>

@@ -1,16 +1,15 @@
 import clsx from 'clsx';
 
-import { Icon } from '@/components/Icon';
+import { Icon, IconClassType } from '@/components/Icon';
 import { ExternalLink } from '@/components/Links';
-import { socialMediaColorClassMap } from '@/lib/colorMaps';
-import { IconClassType } from '@/lib/constants';
 import {
   SOCIAL_MEDIA_DESCRIPTION_TEST_ID,
   SOCIAL_MEDIA_LABEL_TEST_ID,
 } from '@/lib/testIDs';
 
 import { SimpleCard } from '../SimpleCard';
-import { SocialMediaCardProps } from './types';
+import { socialMediaColorClassMap } from './styleMaps';
+import type { SocialMediaCardProps } from './types';
 
 const SocialMediaCard = ({
   iconURL,

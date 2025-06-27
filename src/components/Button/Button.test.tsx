@@ -5,12 +5,13 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { BUTTON_TEST_ID } from '@/lib/testIDs';
 
 import Button from './Button';
+import { ButtonColor } from './types';
 
 describe('Button component', () => {
   const defaultProps = {
     children: 'Click me',
     onClick: jest.fn(),
-    variant: 'teal' as const,
+    variant: ButtonColor.TEAL,
   };
 
   it('renders the Button component', () => {
@@ -30,7 +31,9 @@ describe('Button component', () => {
   });
 
   it('applies correct styles for teal color', () => {
-    const { asFragment } = render(<Button {...defaultProps} variant="teal" />);
+    const { asFragment } = render(
+      <Button {...defaultProps} variant={ButtonColor.TEAL} />,
+    );
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
     expect(buttonElement).toHaveClass(
@@ -44,7 +47,9 @@ describe('Button component', () => {
   });
 
   it('applies correct styles for white color', () => {
-    const { asFragment } = render(<Button {...defaultProps} variant="white" />);
+    const { asFragment } = render(
+      <Button {...defaultProps} variant={ButtonColor.WHITE} />,
+    );
     const buttonElement = screen.getByTestId(BUTTON_TEST_ID);
 
     expect(buttonElement).toHaveClass(

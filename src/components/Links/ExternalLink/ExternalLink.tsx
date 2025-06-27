@@ -2,7 +2,7 @@ import type { PropsWithChildren } from 'react';
 
 import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
-import { ExternalLinkProps } from './types';
+import type { ExternalLinkProps } from './types';
 
 const ExternalLink = ({
   href,

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { AdaptiveImageProps } from './types';
+import type { AdaptiveImageProps } from './types';
 
 export default function AdaptiveImage({
   sources,

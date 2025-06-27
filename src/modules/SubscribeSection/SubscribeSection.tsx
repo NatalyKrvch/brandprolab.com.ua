@@ -2,7 +2,7 @@ import { MainSocialMediaCard, SocialMediaCard } from '@/components';
 import { normalizeImageURL, normalizeText } from '@/utils';
 
 import getMainColorByIndex from './helpers/getMainColorByIndex';
-import { SubscribeSectionProps } from './types';
+import type { SubscribeSectionProps } from './types';
 
 const SubscribeSection = ({ subscribeData }: SubscribeSectionProps) => {
   const { mainCard, cards, title } = subscribeData;
