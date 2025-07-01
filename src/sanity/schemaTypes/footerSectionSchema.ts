@@ -11,8 +11,20 @@ export const footerSectionSchema = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'offerLink',
-      title: 'Offer Link',
+      name: 'companyName',
+      title: 'Company Name',
+      type: 'string',
+      validation: rule => rule.required(),
+    }),
+    defineField({
+      name: 'linkTitle',
+      title: 'Link Title',
+      type: 'string',
+      validation: rule => rule.required(),
+    }),
+    defineField({
+      name: 'URL',
+      title: 'URL for link',
       type: 'url',
       validation: rule =>
         rule.required().uri({
