@@ -22,7 +22,7 @@ const TestimonialsSection = ({
   );
 
   return (
-    <section>
+    <>
       <div className="mx-14 mb-36 flex tablet:mx-120 tablet:mb-40 desktop:mx-150 desktop:mb-80">
         <h2 className="text-center text-32 font-bold leading-34 tracking-tight text-teal-dark tablet:text-left tablet:text-40 tablet:leading-none desktop:text-left desktop:text-56 desktop:leading-none">
           {normalizeText(title)}
@@ -41,7 +41,7 @@ const TestimonialsSection = ({
           />
         ))}
       </ControlledCarousel>
-    </section>
+    </>
   );
 };
 

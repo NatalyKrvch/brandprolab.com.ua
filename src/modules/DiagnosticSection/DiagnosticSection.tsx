@@ -21,7 +21,7 @@ const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
   } = diagnosticData;
 
   return (
-    <section className="relative w-full desktop:px-72">
+    <div className="relative w-full desktop:px-72">
       <div className="grid desktop:grid-cols-2 desktop:gap-24">
         <div className="flex flex-col items-center text-center desktop:w-464 desktop:items-start desktop:px-2 desktop:text-left">
           <h2 className="mb-2 text-4xl font-bold leading-9 tracking-tight text-black tablet:mb-3 tablet:text-44 tablet:leading-44 desktop:mb-5 desktop:text-52 desktop:leading-54">
@@ -70,7 +70,7 @@ const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
           </ExternalLink>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

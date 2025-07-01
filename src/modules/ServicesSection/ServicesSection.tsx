@@ -9,7 +9,7 @@ const ServicesSection = ({ servicesData }: ServicesSectionProps) => {
   const { title, description, cards, backgroundImage } = servicesData;
 
   return (
-    <section className="flex flex-col gap-12">
+    <div className="flex flex-col gap-12">
       <div className="flex flex-col gap-4 px-1 text-left tablet:gap-4 tablet:px-2 desktop:gap-6 desktop:px-2">
         <h2 className="font-bold leading-9 -tracking-wide text-teal-dark tablet:text-5xl tablet:leading-48 desktop:text-6xl">
           {normalizeText(title)}
@@ -53,7 +53,7 @@ const ServicesSection = ({ servicesData }: ServicesSectionProps) => {
           );
         })}
       </article>
-    </section>
+    </div>
   );
 };
 
