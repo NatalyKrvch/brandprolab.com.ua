@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section component applies custom className and containerClassName 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-red-500"
+  >
+    <div
+      class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12 py-8"
+      data-testid="limited-width-container-test-id"
+    >
+      <p>
+        Styled section
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Section component renders children inside the section and default container 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="mx-auto max-w-container px-4 tablet:px-12 desktop:px-12"
+      data-testid="limited-width-container-test-id"
+    >
+      <p>
+        Section content
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Section component renders with full-width container when variant is FULL 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="w-full"
+      data-testid="full-width-container-test-id"
+    >
+      <p>
+        Full width section
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
