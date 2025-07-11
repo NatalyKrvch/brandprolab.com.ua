@@ -1,9 +1,4 @@
-import Image from 'next/image';
-
-import { Button, ButtonColor } from '@/components/Button';
-import { ExternalLink } from '@/components/Links';
-import { HERO_MAIN_CARD_ICON_TEST_ID } from '@/lib/testIDs';
-
+import { HeroTextContent } from '../../HeroTextContent';
 import { SimpleCard } from '../SimpleCard';
 import type { HeroMainCardProps } from './types';
 
@@ -22,39 +17,22 @@ const HeroMainCard = ({
 
   return (
     <SimpleCard
-      className="pt-130 text-white"
+      className="pt-120 text-white"
       backgroundImageUrl={backgroundImageUrl}
     >
-      <Image
-        data-testid={HERO_MAIN_CARD_ICON_TEST_ID}
-        className="mb-6 ml-11"
-        width={84}
-        height={84}
-        src={iconURL}
-        aria-hidden="true"
-        alt=""
+      <HeroTextContent
+        iconUrl={iconURL}
+        title={title}
+        subtitle={subtitle}
+        description={description}
+        buttonText={buttonText}
+        buttonLink={buttonLink}
+        iconClassName="mb-6 ml-11"
+        titleClassName="px-52 flex flex-col gap-4 text-[52px] font-bold leading-56 tracking-tight text-white"
+        subtitleClassName="block text-right text-40 font-normal leading-40 tracking-normal"
+        descriptionClassName="max-w-408 px-2 text-xl font-normal"
+        contentWrapperClassName="flex flex-col gap-10 px-11 pb-160 pt-11"
       />
-
-      <h1 className="px-54 text-54 font-bold leading-54 tracking-tight text-white">
-        <span className="mb-4 block">{title}</span>
-
-        <span className="block text-right text-40 font-normal leading-40 tracking-normal">
-          {subtitle}
-        </span>
-      </h1>
-
-      <div className="flex flex-col gap-10 px-11 pb-160 pt-11">
-        <strong className="max-w-408 px-2 text-xl font-normal">
-          {description}
-        </strong>
-
-        <ExternalLink
-          href={buttonLink}
-          aria-label={`Перейти, щоб ${buttonText}`}
-        >
-          <Button variant={ButtonColor.WHITE}>{buttonText}</Button>
-        </ExternalLink>
-      </div>
     </SimpleCard>
   );
 };
