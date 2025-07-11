@@ -12,26 +12,25 @@ import {
   VideoSection,
 } from '@/modules';
 import { AllData } from '@/sanity/lib/types';
-import { fetchDataFromSanity } from '@/utils';
+import { fetchDataFromSanity, throwError } from '@/utils';
 
 const Modules = async () => {
   const data = await fetchDataFromSanity<AllData>(ALL_DATA_QUERY);
 
   if (!data) {
-    throw new Error('Sanity data not found. Cannot generate static page.');
+    throwError('Sanity data not found. Cannot generate static page.');
   }
 
   return (
     <>
-      <div className="mb-16 flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-bold">Modules</h1>
-      </div>
+      <main>
+        <div className="mb-16 flex flex-col items-center justify-center">
+          <h1 className="text-3xl font-bold">Modules</h1>
+        </div>
 
-      <div>
         <Section
           id="hero"
           className="mb-24 desktop:mb-144"
-          containerClassName="desktop:mx-auto desktop:max-w-container desktop:px-12"
           containerVariant={ContainerVariant.FULL}
         >
           <HeroSection heroData={data.hero} />
@@ -68,9 +67,9 @@ const Modules = async () => {
         <Section id="subscribe" className="mb-8 tablet:mb-12 desktop:mb-80">
           <SubscribeSection subscribeData={data.subscribe} />
         </Section>
+      </main>
 
-        <FooterSection footerData={data.footer} />
-      </div>
+      <FooterSection footerData={data.footer} />
     </>
   );
 };

@@ -13,23 +13,16 @@ export const heroSectionSchema = defineType({
       validation: rule => rule.required(),
     }),
     defineField({
-      name: 'tagline',
-      title: 'Tagline',
-      type: 'array',
-      of: [
-        defineField({
-          name: 'boldText',
-          title: 'Bold Text',
-          type: 'string',
-          validation: rule => rule.required(),
-        }),
-        defineField({
-          name: 'regularText',
-          title: 'Regular Text',
-          type: 'string',
-          validation: rule => rule.required(),
-        }),
-      ],
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    }),
+    defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'description',

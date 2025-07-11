@@ -23,3 +23,5 @@ export const AMOUNT_OF_TESTIMONIALS_WORDS = 12;
 export const AMOUNT_OF_CASES_WORDS_DESKTOP = 13;
 export const AMOUNT_OF_CASES_WORDS_TABLET = 9;
 export const AMOUNT_OF_CASES_WORDS_MOBILE = 13;
+
+export const HERO_PHOTO_ALT = "Захарова Вікторія - кар'єрна консультантка";

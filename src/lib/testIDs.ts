@@ -51,3 +51,5 @@ export const ENDLESS_CAROUSEL_CONTENT_TEST_ID =
   'endless-carousel-content-test-id';
 export const SPRAY_BG_TEST_ID = 'spray-bg-test-id';
 export const HERO_MAIN_CARD_ICON_TEST_ID = 'hero-main-card-icon-test-id';
+export const HERO_TEXT_CONTENT_TEST_ID = 'hero-text-content-test-id';
+export const HERO_TEXT_CONTENT_ICON_TEST_ID = 'hero-text-content-icon-test-id';
