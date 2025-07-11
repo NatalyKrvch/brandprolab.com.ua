@@ -14,7 +14,7 @@ exports[`Button component applies correct styles for teal color 1`] = `
 exports[`Button component applies correct styles for white color 1`] = `
 <DocumentFragment>
   <button
-    class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-normal text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
+    class="w-full rounded-full py-3 text-xl font-medium leading-26 tracking-wide outline-none transition-all duration-150 ease-in-out hover:outline-offset-0 tablet:py-5 tablet:text-22 desktop:py-6 desktop:text-2xl desktop:leading-6 bg-white font-medium text-blue-default hover:outline-8 hover:outline-whiteOpacity active:bg-teal-light"
     data-testid="button-test-id"
   >
     Click me
