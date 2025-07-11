@@ -25,7 +25,7 @@ const Icon = ({
     >
       <div className={`${circleColor} ${circleClass}`}>
         <Image
-          aria-hidden={true}
+          aria-hidden="true"
           src={iconURL}
           alt={iconAlt}
           width={68}
