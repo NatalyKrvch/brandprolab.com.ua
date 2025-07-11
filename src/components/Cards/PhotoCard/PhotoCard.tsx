@@ -15,6 +15,7 @@ const PhotoCard = ({
   imageWidth,
   imageHeight,
   text,
+  photoAlt = 'Photo',
   hasPriority = false,
 }: PhotoCardProps) => {
   return (
@@ -40,7 +41,7 @@ const PhotoCard = ({
           src={photoUrl}
           fill
           className="object-cover"
-          alt="Photo"
+          alt={photoAlt}
           priority={hasPriority}
           data-testid={PHOTO_CARD_IMAGE_TEST_ID}
         />
