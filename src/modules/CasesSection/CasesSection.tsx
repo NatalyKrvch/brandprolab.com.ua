@@ -13,7 +13,7 @@ const CasesSection = ({ casesData }: CasesSectionProps) => {
     useCasesSection(description);
 
   return (
-    <section>
+    <>
       <Container className="desktop:px-2">
         <p className="mb-4 text-lg font-normal leading-5 tracking-wider text-gray-dark tablet:text-xl tablet:leading-none desktop:text-22 desktop:leading-none">
           {normalizeText(subtitle)}
@@ -38,7 +38,7 @@ const CasesSection = ({ casesData }: CasesSectionProps) => {
           );
         })}
       </CarouselComponent>
-    </section>
+    </>
   );
 };
 

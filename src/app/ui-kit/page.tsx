@@ -8,6 +8,7 @@ import {
   DiplomaCard,
   // EndlessCarousel,
   ExternalLink,
+  HeroMainCard,
   // FlipCard,
   Icon,
   InternalLink,
@@ -22,7 +23,6 @@ import {
   UnderlinedText,
   UserBadge,
 } from '@/components';
-import HeroMainCard from '@/components/Cards/HeroMainCard';
 import { IconClassType } from '@/lib/constants';
 import {
   EXPERTISE_CARD_HEIGHT,

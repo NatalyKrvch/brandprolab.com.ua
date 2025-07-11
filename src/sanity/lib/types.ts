@@ -113,18 +113,8 @@ export type HeroSectionType = {
       _type: 'reference';
     };
   };
-  tagline: (
-    | {
-        _key: string;
-        _type: 'boldText';
-        [key: string]: any;
-      }
-    | {
-        _key: string;
-        _type: 'regularText';
-        [key: string]: any;
-      }
-  )[];
+  title: string;
+  subtitle: string;
   description: string;
   buttonText: string;
   buttonLink: string;
@@ -260,7 +250,9 @@ export type TestimonialsSectionType = {
 
 export type FooterSectionType = {
   title: string;
-  offerLink: string;
+  companyName: string;
+  linkTitle: string;
+  URL: string;
 };
 
 export type AllData = {

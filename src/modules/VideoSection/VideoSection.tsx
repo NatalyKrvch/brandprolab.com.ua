@@ -21,7 +21,7 @@ const VideoSection = ({ videoData }: VideoSectionProps) => {
   } = videoData;
 
   return (
-    <section className="flex flex-col items-center desktop:grid desktop:grid-cols-2 desktop:gap-24 desktop:px-36">
+    <div className="flex flex-col items-center desktop:grid desktop:grid-cols-2 desktop:gap-24 desktop:px-36">
       <div className="flex flex-col items-center text-center desktop:items-start desktop:text-left">
         <Label className="mb-6 px-5 py-2 text-sm font-normal leading-none tracking-normal tablet:mb-10 tablet:text-lg desktop:mb-8 desktop:text-lg desktop:leading-none">
           {normalizeText(label)}
@@ -59,7 +59,7 @@ const VideoSection = ({ videoData }: VideoSectionProps) => {
           thumbnailSrc={normalizeImageURL(videoCover)}
         />
       </div>
-    </section>
+    </div>
   );
 };
 

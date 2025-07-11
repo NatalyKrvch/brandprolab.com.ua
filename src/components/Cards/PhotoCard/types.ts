@@ -6,4 +6,5 @@ export interface PhotoCardProps {
   backgroundUrl: string;
   hasPriority?: boolean;
   text?: string;
+  photoAlt?: string;
 }
