@@ -28,6 +28,7 @@ const EndlessCarousel = ({
         gradient={gradient}
         speed={speed}
         pauseOnHover={pauseOnHover}
+        play={true}
       >
         {children}
       </Marquee>
