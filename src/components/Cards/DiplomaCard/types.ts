@@ -1,4 +1,5 @@
 export interface DiplomaCardProps {
-  diplomaURL: string;
+  colorDiplomaURL: string;
+  bwDiplomaURL: string;
   onClick?: () => void;
 }

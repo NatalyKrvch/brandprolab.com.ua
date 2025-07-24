@@ -1,73 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DiplomaCard component renders the DiplomaCard component 1`] = `
-<DocumentFragment>
+exports[`DiplomaCard renders correctly with black & white image and overlay 1`] = `
+<div>
   <div
-    class="w-fit rounded-24 border border-gray-medium p-2"
+    class="hover:transition-color w-fit overflow-hidden rounded-24 border border-gray-medium p-3 hover:border-teal-dark hover:duration-500"
     data-testid="diploma-card-test-id"
   >
     <div
-      class="relative h-108 w-auto max-w-full overflow-hidden rounded-3xl"
+      class="relative h-230 w-auto max-w-full overflow-hidden rounded-2xl"
     >
       <div
-        class="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
+        class="absolute inset-0 z-10 overflow-hidden bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-30 hover:transition-opacity hover:duration-300"
         data-testid="diploma-overlay-test-id"
+        role="button"
+        tabindex="0"
       />
       <img
         alt="Diploma"
         class="h-full w-auto object-contain"
+        data-nimg="1"
         data-testid="diploma-image-test-id"
-        src="/test-diploma.jpg"
+        decoding="async"
+        height="168"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fexample.com%2Fbw-diploma.jpg&w=384&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Fbw-diploma.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Fbw-diploma.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="168"
       />
     </div>
   </div>
-</DocumentFragment>
-`;
-
-exports[`DiplomaCard component renders the diploma image correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="w-fit rounded-24 border border-gray-medium p-2"
-    data-testid="diploma-card-test-id"
-  >
-    <div
-      class="relative h-108 w-auto max-w-full overflow-hidden rounded-3xl"
-    >
-      <div
-        class="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
-        data-testid="diploma-overlay-test-id"
-      />
-      <img
-        alt="Diploma"
-        class="h-full w-auto object-contain"
-        data-testid="diploma-image-test-id"
-        src="/test-diploma.jpg"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`DiplomaCard component triggers onClick when overlay is clicked 1`] = `
-<DocumentFragment>
-  <div
-    class="w-fit rounded-24 border border-gray-medium p-2"
-    data-testid="diploma-card-test-id"
-  >
-    <div
-      class="relative h-108 w-auto max-w-full overflow-hidden rounded-3xl"
-    >
-      <div
-        class="absolute inset-0 z-10 bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-0"
-        data-testid="diploma-overlay-test-id"
-      />
-      <img
-        alt="Diploma"
-        class="h-full w-auto object-contain"
-        data-testid="diploma-image-test-id"
-        src="/test-diploma.jpg"
-      />
-    </div>
-  </div>
-</DocumentFragment>
+</div>
 `;
