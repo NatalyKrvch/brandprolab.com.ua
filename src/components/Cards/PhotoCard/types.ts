@@ -4,6 +4,8 @@ export interface PhotoCardProps {
   imageWidth: number;
   imageHeight: number;
   backgroundUrl: string;
+  imageContainerClassName?: string;
+  className?: string;
   hasPriority?: boolean;
   text?: string;
   photoAlt?: string;
