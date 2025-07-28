@@ -5,5 +5,5 @@ export { getReadMoreText } from './getReadMoreText';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';
 export { normalizeImageURL } from './normalizeImageURL';
 export { normalizeText } from './normalizeText';
-export { splitFirstWord } from './splitFirstWord';
+export { splitLeadingWords } from './splitLeadingWords';
 export { throwError } from './throwError';
