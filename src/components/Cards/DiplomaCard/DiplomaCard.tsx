@@ -21,7 +21,7 @@ const DiplomaCard = ({ colorDiplomaURL, bwDiplomaURL }: DiplomaCardProps) => {
         className="hover:transition-color w-fit overflow-hidden rounded-24 border border-gray-medium p-3 hover:border-teal-dark hover:duration-500"
         data-testid={DIPLOMA_CARD_TEST_ID}
       >
-        <div className="relative h-230 w-auto max-w-full overflow-hidden rounded-2xl">
+        <div className="relative h-216 w-auto max-w-full overflow-hidden rounded-2xl tablet:h-230">
           <div
             onClick={open}
             className="absolute inset-0 z-10 overflow-hidden bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-30 hover:transition-opacity hover:duration-300"
