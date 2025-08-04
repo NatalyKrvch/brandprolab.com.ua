@@ -18,6 +18,7 @@ export { ImageLightbox } from './ImageLightbox';
 export { Label } from './Label';
 export { ExternalLink, InternalLink } from './Links';
 export { List } from './List';
+export { ScrollUpButton } from './ScrollUpButton';
 export { Section } from './Section';
 export { SprayBackground } from './SprayBackground';
 export { UnderlinedText } from './UnderlinedText';

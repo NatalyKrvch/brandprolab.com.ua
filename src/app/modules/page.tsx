@@ -1,6 +1,6 @@
-import { Section } from '@/components';
+import { ScrollUpButton, Section } from '@/components';
 import { ContainerVariant } from '@/components/Container';
-import { ALL_DATA_QUERY } from '@/lib/constants';
+import { ALL_DATA_QUERY, SCROLL_TRIGGER_POSITION } from '@/lib/constants';
 import {
   CasesSection,
   DiagnosticSection,
@@ -73,6 +73,11 @@ const Modules = async () => {
           <SubscribeSection subscribeData={data.subscribe} />
         </Section>
       </main>
+
+      <ScrollUpButton
+        sectionId="hero"
+        scrollThreshold={SCROLL_TRIGGER_POSITION}
+      />
 
       <FooterSection footerData={data.footer} />
     </>

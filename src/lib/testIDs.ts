@@ -54,3 +54,4 @@ export const HERO_MAIN_CARD_ICON_TEST_ID = 'hero-main-card-icon-test-id';
 export const HERO_TEXT_CONTENT_TEST_ID = 'hero-text-content-test-id';
 export const HERO_TEXT_CONTENT_ICON_TEST_ID = 'hero-text-content-icon-test-id';
 export const EXPERTISE_SECTION_TEST_ID = 'expertise-section-test-id';
+export const SCROLL_UP_BUTTON_TEST_ID = 'scroll-up-button-test-id';
