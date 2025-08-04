@@ -11,8 +11,8 @@ export const iconClassMap: Record<IconClassType, IconClassSet> = {
   },
 
   [IconClassType.EXPERTISE]: {
-    circleClass: `${baseCircleClass} w-68 h-68 tablet:w-80 tablet:h-80 desktop:w-16 desktop:h-16`,
-    iconClass: `${baseIconClass} w-16 h-16 tablet:w-72 tablet:h-72 desktop:w-16 desktop:h-16 -translate-x-24 tablet:-translate-x-30 desktop:-translate-x-18`,
+    circleClass: `${baseCircleClass} w-12 h-12 tablet:w-14 tablet:h-14 desktop:w-16 desktop:h-16`,
+    iconClass: `${baseIconClass} w-52 h-52 tablet:w-60 tablet:h-60 desktop:w-16 desktop:h-16 -translate-x-3 tablet:-translate-x-4 desktop:-translate-x-18`,
   },
 
   [IconClassType.SOCIAL_MEDIA]: {

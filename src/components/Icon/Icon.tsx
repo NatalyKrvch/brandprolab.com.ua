@@ -23,18 +23,20 @@ const Icon = ({
       className={clsx('flex items-center justify-center', className)}
       data-testid={ICON_COMPONENT_TEST_ID}
     >
-      <div className={`${circleColor} ${circleClass}`}>
-        <Image
-          aria-hidden="true"
-          src={iconURL}
-          alt={iconAlt}
-          width={68}
-          height={68}
-          className={iconClass}
-          loading="lazy"
-          data-testid={ICON_COMPONENT_IMAGE_TEST_ID}
-        />
-      </div>
+      {iconURL && (
+        <div className={`${circleColor} ${circleClass}`}>
+          <Image
+            aria-hidden="true"
+            src={iconURL}
+            alt={iconAlt}
+            width={68}
+            height={68}
+            className={iconClass}
+            loading="lazy"
+            data-testid={ICON_COMPONENT_IMAGE_TEST_ID}
+          />
+        </div>
+      )}
     </div>
   );
 };

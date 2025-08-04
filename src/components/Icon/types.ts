@@ -6,7 +6,7 @@ export enum IconClassType {
 }
 
 export interface IconProps {
-  iconURL: string;
+  iconURL: string | null;
   type: IconClassType;
   className?: string;
   iconAlt?: string;
