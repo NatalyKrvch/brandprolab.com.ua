@@ -3,14 +3,19 @@
 import 'keen-slider/keen-slider.min.css';
 
 import { Children, isValidElement, type PropsWithChildren } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 import { PaginationDots } from '@/components/PaginationDots';
 import { SLIDE_CLASSNAME, SLIDER_CLASSNAME } from '@/styles/constants';
 
 import { CarouselNavButtons } from './components/CarouselNavButtons';
 import { useControlledCarousel } from './hooks/useControlledCarousel';
+import type { ControlledCarouselProps } from './types';
 
-const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
+const ControlledCarousel = ({
+  children,
+  className,
+}: PropsWithChildren<ControlledCarouselProps>) => {
   const {
     sliderRef,
     currentSlideIndex,
@@ -24,7 +29,11 @@ const ControlledCarousel = ({ children }: PropsWithChildren<{}>) => {
   const validChildren = Children.toArray(children).filter(isValidElement);
 
   return (
-    <div className="relative" role="group" aria-roledescription="carousel">
+    <div
+      className={twMerge('relative', className)}
+      role="group"
+      aria-roledescription="carousel"
+    >
       <CarouselNavButtons
         isFirstSlide={isFirstSlide}
         isLastSlide={isLastSlide}
