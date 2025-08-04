@@ -1,5 +1,5 @@
 import { SimpleCard } from '@/components/Cards/SimpleCard';
-import { Icon, IconClassType } from '@/components/Icon';
+import { Icon } from '@/components/Icon';
 import { Label } from '@/components/Label';
 import { UnderlinedText } from '@/components/UnderlinedText';
 import {
@@ -37,33 +37,37 @@ const ServiceCardFront = ({
       backgroundColor={styles.background}
       decorativeBgImageUrl={bgImageURL}
       decorativeBgImageOpacity={FRONT_CARD_BG_IMAGE_OPACITY}
-      className="group flex flex-col gap-4 p-7 tablet:gap-0 mid_tablet:gap-0 desktop:gap-0 desktop:p-8"
+      className={styles.wrapper}
     >
-      <div aria-hidden="true" className="flex items-center justify-end">
-        <Icon
-          iconURL={iconURL}
-          type={IconClassType.SERVICES}
-          className={styles.icon}
-        />
+      <div className={styles.headerLayout}>
+        <div aria-hidden="true" className={styles.iconContainer}>
+          <Icon
+            iconURL={iconURL}
+            type={styles.iconType}
+            className={styles.icon}
+          />
 
-        <Icon
-          iconURL={whiteIconURL}
-          type={IconClassType.SERVICES}
-          className={styles.whiteIcon}
-          circleColor="bg-whiteOpacity"
-        />
+          {whiteIconURL && (
+            <Icon
+              iconURL={whiteIconURL}
+              type={styles.iconType}
+              className={styles.whiteIcon}
+              circleColor="bg-whiteOpacity"
+            />
+          )}
+        </div>
+
+        <h3
+          className={styles.header}
+          data-testid={SERVICE_CARD_FRONT_HEADER_TEST_ID}
+        >
+          {header}
+        </h3>
       </div>
 
-      <div className="flex h-full flex-col justify-between">
+      <div className="leading flex h-full flex-col justify-between">
         <div className="flex flex-col gap-4">
-          <h3
-            className={styles.header}
-            data-testid={SERVICE_CARD_FRONT_HEADER_TEST_ID}
-          >
-            {header}
-          </h3>
-
-          <Label className={styles.label}>{label}</Label>
+          {label && <Label className={styles.label}>{label}</Label>}
 
           <p
             className={styles.description}
@@ -75,7 +79,7 @@ const ServiceCardFront = ({
 
         <button
           aria-label={`Переглянути деталі про ${header}`}
-          className="px-1 text-left desktop:px-2"
+          className={styles.button}
         >
           <UnderlinedText className={styles.underlined}>
             {callToActionText}

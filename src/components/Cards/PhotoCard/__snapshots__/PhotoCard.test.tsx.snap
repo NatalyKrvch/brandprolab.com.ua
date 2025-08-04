@@ -8,7 +8,7 @@ exports[`PhotoCard component applies correct styles for dimensions 1`] = `
     style="height: 500px; background-image: url(/test-background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <div
-      class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
+      class="absolute left-4 top-4 ml-36 mt-44 w-250 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
     >
       Sample Text
@@ -58,7 +58,7 @@ exports[`PhotoCard component renders text when provided 1`] = `
     style="height: 500px; background-image: url(/test-background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <div
-      class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
+      class="absolute left-4 top-4 ml-36 mt-44 w-250 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
     >
       Sample Text
@@ -86,7 +86,7 @@ exports[`PhotoCard component renders the PhotoCard component 1`] = `
     style="height: 500px; background-image: url(/test-background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <div
-      class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
+      class="absolute left-4 top-4 ml-36 mt-44 w-250 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
     >
       Sample Text
@@ -114,7 +114,7 @@ exports[`PhotoCard component renders the photo with correct attributes 1`] = `
     style="height: 500px; background-image: url(/test-background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <div
-      class="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
+      class="absolute left-4 top-4 ml-36 mt-44 w-250 text-44 font-bold leading-44 tracking-tight text-white"
       data-testid="photo-card-text-test-id"
     >
       Sample Text

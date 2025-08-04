@@ -16,6 +16,16 @@ jest.mock('@/sanity/lib/client', () => ({
   },
 }));
 
+jest.mock('yet-another-react-lightbox', () => {
+  const MockLightbox = () => (
+    <div data-testid="mock-lightbox">Mock Lightbox</div>
+  );
+  MockLightbox.displayName = 'MockLightbox';
+  return MockLightbox;
+});
+
+jest.mock('yet-another-react-lightbox/plugins/zoom', () => ({}));
+
 describe('Section component', () => {
   it('renders children inside the section and default container', () => {
     const { asFragment } = render(

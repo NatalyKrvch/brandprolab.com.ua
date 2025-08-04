@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom';
-
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import {
@@ -10,57 +8,57 @@ import {
 
 import DiplomaCard from './DiplomaCard';
 
-jest.mock('next/image', () => {
-  const MockedImage = ({
-    src,
-    alt,
-    className,
-  }: {
-    src: string;
-    alt: string;
-    className?: string;
-  }) => (
-    <img
-      src={src}
-      alt={alt}
-      className={className}
-      data-testid={DIPLOMA_IMAGE_TEST_ID}
-    />
-  );
-  MockedImage.displayName = 'MockedNextImage';
-  return MockedImage;
-});
+jest.mock('@/components/ImageLightbox', () => ({
+  ImageLightbox: ({ open }: { open: boolean }) => {
+    if (!open) return null;
+    return <div data-testid="mock-lightbox">Mock Lightbox</div>;
+  },
+}));
 
-describe('DiplomaCard component', () => {
-  const defaultProps = {
-    diplomaURL: '/test-diploma.jpg',
-    onClick: jest.fn(),
-  };
+const mockColorDiplomaURL = 'https://example.com/color-diploma.jpg';
+const mockBwDiplomaURL = 'https://example.com/bw-diploma.jpg';
 
-  it('renders the DiplomaCard component', () => {
-    const { asFragment } = render(<DiplomaCard {...defaultProps} />);
-    const cardElement = screen.getByTestId(DIPLOMA_CARD_TEST_ID);
+describe('DiplomaCard', () => {
+  it('renders correctly with black & white image and overlay', () => {
+    const { container } = render(
+      <DiplomaCard
+        colorDiplomaURL={mockColorDiplomaURL}
+        bwDiplomaURL={mockBwDiplomaURL}
+      />,
+    );
 
-    expect(cardElement).toBeInTheDocument();
-    expect(asFragment()).toMatchSnapshot();
+    expect(screen.getByTestId(DIPLOMA_CARD_TEST_ID)).toBeInTheDocument();
+    expect(screen.getByTestId(DIPLOMA_IMAGE_TEST_ID)).toBeInTheDocument();
+    expect(screen.getByTestId(DIPLOMA_OVERLAY_TEST_ID)).toBeInTheDocument();
+    expect(screen.queryByTestId('mock-lightbox')).not.toBeInTheDocument();
+
+    expect(container).toMatchSnapshot();
   });
 
-  it('renders the diploma image correctly', () => {
-    const { asFragment } = render(<DiplomaCard {...defaultProps} />);
-    const imageElement = screen.getByTestId(DIPLOMA_IMAGE_TEST_ID);
+  it('renders correct black & white image attributes', () => {
+    render(
+      <DiplomaCard
+        colorDiplomaURL={mockColorDiplomaURL}
+        bwDiplomaURL={mockBwDiplomaURL}
+      />,
+    );
 
-    expect(imageElement).toBeInTheDocument();
-    expect(imageElement).toHaveAttribute('src', '/test-diploma.jpg');
-    expect(imageElement).toHaveAttribute('alt', 'Diploma');
-    expect(asFragment()).toMatchSnapshot();
+    const image = screen.getByTestId(DIPLOMA_IMAGE_TEST_ID);
+
+    expect(image).toHaveAttribute('src');
+    expect(image).toHaveAttribute('alt', 'Diploma');
   });
 
-  it('triggers onClick when overlay is clicked', () => {
-    const { asFragment } = render(<DiplomaCard {...defaultProps} />);
-    const overlayElement = screen.getByTestId(DIPLOMA_OVERLAY_TEST_ID);
+  it('opens lightbox with color image after overlay click', () => {
+    render(
+      <DiplomaCard
+        colorDiplomaURL={mockColorDiplomaURL}
+        bwDiplomaURL={mockBwDiplomaURL}
+      />,
+    );
 
-    fireEvent.click(overlayElement);
-    expect(defaultProps.onClick).toHaveBeenCalledTimes(1);
-    expect(asFragment()).toMatchSnapshot();
+    fireEvent.click(screen.getByTestId(DIPLOMA_OVERLAY_TEST_ID));
+
+    expect(screen.getByTestId('mock-lightbox')).toBeInTheDocument();
   });
 });

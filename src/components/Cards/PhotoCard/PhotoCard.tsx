@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 import {
   PHOTO_CARD_IMAGE_TEST_ID,
@@ -15,18 +16,20 @@ const PhotoCard = ({
   imageWidth,
   imageHeight,
   text,
+  className,
+  imageContainerClassName,
   photoAlt = 'Photo',
   hasPriority = false,
 }: PhotoCardProps) => {
   return (
     <SimpleCard
       backgroundImageUrl={backgroundUrl}
-      className="relative"
+      className={twMerge('relative', className)}
       style={{ height: `${cardHeight}px` }}
     >
       {text && (
         <div
-          className="absolute left-4 top-4 ml-36 mt-44 w-80 text-44 font-bold leading-44 tracking-tight text-white"
+          className="absolute left-4 top-4 ml-36 mt-44 w-250 text-44 font-bold leading-44 tracking-tight text-white"
           data-testid={PHOTO_CARD_TEXT_TEST_ID}
         >
           {text}
@@ -34,7 +37,10 @@ const PhotoCard = ({
       )}
 
       <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        className={twMerge(
+          'absolute bottom-0 left-1/2 -translate-x-1/2',
+          imageContainerClassName,
+        )}
         style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
       >
         <Image
@@ -42,7 +48,7 @@ const PhotoCard = ({
           fill
           className="object-cover"
           alt={photoAlt}
-          priority={hasPriority}
+          priority={hasPriority || undefined}
           data-testid={PHOTO_CARD_IMAGE_TEST_ID}
         />
       </div>

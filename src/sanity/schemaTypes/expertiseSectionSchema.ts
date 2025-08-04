@@ -12,6 +12,13 @@ export const expertiseSectionSchema = defineType({
       validation: rule => rule.required(),
     }),
     defineField({
+      name: 'photo',
+      title: 'Photo',
+      type: 'image',
+      options: { hotspot: true },
+      validation: rule => rule.required(),
+    }),
+    defineField({
       name: 'expertiseCards',
       title: 'Expertise Cards',
       type: 'array',
@@ -87,9 +94,17 @@ export const expertiseSectionSchema = defineType({
               validation: rule => rule.required(),
             }),
             defineField({
-              name: 'image',
-              title: 'Diploma Image',
+              name: 'colorImage',
+              title: 'Color Image',
               type: 'image',
+              options: { hotspot: true },
+              validation: rule => rule.required(),
+            }),
+            defineField({
+              name: 'bwImage',
+              title: 'Black & White Image',
+              type: 'image',
+              options: { hotspot: true },
               validation: rule => rule.required(),
             }),
           ],

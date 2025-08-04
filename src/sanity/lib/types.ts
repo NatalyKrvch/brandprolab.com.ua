@@ -45,6 +45,13 @@ export type ExpertiseSectionType = {
   _id: string;
   _type: 'expertiseSection';
   title: string;
+  photo: {
+    _type: 'image';
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+  };
   expertiseCards: {
     _key: string;
     _type: 'expertiseCard';
@@ -69,6 +76,20 @@ export type ExpertiseSectionType = {
     type: string;
     institution: string;
     diplomaName: string;
+    colorImage: {
+      _type: 'image';
+      asset: {
+        _ref: string;
+        _type: 'reference';
+      };
+    };
+    bwImage: {
+      _type: 'image';
+      asset: {
+        _ref: string;
+        _type: 'reference';
+      };
+    };
   }[];
 };
 

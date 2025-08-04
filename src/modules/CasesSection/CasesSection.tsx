@@ -9,7 +9,7 @@ import type { CasesSectionProps } from './types';
 const CasesSection = ({ casesData }: CasesSectionProps) => {
   const { subtitle, description, cases } = casesData;
 
-  const { firstWord, rest, wordsToDisplay, CarouselComponent } =
+  const { leadingWords, rest, wordsToDisplay, CarouselComponent } =
     useCasesSection(description);
 
   return (
@@ -20,7 +20,7 @@ const CasesSection = ({ casesData }: CasesSectionProps) => {
         </p>
 
         <p className="mb-16 text-center text-32 font-bold leading-34 tracking-tight text-black tablet:text-4xl tablet:leading-none desktop:text-52 desktop:leading-54">
-          <span className="text-teal-dark">{firstWord}</span>
+          <span className="text-teal-dark">{leadingWords}</span>
           {rest && ` ${rest}`}
         </p>
       </Container>

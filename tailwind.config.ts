@@ -89,6 +89,7 @@ export default {
 
       spacing: {
         '20': '20px',
+        '22': '22px',
         '28': '28px',
         '30': '30px',
         '36': '36px',

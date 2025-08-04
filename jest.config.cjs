@@ -7,9 +7,10 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/src/$1',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.jest.json',
-    },
+  transform: {
+    '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }],
   },
+  transformIgnorePatterns: [
+    '/node_modules/(?!yet-another-react-lightbox(?:/plugins/.*)?).+\\.js$',
+  ],
 };

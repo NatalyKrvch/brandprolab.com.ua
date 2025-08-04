@@ -14,6 +14,7 @@ export { ControlledCarousel, EndlessCarousel } from './Carousels';
 export { Container } from './Container';
 export { HeroTextContent } from './HeroTextContent';
 export { Icon } from './Icon';
+export { ImageLightbox } from './ImageLightbox';
 export { Label } from './Label';
 export { ExternalLink, InternalLink } from './Links';
 export { List } from './List';
