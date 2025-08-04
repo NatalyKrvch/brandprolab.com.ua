@@ -7,7 +7,7 @@ exports[`DiplomaCard renders correctly with black & white image and overlay 1`] 
     data-testid="diploma-card-test-id"
   >
     <div
-      class="relative h-216 tablet:h-230 w-auto max-w-full overflow-hidden rounded-2xl"
+      class="relative h-216 w-auto max-w-full overflow-hidden rounded-2xl tablet:h-230"
     >
       <div
         class="absolute inset-0 z-10 overflow-hidden bg-teal-fog opacity-20 transition-opacity duration-300 hover:cursor-pointer hover:opacity-30 hover:transition-opacity hover:duration-300"

@@ -39,6 +39,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Mariupol', sans-serif;
   color: var(--main-text);

@@ -8,17 +8,20 @@ import {
 } from '@/lib/testIDs';
 
 import PhotoCard from './PhotoCard';
+
 jest.mock('next/image', () => {
   const MockImage = ({
     src,
     alt,
-    ...props
+    _fill,
+    ...rest
   }: {
     src: string;
     alt: string;
+    fill?: boolean;
     [key: string]: any;
   }) => {
-    return <img src={src} alt={alt} {...props} />;
+    return <img src={src} alt={alt} {...rest} />;
   };
 
   MockImage.displayName = 'MockImage';

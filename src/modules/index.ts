@@ -1,5 +1,6 @@
 export { CasesSection } from './CasesSection';
 export { DiagnosticSection } from './DiagnosticSection';
+export { ExpertiseSection } from './ExpertiseSection';
 export { FooterSection } from './FooterSection';
 export { HeroSection } from './HeroSection';
 export { ServicesSection } from './ServicesSection';

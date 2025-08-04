@@ -4,6 +4,7 @@ import { ALL_DATA_QUERY } from '@/lib/constants';
 import {
   CasesSection,
   DiagnosticSection,
+  ExpertiseSection,
   FooterSection,
   HeroSection,
   ServicesSection,
@@ -24,10 +25,6 @@ const Modules = async () => {
   return (
     <>
       <main>
-        <div className="mb-16 flex flex-col items-center justify-center">
-          <h1 className="text-3xl font-bold">Modules</h1>
-        </div>
-
         <Section
           id="hero"
           className="mb-24 desktop:mb-144"
@@ -50,6 +47,14 @@ const Modules = async () => {
 
         <Section id="video" className="mb-108 tablet:mb-120 desktop:mb-48">
           <VideoSection videoData={data.video} />
+        </Section>
+
+        <Section
+          id="expertise"
+          containerVariant={ContainerVariant.FULL}
+          className="mb-80 tablet:mb-32 desktop:mb-180"
+        >
+          <ExpertiseSection expertiseData={data.expertise} />
         </Section>
 
         <Section
