@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import FlipCardFront from './FlipCardFront';
+import ServiceCardFront from '../ServiceCardFront/ServiceCardFront';
 
-const meta: Meta<typeof FlipCardFront> = {
-  title: 'Components/FlipCardFront',
-  component: FlipCardFront,
+const meta: Meta<typeof ServiceCardFront> = {
+  title: 'Components/ServiceCardFront',
+  component: ServiceCardFront,
   parameters: {
     controls: { expanded: true },
   },
@@ -37,7 +37,7 @@ const meta: Meta<typeof FlipCardFront> = {
         type: { summary: 'string' },
       },
     },
-    callToAction: {
+    callToActionText: {
       control: 'text',
       description:
         'A call-to-action displayed as underlined text at the bottom.',
@@ -49,7 +49,7 @@ const meta: Meta<typeof FlipCardFront> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof FlipCardFront>;
+type Story = StoryObj<typeof ServiceCardFront>;
 
 export const Default: Story = {
   args: {
@@ -58,6 +58,6 @@ export const Default: Story = {
     label: 'Our Expertise',
     description:
       'We provide professional services with years of experience and a passion for excellence.',
-    callToAction: 'Learn More',
+    callToActionText: 'Learn More',
   },
 };

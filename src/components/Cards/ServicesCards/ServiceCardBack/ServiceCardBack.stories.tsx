@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import FlipCardBack from './FlipCardBack';
+import ServiceCardBack from '../ServiceCardBack/ServiceCardBack';
 
-const meta: Meta<typeof FlipCardBack> = {
-  title: 'Components/FlipCardBack',
-  component: FlipCardBack,
+const meta: Meta<typeof ServiceCardBack> = {
+  title: 'Components/ServiceCardBack',
+  component: ServiceCardBack,
   parameters: {
     controls: { expanded: true },
   },
@@ -27,7 +27,7 @@ const meta: Meta<typeof FlipCardBack> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof FlipCardBack>;
+type Story = StoryObj<typeof ServiceCardBack>;
 
 export const Default: Story = {
   args: {
