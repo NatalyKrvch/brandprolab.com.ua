@@ -7,10 +7,20 @@ exports[`TestimonialCard component renders UserBadge when clientName and clientP
     data-testid="simple-card-test-id"
   >
     <div
-      class="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
-      data-testid="testimonials-text-test-id"
+      class="flex flex-col gap-3"
     >
-      This is a testimonial text.
+      <div
+        class="max-h-70 overflow-hidden text-xl font-normal leading-6 text-black desktop:max-h-80 desktop:text-22 desktop:leading-26"
+        data-testid="testimonials-text-test-id"
+      >
+        This is a testimonial text.
+      </div>
+      <button
+        class="text-right text-lg leading-18 text-gray-dark hover:text-teal-dark transition-color-fast"
+        role="button"
+      >
+        Читати більше
+      </button>
     </div>
     <div
       data-testid="user-badge-test-id"
@@ -39,10 +49,20 @@ exports[`TestimonialCard component renders the TestimonialCard component 1`] = `
     data-testid="simple-card-test-id"
   >
     <div
-      class="text-xl font-normal leading-6 text-black desktop:text-22 desktop:leading-26"
-      data-testid="testimonials-text-test-id"
+      class="flex flex-col gap-3"
     >
-      This is a testimonial text.
+      <div
+        class="max-h-70 overflow-hidden text-xl font-normal leading-6 text-black desktop:max-h-80 desktop:text-22 desktop:leading-26"
+        data-testid="testimonials-text-test-id"
+      >
+        This is a testimonial text.
+      </div>
+      <button
+        class="text-right text-lg leading-18 text-gray-dark hover:text-teal-dark transition-color-fast"
+        role="button"
+      >
+        Читати більше
+      </button>
     </div>
     <div
       data-testid="user-badge-test-id"

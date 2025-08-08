@@ -7,13 +7,8 @@ import {
   TESTIMONIAL_TEXT_TEST_ID,
   USER_BADGE_TEST_ID,
 } from '@/lib/testIDs';
-import { getReadMoreText } from '@/utils';
 
 import TestimonialCard from './TestimonialCard';
-
-jest.mock('@/utils', () => ({
-  getReadMoreText: jest.fn(text => text),
-}));
 
 jest.mock('@/components/UserBadge', () => ({
   UserBadge: ({
@@ -36,7 +31,6 @@ jest.mock('@/components/UserBadge', () => ({
 describe('TestimonialCard component', () => {
   const defaultProps = {
     text: 'This is a testimonial text.',
-    amountOfWordsToDisplay: 12,
     clientName: 'John Doe',
     clientPhotoUrl: '/john-doe.jpg',
     clientLink: 'https://example.com',
@@ -58,12 +52,13 @@ describe('TestimonialCard component', () => {
     expect(textElement).toHaveTextContent('This is a testimonial text.');
   });
 
-  it('applies getReadMoreText to the testimonial text', () => {
+  it('renders the "Читати більше" button', () => {
     render(<TestimonialCard {...defaultProps} />);
-    expect(getReadMoreText).toHaveBeenCalledWith(
-      'This is a testimonial text.',
-      12,
-    );
+    const readMoreButton = screen.getByRole('button', {
+      name: /читати більше/i,
+    });
+
+    expect(readMoreButton).toBeInTheDocument();
   });
 
   it('renders UserBadge when clientName and clientPhotoUrl are provided', () => {
@@ -84,7 +79,7 @@ describe('TestimonialCard component', () => {
   });
 
   it('does not render UserBadge if clientName or clientPhotoUrl is missing', () => {
-    render(<TestimonialCard amountOfWordsToDisplay={12} text="Test text" />);
+    render(<TestimonialCard text="Test text" />);
     expect(screen.queryByTestId(USER_BADGE_TEST_ID)).not.toBeInTheDocument();
   });
 });
