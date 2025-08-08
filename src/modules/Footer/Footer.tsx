@@ -2,9 +2,9 @@ import { ExternalLink } from '@/components';
 import { FOOTER_SECTION_TEST_ID } from '@/lib/testIDs';
 import { getCurrentYear, normalizeText } from '@/utils';
 
-import type { FooterSectionProps } from './types';
+import type { FooterProps } from './types';
 
-const FooterSection = ({ footerData }: FooterSectionProps) => {
+const Footer = ({ footerData }: FooterProps) => {
   if (!footerData) {
     return null;
   }
@@ -39,4 +39,4 @@ const FooterSection = ({ footerData }: FooterSectionProps) => {
   );
 };
 
-export default FooterSection;
+export default Footer;

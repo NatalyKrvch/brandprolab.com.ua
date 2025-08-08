@@ -5,7 +5,7 @@ import {
   CasesSection,
   DiagnosticSection,
   ExpertiseSection,
-  FooterSection,
+  Footer,
   HeroSection,
   ServicesSection,
   SubscribeSection,
@@ -79,7 +79,7 @@ const Modules = async () => {
         scrollThreshold={SCROLL_TRIGGER_POSITION}
       />
 
-      <FooterSection footerData={data.footer} />
+      <Footer footerData={data.footer} />
     </>
   );
 };
