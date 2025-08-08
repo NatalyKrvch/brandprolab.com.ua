@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialModal does not render anything when closed 1`] = `<DocumentFragment />`;
+
+exports[`TestimonialModal renders all testimonial info when open 1`] = `<DocumentFragment />`;
