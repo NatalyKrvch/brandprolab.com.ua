@@ -13,7 +13,6 @@ jest.mock('next/image', () => {
   const MockImage = ({
     src,
     alt,
-    _fill,
     ...rest
   }: {
     src: string;
@@ -21,7 +20,10 @@ jest.mock('next/image', () => {
     fill?: boolean;
     [key: string]: any;
   }) => {
-    return <img src={src} alt={alt} {...rest} />;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { fill: _fill, ...safeRest } = rest;
+
+    return <img src={src} alt={alt} {...safeRest} />;
   };
 
   MockImage.displayName = 'MockImage';

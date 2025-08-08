@@ -16,7 +16,7 @@ exports[`TestimonialCard component renders UserBadge when clientName and clientP
         This is a testimonial text.
       </div>
       <button
-        class="text-right text-lg leading-18 text-gray-dark hover:text-teal-dark transition-color-fast"
+        class="transition-color-fast text-right text-lg leading-18 text-gray-dark hover:text-teal-dark"
         role="button"
       >
         Читати більше
@@ -58,7 +58,7 @@ exports[`TestimonialCard component renders the TestimonialCard component 1`] = `
         This is a testimonial text.
       </div>
       <button
-        class="text-right text-lg leading-18 text-gray-dark hover:text-teal-dark transition-color-fast"
+        class="transition-color-fast text-right text-lg leading-18 text-gray-dark hover:text-teal-dark"
         role="button"
       >
         Читати більше
