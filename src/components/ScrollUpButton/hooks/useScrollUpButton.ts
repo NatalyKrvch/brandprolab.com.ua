@@ -2,10 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export const useScrollUpButton = (
-  sectionId: string,
-  scrollThreshold: number,
-) => {
+export const useScrollUpButton = (scrollThreshold: number) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
 
@@ -23,13 +20,5 @@ export const useScrollUpButton = (
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrollThreshold]);
 
-  const handleScrollToSection = () => {
-    const section = document.getElementById(sectionId);
-
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  return { isVisible, hasMounted, handleScrollToSection };
+  return { isVisible, hasMounted };
 };

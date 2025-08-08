@@ -10,8 +10,15 @@ jest.mock('./hooks/useScrollUpButton', () => ({
   useScrollUpButton: jest.fn(),
 }));
 
+jest.mock('@/utils/scrollToSectionById', () => ({
+  scrollToSectionById: jest.fn(),
+}));
+
 const mockUseScrollUpButton = require('./hooks/useScrollUpButton')
   .useScrollUpButton as jest.Mock;
+const mockScrollUtils = require('@/utils/scrollToSectionById');
+const mockScrollToSectionById =
+  mockScrollUtils.scrollToSectionById as jest.Mock;
 
 describe('ScrollUpButton component', () => {
   const sectionId = 'hero';
@@ -25,7 +32,6 @@ describe('ScrollUpButton component', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: false,
       hasMounted: false,
-      handleScrollToSection: jest.fn(),
     });
 
     const { asFragment } = render(
@@ -34,6 +40,7 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
+
     expect(
       screen.queryByTestId(SCROLL_UP_BUTTON_TEST_ID),
     ).not.toBeInTheDocument();
@@ -44,7 +51,6 @@ describe('ScrollUpButton component', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: false,
       hasMounted: true,
-      handleScrollToSection: jest.fn(),
     });
 
     const { asFragment } = render(
@@ -53,6 +59,7 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
+
     const button = screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID);
     expect(button).toHaveClass('pointer-events-none translate-y-4 opacity-0');
     expect(asFragment()).toMatchSnapshot();
@@ -62,7 +69,6 @@ describe('ScrollUpButton component', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: true,
       hasMounted: true,
-      handleScrollToSection: jest.fn(),
     });
 
     const { asFragment } = render(
@@ -71,17 +77,16 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
+
     const button = screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID);
     expect(button).toHaveClass('translate-y-0 opacity-100');
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should call handleScrollToSection on click', () => {
-    const handleScrollToSection = jest.fn();
+  it('should call scrollToSectionById on click', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: true,
       hasMounted: true,
-      handleScrollToSection,
     });
 
     const { asFragment } = render(
@@ -90,8 +95,11 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
+
     fireEvent.click(screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID));
-    expect(handleScrollToSection).toHaveBeenCalledTimes(1);
+
+    expect(mockScrollToSectionById).toHaveBeenCalledWith(sectionId);
+    expect(mockScrollToSectionById).toHaveBeenCalledTimes(1);
     expect(asFragment()).toMatchSnapshot();
   });
 });

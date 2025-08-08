@@ -3,6 +3,7 @@
 import Image from 'next/image';
 
 import { SCROLL_UP_BUTTON_TEST_ID } from '@/lib/testIDs';
+import { scrollToSectionById } from '@/utils/scrollToSectionById';
 
 import { useScrollUpButton } from './hooks/useScrollUpButton';
 import type { ScrollUpButtonProps } from './types';
@@ -11,10 +12,7 @@ const ScrollUpButton = ({
   sectionId,
   scrollThreshold,
 }: ScrollUpButtonProps) => {
-  const { isVisible, hasMounted, handleScrollToSection } = useScrollUpButton(
-    sectionId,
-    scrollThreshold,
-  );
+  const { isVisible, hasMounted } = useScrollUpButton(scrollThreshold);
 
   const visibilityClasses = isVisible
     ? 'translate-y-0 opacity-100'
@@ -26,7 +24,7 @@ const ScrollUpButton = ({
     <button
       data-testid={SCROLL_UP_BUTTON_TEST_ID}
       type="button"
-      onClick={handleScrollToSection}
+      onClick={() => scrollToSectionById(sectionId)}
       aria-label="Піднятись нагору"
       className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ease-in-out hover:scale-105 ${visibilityClasses}`}
     >

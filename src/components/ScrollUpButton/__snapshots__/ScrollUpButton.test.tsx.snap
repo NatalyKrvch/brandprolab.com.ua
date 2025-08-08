@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScrollUpButton component should call handleScrollToSection on click 1`] = `
+exports[`ScrollUpButton component should call scrollToSectionById on click 1`] = `
 <DocumentFragment>
   <button
     aria-label="Піднятись нагору"

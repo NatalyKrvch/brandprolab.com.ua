@@ -5,5 +5,6 @@ export { getCurrentYear } from './getCurrentYear';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';
 export { normalizeImageURL } from './normalizeImageURL';
 export { normalizeText } from './normalizeText';
+export { scrollToSectionById } from './scrollToSectionById';
 export { splitLeadingWords } from './splitLeadingWords';
 export { throwError } from './throwError';
