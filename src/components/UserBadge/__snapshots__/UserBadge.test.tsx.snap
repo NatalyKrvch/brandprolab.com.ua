@@ -12,7 +12,7 @@ exports[`UserBadge component displays the correct user name 1`] = `
       class="flex items-center gap-5"
     >
       <span
-        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark transition-color-fast desktop:text-xl"
         data-testid="user-badge-name-test-id"
       >
         John Doe
@@ -42,7 +42,7 @@ exports[`UserBadge component renders a div wrapper when no userLink is provided 
       class="flex items-center gap-5"
     >
       <span
-        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark transition-color-fast desktop:text-xl"
         data-testid="user-badge-name-test-id"
       >
         John Doe
@@ -74,7 +74,7 @@ exports[`UserBadge component renders the UserBadge component 1`] = `
       class="flex items-center gap-5"
     >
       <span
-        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark transition-color-fast desktop:text-xl"
         data-testid="user-badge-name-test-id"
       >
         John Doe
@@ -106,7 +106,7 @@ exports[`UserBadge component renders the correct wrapper element when userLink i
       class="flex items-center gap-5"
     >
       <span
-        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark transition-color-fast desktop:text-xl"
         data-testid="user-badge-name-test-id"
       >
         John Doe
@@ -138,7 +138,7 @@ exports[`UserBadge component renders the user image with correct attributes 1`] 
       class="flex items-center gap-5"
     >
       <span
-        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        class="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark transition-color-fast desktop:text-xl"
         data-testid="user-badge-name-test-id"
       >
         John Doe
