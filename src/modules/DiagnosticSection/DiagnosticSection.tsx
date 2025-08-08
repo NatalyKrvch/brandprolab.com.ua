@@ -10,6 +10,10 @@ import { normalizeText } from '@/utils';
 import type { DiagnosticSectionProps } from './types';
 
 const DiagnosticSection = ({ diagnosticData }: DiagnosticSectionProps) => {
+  if (!diagnosticData) {
+    return null;
+  }
+
   const {
     title,
     subtitle,
