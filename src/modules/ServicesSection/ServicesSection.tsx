@@ -6,6 +6,10 @@ import { serviceCardClassMap } from './styleMaps';
 import type { ServicesSectionProps } from './types';
 
 const ServicesSection = ({ servicesData }: ServicesSectionProps) => {
+  if (!servicesData) {
+    return null;
+  }
+
   const { title, description, cards, backgroundImage } = servicesData;
 
   return (

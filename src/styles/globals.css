@@ -49,6 +49,10 @@ body {
   background: var(--background);
 }
 
+.transition-color-fast {
+  @apply transition-colors duration-200;
+}
+
 @media (max-width: 480px) {
   .keen-slider__slide {
     flex: 0 0 auto;

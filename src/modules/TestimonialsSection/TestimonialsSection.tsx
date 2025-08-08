@@ -2,24 +2,32 @@
 
 import dynamic from 'next/dynamic';
 
-import { TestimonialCard } from '@/components';
-import { AMOUNT_OF_TESTIMONIALS_WORDS } from '@/lib/constants';
-import { normalizeImageURL, normalizeText } from '@/utils';
+import { TestimonialCard, TestimonialModal } from '@/components';
+import { normalizeText } from '@/utils';
 
+import { useTestimonialsSection } from './hooks/useTestimonialsSection';
 import type { TestimonialsSectionProps } from './types';
+
+const ControlledCarousel = dynamic(
+  () =>
+    import('@/components/Carousels/ControlledCarousel').then(
+      mod => mod.ControlledCarousel,
+    ),
+  { ssr: false },
+);
 
 const TestimonialsSection = ({
   testimonialsData,
 }: TestimonialsSectionProps) => {
-  const { title, testimonials } = testimonialsData;
+  const {
+    title,
+    normalizedTestimonials,
+    selectedTestimonial,
+    handleCloseModal,
+    handleReadMoreClick,
+  } = useTestimonialsSection(testimonialsData);
 
-  const ControlledCarousel = dynamic(
-    () =>
-      import('@/components/Carousels/ControlledCarousel').then(
-        mod => mod.ControlledCarousel,
-      ),
-    { ssr: false },
-  );
+  if (!testimonialsData) return null;
 
   return (
     <>
@@ -28,19 +36,26 @@ const TestimonialsSection = ({
           {normalizeText(title)}
         </h2>
       </div>
+
       <ControlledCarousel aria-label="Відгуки" aria-roledescription="carousel">
-        {testimonials.map(person => (
+        {normalizedTestimonials.map(testimonial => (
           <TestimonialCard
-            key={person._key}
-            text={normalizeText(person.review)}
-            clientName={normalizeText(person.personName)}
-            clientPhotoUrl={normalizeImageURL(person.smallPhoto)}
-            clientLink={person.link.trim()}
-            amountOfWordsToDisplay={AMOUNT_OF_TESTIMONIALS_WORDS}
+            key={testimonial.key}
+            text={testimonial.text}
+            clientName={testimonial.clientName}
+            clientPhotoUrl={testimonial.clientPhotoUrl}
+            clientLink={testimonial.clientLink}
+            onReadMore={() => handleReadMoreClick(testimonial)}
             className="h-240 w-314 tablet:h-280 tablet:w-330 desktop:h-300 desktop:w-442"
           />
         ))}
       </ControlledCarousel>
+
+      <TestimonialModal
+        isOpen={!!selectedTestimonial}
+        onClose={handleCloseModal}
+        testimonial={selectedTestimonial}
+      />
     </>
   );
 };

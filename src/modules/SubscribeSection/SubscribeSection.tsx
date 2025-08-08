@@ -5,6 +5,8 @@ import getMainColorByIndex from './helpers/getMainColorByIndex';
 import type { SubscribeSectionProps } from './types';
 
 const SubscribeSection = ({ subscribeData }: SubscribeSectionProps) => {
+  if (!subscribeData) return null;
+
   const { mainCard, cards, title } = subscribeData;
 
   return (

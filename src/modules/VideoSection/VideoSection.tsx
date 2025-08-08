@@ -10,6 +10,8 @@ import { normalizeImageURL, normalizeText } from '@/utils';
 import type { VideoSectionProps } from './types';
 
 const VideoSection = ({ videoData }: VideoSectionProps) => {
+  if (!videoData) return null;
+
   const {
     title,
     label,
@@ -31,7 +33,7 @@ const VideoSection = ({ videoData }: VideoSectionProps) => {
           {normalizeText(title)}
         </h2>
 
-        <div className="tablet:max-w-480 relative mb-8 flex w-full max-w-400 justify-center desktop:hidden">
+        <div className="relative mb-8 flex w-full max-w-400 justify-center tablet:max-w-480 desktop:hidden">
           <SprayBackground className="-left-30 -top-250 h-650 w-full -rotate-30 tablet:-left-30 tablet:-top-350 tablet:h-1000 tablet:w-full tablet:-rotate-45" />
           <Video
             videoUrl={VideoLink.trim()}

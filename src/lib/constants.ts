@@ -15,14 +15,12 @@ export const ALL_DATA_QUERY = `
 
 export const YOUTUBE_REGEX =
   /(?:youtu\.be\/|youtube\.com\/(?:.*[?&]v=|embed\/|v\/|shorts\/|live\/))([^&?/]+)/;
+export const DASH_LIST_ITEM_SEPARATOR_REGEX = / - /g;
+export const LIST_ITEM_PREFIX = '\n– ';
 
 export const REVALIDATE = 60;
 export const ENDLESS_CAROUSEL_SPEED = 50;
 export const SLIDER_RIGHT_SHIFT = 2;
-export const AMOUNT_OF_TESTIMONIALS_WORDS = 12;
-export const AMOUNT_OF_CASES_WORDS_DESKTOP = 13;
-export const AMOUNT_OF_CASES_WORDS_TABLET = 9;
-export const AMOUNT_OF_CASES_WORDS_MOBILE = 13;
 export const SCROLL_TRIGGER_POSITION = 1000;
 
 export const HERO_PHOTO_ALT = "Захарова Вікторія - кар'єрна консультантка";

@@ -13,7 +13,7 @@ const UserBadge = ({ userName, userPhotoUrl, userLink }: UserBadgeProps) => {
   const content = (
     <div className="flex items-center gap-5">
       <span
-        className="text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
+        className="transition-color-fast text-right text-lg font-medium leading-6 text-gray-dark hover:text-teal-dark desktop:text-xl"
         data-testid={USER_BADGE_NAME_TEST_ID}
       >
         {userName}

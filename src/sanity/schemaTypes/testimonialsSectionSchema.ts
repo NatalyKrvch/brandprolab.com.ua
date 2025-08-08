@@ -55,13 +55,6 @@ export const testimonialsSectionSchema = defineType({
               options: { hotspot: true },
               validation: rule => rule.required(),
             }),
-            defineField({
-              name: 'largePhoto',
-              title: 'Large Photo',
-              type: 'image',
-              options: { hotspot: true },
-              validation: rule => rule.required(),
-            }),
           ],
         }),
       ],

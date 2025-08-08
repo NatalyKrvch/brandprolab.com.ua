@@ -1,9 +1,6 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-
 import {
-  ControlledCarousel,
   DiplomaCard,
   FlipCard,
   PhotoCard,
@@ -11,22 +8,20 @@ import {
   ServiceCardFront,
 } from '@/components';
 import { ServiceCardFrontVariant } from '@/components/Cards/ServicesCards';
+import { useCarouselComponent } from '@/hooks';
 import { EXPERTISE_SECTION_TEST_ID } from '@/lib/testIDs';
 import { normalizeImageURL, splitLeadingWords } from '@/utils';
 
 import { serviceCardClassMap } from '../ServicesSection/styleMaps';
-import { ExpertiseSectionProps } from './types';
-
-const EndlessCarousel = dynamic(
-  () => import('@/components').then(mod => mod.EndlessCarousel),
-  { ssr: false },
-);
+import type { ExpertiseSectionProps } from './types';
 
 const ExpertiseSection = ({ expertiseData }: ExpertiseSectionProps) => {
+  const CarouselComponent = useCarouselComponent();
+
   if (!expertiseData) return null;
 
   const { diplomaCards, expertiseCards, title, photo } = expertiseData;
-  const { leadingWords, rest } = splitLeadingWords(title, 3);
+  const { leadingWords, restWords } = splitLeadingWords(title, 3);
 
   const photoUrl = normalizeImageURL(photo);
   const variant = ServiceCardFrontVariant.BASE;
@@ -39,8 +34,7 @@ const ExpertiseSection = ({ expertiseData }: ExpertiseSectionProps) => {
     >
       <h2 className="ml-6 text-32 font-bold leading-34 tracking-tight text-black tablet:ml-10 desktop:hidden">
         <span className="text-teal-dark">{leadingWords}</span>
-
-        <span>{' ' + rest}</span>
+        <span>{' ' + restWords}</span>
       </h2>
 
       <div className="flex gap-6">
@@ -53,7 +47,7 @@ const ExpertiseSection = ({ expertiseData }: ExpertiseSectionProps) => {
           imageContainerClassName="-translate-x-[155px]"
           photoUrl={photoUrl}
           text={title}
-          className="hidden w-[408px] desktop:block"
+          className="hidden desktop:block desktop:w-[408px]"
         />
 
         <article className="mx-auto grid grid-cols-1 gap-6 tablet:grid-cols-2 mid_tablet:grid-cols-2 desktop:grid-cols-2 [@media(min-width:600px)_and_(max-width:900px)]:grid-cols-1">
@@ -83,7 +77,7 @@ const ExpertiseSection = ({ expertiseData }: ExpertiseSectionProps) => {
         </article>
       </div>
 
-      <EndlessCarousel className="hidden tablet:block mid_tablet:block desktop:block">
+      <CarouselComponent>
         {diplomaCards.map(card => (
           <div key={card._key} className="mx-4">
             <DiplomaCard
@@ -92,18 +86,7 @@ const ExpertiseSection = ({ expertiseData }: ExpertiseSectionProps) => {
             />
           </div>
         ))}
-      </EndlessCarousel>
-
-      <ControlledCarousel className="tablet:hidden mid_tablet:hidden desktop:hidden">
-        {diplomaCards.map(card => (
-          <div key={card._key} className="mx-4">
-            <DiplomaCard
-              colorDiplomaURL={normalizeImageURL(card.colorImage)}
-              bwDiplomaURL={normalizeImageURL(card.bwImage)}
-            />
-          </div>
-        ))}
-      </ControlledCarousel>
+      </CarouselComponent>
     </div>
   );
 };
