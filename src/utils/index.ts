@@ -1,7 +1,7 @@
 export { assertValue } from './assertValue';
 export { fetchDataFromSanity } from './fetchDataFromSanity';
+export { formatTextWithListItems } from './formatTextWithListItems';
 export { getCurrentYear } from './getCurrentYear';
-export { getReadMoreText } from './getReadMoreText';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';
 export { normalizeImageURL } from './normalizeImageURL';
 export { normalizeText } from './normalizeText';
