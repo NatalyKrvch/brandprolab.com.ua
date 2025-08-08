@@ -55,3 +55,13 @@ export const HERO_TEXT_CONTENT_TEST_ID = 'hero-text-content-test-id';
 export const HERO_TEXT_CONTENT_ICON_TEST_ID = 'hero-text-content-icon-test-id';
 export const EXPERTISE_SECTION_TEST_ID = 'expertise-section-test-id';
 export const SCROLL_UP_BUTTON_TEST_ID = 'scroll-up-button-test-id';
+export const MODAL_WRAPPER_TEST_ID = 'modal-wrapper-test-id';
+export const MODAL_CONTENT_TEST_ID = 'modal-content-test-id';
+export const MODAL_CLOSE_BUTTON_TEST_ID = 'modal-close-button-test-id';
+export const CASE_MODAL_TEXT_TEST_ID = 'case-modal-text-test-id';
+export const TESTIMONIAL_MODAL_NAME_TEST_ID = 'testimonial-modal-name-test-id';
+export const TESTIMONIAL_MODAL_POSITION_TEST_ID =
+  'testimonial-modal-position-test-id';
+export const TESTIMONIAL_MODAL_TEXT_TEST_ID = 'testimonial-modal-text-test-id';
+export const TESTIMONIAL_MODAL_IMAGE_TEST_ID =
+  'testimonial-modal-image-test-id';
