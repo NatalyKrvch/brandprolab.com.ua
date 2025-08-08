@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaseModal does not render modal when closed 1`] = `<DocumentFragment />`;
+
+exports[`CaseModal does not render modal when closed and matches snapshot 1`] = `<DocumentFragment />`;
+
+exports[`CaseModal renders modal when open 1`] = `<DocumentFragment />`;
+
+exports[`CaseModal renders modal when open and matches snapshot 1`] = `<DocumentFragment />`;
