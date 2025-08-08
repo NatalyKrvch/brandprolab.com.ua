@@ -41,6 +41,7 @@ export default {
           fog: '#47EDFF',
           fogOpacity: '#1D81B2',
           lightOpacity: 'rgba(231, 250, 249, 0.8)',
+          lightOpacity06: 'rgba(231, 250, 249, 0.6)',
         },
       },
 
@@ -168,6 +169,7 @@ export default {
         '60': '60px',
         '64': '64px',
         '68': '68px',
+        '70': '70px',
         '72': '72px',
         '80': '80px',
         '84': '84px',
@@ -217,6 +219,8 @@ export default {
       },
 
       maxHeight: {
+        '70': '70px',
+        '80': '80px',
         '400': '400px',
         '424': '424px',
         '462': '462px',
