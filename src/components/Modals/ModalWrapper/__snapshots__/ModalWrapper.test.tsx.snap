@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalWrapper calls onClose when clicking on backdrop 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper calls onClose when clicking on backdrop and matches snapshot 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper calls onClose when clicking on close button 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper calls onClose when clicking on close button and matches snapsho 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper calls onClose when clicking on close button and matches snapshot 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper does not call onClose when clicking inside modal content 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper does not call onClose when clicking inside modal content and matches snapshot 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper renders modal with content 1`] = `<DocumentFragment />`;
+
+exports[`ModalWrapper renders modal with content and matches snapshot 1`] = `<DocumentFragment />`;
