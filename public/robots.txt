@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /studio/
+Allow: /
+
+Sitemap: https://brandprolab.com.ua/sitemap.xml
