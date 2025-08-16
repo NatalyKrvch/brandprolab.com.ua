@@ -61,8 +61,13 @@ jest.mock('@/utils', () => ({
     image?.asset?._ref ? `/mocked-url-${image.asset._ref}` : '/mocked-fallback',
 }));
 
-jest.mock('@/sanity/lib/client', () => ({
+jest.mock('@/sanity/lib/serverClient', () => ({
   client: { fetch: jest.fn() },
+}));
+
+jest.mock('@/sanity/lib/image', () => ({
+  urlForImage: (image: any) =>
+    image?.asset?._ref ? `/mocked-url-${image.asset._ref}` : '/mocked-fallback',
 }));
 
 describe('SocialIcons component', () => {
