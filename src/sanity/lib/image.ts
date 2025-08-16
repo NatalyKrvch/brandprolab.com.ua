@@ -1,13 +1,16 @@
 import createImageUrlBuilder from '@sanity/image-url';
-import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
-import { getSanityConfig } from '../env';
+const projectId =
+  process.env.SANITY_PROJECT_ID || process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 
-const { projectId, dataset } = getSanityConfig();
+const dataset =
+  process.env.SANITY_DATASET || process.env.NEXT_PUBLIC_SANITY_DATASET;
 
-// https://www.sanity.io/docs/image-url
+if (!projectId || !dataset) {
+  throw new Error('Sanity projectId or dataset is missing');
+}
+
 const builder = createImageUrlBuilder({ projectId, dataset });
 
-export const urlFor = (source: SanityImageSource) => {
-  return builder.image(source);
-};
+export const urlFor = (source: SanityImageSource) => builder.image(source);

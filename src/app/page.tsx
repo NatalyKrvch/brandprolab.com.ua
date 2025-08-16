@@ -1,6 +1,5 @@
 import { Section } from '@/components';
 import { ContainerVariant } from '@/components/Container';
-import { ALL_DATA_QUERY, REVALIDATE } from '@/lib/constants';
 import {
   CasesSection,
   DiagnosticSection,
@@ -13,16 +12,13 @@ import {
   VideoSection,
 } from '@/modules';
 import { Header } from '@/modules/Header';
-import { AllData } from '@/sanity/lib/types';
-import { fetchDataFromSanity } from '@/utils';
-
-export const revalidate = REVALIDATE;
+import { getAllData } from '@/utils/getAllData';
 
 const Home = async () => {
-  const data = await fetchDataFromSanity<AllData>(ALL_DATA_QUERY);
+  const data = await getAllData();
 
   if (!data) {
-    throw new Error('Sanity data not found');
+    throw new Error('Sanity data not found. Cannot generate static page.');
   }
 
   return (

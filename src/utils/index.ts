@@ -1,5 +1,4 @@
 export { assertValue } from './assertValue';
-export { fetchDataFromSanity } from './fetchDataFromSanity';
 export { formatTextWithListItems } from './formatTextWithListItems';
 export { getCurrentYear } from './getCurrentYear';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';

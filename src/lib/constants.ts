@@ -18,7 +18,7 @@ export const YOUTUBE_REGEX =
 export const DASH_LIST_ITEM_SEPARATOR_REGEX = / - /g;
 export const LIST_ITEM_PREFIX = '\n– ';
 
-export const REVALIDATE = 60;
+export const REVALIDATE = 3600;
 export const ENDLESS_CAROUSEL_SPEED = 50;
 export const SLIDER_RIGHT_SHIFT = 2;
 export const SCROLL_TRIGGER_POSITION = 1000;
