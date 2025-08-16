@@ -113,7 +113,15 @@ export type HeaderSectionType = {
   socialLinks: {
     _key: string;
     _type: 'socialLink';
-    icon: {
+    label: string;
+    colorIcon: {
+      _type: 'image';
+      asset: {
+        _ref: string;
+        _type: 'reference';
+      };
+    };
+    whiteIcon: {
       _type: 'image';
       asset: {
         _ref: string;

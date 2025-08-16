@@ -32,12 +32,7 @@ export const headerSectionSchema = defineType({
               name: 'link',
               title: 'Anchor Link',
               type: 'string',
-              validation: rule =>
-                rule.required().custom(value => {
-                  return value?.startsWith('#')
-                    ? true
-                    : 'Посилання має починатися з #';
-                }),
+              validation: rule => rule.required(),
             }),
           ],
         }),
@@ -63,8 +58,21 @@ export const headerSectionSchema = defineType({
           type: 'object',
           fields: [
             defineField({
-              name: 'icon',
-              title: 'Icon',
+              name: 'label',
+              title: 'Label',
+              type: 'string',
+              validation: rule => rule.required(),
+            }),
+            defineField({
+              name: 'colorIcon',
+              title: 'Color Icon',
+              type: 'image',
+              options: { hotspot: true },
+              validation: rule => rule.required(),
+            }),
+            defineField({
+              name: 'whiteIcon',
+              title: 'White Icon',
               type: 'image',
               options: { hotspot: true },
               validation: rule => rule.required(),
