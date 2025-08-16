@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react';
 
-import { SPRAY_BG_TEST_ID } from '@/lib/testIDs';
+import { MAIN_SPRAY_BG_TEST_ID } from '@/lib/testIDs';
 
-import SprayBackground from './SprayBackground';
+import MainSprayBg from './MainSprayBg';
 
-describe('SprayBackground', () => {
+describe('MainSprayBg', () => {
   it('renders an img with correct default attributes', () => {
-    const { getByTestId, asFragment } = render(<SprayBackground />);
+    const { getByTestId, asFragment } = render(<MainSprayBg />);
 
-    const img = getByTestId(SPRAY_BG_TEST_ID);
+    const img = getByTestId(MAIN_SPRAY_BG_TEST_ID);
     expect(img).toBeInTheDocument();
     expect(img).toHaveAttribute('src', '/images/backgrounds/spray.svg');
     expect(img).toHaveAttribute('alt', '');
@@ -28,10 +28,10 @@ describe('SprayBackground', () => {
 
   it('applies custom className if provided', () => {
     const { getByTestId, asFragment } = render(
-      <SprayBackground className="left-[200px] top-[100px]" />,
+      <MainSprayBg className="left-[200px] top-[100px]" />,
     );
 
-    const img = getByTestId(SPRAY_BG_TEST_ID);
+    const img = getByTestId(MAIN_SPRAY_BG_TEST_ID);
     expect(img).toHaveClass('top-[100px]', 'left-[200px]');
 
     expect(asFragment()).toMatchSnapshot();
