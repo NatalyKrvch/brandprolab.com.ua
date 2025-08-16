@@ -49,7 +49,7 @@ export const CAROUSEL_NAV_PREV_TEST_ID = 'carousel-nav-prev-test-id';
 export const ENDLESS_CAROUSEL_TEST_ID = 'endless-carousel-test-id';
 export const ENDLESS_CAROUSEL_CONTENT_TEST_ID =
   'endless-carousel-content-test-id';
-export const SPRAY_BG_TEST_ID = 'spray-bg-test-id';
+export const MAIN_SPRAY_BG_TEST_ID = 'main-spray-bg-test-id';
 export const HERO_MAIN_CARD_ICON_TEST_ID = 'hero-main-card-icon-test-id';
 export const HERO_TEXT_CONTENT_TEST_ID = 'hero-text-content-test-id';
 export const HERO_TEXT_CONTENT_ICON_TEST_ID = 'hero-text-content-icon-test-id';
