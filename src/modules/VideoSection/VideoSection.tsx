@@ -1,10 +1,4 @@
-import {
-  Button,
-  ExternalLink,
-  Label,
-  SprayBackground,
-  Video,
-} from '@/components';
+import { Button, ExternalLink, Label, MainSprayBg, Video } from '@/components';
 import { normalizeImageURL, normalizeText } from '@/utils';
 
 import type { VideoSectionProps } from './types';
@@ -34,7 +28,7 @@ const VideoSection = ({ videoData }: VideoSectionProps) => {
         </h2>
 
         <div className="relative mb-8 flex w-full max-w-400 justify-center tablet:max-w-480 desktop:hidden">
-          <SprayBackground className="-left-30 -top-250 h-650 w-full -rotate-30 tablet:-left-30 tablet:-top-350 tablet:h-1000 tablet:w-full tablet:-rotate-45" />
+          <MainSprayBg className="-left-30 -top-250 h-650 w-full -rotate-30 tablet:-left-30 tablet:-top-350 tablet:h-1000 tablet:w-full tablet:-rotate-45" />
           <Video
             videoUrl={VideoLink.trim()}
             thumbnailSrc={normalizeImageURL(videoCover)}
@@ -55,7 +49,7 @@ const VideoSection = ({ videoData }: VideoSectionProps) => {
       </div>
 
       <div className="relative hidden w-full justify-center desktop:flex">
-        <SprayBackground className="-rotate-30 desktop:-top-350 desktop:h-1020 desktop:w-full" />
+        <MainSprayBg className="-rotate-30 desktop:-top-350 desktop:h-1020 desktop:w-full" />
         <Video
           videoUrl={VideoLink.trim()}
           thumbnailSrc={normalizeImageURL(videoCover)}
