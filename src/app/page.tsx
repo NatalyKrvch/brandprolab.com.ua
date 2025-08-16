@@ -1,5 +1,6 @@
-import { Section } from '@/components';
+import { ScrollUpButton, Section } from '@/components';
 import { ContainerVariant } from '@/components/Container';
+import { SCROLL_TRIGGER_POSITION, SCROLL_UP_TO_ID } from '@/lib/constants';
 import {
   CasesSection,
   DiagnosticSection,
@@ -74,6 +75,11 @@ const Home = async () => {
           <SubscribeSection subscribeData={data.subscribe} />
         </Section>
       </main>
+
+      <ScrollUpButton
+        scrollThreshold={SCROLL_TRIGGER_POSITION}
+        sectionId={SCROLL_UP_TO_ID}
+      />
 
       <Footer footerData={data.footer} />
     </>
