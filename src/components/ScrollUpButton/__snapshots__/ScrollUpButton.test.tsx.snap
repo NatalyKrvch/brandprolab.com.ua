@@ -1,37 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScrollUpButton component should call scrollToSectionById on click 1`] = `
-<DocumentFragment>
-  <button
-    aria-label="Піднятись нагору"
-    class="fixed bottom-6 right-6 z-50 transition-all duration-300 ease-in-out hover:scale-105 translate-y-0 opacity-100"
-    data-testid="scroll-up-button-test-id"
-    type="button"
-  >
-    <img
-      alt="Піднятись нагору"
-      class="h-48 w-48 tablet:h-54 tablet:w-54 desktop:h-64 desktop:w-64"
-      data-nimg="1"
-      decoding="async"
-      height="64"
-      loading="lazy"
-      src="/icons/nav/up.svg"
-      style="color: transparent;"
-      width="64"
-    />
-  </button>
-</DocumentFragment>
-`;
-
 exports[`ScrollUpButton component should not render if component is not mounted 1`] = `<DocumentFragment />`;
 
 exports[`ScrollUpButton component should render and be visible when isVisible = true 1`] = `
 <DocumentFragment>
-  <button
-    aria-label="Піднятись нагору"
+  <a
     class="fixed bottom-6 right-6 z-50 transition-all duration-300 ease-in-out hover:scale-105 translate-y-0 opacity-100"
-    data-testid="scroll-up-button-test-id"
-    type="button"
+    data-testid="internal-link-test-id"
+    href="#hero"
   >
     <img
       alt="Піднятись нагору"
@@ -44,17 +20,16 @@ exports[`ScrollUpButton component should render and be visible when isVisible = 
       style="color: transparent;"
       width="64"
     />
-  </button>
+  </a>
 </DocumentFragment>
 `;
 
 exports[`ScrollUpButton component should render but be hidden when isVisible = false 1`] = `
 <DocumentFragment>
-  <button
-    aria-label="Піднятись нагору"
+  <a
     class="fixed bottom-6 right-6 z-50 transition-all duration-300 ease-in-out hover:scale-105 pointer-events-none translate-y-4 opacity-0"
-    data-testid="scroll-up-button-test-id"
-    type="button"
+    data-testid="internal-link-test-id"
+    href="#hero"
   >
     <img
       alt="Піднятись нагору"
@@ -67,6 +42,6 @@ exports[`ScrollUpButton component should render but be hidden when isVisible = f
       style="color: transparent;"
       width="64"
     />
-  </button>
+  </a>
 </DocumentFragment>
 `;

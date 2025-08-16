@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
-import { SCROLL_UP_BUTTON_TEST_ID } from '@/lib/testIDs';
+import { INTERNAL_LINK_TEST_ID, SCROLL_UP_BUTTON_TEST_ID } from '@/lib/testIDs';
 
 import ScrollUpButton from './ScrollUpButton';
 
@@ -10,15 +10,8 @@ jest.mock('./hooks/useScrollUpButton', () => ({
   useScrollUpButton: jest.fn(),
 }));
 
-jest.mock('@/utils/scrollToSectionById', () => ({
-  scrollToSectionById: jest.fn(),
-}));
-
 const mockUseScrollUpButton = require('./hooks/useScrollUpButton')
   .useScrollUpButton as jest.Mock;
-const mockScrollUtils = require('@/utils/scrollToSectionById');
-const mockScrollToSectionById =
-  mockScrollUtils.scrollToSectionById as jest.Mock;
 
 describe('ScrollUpButton component', () => {
   const sectionId = 'hero';
@@ -60,7 +53,8 @@ describe('ScrollUpButton component', () => {
       />,
     );
 
-    const button = screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID);
+    const button = screen.getByTestId(INTERNAL_LINK_TEST_ID);
+    expect(button).toBeInTheDocument();
     expect(button).toHaveClass('pointer-events-none translate-y-4 opacity-0');
     expect(asFragment()).toMatchSnapshot();
   });
@@ -78,28 +72,9 @@ describe('ScrollUpButton component', () => {
       />,
     );
 
-    const button = screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID);
+    const button = screen.getByTestId(INTERNAL_LINK_TEST_ID);
+    expect(button).toBeInTheDocument();
     expect(button).toHaveClass('translate-y-0 opacity-100');
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('should call scrollToSectionById on click', () => {
-    mockUseScrollUpButton.mockReturnValue({
-      isVisible: true,
-      hasMounted: true,
-    });
-
-    const { asFragment } = render(
-      <ScrollUpButton
-        sectionId={sectionId}
-        scrollThreshold={scrollThreshold}
-      />,
-    );
-
-    fireEvent.click(screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID));
-
-    expect(mockScrollToSectionById).toHaveBeenCalledWith(sectionId);
-    expect(mockScrollToSectionById).toHaveBeenCalledTimes(1);
     expect(asFragment()).toMatchSnapshot();
   });
 });
