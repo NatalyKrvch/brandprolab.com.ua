@@ -10,10 +10,13 @@ import {
 import { ContainerVariant } from '../Container';
 import Section from './Section';
 
-jest.mock('@/sanity/lib/client', () => ({
-  client: {
-    fetch: jest.fn(),
-  },
+jest.mock('@/sanity/lib/serverClient', () => ({
+  client: { fetch: jest.fn() },
+}));
+
+jest.mock('@/sanity/lib/image', () => ({
+  urlForImage: (image: any) =>
+    image?.asset?._ref ? `/mocked-url-${image.asset._ref}` : '/mocked-fallback',
 }));
 
 jest.mock('yet-another-react-lightbox', () => {

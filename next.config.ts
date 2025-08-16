@@ -1,5 +1,35 @@
 import type { NextConfig } from 'next';
 
+const securityHeaders = [
+  {
+    key: 'Content-Security-Policy',
+    value:
+      "default-src 'self'; " +
+      "script-src 'self' 'unsafe-inline';" +
+      "style-src 'self' 'unsafe-inline'; " +
+      "img-src 'self' https://cdn.sanity.io data: blob:; " +
+      "font-src 'self'; " +
+      "connect-src 'self' https://*.sanity.io; " +
+      "frame-ancestors 'none';",
+  },
+  {
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin',
+  },
+  {
+    key: 'X-Frame-Options',
+    value: 'DENY',
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=()',
+  },
+];
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -8,11 +38,16 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.sanity.io',
         pathname: '/images/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'media.vanityfair.com',
-      },
     ],
+  },
+
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+    ];
   },
 };
 
