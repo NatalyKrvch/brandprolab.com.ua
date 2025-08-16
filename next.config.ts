@@ -9,7 +9,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'; " +
       "img-src 'self' https://cdn.sanity.io data: blob:; " +
       "font-src 'self'; " +
-      "connect-src 'self'; " +
+      "connect-src 'self' https://*.sanity.io; " +
       "frame-ancestors 'none';",
   },
   {
