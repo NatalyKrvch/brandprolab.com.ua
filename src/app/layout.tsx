@@ -2,9 +2,12 @@ import '@/styles/globals.css';
 
 import type { Metadata } from 'next';
 
+import { MODAL_ROOT_ID } from '@/lib/constants';
+
 export const metadata: Metadata = {
   title: 'BrandProLab',
   description: '', // TODO: add description
+  icons: '/favicon.png',
 };
 
 export default function RootLayout({
@@ -16,7 +19,7 @@ export default function RootLayout({
     <html lang="uk">
       <body>
         {children}
-        <div id="modal-root" />
+        <div id={MODAL_ROOT_ID} />
       </body>
     </html>
   );

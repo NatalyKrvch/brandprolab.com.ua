@@ -9,9 +9,15 @@ const InternalLink = ({
   href,
   className,
   children,
+  prefetch = true,
 }: PropsWithChildren<InternalLinkProps>) => {
   return (
-    <Link href={href} className={className} data-testid={INTERNAL_LINK_TEST_ID}>
+    <Link
+      href={href}
+      prefetch={prefetch}
+      className={className}
+      data-testid={INTERNAL_LINK_TEST_ID}
+    >
       {children}
     </Link>
   );

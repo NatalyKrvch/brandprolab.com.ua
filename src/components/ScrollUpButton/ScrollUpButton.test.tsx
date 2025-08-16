@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
-import { SCROLL_UP_BUTTON_TEST_ID } from '@/lib/testIDs';
+import { INTERNAL_LINK_TEST_ID, SCROLL_UP_BUTTON_TEST_ID } from '@/lib/testIDs';
 
 import ScrollUpButton from './ScrollUpButton';
 
@@ -25,7 +25,6 @@ describe('ScrollUpButton component', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: false,
       hasMounted: false,
-      handleScrollToSection: jest.fn(),
     });
 
     const { asFragment } = render(
@@ -34,6 +33,7 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
+
     expect(
       screen.queryByTestId(SCROLL_UP_BUTTON_TEST_ID),
     ).not.toBeInTheDocument();
@@ -44,7 +44,6 @@ describe('ScrollUpButton component', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: false,
       hasMounted: true,
-      handleScrollToSection: jest.fn(),
     });
 
     const { asFragment } = render(
@@ -53,7 +52,9 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
-    const button = screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID);
+
+    const button = screen.getByTestId(INTERNAL_LINK_TEST_ID);
+    expect(button).toBeInTheDocument();
     expect(button).toHaveClass('pointer-events-none translate-y-4 opacity-0');
     expect(asFragment()).toMatchSnapshot();
   });
@@ -62,7 +63,6 @@ describe('ScrollUpButton component', () => {
     mockUseScrollUpButton.mockReturnValue({
       isVisible: true,
       hasMounted: true,
-      handleScrollToSection: jest.fn(),
     });
 
     const { asFragment } = render(
@@ -71,27 +71,10 @@ describe('ScrollUpButton component', () => {
         scrollThreshold={scrollThreshold}
       />,
     );
-    const button = screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID);
+
+    const button = screen.getByTestId(INTERNAL_LINK_TEST_ID);
+    expect(button).toBeInTheDocument();
     expect(button).toHaveClass('translate-y-0 opacity-100');
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('should call handleScrollToSection on click', () => {
-    const handleScrollToSection = jest.fn();
-    mockUseScrollUpButton.mockReturnValue({
-      isVisible: true,
-      hasMounted: true,
-      handleScrollToSection,
-    });
-
-    const { asFragment } = render(
-      <ScrollUpButton
-        sectionId={sectionId}
-        scrollThreshold={scrollThreshold}
-      />,
-    );
-    fireEvent.click(screen.getByTestId(SCROLL_UP_BUTTON_TEST_ID));
-    expect(handleScrollToSection).toHaveBeenCalledTimes(1);
     expect(asFragment()).toMatchSnapshot();
   });
 });

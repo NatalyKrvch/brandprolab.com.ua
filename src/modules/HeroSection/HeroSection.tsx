@@ -6,7 +6,6 @@ import {
   HeroTextContent,
   PhotoCard,
 } from '@/components';
-import { HERO_PHOTO_ALT } from '@/lib/constants';
 import {
   HERO_CARD_HEIGHT,
   HERO_CARD_PHOTO_HEIGHT,
@@ -25,13 +24,15 @@ const HeroSection = ({ heroData }: HeroSectionProps) => {
   const photoUrl = normalizeImageURL(photo);
   const iconUrl = normalizeImageURL(icon);
 
+  const photoAlt = "Захарова Вікторія - кар'єрна консультантка";
+
   return (
     <>
       <div className="relative aspect-[10/17] max-h-833 min-h-477 w-full overflow-hidden bg-[url('/images/backgrounds/hero/mobile-spray-bg.svg')] bg-cover bg-no-repeat tablet:aspect-auto tablet:h-800 tablet:bg-[url('/images/backgrounds/hero/tablet-spray-bg.svg')] desktop:hidden">
         <div className="absolute inset-0 -translate-y-8 translate-x-[8%] min_mobile:translate-x-[15%] tablet:-translate-x-0 tablet:translate-y-0 mid_tablet:-translate-x-16">
           <Image
             src={photoUrl}
-            alt={HERO_PHOTO_ALT}
+            alt={photoAlt}
             fill
             priority
             className="object-contain object-right"
@@ -90,7 +91,7 @@ const HeroSection = ({ heroData }: HeroSectionProps) => {
 
         <PhotoCard
           photoUrl={photoUrl}
-          photoAlt={HERO_PHOTO_ALT}
+          photoAlt={photoAlt}
           backgroundUrl="./images/backgrounds/hero/photocard-bg.svg"
           hasPriority
           cardHeight={HERO_CARD_HEIGHT}

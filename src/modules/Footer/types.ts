@@ -1,5 +1,5 @@
 import { FooterSectionType } from '@/sanity/lib/types';
 
-export interface FooterSectionProps {
+export interface FooterProps {
   footerData: FooterSectionType;
 }

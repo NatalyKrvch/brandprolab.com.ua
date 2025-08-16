@@ -1,17 +1,22 @@
 import { ScrollUpButton, Section } from '@/components';
 import { ContainerVariant } from '@/components/Container';
-import { ALL_DATA_QUERY, SCROLL_TRIGGER_POSITION } from '@/lib/constants';
+import {
+  ALL_DATA_QUERY,
+  SCROLL_TRIGGER_POSITION,
+  SCROLL_UP_TO_ID,
+} from '@/lib/constants';
 import {
   CasesSection,
   DiagnosticSection,
   ExpertiseSection,
-  FooterSection,
+  Footer,
   HeroSection,
   ServicesSection,
   SubscribeSection,
   TestimonialsSection,
   VideoSection,
 } from '@/modules';
+import { Header } from '@/modules/Header';
 import { AllData } from '@/sanity/lib/types';
 import { fetchDataFromSanity, throwError } from '@/utils';
 
@@ -24,7 +29,9 @@ const Modules = async () => {
 
   return (
     <>
-      <main>
+      <Header id="header" headerData={data.header} />
+
+      <main className="pt-12 tablet:pt-72 desktop:pt-96">
         <Section
           id="hero"
           className="mb-24 desktop:mb-144"
@@ -75,11 +82,11 @@ const Modules = async () => {
       </main>
 
       <ScrollUpButton
-        sectionId="hero"
+        sectionId={SCROLL_UP_TO_ID}
         scrollThreshold={SCROLL_TRIGGER_POSITION}
       />
 
-      <FooterSection footerData={data.footer} />
+      <Footer footerData={data.footer} />
     </>
   );
 };

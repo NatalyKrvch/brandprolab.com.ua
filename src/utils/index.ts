@@ -4,6 +4,7 @@ export { formatTextWithListItems } from './formatTextWithListItems';
 export { getCurrentYear } from './getCurrentYear';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';
 export { normalizeImageURL } from './normalizeImageURL';
+export { normalizeSectionHref } from './normalizeSectionHref';
 export { normalizeText } from './normalizeText';
 export { splitLeadingWords } from './splitLeadingWords';
 export { throwError } from './throwError';

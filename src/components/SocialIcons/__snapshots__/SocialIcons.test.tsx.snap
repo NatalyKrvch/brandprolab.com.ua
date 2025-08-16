@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialIcons component matches snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    aria-label="Соціальні мережі"
+    class="flex items-center gap-4"
+  >
+    <li>
+      <a
+        data-testid="external-link-test-id"
+        href="https://facebook.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Посилання на Facebook"
+          height="32"
+          src="/mocked-url-white-123"
+          width="32"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        data-testid="external-link-test-id"
+        href="https://instagram.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Посилання на Instagram"
+          height="32"
+          src="/mocked-url-white-456"
+          width="32"
+        />
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

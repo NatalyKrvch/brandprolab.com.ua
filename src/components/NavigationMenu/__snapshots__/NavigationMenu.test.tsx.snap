@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationMenu matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Головне меню"
+    class=""
+  >
+    <ul
+      class="flex flex-col gap-8 desktop:flex-row"
+    >
+      <li>
+        <a
+          class="text-xl font-medium leading-none tracking-normal transition-colors text-white hover:text-teal-dark tablet:text-32 desktop:text-gray-dark rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-dark focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+          href="#about"
+        >
+          Про нас
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-xl font-medium leading-none tracking-normal transition-colors text-white hover:text-teal-dark tablet:text-32 desktop:text-gray-dark rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-dark focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+          href="#services"
+        >
+          Послуги
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-xl font-medium leading-none tracking-normal transition-colors text-white hover:text-teal-dark tablet:text-32 desktop:text-gray-dark rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-dark focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+          href="#contacts"
+        >
+          Контакти
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
