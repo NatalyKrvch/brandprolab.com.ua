@@ -47,8 +47,8 @@ export default {
       },
 
       fontFamily: {
-        mariupol: ['Mariupol', 'sans-serif'],
-        symbols: ['Mariupol-Symbols', 'sans-serif'],
+        mariupol: ['var(--font-mariupol)', 'sans-serif'],
+        symbols: ['var(--font-mariupol-symbols)', 'sans-serif'],
       },
 
       textUnderlineOffset: {
