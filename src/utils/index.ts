@@ -1,5 +1,6 @@
 export { assertValue } from './assertValue';
 export { formatTextWithListItems } from './formatTextWithListItems';
+export { generateNonce } from './generateNonce';
 export { getCurrentYear } from './getCurrentYear';
 export { getYouTubeEmbedUrl } from './getYouTubeEmbedUrl';
 export { normalizeImageURL } from './normalizeImageURL';
