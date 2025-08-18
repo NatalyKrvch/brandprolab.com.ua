@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-*storybook.log
 .vscode/
-
+Thumbs.db
+ehthumbs.db
+Icon?
+.Spotlight-V100
+.Trashes

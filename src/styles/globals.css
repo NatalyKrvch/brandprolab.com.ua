@@ -7,33 +7,6 @@
   --main-text: #171717;
 }
 
-@font-face {
-  font-family: 'Mariupol';
-  src: url('/fonts/mariupol/Mariupol-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Mariupol';
-  src: url('/fonts/mariupol/Mariupol-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Mariupol';
-  src: url('/fonts/mariupol/Mariupol-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Mariupol-Symbols';
-  src: url('/fonts/mariupol/Mariupol-Symbols.otf') format('opentype');
-  font-style: normal;
-}
-
 html,
 body {
   overflow-x: hidden;
@@ -45,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Mariupol', sans-serif;
+  font-family: var(--font-mariupol), sans-serif;
   color: var(--main-text);
   background: var(--background);
 }

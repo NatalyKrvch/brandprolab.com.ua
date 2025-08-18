@@ -32,7 +32,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           isPlaying ? 'pointer-events-none opacity-0' : 'opacity-100',
         )}
       >
-        <div className={`absolute inset-0 bg-teal-fogOpacity opacity-50`} />
+        <div className="absolute inset-0 bg-teal-fogOpacity opacity-50" />
 
         <Image
           src={thumbnailSrc}
@@ -41,7 +41,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           loading="lazy"
           width={280}
           height={210}
-          className={`h-full w-full object-cover`}
+          className="h-full w-full object-cover"
           data-testid={VIDEO_THUMBNAIL_TEST_ID}
         />
 
@@ -49,7 +49,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           <button
             className="rounded-full shadow-lg transition hover:scale-105"
             onClick={handlePlay}
-            aria-label="Play video"
+            aria-label="Відтворити відео"
             data-testid={VIDEO_PLAY_BUTTON_TEST_ID}
           >
             <Image
@@ -65,7 +65,7 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
 
       {isPlaying && (
         <iframe
-          className={`h-full w-full`}
+          className="h-full w-full"
           src={embedUrl}
           title="Відео"
           allow="autoplay; encrypted-media"

@@ -9,6 +9,35 @@ jest.mock('yet-another-react-lightbox', () => {
 });
 jest.mock('yet-another-react-lightbox/plugins/zoom', () => ({}));
 
+jest.mock('@/sanity/lib/image', () => ({
+  urlForImage: () => '/__tests__/mock-image.png',
+}));
+
+jest.mock('next/image', () => {
+  const React = require('react');
+  return function NextImageMock(props: any) {
+    const { src, alt, width, height, ...rest } = props;
+    const imgProps: any = { ...rest };
+    delete imgProps.priority;
+    delete imgProps.loader;
+    delete imgProps.fill;
+    delete imgProps.quality;
+    delete imgProps.sizes;
+    delete imgProps.placeholder;
+    delete imgProps.blurDataURL;
+
+    const normalizedSrc = typeof src === 'string' ? src : (src?.src ?? '');
+
+    return React.createElement('img', {
+      src: normalizedSrc,
+      alt,
+      width,
+      height,
+      ...imgProps,
+    });
+  };
+});
+
 import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIDs';
 
 import SocialIcons from './SocialIcons';
@@ -43,30 +72,9 @@ const mockSocialLinks: SocialIconsProps['socialLinks'] = [
   },
 ];
 
-jest.mock('next/image', () => {
-  const MockImage = (props: any) => {
-    // eslint-disable-next-line jsx-a11y/alt-text
-    return <img {...props} />;
-  };
-  MockImage.displayName = 'MockNextImage';
-  return {
-    __esModule: true,
-    default: MockImage,
-  };
-});
-
 jest.mock('@/utils', () => ({
   ...jest.requireActual('@/utils'),
   normalizeImageURL: (image: any) =>
-    image?.asset?._ref ? `/mocked-url-${image.asset._ref}` : '/mocked-fallback',
-}));
-
-jest.mock('@/sanity/lib/serverClient', () => ({
-  client: { fetch: jest.fn() },
-}));
-
-jest.mock('@/sanity/lib/image', () => ({
-  urlForImage: (image: any) =>
     image?.asset?._ref ? `/mocked-url-${image.asset._ref}` : '/mocked-fallback',
 }));
 

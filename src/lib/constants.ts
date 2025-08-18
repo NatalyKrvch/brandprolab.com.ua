@@ -13,16 +13,27 @@ export const ALL_DATA_QUERY = `
 }
 `;
 
+export const PERSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Вікторія Захарова',
+  jobTitle: "Кар'єрна консультантка в IT",
+  description:
+    'Карʼєрна консультантка в IT, допомагає спеціалістам знаходити роботу та досягати нових цілей.',
+  image: 'https://brandprolab.com.ua/og-image.jpg',
+  url: 'https://brandprolab.com.ua',
+  sameAs: [
+    'https://www.linkedin.com/in/zakharovaviktoriia/',
+    'https://t.me/Zakharovavika',
+  ],
+};
+
 export const YOUTUBE_REGEX =
   /(?:youtu\.be\/|youtube\.com\/(?:.*[?&]v=|embed\/|v\/|shorts\/|live\/))([^&?/]+)/;
 export const DASH_LIST_ITEM_SEPARATOR_REGEX = / - /g;
 export const LIST_ITEM_PREFIX = '\n– ';
 
 export const REVALIDATE = 3600;
-export const ENDLESS_CAROUSEL_SPEED = 50;
-export const SLIDER_RIGHT_SHIFT = 2;
-export const SCROLL_TRIGGER_POSITION = 1000;
-export const BURGER_ANIMATION_MS = 220;
 
 export const MODAL_ROOT_ID = 'modal-root';
 

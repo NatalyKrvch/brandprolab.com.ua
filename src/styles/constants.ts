@@ -21,3 +21,10 @@ export const HERO_CARD_PHOTO_WIDTH = 512;
 export const EXPERTISE_CARD_HEIGHT = 744;
 export const EXPERTISE_CARD_PHOTO_HEIGHT = 600;
 export const EXPERTISE_CARD_PHOTO_WIDTH = 362;
+
+export const ENDLESS_CAROUSEL_SPEED = 50;
+export const SLIDER_RIGHT_SHIFT = 2;
+export const SCROLL_TRIGGER_POSITION = 1000;
+export const BURGER_ANIMATION_MS = 220;
+export const OG_IMAGE_WIDTH = 1200;
+export const OG_IMAGE_HEIGHT = 630;

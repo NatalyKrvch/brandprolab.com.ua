@@ -1,7 +1,7 @@
 import { KeenSliderInstance } from 'keen-slider';
 import { Dispatch, SetStateAction } from 'react';
 
-import { SLIDER_RIGHT_SHIFT } from '@/lib/constants';
+import { SLIDER_RIGHT_SHIFT } from '@/styles/constants';
 
 interface OnSlideChangedParams {
   setCurrentSlideIndex: Dispatch<SetStateAction<number>>;
