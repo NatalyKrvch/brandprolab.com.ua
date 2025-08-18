@@ -9,20 +9,14 @@ import InternalLink from './InternalLink';
 import { InternalLinkProps } from './types';
 
 jest.mock('next/link', () => {
-  const MockLink = ({
-    children,
-    href,
-    ...rest
-  }: {
-    children: React.ReactNode;
-    href: string;
-  }) => (
-    <a href={href} {...rest}>
-      {children}
-    </a>
-  );
-  MockLink.displayName = 'MockLink';
-  return MockLink;
+  const React = require('react');
+  return React.forwardRef(function MockNextLink(
+    { href, children, _prefetch, ...rest }: any,
+    ref: any,
+  ) {
+    const h = typeof href === 'string' ? href : href?.pathname || '#';
+    return React.createElement('a', { href: h, ref, ...rest }, children);
+  });
 });
 
 describe('InternalLink component', () => {

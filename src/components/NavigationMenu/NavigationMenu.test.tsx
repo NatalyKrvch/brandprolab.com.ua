@@ -6,7 +6,7 @@ import NavigationMenu from './NavigationMenu';
 import type { MenuItemType } from './types';
 
 jest.mock('../Links', () => ({
-  InternalLink: ({ href, className, children, ...rest }: any) => (
+  InternalLink: ({ href, className, children, _prefetch, ...rest }: any) => (
     <a href={href} className={className} {...rest}>
       {children}
     </a>
