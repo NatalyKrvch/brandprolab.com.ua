@@ -1,6 +1,6 @@
 import { ScrollUpButton, Section } from '@/components';
 import { ContainerVariant } from '@/components/Container';
-import { SCROLL_TRIGGER_POSITION, SCROLL_UP_TO_ID } from '@/lib/constants';
+import { SCROLL_UP_TO_ID } from '@/lib/constants';
 import {
   CasesSection,
   DiagnosticSection,
@@ -13,6 +13,7 @@ import {
   VideoSection,
 } from '@/modules';
 import { Header } from '@/modules/Header';
+import { SCROLL_TRIGGER_POSITION } from '@/styles/constants';
 import { getAllData } from '@/utils/getAllData';
 
 const Home = async () => {

@@ -8,7 +8,8 @@ import { twMerge } from 'tailwind-merge';
 
 import { NavigationMenu } from '@/components/NavigationMenu';
 import { useLayer } from '@/hooks';
-import { BURGER_ANIMATION_MS, MODAL_ROOT_ID } from '@/lib/constants';
+import { MODAL_ROOT_ID } from '@/lib/constants';
+import { BURGER_ANIMATION_MS } from '@/styles/constants';
 
 import { SocialIcons } from '../SocialIcons';
 import { BurgerMenuSprayBg } from '../SprayBackgrounds/BurgerMenuSprayBg';

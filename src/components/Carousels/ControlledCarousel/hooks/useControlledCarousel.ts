@@ -4,7 +4,7 @@ import type { KeenSliderInstance, KeenSliderOptions } from 'keen-slider';
 import { useKeenSlider } from 'keen-slider/react';
 import { useState } from 'react';
 
-import { SLIDER_RIGHT_SHIFT } from '@/lib/constants';
+import { SLIDER_RIGHT_SHIFT } from '@/styles/constants';
 
 import {
   BASE_SLIDES_CONFIG,

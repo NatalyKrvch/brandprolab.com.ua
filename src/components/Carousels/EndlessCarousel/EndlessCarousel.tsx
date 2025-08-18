@@ -1,11 +1,11 @@
 import type { PropsWithChildren } from 'react';
 import Marquee from 'react-fast-marquee';
 
-import { ENDLESS_CAROUSEL_SPEED } from '@/lib/constants';
 import {
   ENDLESS_CAROUSEL_CONTENT_TEST_ID,
   ENDLESS_CAROUSEL_TEST_ID,
 } from '@/lib/testIDs';
+import { ENDLESS_CAROUSEL_SPEED } from '@/styles/constants';
 
 import type { EndlessCarouselProps } from './types';
 
