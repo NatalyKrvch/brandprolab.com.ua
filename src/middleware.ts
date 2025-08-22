@@ -4,6 +4,24 @@ import { generateNonce } from './utils';
 
 export function middleware(req: NextRequest) {
   const nonce = generateNonce();
+  const url = req.nextUrl;
+
+  if (url.pathname.startsWith('/studio')) {
+    const auth = req.headers.get('authorization');
+    const need = new NextResponse('Потрібна авторизація', {
+      status: 401,
+      headers: { 'WWW-Authenticate': 'Basic realm="Studio"' },
+    });
+
+    if (!auth) return need;
+
+    const [, b64] = auth.split(' ');
+    const [user, pass] = atob(b64 || '').split(':');
+
+    if (user !== process.env.STUDIO_USER || pass !== process.env.STUDIO_PASS) {
+      return need;
+    }
+  }
 
   const requestHeaders = new Headers(req.headers);
   requestHeaders.set('x-nonce', nonce);
