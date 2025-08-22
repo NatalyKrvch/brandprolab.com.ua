@@ -6,7 +6,7 @@ export default function GlobalError({ reset }: { reset: () => void }) {
       <body>
         <main className="flex min-h-screen items-center justify-center p-8">
           <div className="text-center">
-            <h1 className="mb-4 text-2xl font-semibold">
+            <h1 className="mb-4 text-3xl font-semibold">
               Вибачте, сайт тимчасово недоступний
             </h1>
             <button
