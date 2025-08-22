@@ -11,7 +11,7 @@ import { structureTool } from 'sanity/structure';
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { schema } from './src/sanity/schemaTypes';
 import { structure } from './src/sanity/structure';
-import { getSanityConfig } from '@/sanity/env';
+import { getSanityConfig } from '@/sanity/lib/getSanityConfig';
 
 const { apiVersion, dataset, projectId } = getSanityConfig();
 
