@@ -11,6 +11,7 @@ import {
   SocialIcons,
 } from '@/components';
 import { MENU_PANEL_ID } from '@/lib/constants';
+import { normalizeImageURL } from '@/utils';
 
 import type { HeaderProps } from './types';
 
@@ -57,6 +58,7 @@ const Header = ({ headerData, id }: HeaderProps) => {
 
       <div id={MENU_PANEL_ID}>
         <BurgerMenu
+          photoUrl={normalizeImageURL(headerData.photo)}
           isOpen={isBurgerOpen}
           onClose={() => setIsBurgerOpen(false)}
           menuItems={headerData.menuItems}

@@ -18,6 +18,7 @@ import type { BurgerMenuProps } from './types';
 const BurgerMenu = ({
   isOpen,
   onClose,
+  photoUrl,
   menuItems,
   panelClassName,
   navClassName,
@@ -81,7 +82,7 @@ const BurgerMenu = ({
           <BurgerMenuSprayBg className="-z-10" />
 
           <Image
-            src="/images/temp/Ellipse.png"
+            src={photoUrl}
             alt="Вікторія Захарова"
             width={90}
             height={90}

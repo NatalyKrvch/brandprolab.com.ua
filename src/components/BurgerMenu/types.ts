@@ -4,6 +4,7 @@ import type { SocialIcon } from '../SocialIcons';
 export interface BurgerMenuProps {
   isOpen: boolean;
   onClose: () => void;
+  photoUrl: string;
   socialLinks: SocialIcon[];
   menuItems: MenuItemType[];
   panelClassName?: string;
