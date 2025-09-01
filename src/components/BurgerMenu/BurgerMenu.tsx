@@ -86,10 +86,11 @@ const BurgerMenu = ({
             alt="Вікторія Захарова"
             width={90}
             height={90}
-            className="h-60 w-60 rounded-full tablet:h-90 tablet:w-90"
+            priority
+            className="h-90 w-90 rounded-full tablet:h-120 tablet:w-120"
           />
 
-          <h2 className="mt-2 text-center text-base font-light leading-22 tracking-wider text-teal-dark tablet:text-2xl">
+          <h2 className="mt-2 text-center text-lg font-light leading-22 tracking-wider text-teal-dark tablet:text-2xl">
             Вікторія Захарова
           </h2>
         </div>

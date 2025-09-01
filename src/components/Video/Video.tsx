@@ -68,8 +68,9 @@ const Video = ({ videoUrl, thumbnailSrc, className }: VideoProps) => {
           className="h-full w-full"
           src={embedUrl}
           title="Відео"
-          allow="autoplay; encrypted-media"
+          allow="autoplay; encrypted-media; picture-in-picture"
           allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
           data-testid={VIDEO_IFRAME_TEST_ID}
         />
       )}

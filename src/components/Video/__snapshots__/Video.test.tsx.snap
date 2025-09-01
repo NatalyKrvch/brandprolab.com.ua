@@ -217,11 +217,12 @@ exports[`Video component replaces thumbnail with iframe when play button is clic
       </div>
     </div>
     <iframe
-      allow="autoplay; encrypted-media"
+      allow="autoplay; encrypted-media; picture-in-picture"
       allowfullscreen=""
       class="h-full w-full"
       data-testid="video-iframe-test-id"
-      src="https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0"
+      referrerpolicy="strict-origin-when-cross-origin"
+      src="https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0&playsinline=1&mute=1&modestbranding=1&enablejsapi=1"
       title="Відео"
     />
   </div>
