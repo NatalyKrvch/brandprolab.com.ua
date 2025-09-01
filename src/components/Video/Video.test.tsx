@@ -78,7 +78,7 @@ describe('Video component', () => {
     expect(iframeElement).toBeInTheDocument();
     expect(iframeElement).toHaveAttribute(
       'src',
-      'https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0',
+      'https://www.youtube.com/embed/testvideo12345?autoplay=1&rel=0&playsinline=1&mute=1&modestbranding=1&enablejsapi=1',
     );
     expect(asFragment()).toMatchSnapshot();
   });
