@@ -31,6 +31,7 @@ const TestimonialModal = ({
             alt={testimonial.clientName}
             width={100}
             height={100}
+            priority
             className="absolute left-4 top-[-10px] h-96 w-96 rounded-full object-cover tablet:left-7 tablet:top-[-15px] tablet:h-108 tablet:w-108 desktop:left-30 desktop:top-[-20px] desktop:h-144 desktop:w-144"
           />
 
